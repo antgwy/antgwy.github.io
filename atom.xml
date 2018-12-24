@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-24T14:40:47.693Z</updated>
+  <updated>2018-12-24T15:24:23.079Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,20 +17,56 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>About me</title>
+    <link href="http://yoursite.com/2018/12/24/About-me-0/"/>
+    <id>http://yoursite.com/2018/12/24/About-me-0/</id>
+    <published>2018-12-24T15:23:39.000Z</published>
+    <updated>2018-12-24T15:24:23.079Z</updated>
+    
+    <content type="html"><![CDATA[<p>各位大佬好，我的名字叫ywt，是一个spicychicken,我喜欢算法，作为一个曾经喜欢MO却没有任何OI经验的辣鸡，我很是羞愧，我的博客主要用来分享我的学习经历和人生经验，感谢大佬们有缘路过，本萌新瑟瑟发抖。</p><p><img src="/2018/12/24/About-me-0/C:/Users\22473\Pictures\Saved Pictures\IMG_20181224_223028.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;各位大佬好，我的名字叫ywt，是一个spicychicken,我喜欢算法，作为一个曾经喜欢MO却没有任何OI经验的辣鸡，我很是羞愧，我的博客主要用来分享我的学习经历和人生经验，感谢大佬们有缘路过，本萌新瑟瑟发抖。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2018/12/24/A
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>linux学习</title>
+    <link href="http://yoursite.com/2018/12/24/linux%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://yoursite.com/2018/12/24/linux学习/</id>
+    <published>2018-12-24T15:23:02.000Z</published>
+    <updated>2018-12-24T15:23:02.939Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>about me</title>
     <link href="http://yoursite.com/2018/12/24/about-me/"/>
     <id>http://yoursite.com/2018/12/24/about-me/</id>
     <published>2018-12-24T13:23:25.000Z</published>
     <updated>2018-12-24T14:40:47.693Z</updated>
     
-    <content type="html"><![CDATA[<p>​    各位大佬好，我的名字叫ywt，是一个spicychicken,我喜欢算法，作为一个曾经喜欢MO却没有任何OI经验的辣鸡，我很是羞愧，我的博客主要用来分享我的学习经历和人生经验，感谢大佬们有缘路过，本萌新瑟瑟发抖。</p><p><img src="C:\Users\22473\Pictures\Saved Pictures\IMG_20181224_223028.jpg" alt=""></p>]]></content>
+    <content type="html"><![CDATA[<p>​    各位大佬好，我的名字叫ywt，是一个spicychicken,我喜欢算法，作为一个曾经喜欢MO却没有任何OI经验的辣鸡，我很是羞愧，我的博客主要用来分享我的学习经历和人生经验，感谢大佬们有缘路过，本萌新瑟瑟发抖。</p><p><img src="/2018/12/24/about-me/C:/Users\22473\Pictures\Saved Pictures\IMG_20181224_223028.jpg" alt=""></p>]]></content>
     
     <summary type="html">
     
       
       
         &lt;p&gt;​    各位大佬好，我的名字叫ywt，是一个spicychicken,我喜欢算法，作为一个曾经喜欢MO却没有任何OI经验的辣鸡，我很是羞愧，我的博客主要用来分享我的学习经历和人生经验，感谢大佬们有缘路过，本萌新瑟瑟发抖。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;C:\Users
+&lt;p&gt;&lt;img src=&quot;/2018/12
       
     
     </summary>
