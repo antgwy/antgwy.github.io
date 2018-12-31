@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-29T14:36:09.653Z</updated>
+  <updated>2018-12-31T14:49:38.272Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>goodbye2018</title>
+    <link href="http://yoursite.com/2018/12/31/goodbye2018/"/>
+    <id>http://yoursite.com/2018/12/31/goodbye2018/</id>
+    <published>2018-12-31T10:55:40.000Z</published>
+    <updated>2018-12-31T14:49:38.272Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个标题来源于昨天的cf,菜鸟我只过了三道。</p><h2>关于$2018$</h2><p>​2018是个具有重要意义的一年，这一年里我经历了高三并且不再是未成年人，并进入大学遇到了很多不一样的人和事。</p><p>​2018我有一半的时间在高三度过，并经历了人生第一次大考—高考，而这一年最遗憾的事莫过于我没有考上北航，不过就这样吧，未来还长着呢。大学的第一学期算是我的适应期，这一学期算不上繁忙，我还是比较浪，以后还是要努力学习鸭。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这个标题来源于昨天的cf,菜鸟我只过了三道。&lt;/p&gt;
+&lt;h2&gt;关于$2018$&lt;/h2&gt;
+&lt;p&gt;​	2018是个具有重要意义的一年，这一年里我经历了高三并且不再是未成年人，并进入大学遇到了很多不一样的人和事。&lt;/p&gt;
+&lt;p&gt;​	2018我有一半的时间在高三度过，并经历了人生
+      
+    
+    </summary>
+    
+    
+      <category term="杂谈" scheme="http://yoursite.com/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
   
   <entry>
     <title>About me</title>
