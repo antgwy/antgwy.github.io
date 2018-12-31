@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-31T15:33:30.646Z</updated>
+  <updated>2018-12-31T15:39:28.609Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2018/12/31/goodbye2018/"/>
     <id>http://yoursite.com/2018/12/31/goodbye2018/</id>
     <published>2018-12-31T10:55:40.000Z</published>
-    <updated>2018-12-31T15:33:30.646Z</updated>
+    <updated>2018-12-31T15:39:28.609Z</updated>
     
-    <content type="html"><![CDATA[<p>这个标题来源于昨天的cf,菜鸟我只过了三道，还被hack了一次:sob:，真叫人伤心。</p><h2>关于$2018$</h2><p>​2018是个具有重要意义的一年，这一年里我经历了高三并且进入了成年人阶段，并进入大学遇到了很多不一样的人和事。</p><p>​2018我有一半的时间在高三度过，并经历了人生第一次大考—高考，而这一年最遗憾的事莫过于我没有考上北航，不过就这样吧，未来的路还长着呢，引用习总书记2019新年贺词的一句话：我们都在努力奔跑，我们都是追梦人。大学的第一学期算是我的适应期，这一学期算不上繁忙，对于以后的人生规划还不是很清晰，因此我希望在多个方面进行尝试，找到自己最适合的方向，在生活我还是比较浪，18年的最后一天想不到是跟室友出去玩结束的，然而马上就要期末考试了，我还是去复习吧，以后还是要努力学习鸭。</p><p>​最后用什么结尾呢，博主文字水平不好，就换一种表述吧，两年前我的笔记上的一道题：</p><p>$$prove:\ln520&lt;\log_\pi1314$$</p><p>$$\ln520=8\ln2+ln\left(1+\frac{1}{2}\right)+\ln\left(1+\frac{1}{4}\right)+\ln\left(1+\frac{1}{12}\right)&lt;\frac{394}{63}$$</p><p>$$\ln1314=8\ln2+3\ln\left(1+\frac{1}{2}\right)+2\ln\left(1+\frac{1}{4}\right)-\ln\left(1+\frac{2}{73}\right)&gt;\frac{43}{6}$$</p><p>$$\ln\pi&lt;\ln\frac{22}{7}=2\ln2-\ln\left(1+\frac{1}{2}\right)+\ln\left(1+\frac{1}{4}\right)-\ln\left(1+\frac{1}{6}\right)+\ln\left(1+\frac{1}{10}\right)&lt;\frac{71}{62}$$</p><p>$$\therefore\ln520&lt;\frac{394}{63}&lt;\frac{43}{6}\cdot\frac{62}{71}&lt;\log_\pi1314$$</p>]]></content>
+    <content type="html"><![CDATA[<p>这个标题来源于昨天的cf,菜鸟我只过了三道，还被hack了一次:sob:，真叫人伤心。</p><h2>关于$2018$</h2><p>​2018是个具有重要意义的一年，这一年里我经历了高三并且进入了成年人阶段，并进入大学遇到了很多不一样的人和事。</p><p>​2018我有一半的时间在高三度过，并经历了人生第一次大考—高考，而这一年最遗憾的事莫过于我没有考上北航，不过就这样吧，未来的路还长着呢，引用习总书记2019新年贺词的一句话：我们都在努力奔跑，我们都是追梦人。大学的第一学期算是我的适应期，这一学期算不上繁忙，对于以后的人生规划还不是很清晰，因此我希望在多个方面进行尝试，找到自己最适合的方向，在生活上我还是比较浪，18年的最后一天想不到是跟室友出去玩结束的，然而马上就要期末考试了，我还是去复习吧，以后还是要努力学习鸭。</p><p>​最后用什么结尾呢，博主文字水平不好，就换一种表述吧，两年前我的笔记上的一道题：</p><p>$$prove:\ln520&lt;\log_\pi1314$$</p><p>$$\ln520=8\ln2+ln\left(1+\frac{1}{2}\right)+\ln\left(1+\frac{1}{4}\right)+\ln\left(1+\frac{1}{12}\right)&lt;\frac{394}{63}$$</p><p>$$\ln1314=8\ln2+3\ln\left(1+\frac{1}{2}\right)+2\ln\left(1+\frac{1}{4}\right)-\ln\left(1+\frac{2}{73}\right)&gt;\frac{43}{6}$$</p><p>$$\ln\pi&lt;\ln\frac{22}{7}=2\ln2-\ln\left(1+\frac{1}{2}\right)+\ln\left(1+\frac{1}{4}\right)-\ln\left(1+\frac{1}{6}\right)+\ln\left(1+\frac{1}{10}\right)&lt;\frac{71}{62}$$</p><p>$$\therefore\ln520&lt;\frac{394}{63}&lt;\frac{43}{6}\cdot\frac{62}{71}&lt;\log_\pi1314$$</p>]]></content>
     
     <summary type="html">
     
