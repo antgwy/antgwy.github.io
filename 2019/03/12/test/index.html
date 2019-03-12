@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="小知识,">
 
 
 
@@ -81,14 +81,18 @@
 
 
 
+<meta name="description" content="$test$">
+<meta name="keywords" content="小知识">
 <meta property="og:type" content="article">
 <meta property="og:title" content="test">
 <meta property="og:url" content="http://yoursite.com/2019/03/12/test/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
+<meta property="og:description" content="$test$">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-12T15:28:30.338Z">
+<meta property="og:updated_time" content="2019-03-12T15:34:37.877Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test">
+<meta name="twitter:description" content="$test$">
 
 
 
@@ -328,7 +332,8 @@
       
 
       
-        
+        <p>$test$</p>
+
       
     </div>
     
@@ -342,6 +347,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/小知识/" rel="tag"># 小知识</a>
+          
+        </div>
       
 
       
@@ -689,6 +700,26 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
