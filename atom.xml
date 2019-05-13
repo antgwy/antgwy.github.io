@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-27T07:12:07.793Z</updated>
+  <updated>2019-05-13T14:36:22.747Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/2019/04/27/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     <id>http://yoursite.com/2019/04/27/Python正则表达式/</id>
     <published>2019-04-27T06:13:00.000Z</published>
-    <updated>2019-04-27T07:12:07.793Z</updated>
+    <updated>2019-05-13T14:36:22.747Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>正则表达式，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。</p></blockquote><h5 id="re-compile-pattern-flags-0"><a class="header-anchor" href="#re-compile-pattern-flags-0">¶</a>re.compile(pattern, flags=0)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile 函数用于编译正则表达式，生成一个正则表达式（ Pattern ）对象，供 match() 和 search() 这两个函数使用。</span><br></pre></td></tr></table></figure><p>pattern : 一个字符串形式的正则表达式</p><p>flags : 可选，表示匹配模式，比如忽略大小写，多行模式等，具体参数为：<br>re.I 忽略大小写</p><p>re.L 表示特殊字符集 \w, \W, \b, \B, \s, \S 依赖于当前环境</p><p>re.M 多行模式</p><p>re.S 即为 . 并且包括换行符在内的任意字符（. 不包括换行符）</p><p>re.U 表示特殊字符集 \w, \W, \b, \B, \d, \D, \s, \S 依赖于 Unicode 字符属性数据库</p><p>$re.X 为了增加可读性，忽略空格和 # 后面的注释$</p><hr><p>saads</p>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>正则表达式，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。</p></blockquote><h5 id="re-compile-pattern-flags-0"><a class="header-anchor" href="#re-compile-pattern-flags-0">¶</a>re.compile(pattern, flags=0)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">compile 函数用于编译正则表达式，生成一个正则表达式（ Pattern ）对象，供 match() 和 search() 这两个函数使用。</span><br></pre></td></tr></table></figure><p>pattern : 一个字符串形式的正则表达式</p><p>flags : 可选，表示匹配模式，比如忽略大小写，多行模式等，具体参数为：<br>re.I 忽略大小写</p><p>re.L 表示特殊字符集 \w, \W, \b, \B, \s, \S 依赖于当前环境</p><p>re.M 多行模式</p><p>re.S 即为 . 并且包括换行符在内的任意字符（. 不包括换行符）</p><p>re.U 表示特殊字符集 \w, \W, \b, \B, \d, \D, \s, \S 依赖于 Unicode 字符属性数据库</p><p>$re.X 为了增加可读性，忽略空格和$ # $后面的注释​$</p><hr><p>saads</p>]]></content>
     
     <summary type="html">
     
