@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="¶正则表达式 ¶基本概念  正则表达式，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  ¶基本语法 正则表达式语法由字符和操作符构成 正则表达式的常用操作符    操作符 说明 实例     . 表示任何单个字符    [ ] 字符集, 对单个字符给出取值范围 [abc]表示a、b、c, [a-z]表示a到z单个字符   [^ ] 非字符集, 对单个字符给出排除范">
+<meta name="description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 ¶正则表达式 ¶基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  ¶正则表达式的语法 正则表达式语法由字符和操作符构成 正则表达式的常用操作符    操作符 说明 实例     . 表示任何单个字符    [ ] 字符集, 对单个字符给出取值范围 [abc">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python简易网络爬虫初探">
 <meta property="og:url" content="http://yoursite.com/2019/04/27/Python正则表达式/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
-<meta property="og:description" content="¶正则表达式 ¶基本概念  正则表达式，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  ¶基本语法 正则表达式语法由字符和操作符构成 正则表达式的常用操作符    操作符 说明 实例     . 表示任何单个字符    [ ] 字符集, 对单个字符给出取值范围 [abc]表示a、b、c, [a-z]表示a到z单个字符   [^ ] 非字符集, 对单个字符给出排除范">
+<meta property="og:description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 ¶正则表达式 ¶基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  ¶正则表达式的语法 正则表达式语法由字符和操作符构成 正则表达式的常用操作符    操作符 说明 实例     . 表示任何单个字符    [ ] 字符集, 对单个字符给出取值范围 [abc">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-21T10:03:59.355Z">
+<meta property="og:updated_time" content="2019-06-21T17:30:52.781Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python简易网络爬虫初探">
-<meta name="twitter:description" content="¶正则表达式 ¶基本概念  正则表达式，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  ¶基本语法 正则表达式语法由字符和操作符构成 正则表达式的常用操作符    操作符 说明 实例     . 表示任何单个字符    [ ] 字符集, 对单个字符给出取值范围 [abc]表示a、b、c, [a-z]表示a到z单个字符   [^ ] 非字符集, 对单个字符给出排除范">
+<meta name="twitter:description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 ¶正则表达式 ¶基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  ¶正则表达式的语法 正则表达式语法由字符和操作符构成 正则表达式的常用操作符    操作符 说明 实例     . 表示任何单个字符    [ ] 字符集, 对单个字符给出取值范围 [abc">
 
 
 
@@ -331,12 +331,13 @@
       
 
       
-        <h3 id="正则表达式"><a class="header-anchor" href="#正则表达式">¶</a>正则表达式</h3>
-<h5 id="基本概念"><a class="header-anchor" href="#基本概念">¶</a>基本概念</h5>
+        <p>上大学后自学了点爬虫, 下面是我个人的学习总结</p>
+<h2 id="正则表达式"><a class="header-anchor" href="#正则表达式">¶</a>正则表达式</h2>
+<h4 id="基本概念"><a class="header-anchor" href="#基本概念">¶</a>基本概念</h4>
 <blockquote>
-<p>正则表达式，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。</p>
+<p>正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。</p>
 </blockquote>
-<h5 id="基本语法"><a class="header-anchor" href="#基本语法">¶</a>基本语法</h5>
+<h4 id="正则表达式的语法"><a class="header-anchor" href="#正则表达式的语法">¶</a>正则表达式的语法</h4>
 <p>正则表达式语法由字符和操作符构成<br></p>
 <center><b>正则表达式的常用操作符</b></center>
 <table>
@@ -434,10 +435,22 @@
         <td><center>^[A-Za-z0-9]+$</center></td><td><center>由26个字母和数字组成的字符串</center></td>
     </tr>
     <tr>
-        <td><center></center></td><td><center></center></td>
+        <td><center>^-?\d+$</center></td><td><center>整数形式的字符串</center></td>
     </tr>
   	<tr>
-        <td><center></center></td><td><center></center></td>
+        <td><center>^[0-9]\*[1-9][0-9]*$</center></td><td><center>正整数形式的字符串</center></td>
+    </tr>
+  	<tr>
+        <td><center>[1-9]\d{5}</center></td><td><center>中国境内邮政编码, 6位</center></td>
+    </tr>
+  	<tr>
+        <td><center>[\u4e00-\u9fa5]</center></td><td><center>匹配中文字符</center></td>
+    </tr>
+  	<tr>
+        <td><center>\d{3}-\d{8}|\d{4}-\d{7}</center></td><td><center>国内电话号码, 010-68913536</center></td>
+    </tr>
+  	<tr>
+        <td><center>(([1-9]?\d|1\d{2}|2[0-4]\d|25[0-5]).){3}(([1-9]?\d|1\d{2}|2[0-4]\d|25[0-5]))</center></td><td><center>匹配IP地址</center></td>
     </tr>
   	<tr>
         <td><center></center></td><td><center></center></td>
@@ -446,6 +459,30 @@
         <td><center></center></td><td><center></center></td>
     </tr>
 </table>
+<h4 id="re库的基本使用"><a class="header-anchor" href="#re库的基本使用">¶</a>Re库的基本使用</h4>
+<ul>
+<li>raw string类型, 是不包含对转义符再次转义的字符串: r’text’</li>
+</ul>
+<h6 id="re-search-pattern-string-flags-0"><a class="header-anchor" href="#re-search-pattern-string-flags-0">¶</a>re.search(pattern, string, flags=0)</h6>
+<p>从字符串的起始位置匹配, 如果不是起始位置匹配成功的话, match()就返回none</p>
+<ul>
+    <li><font color="red">pattern</font>: 正则表达式的字符串或原生字符串表示</li><li><font color="red">string</font>: 待匹配字符串</li>
+ <li><font color="red">flags</font>: 正则表达式使用时的控制标记</li>
+	<table border="0">
+  		<tr>
+  			<th><center>修饰符</center></th><th><center>说明</center></th>
+    	</tr>
+    	<tr>
+        	<td><center>re.I re.IGNORECASE</center></td><td><center>使匹配对大小写不敏感</center></td>
+    	</tr>
+      	<tr>
+        	<td><center>re.M</center></td><td><center></center></td>
+    	</tr>
+      	<tr>
+        	<td><center></center></td><td><center></center></td>
+    	</tr>
+	</table>
+</ul>
 
       
     </div>
@@ -666,7 +703,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#正则表达式"><span class="nav-number">1.</span> <span class="nav-text">¶正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#基本概念"><span class="nav-number">1.0.1.</span> <span class="nav-text">¶基本概念</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#基本语法"><span class="nav-number">1.0.2.</span> <span class="nav-text">¶基本语法</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#正则表达式"><span class="nav-number">1.</span> <span class="nav-text">¶正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本概念"><span class="nav-number">1.0.1.</span> <span class="nav-text">¶基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#正则表达式的语法"><span class="nav-number">1.0.2.</span> <span class="nav-text">¶正则表达式的语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#re库的基本使用"><span class="nav-number">1.0.3.</span> <span class="nav-text">¶Re库的基本使用</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#re-search-pattern-string-flags-0"><span class="nav-number">1.0.3.0.1.</span> <span class="nav-text">¶re.search(pattern, string, flags=0)</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
