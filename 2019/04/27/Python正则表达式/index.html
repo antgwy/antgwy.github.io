@@ -83,14 +83,14 @@
 
 <meta name="description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 ¶正则表达式 ¶基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  ¶正则表达式的语法 正则表达式语法由字符和操作符构成 正则表达式的常用操作符    操作符 说明 实例     . 表示任何单个字符    [ ] 字符集, 对单个字符给出取值范围 [abc">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python简易网络爬虫初探">
+<meta property="og:title" content="Python简易网络爬虫">
 <meta property="og:url" content="http://yoursite.com/2019/04/27/Python正则表达式/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 ¶正则表达式 ¶基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  ¶正则表达式的语法 正则表达式语法由字符和操作符构成 正则表达式的常用操作符    操作符 说明 实例     . 表示任何单个字符    [ ] 字符集, 对单个字符给出取值范围 [abc">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-22T04:25:54.860Z">
+<meta property="og:updated_time" content="2019-06-29T13:02:41.601Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python简易网络爬虫初探">
+<meta name="twitter:title" content="Python简易网络爬虫">
 <meta name="twitter:description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 ¶正则表达式 ¶基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  ¶正则表达式的语法 正则表达式语法由字符和操作符构成 正则表达式的常用操作符    操作符 说明 实例     . 表示任何单个字符    [ ] 字符集, 对单个字符给出取值范围 [abc">
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <title>Python简易网络爬虫初探 | 2inf's blog</title>
+  <title>Python简易网络爬虫 | 2inf's blog</title>
   
 
 
@@ -281,7 +281,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python简易网络爬虫初探</h1>
+          <h1 class="post-title" itemprop="name headline">Python简易网络爬虫</h1>
         
 
         <div class="post-meta">
@@ -421,9 +421,35 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>经典正则表达式</li>
-</ul>
+<p>Re库默认采用贪婪匹配, 即输出匹配最长的子串</p>
+<center><b>最小匹配操作符</b></center>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">操作符</th>
+<th style="text-align:center">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">*?</td>
+<td style="text-align:center">前1个字符0次或无限次扩展</td>
+</tr>
+<tr>
+<td style="text-align:center">+?</td>
+<td style="text-align:center">前1个字符1次或无限次扩展</td>
+</tr>
+<tr>
+<td style="text-align:center">??</td>
+<td style="text-align:center">前1个字符0次或1次扩展</td>
+</tr>
+<tr>
+<td style="text-align:center">{m,n}?</td>
+<td style="text-align:center">扩展前1个字符m次至n次</td>
+</tr>
+</tbody>
+</table>
+<p>始位置匹配一个模式，如果不是起始位置匹配成功的话，match()就返回none。</p>
 <table border="3">
   	<tr>
       <th><center>表达式</center></th><th><center>意义</center></th>
@@ -479,7 +505,7 @@
         	<td><center>re.M<br>(re.MULTILINE)</center></td><td><center>多行匹配, 正则表达式的^操作符能将给定字符串的每行当作匹配开始</center></td>
     	</tr>
       	<tr>
-        	<td><center>re.S(re.DOTALL)</center></td><td><center>正则表达式的.操作符能够匹配所有字符串, 默认匹配除换行外的所有字符</center></td>
+        	<td><center>re.S<br>(re.DOTALL)</center></td><td><center>正则表达式的.操作符能够匹配所有字符串, 默认匹配除换行外的所有字符</center></td>
     	</tr>
       	<tr>
         	<td><center></center></td><td><center></center></td>
@@ -489,12 +515,30 @@
     	</tr>
 	</table>
 </ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match = re.search(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz 425000'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> match:</span><br><span class="line">		print(match.group(<span class="number">0</span>))</span><br><span class="line"></span><br><span class="line"><span class="number">425000</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">line = <span class="string">"Cats are smarter than dogs"</span>;</span><br><span class="line">searchObj = re.search( <span class="string">r'(.*) are (.*?) .*'</span>, line, re.M|re.I)</span><br><span class="line"><span class="keyword">if</span> searchObj:</span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"searchObj.group() : "</span>, searchObj.group())</span><br><span class="line"><span class="comment">#searchObj.group() :  Cats are smarter than dogs</span></span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"searchObj.group(1) : "</span>, searchObj.group(<span class="number">1</span>))</span><br><span class="line"><span class="comment">#searchObj.group(1) :  Cats</span></span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"searchObj.group(2) : "</span>, searchObj.group(<span class="number">2</span>))</span><br><span class="line"><span class="comment">#searchObj.group(2) :  smarter</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"Nothing found!!"</span>)</span><br></pre></td></tr></table></figure>
 <h5 id="re-match-pattern-string-flags-0"><a class="header-anchor" href="#re-match-pattern-string-flags-0">¶</a>re.match(pattern, string, flags=0)</h5>
+<p>re.match 从第一个字符串的开始位置起匹配正则表达式, 返回match对象</p>
+<ul>
+<li>group(num=0):<br>
+匹配的整个表达式的字符串，group() 可以一次输入多个组号，在这种情况下它将返回一个包含那些组所对应值的元组。</li>
+<li>groups():<br>
+返回一个包含所有小组字符串的元组，从 1 到 所含的小组号。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match = re.match(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz 425000'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> match:</span><br><span class="line">		match.group(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match.group(<span class="number">0</span>)</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;pyshell#15&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    match.group(<span class="number">0</span>)</span><br><span class="line">AttributeError: <span class="string">'NoneType'</span> object has no attribute <span class="string">'group'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match = re.match(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'425000 Hunanyz'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> match:</span><br><span class="line">		match.group(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">'425000'</span></span><br></pre></td></tr></table></figure>
+<p>函数式用法: 一次性操作</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>rst = re.search(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz 425000'</span>)</span><br></pre></td></tr></table></figure>
+<p>面向对象用法: 编译后的多次操作</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>pat = re.compile(<span class="string">r'[1-9]\d&#123;5&#125;'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>rst = pat.search(<span class="string">'Hunanyz 425000'</span>)</span><br></pre></td></tr></table></figure>
 <h5 id="re-findall-pattern-string-flags-0"><a class="header-anchor" href="#re-findall-pattern-string-flags-0">¶</a>re.findall(pattern, string, flags=0)</h5>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.findall(<span class="string">r'[1-9]\d&#123;5&#125;'</span>,<span class="string">'Hunanyz425000 ywt666666'</span>)</span><br><span class="line">[<span class="string">'425000'</span>, <span class="string">'666666'</span>]</span><br></pre></td></tr></table></figure>
 <h5 id="re-split-pattern-string-maxsplit-0-flags-0"><a class="header-anchor" href="#re-split-pattern-string-maxsplit-0-flags-0">¶</a>re.split(pattern, string, maxsplit=0, flags=0)</h5>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'[1-9]\d&#123;5&#125;'</span>,<span class="string">'Hunanyz425000 ywt666666'</span>)</span><br><span class="line">[<span class="string">'Hunanyz'</span>, <span class="string">' ywt'</span>, <span class="string">''</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'[1-9]\d&#123;5&#125;'</span>,<span class="string">'Hunanyz425000 ywt666666'</span>, maxsplit=<span class="number">1</span>)</span><br><span class="line">[<span class="string">'Hunanyz'</span>, <span class="string">' ywt666666'</span>]</span><br></pre></td></tr></table></figure>
 <h5 id="re-finditer-pattern-string-flags-0"><a class="header-anchor" href="#re-finditer-pattern-string-flags-0">¶</a>re.finditer(pattern, string, flags=0)</h5>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> m <span class="keyword">in</span> re.finditer(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz425000 ywt666666'</span>):</span><br><span class="line">		<span class="keyword">if</span> m:</span><br><span class="line">			print(m.group(<span class="number">0</span>))</span><br><span class="line">	</span><br><span class="line"><span class="number">425000</span></span><br><span class="line"><span class="number">666666</span></span><br></pre></td></tr></table></figure>
 <h5 id="re-sub-pattern-repl-string-count-0-flags-0"><a class="header-anchor" href="#re-sub-pattern-repl-string-count-0-flags-0">¶</a>re.sub(pattern, repl, string, count=0, flags=0)</h5>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.sub(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">':zipcode'</span>,<span class="string">'Hunanyz425000 ywt666666'</span>)</span><br><span class="line"><span class="string">'Hunanyz:zipcode ywt:zipcode'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#CrawTaobaoPrice.py</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getHTMLText</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        cookies = &#123;&#125;</span><br><span class="line">        cookiestext = <span class="string">'miid=447214471620210220; t=daacc1adb7b8d8ce463fc06d0450c7ce; _m_h5_tk=002873f26cfc1e420ff3122c5492c7c9_1557484529238; _m_h5_tk_enc=65acce1ae24f182e94781af0151760a8; cna=eEfQE0Z7LH0CAXFJnusRzYTI; thw=cn; v=0; cookie2=1daeaf566f932421be0293c558854e53; _tb_token_=e4714b1e4b700; skt=fe7483af86fc3fa7; csg=c58e3cb2; uc3=vt3=F8dBy3qLpz1EFG7igHg%3D&amp;id2=Uone%2BIX5BNoxeA%3D%3D&amp;nk2=F5RMHlysDcyBUg%3D%3D&amp;lg2=VFC%2FuZ9ayeYq2g%3D%3D; existShop=MTU1NzQ3NDQ5MA%3D%3D; tracknick=tb97668932; lgc=tb97668932; _cc_=W5iHLLyFfA%3D%3D; dnk=tb97668932; tg=0; enc=3ukH3QlCeyiQ6MFTauMNgLvWKWnuXa3Jw3n2WhkpKJAmlq33XogQu8U1mIK3erlfcBDcFlwD%2B0PqC6mRrGzvUQ%3D%3D; mt=ci=110_1; hng=CN%7Czh-CN%7CCNY%7C156; x=e%3D1%26p%3D*%26s%3D0%26c%3D0%26f%3D0%26g%3D0%26t%3D0; swfstore=213919; uc1=cookie15=U%2BGCWk%2F75gdr5Q%3D%3D&amp;cookie14=UoTZ48F1Orvnkg%3D%3D; alitrackid=www.taobao.com; lastalitrackid=www.taobao.com; JSESSIONID=779A7AFFB8D472B89FE1153556AA5258; l=bBxX6XbVv0FzD8MSBOCg5uI8aPbOSLAAIuPRwNcXi_5N-6L6Vd_OlL6deFp6Vj5RO6TB4XEDz5w9-etui; isg=BGRk0tuo5AKzCBDOAudCpWpJIGKWVYgCO075jX6F8C_yKQTzpg1Y95oL6cGU0MC_'</span></span><br><span class="line">        kv = &#123;<span class="string">'user-agent'</span>: <span class="string">'Mozilla/5.0'</span>&#125;</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> cookiestext.split(<span class="string">';'</span>):</span><br><span class="line">            name,value = line.strip().split(<span class="string">'='</span>,<span class="number">1</span>)</span><br><span class="line">            cookies[name] = value</span><br><span class="line">        r = requests.get(url,headers = kv, cookies=cookies, timeout=<span class="number">30</span>)</span><br><span class="line">        r.raise_for_status()</span><br><span class="line">        r.encoding = r.apparent_encoding</span><br><span class="line">        <span class="keyword">return</span> r.text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">""</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parsePage</span><span class="params">(ilt, html)</span>:</span></span><br><span class="line">    plt = re.findall(<span class="string">r'\"view_price\"\:\"[\d\.]*\"'</span>,html)</span><br><span class="line">    tlt = re.findall(<span class="string">r'\"raw_title\"\:\".*?\"'</span>,html)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(plt)):</span><br><span class="line">        price = eval(plt[i].split(<span class="string">':'</span>)[<span class="number">1</span>])</span><br><span class="line">        title = eval(tlt[i].split(<span class="string">':'</span>)[<span class="number">1</span>])</span><br><span class="line">        ilt.append([price, title])</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printGoodsList</span><span class="params">(ilt)</span>:</span></span><br><span class="line">    tplt = <span class="string">"&#123;:4&#125;\t&#123;:8&#125;\t&#123;:16&#125;"</span></span><br><span class="line">    print(tplt.format(<span class="string">"序号"</span>, <span class="string">"价格"</span>, <span class="string">"商品名称"</span>))</span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> g <span class="keyword">in</span> ilt:</span><br><span class="line">        count = count + <span class="number">1</span></span><br><span class="line">        print(tplt.format(count, g[<span class="number">0</span>], g[<span class="number">1</span>]))</span><br><span class="line">         </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    goods = <span class="string">'书包'</span></span><br><span class="line">    depth = <span class="number">3</span></span><br><span class="line">    start_url = <span class="string">'https://s.taobao.com/search?q='</span> + goods</span><br><span class="line">    infoList = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(depth):</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            url = start_url + <span class="string">'&amp;s='</span> + str(<span class="number">44</span>*i)</span><br><span class="line">            html = getHTMLText(url)</span><br><span class="line">            parsePage(infoList, html)</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">    printGoodsList(infoList)</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
 <p><a href="https://www.icourse163.org/learn/BIT-1001870001?from=study#/learn/forumdetail?pid=1212153268" target="_blank" rel="noopener">关于淘宝反爬的解决</a></p>
 
       
