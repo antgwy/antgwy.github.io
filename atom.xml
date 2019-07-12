@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-07-12T14:15:30.930Z</updated>
+  <updated>2019-07-12T14:24:19.700Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,17 @@
     <link href="http://yoursite.com/2019/07/12/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E6%9E%81%E9%99%90/"/>
     <id>http://yoursite.com/2019/07/12/数学分析-极限/</id>
     <published>2019-07-12T14:12:44.000Z</published>
-    <updated>2019-07-12T14:15:30.930Z</updated>
+    <updated>2019-07-12T14:24:19.700Z</updated>
     
-    <content type="html"><![CDATA[<p>本章主要以相关题目，但出于节省时间考虑，不附以解答</p><p>1.设数列${a_n}$满足条件$0 &lt; a_1 &lt; 1$和 $a_{n+1}=a_n(1-a_n)\ (n\geq1)$, 证明: $\lim na_n=1$</p>]]></content>
+    <content type="html"><![CDATA[<p>本章主要提供一些题目复习，但出于节省时间考虑，不附以解答, 若需要解答可联系$qq: 2247389338$</p><ol><li>设数列${a_n}$满足条件$0 &lt; a_1 &lt; 1$和 $a_{n+1}=a_n(1-a_n)\ (n\geq1)$, 证明: $\lim na_n=1$</li><li>若$\displaystyle\lim_{n\to\infty}a_n=\alpha$, $\displaystyle\lim_{n\to\infty}b_n=\beta$, 证明: $\displaystyle\lim_{n\to\infty}\frac{a_1b_n+a_2b_{n-1}+\cdots+a_nb_1}{n}=\alpha\beta$</li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;本章主要以相关题目，但出于节省时间考虑，不附以解答&lt;/p&gt;
-&lt;p&gt;1.设数列${a_n}$满足条件$0 &amp;lt; a_1 &amp;lt; 1$和 $a_{n+1}=a_n(1-a_n)\ (n\geq1)$, 证明: $\lim na_n=1$&lt;/p&gt;
-
+        &lt;p&gt;本章主要提供一些题目复习，但出于节省时间考虑，不附以解答, 若需要解答可联系$qq: 2247389338$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;设数列${a_n}$满足条件$0 &amp;lt; a_1 &amp;lt; 1$和 $a_{n+1}=a_n(1-a_n)\ (n\geq1)$, 证明
       
     
     </summary>
