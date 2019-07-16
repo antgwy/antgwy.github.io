@@ -5,9 +5,9 @@
   <subtitle>心头蒙上一层灰</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://2inf.top/"/>
   <updated>2019-07-16T15:29:16.284Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://2inf.top/</id>
   
   <author>
     <name>ywt</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>数学分析-极限</title>
-    <link href="http://yoursite.com/2019/07/12/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E6%9E%81%E9%99%90/"/>
-    <id>http://yoursite.com/2019/07/12/数学分析-极限/</id>
+    <link href="http://2inf.top/2019/07/12/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90-%E6%9E%81%E9%99%90/"/>
+    <id>http://2inf.top/2019/07/12/数学分析-极限/</id>
     <published>2019-07-12T14:12:44.000Z</published>
     <updated>2019-07-16T15:29:16.284Z</updated>
     
@@ -41,8 +41,8 @@
   
   <entry>
     <title>Python简易网络爬虫</title>
-    <link href="http://yoursite.com/2019/04/27/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    <id>http://yoursite.com/2019/04/27/Python正则表达式/</id>
+    <link href="http://2inf.top/2019/04/27/Python%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>http://2inf.top/2019/04/27/Python正则表达式/</id>
     <published>2019-04-27T06:13:00.000Z</published>
     <updated>2019-06-29T13:14:02.665Z</updated>
     
@@ -64,8 +64,8 @@
   
   <entry>
     <title>部分写作知识点小结</title>
-    <link href="http://yoursite.com/2019/01/03/%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C%E5%B0%8F%E7%BB%93/"/>
-    <id>http://yoursite.com/2019/01/03/博客写作小结/</id>
+    <link href="http://2inf.top/2019/01/03/%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C%E5%B0%8F%E7%BB%93/"/>
+    <id>http://2inf.top/2019/01/03/博客写作小结/</id>
     <published>2019-01-03T14:55:00.000Z</published>
     <updated>2019-05-19T10:48:01.871Z</updated>
     
@@ -84,7 +84,7 @@
     </summary>
     
     
-      <category term="小知识" scheme="http://yoursite.com/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+      <category term="小知识" scheme="http://2inf.top/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
