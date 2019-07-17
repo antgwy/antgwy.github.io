@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="$Sumdiv$ 题意: 求$A^B$的所有约数之和$mod9901\left(1\leq A,B \leq5*10^7\right)$ 分析: A分解质因数为$p_1^{c_1}p_2^{c_2}\cdotsp_n^{c_n}$。那么$A^B$表示为$p_1^{Bc_1}p_2^{Bc_2}\cdotsp_n^{Bc_n}$。$A^B$的所有约数表示为集合${p_1^{k_1}p_2^{k_2}">
+<meta name="description" content="$Sumdiv$ 题意: 求$A^B$的所有约数之和$mod9901\left(1\leq A,B \leq5*10^7\right)$ 分析: A分解质因数为$p_1^{c_1}p_2^{c_2}\cdotsp_n^{c_n}$。那么$A^B$表示为$p_1^{Bc_1}p_2^{Bc_2}\cdotsp_n^{Bc_n}$。$A^B$的所有约数表示为集合$\{p_1^{k_1}p_2^{k_2">
 <meta name="keywords" content="基础-分治">
 <meta property="og:type" content="article">
 <meta property="og:title" content="POJ1845 Sumdiv">
 <meta property="og:url" content="http://2inf.top/2019/07/17/POJ1845 Sumdiv/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
-<meta property="og:description" content="$Sumdiv$ 题意: 求$A^B$的所有约数之和$mod9901\left(1\leq A,B \leq5*10^7\right)$ 分析: A分解质因数为$p_1^{c_1}p_2^{c_2}\cdotsp_n^{c_n}$。那么$A^B$表示为$p_1^{Bc_1}p_2^{Bc_2}\cdotsp_n^{Bc_n}$。$A^B$的所有约数表示为集合${p_1^{k_1}p_2^{k_2}">
+<meta property="og:description" content="$Sumdiv$ 题意: 求$A^B$的所有约数之和$mod9901\left(1\leq A,B \leq5*10^7\right)$ 分析: A分解质因数为$p_1^{c_1}p_2^{c_2}\cdotsp_n^{c_n}$。那么$A^B$表示为$p_1^{Bc_1}p_2^{Bc_2}\cdotsp_n^{Bc_n}$。$A^B$的所有约数表示为集合$\{p_1^{k_1}p_2^{k_2">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-07-17T09:14:18.970Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="POJ1845 Sumdiv">
-<meta name="twitter:description" content="$Sumdiv$ 题意: 求$A^B$的所有约数之和$mod9901\left(1\leq A,B \leq5*10^7\right)$ 分析: A分解质因数为$p_1^{c_1}p_2^{c_2}\cdotsp_n^{c_n}$。那么$A^B$表示为$p_1^{Bc_1}p_2^{Bc_2}\cdotsp_n^{Bc_n}$。$A^B$的所有约数表示为集合${p_1^{k_1}p_2^{k_2}">
+<meta name="twitter:description" content="$Sumdiv$ 题意: 求$A^B$的所有约数之和$mod9901\left(1\leq A,B \leq5*10^7\right)$ 分析: A分解质因数为$p_1^{c_1}p_2^{c_2}\cdotsp_n^{c_n}$。那么$A^B$表示为$p_1^{Bc_1}p_2^{Bc_2}\cdotsp_n^{Bc_n}$。$A^B$的所有约数表示为集合$\{p_1^{k_1}p_2^{k_2">
 
 
 
@@ -384,7 +384,7 @@
       
         <p><a href="http://poj.org/problem?id=1845" target="_blank" rel="noopener">$Sumdiv$</a></p>
 <p><strong>题意</strong>: 求$A^B$的所有约数之和$mod9901\left(1\leq A,B \leq5*10^7\right)$</p>
-<p><strong>分析</strong>: A分解质因数为$p_1^{c_1}<em>p_2^{c_2}</em>\cdots<em>p_n^{c_n}$。那么$A^B$表示为$p_1^{B</em>c_1}<em>p_2^{B</em>c_2}<em>\cdots</em>p_n^{B<em>c_n}$。$A^B$的所有约数表示为集合${p_1^{k_1}</em>p_2^{k_2}<em>\cdots</em>p_n^{k_n}}$，其中$0\leq k_i \leq B*c_i\left(1\leq i \leq n\right)$</p>
+<p><strong>分析</strong>: A分解质因数为$p_1^{c_1}<em>p_2^{c_2}</em>\cdots<em>p_n^{c_n}$。那么$A^B$表示为$p_1^{B</em>c_1}<em>p_2^{B</em>c_2}<em>\cdots</em>p_n^{B<em>c_n}$。$A^B$的所有约数表示为集合$\{p_1^{k_1}</em>p_2^{k_2}<em>\cdots</em>p_n^{k_n}\}$，其中$0\leq k_i \leq B*c_i\left(1\leq i \leq n\right)$</p>
 <p>由乘法分配律, $A^B$的所有约数之和为:</p>
 <script type="math/tex; mode=display">\left(1+p_1+\cdots+p_1^{B*c_1}\right)*\left(1+p_2+\cdots+p_2^{B*c_2}\right)*\cdots\\*\left(1+p_n+\cdots+p_n^{B*c_n}\right)=\prod_{i=1}^n\left(\sum_{j=0}^{B*c_i}\left(p_i\right)^j\right)</script><p>括号内为等比数列，直接使用求和公式，需要做除法。答案还需对9901取模，mod运算只对加、减、乘有分配律，不能对分子分母取模后做除法，换一种思路，用分治法对等比数列求和。</p>
 <p>用分治法求$\displaystyle\sum_{i=1}^cp^i\quad\text{若c为奇数:}$</p>
