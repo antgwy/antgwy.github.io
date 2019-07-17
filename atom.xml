@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://2inf.top/"/>
-  <updated>2019-07-16T17:11:48.586Z</updated>
+  <updated>2019-07-17T02:59:33.458Z</updated>
   <id>http://2inf.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>POJ1845 Sumdiv</title>
+    <link href="http://2inf.top/2019/07/17/ntitled/"/>
+    <id>http://2inf.top/2019/07/17/ntitled/</id>
+    <published>2019-07-17T02:47:04.000Z</published>
+    <updated>2019-07-17T02:59:33.458Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://poj.org/problem?id=1845" target="_blank" rel="noopener">Sumdiv</a></p><p><strong>题意</strong>: 求$A^B$的所有约数之和mod9901(1\leq A,B \leq5*10^7)</p><p><strong>分析</strong>: A分解质因数</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://poj.org/problem?id=1845&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Sumdiv&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;题意&lt;/strong&gt;: 求$A^B$的所有约数之和mod9901(1\leq
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>数学分析-极限</title>
