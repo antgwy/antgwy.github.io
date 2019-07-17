@@ -88,17 +88,17 @@
 
 
 
-<meta name="description" content="本章主要提供一些题目复习，但出于节省时间考虑，不附以解答，若需要个别题目解答可联系$qq: 2247389338$  设数列$\{a_n\}$满足条件$0 &amp;lt; a_1 &amp;lt; 1$和 $a_{n+1}=a_n(1-a_n) (n\geq1)$, 证明: $\lim na_n=1$ 若$\displaystyle\lim_{n\to\infty}a_n=\alpha$, $\displays">
+<meta name="description" content="本章主要提供一些题目复习，但出于节省时间考虑，不附以解答，若需要个别题目解答可联系$qq: 2247389338$  设数列${a_n}$满足条件$0 &amp;lt; a_1 &amp;lt; 1$和 $a_{n+1}=a_n(1-a_n)\ (n\geq1)$, 证明: $\lim na_n=1$ 若$\displaystyle\lim_{n\to\infty}a_n=\alpha$, $\displayst">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数学分析-极限">
 <meta property="og:url" content="http://2inf.top/2019/07/12/数学分析-极限/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
-<meta property="og:description" content="本章主要提供一些题目复习，但出于节省时间考虑，不附以解答，若需要个别题目解答可联系$qq: 2247389338$  设数列$\{a_n\}$满足条件$0 &amp;lt; a_1 &amp;lt; 1$和 $a_{n+1}=a_n(1-a_n) (n\geq1)$, 证明: $\lim na_n=1$ 若$\displaystyle\lim_{n\to\infty}a_n=\alpha$, $\displays">
+<meta property="og:description" content="本章主要提供一些题目复习，但出于节省时间考虑，不附以解答，若需要个别题目解答可联系$qq: 2247389338$  设数列${a_n}$满足条件$0 &amp;lt; a_1 &amp;lt; 1$和 $a_{n+1}=a_n(1-a_n)\ (n\geq1)$, 证明: $\lim na_n=1$ 若$\displaystyle\lim_{n\to\infty}a_n=\alpha$, $\displayst">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-07-16T17:11:48.586Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数学分析-极限">
-<meta name="twitter:description" content="本章主要提供一些题目复习，但出于节省时间考虑，不附以解答，若需要个别题目解答可联系$qq: 2247389338$  设数列$\{a_n\}$满足条件$0 &amp;lt; a_1 &amp;lt; 1$和 $a_{n+1}=a_n(1-a_n) (n\geq1)$, 证明: $\lim na_n=1$ 若$\displaystyle\lim_{n\to\infty}a_n=\alpha$, $\displays">
+<meta name="twitter:description" content="本章主要提供一些题目复习，但出于节省时间考虑，不附以解答，若需要个别题目解答可联系$qq: 2247389338$  设数列${a_n}$满足条件$0 &amp;lt; a_1 &amp;lt; 1$和 $a_{n+1}=a_n(1-a_n)\ (n\geq1)$, 证明: $\lim na_n=1$ 若$\displaystyle\lim_{n\to\infty}a_n=\alpha$, $\displayst">
 
 
 
@@ -383,10 +383,24 @@
       
         <p>本章主要提供一些题目复习，但出于节省时间考虑，不附以解答，若需要个别题目解答可联系$qq: 2247389338$</p>
 <ol>
-<li>设数列$\{a_n\}$满足条件$0 &lt; a_1 &lt; 1$和 $a_{n+1}=a_n(1-a_n) (n\geq1)$, 证明: $\lim na_n=1$</li>
+<li>设数列${a_n}$满足条件$0 &lt; a_1 &lt; 1$和 $a_{n+1}=a_n(1-a_n)\ (n\geq1)$, 证明: $\lim na_n=1$</li>
 <li>若$\displaystyle\lim_{n\to\infty}a_n=\alpha$, $\displaystyle\lim_{n\to\infty}b_n=\beta$, 证明: $\displaystyle\lim_{n\to\infty}\frac{a_1b_n+a_2b_{n-1}+\cdots+a_nb_1}{n}=\alpha\beta$</li>
-<li>$(1)\displaystyle\lim_{n\to\infty}\frac{1^k+2^k+\cdots+n^k}{n^{k+1}}=\frac{1}{k+1}\\<br>(2)\displaystyle\lim_{n\to\infty}\left(\frac{1^k+2^k+\cdots+n^k}{n^k}-\frac{n}{k+1}\right)=\frac{1}{2}$</li>
-<li>设$A_n=\sum\limits_{k=1}^{n}\frac{n}{n^2+k^2}$,求$\lim\limits_{n\to\infty}n\left(\frac{\pi}{4}-A_n\right)$.<br>解:令$f(x)=\frac{1}{1+x^2},$因为$A_n=\frac{1}{n}\sum\limits_{i=1}^{n}\frac{1}{1+\frac{i^2}{n^2}},$所以<script type="math/tex; mode=display">\lim_{n\to\infty}A_n=\int_{0}^{1}f(x)dx=\frac{\pi}{4}</script>记$x_i=\frac{i}{n}$,则$x_i-x_{i-1}=\frac{1}{n},A_n=n\sum\limits_{i=1}^{n}\int_{x_{i-1}}^{x_i}f(x_i)dx.$<br>令<script type="math/tex">J_n=n\left(\frac{\pi}{4}-A_n\right)=n\sum\limits_{i=1}^{n}\int_{x_{i-1}}^{x_i}\left[f(x)-f(x_i)\right]dx,</script><br>由拉格朗日中值定理，$\exists\xi_i\in(x_{i-1},x_i)$<br>使得<script type="math/tex">J_n=n\left(\frac{\pi}{4}-A_n\right)=n\sum\limits_{i=1}^{n}\int_{x_{i-1}}^{x_i}f'(\xi_i)\left(x-x_i\right)dx.</script><br>记$m_i,M_i$分别是$f’(x)$在$\left[x_{i-1},x_i\right]$上的最大值和最小值,则$m_i\leq f’(\xi_i)\leq M_i$,<br>积分$\int_{x_{i-1}}^{x_i}f’(\xi_i)\left(x-x_i\right)dx$<br>介于$m_i\int_{x_{i-1}}^{x_i}\left(x-x_i\right)dx,M_i\int_{x_{i-1}}^{x_i}\left(x-x_i\right)dx$之间,由介值定理<script type="math/tex; mode=display">\exists\eta_i\in\left(x_{i-1},x_i\right),\int_{x_{i-1}}^{x_i}f'(\xi_i)\left(x-x_i\right)dx=-f'(\eta_i)\frac{\left(x_i-x_{i-1}\right)^2}{2}.</script>于是有$J_n=-\frac{n}{2}\sum\limits_{i=1}^{n}f’(\eta_i)\left(x_i-x_{i-1}\right)^2=-\frac{1}{2n}\sum\limits_{i=1}^{n}f’(\eta_i).$<br>从而<script type="math/tex; mode=display">\lim_{n\to\infty}n\left(\frac{\pi}{4}-A_n\right)=\lim_{n\to\infty}J_n=-\frac{1}{2}\int_{0}^{1}f'(x)dx=-\frac{1}{2}\left[f\left(1\right)-f\left(0\right)\right]=\frac{1}{4}.</script></li>
+<li>$(1)\displaystyle\lim_{n\to\infty}\frac{1<sup>k+2</sup>k+\cdots+n<sup>k}{n</sup>{k+1}}=\frac{1}{k+1}\<br>
+(2)\displaystyle\lim_{n\to\infty}\left(\frac{1<sup>k+2</sup>k+\cdots+n<sup>k}{n</sup>k}-\frac{n}{k+1}\right)=\frac{1}{2}$</li>
+<li>设$A_n=\sum\limits_{k=1}<sup>{n}\frac{n}{n</sup>2+k^2}$,求$\lim\limits_{n\to\infty}n\left(\frac{\pi}{4}-A_n\right)$.<br>
+解:令$f(x)=\frac{1}{1+x<sup>2},$因为$A_n=\frac{1}{n}\sum\limits_{i=1}</sup>{n}\frac{1}{1+\frac{i<sup>2}{n</sup>2}},$所以<br>
+$$\lim_{n\to\infty}A_n=\int_{0}^{1}f(x)dx=\frac{\pi}{4}$$<br>
+记$x_i=\frac{i}{n}$,则$x_i-x_{i-1}=\frac{1}{n},A_n=n\sum\limits_{i=1}<sup>{n}\int_{x_{i-1}}</sup>{x_i}f(x_i)dx.$<br>
+令$$J_n=n\left(\frac{\pi}{4}-A_n\right)=n\sum\limits_{i=1}<sup>{n}\int_{x_{i-1}}</sup>{x_i}\left[f(x)-f(x_i)\right]dx,$$<br>
+由拉格朗日中值定理，$\exists\xi_i\in(x_{i-1},x_i)$<br>
+使得$$J_n=n\left(\frac{\pi}{4}-A_n\right)=n\sum\limits_{i=1}<sup>{n}\int_{x_{i-1}}</sup>{x_i}f’(\xi_i)\left(x-x_i\right)dx.$$<br>
+记$m_i,M_i$分别是$f’(x)$在$\left[x_{i-1},x_i\right]$上的最大值和最小值,则$m_i\leq f’(\xi_i)\leq M_i$,<br>
+积分$\int_{x_{i-1}}^{x_i}f’(\xi_i)\left(x-x_i\right)dx$<br>
+介于$m_i\int_{x_{i-1}}<sup>{x_i}\left(x-x_i\right)dx,M_i\int_{x_{i-1}}</sup>{x_i}\left(x-x_i\right)dx$之间,由介值定理<br>
+$$\exists\eta_i\in\left(x_{i-1},x_i\right),\int_{x_{i-1}}<sup>{x_i}f’(\xi_i)\left(x-x_i\right)dx=-f’(\eta_i)\frac{\left(x_i-x_{i-1}\right)</sup>2}{2}.$$<br>
+于是有$J_n=-\frac{n}{2}\sum\limits_{i=1}<sup>{n}f’(\eta_i)\left(x_i-x_{i-1}\right)</sup>2=-\frac{1}{2n}\sum\limits_{i=1}^{n}f’(\eta_i).$<br>
+从而<br>
+$$\lim_{n\to\infty}n\left(\frac{\pi}{4}-A_n\right)=\lim_{n\to\infty}J_n=-\frac{1}{2}\int_{0}^{1}f’(x)dx=-\frac{1}{2}\left[f\left(1\right)-f\left(0\right)\right]=\frac{1}{4}.$$</li>
 </ol>
 
       
@@ -464,7 +478,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/17/ntitled/" rel="prev" title="POJ1845 Sumdiv">
+              <a href="/2019/07/17/POJ1845 Sumdiv/" rel="prev" title="POJ1845 Sumdiv">
                 POJ1845 Sumdiv <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -543,13 +557,22 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
