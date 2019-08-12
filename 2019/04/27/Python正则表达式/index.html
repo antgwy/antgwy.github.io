@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 正则表达式 基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  正则表达式的语法 正则表达式语法由字符和操作符构成  正则表达式的常用操作符     操作符 说明 实例     . 表示任何单个字符">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-12T07:40:52.285Z">
+<meta property="og:updated_time" content="2019-08-12T08:07:57.138Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python简易网络爬虫">
 <meta name="twitter:description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 正则表达式 基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。  正则表达式的语法 正则表达式语法由字符和操作符构成  正则表达式的常用操作符     操作符 说明 实例     . 表示任何单个字符">
@@ -483,7 +483,7 @@
 </tr>
 <tr class="odd">
 <td style="text-align: center;">\s</td>
-<td style="text-align: center;">空白字符, 等价于[\f</td>
+<td style="text-align: center;">空白字符, 等价于[\f\n\r\t\v]</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
@@ -680,6 +680,7 @@ Re库默认采用贪婪匹配, 即输出匹配最长的子串
 <li>
 <font color="red">flags</font>: 正则表达式使用时的控制标记
 </li>
+</ul>
 <table border="0">
 <tr>
 <th>
@@ -737,13 +738,16 @@ re.S<br>(re.DOTALL)
     &lt;/tr&gt;
     &lt;tr&gt;
         &lt;td&gt;&lt;center&gt;&lt;/center&gt;&lt;/td&gt;&lt;td&gt;&lt;center&gt;&lt;/center&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;</code></pre>
-</tr></table></ul>
+    &lt;/tr&gt;</code></pre>
+</tr></table>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match = re.search(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz 425000'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> match:</span><br><span class="line">		print(match.group(<span class="number">0</span>))</span><br><span class="line"></span><br><span class="line"><span class="number">425000</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">line = <span class="string">"Cats are smarter than dogs"</span>;</span><br><span class="line">searchObj = re.search( <span class="string">r'(.*) are (.*?) .*'</span>, line, re.M|re.I)</span><br><span class="line"><span class="keyword">if</span> searchObj:</span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"searchObj.group() : "</span>, searchObj.group())</span><br><span class="line"><span class="comment">#searchObj.group() :  Cats are smarter than dogs</span></span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"searchObj.group(1) : "</span>, searchObj.group(<span class="number">1</span>))</span><br><span class="line"><span class="comment">#searchObj.group(1) :  Cats</span></span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"searchObj.group(2) : "</span>, searchObj.group(<span class="number">2</span>))</span><br><span class="line"><span class="comment">#searchObj.group(2) :  smarter</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"Nothing found!!"</span>)</span><br></pre></td></tr></table></figure>
 <h5 id="re.matchpattern-string-flags0">re.match(pattern, string, flags=0)</h5>
-<p>re.match 从第一个字符串的开始位置起匹配正则表达式, 返回match对象 * group(num=0): 匹配的整个表达式的字符串，group() 可以一次输入多个组号，在这种情况下它将返回一个包含那些组所对应值的元组。 * groups(): 返回一个包含所有小组字符串的元组，从 1 到 所含的小组号。</p>
+<p>re.match 从第一个字符串的开始位置起匹配正则表达式, 返回match对象</p>
+<ul>
+<li>group(num=0): 匹配的整个表达式的字符串，group() 可以一次输入多个组号，在这种情况下它将返回一个包含那些组所对应值的元组。</li>
+<li>groups(): 返回一个包含所有小组字符串的元组，从 1 到 所含的小组号。</li>
+</ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match = re.match(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz 425000'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> match:</span><br><span class="line">		match.group(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match.group(<span class="number">0</span>)</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;pyshell#15&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    match.group(<span class="number">0</span>)</span><br><span class="line">AttributeError: <span class="string">'NoneType'</span> object has no attribute <span class="string">'group'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match = re.match(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'425000 Hunanyz'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> match:</span><br><span class="line">		match.group(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">'425000'</span></span><br></pre></td></tr></table></figure>
 <p>函数式用法: 一次性操作 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>rst = re.search(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz 425000'</span>)</span><br></pre></td></tr></table></figure></p>
 <p>面向对象用法: 编译后的多次操作 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>pat = re.compile(<span class="string">r'[1-9]\d&#123;5&#125;'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>rst = pat.search(<span class="string">'Hunanyz 425000'</span>)</span><br></pre></td></tr></table></figure></p>
