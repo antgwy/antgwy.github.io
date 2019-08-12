@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://2inf.top/"/>
-  <updated>2019-08-12T02:21:39.977Z</updated>
+  <updated>2019-07-17T09:31:28.828Z</updated>
   <id>http://2inf.top/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Tikz入门</title>
-    <link href="http://2inf.top/2019/08/12/Tikz%E5%AD%A6%E4%B9%A0/"/>
-    <id>http://2inf.top/2019/08/12/Tikz学习/</id>
-    <published>2019-08-12T02:21:39.000Z</published>
-    <updated>2019-08-12T02:21:39.977Z</updated>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        
-
-      
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>POJ1845 Sumdiv</title>
