@@ -88,17 +88,17 @@
 
 
 
-<meta name="description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 ## 正则表达式 #### 基本概念 &amp;gt;正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。 #### 正则表达式的语法 正则表达式语法由字符和操作符构成  正则表达式的常用操作符     操作符 说明 实例     . 表示任何单个字符">
+<meta name="description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 正则表达式 基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。 #### 正则表达式的语法  正则表达式语法由字符和操作符构成  正则表达式的常用操作符     操作符 说明 实例     . 表示任何单个字符">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python简易网络爬虫">
 <meta property="og:url" content="http://2inf.top/2019/04/27/Python正则表达式/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
-<meta property="og:description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 ## 正则表达式 #### 基本概念 &amp;gt;正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。 #### 正则表达式的语法 正则表达式语法由字符和操作符构成  正则表达式的常用操作符     操作符 说明 实例     . 表示任何单个字符">
+<meta property="og:description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 正则表达式 基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。 #### 正则表达式的语法  正则表达式语法由字符和操作符构成  正则表达式的常用操作符     操作符 说明 实例     . 表示任何单个字符">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-16T17:04:01.649Z">
+<meta property="og:updated_time" content="2019-08-12T07:16:22.466Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python简易网络爬虫">
-<meta name="twitter:description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 ## 正则表达式 #### 基本概念 &amp;gt;正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。 #### 正则表达式的语法 正则表达式语法由字符和操作符构成  正则表达式的常用操作符     操作符 说明 实例     . 表示任何单个字符">
+<meta name="twitter:description" content="上大学后自学了点爬虫, 下面是我个人的学习总结 正则表达式 基本概念  正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。 #### 正则表达式的语法  正则表达式语法由字符和操作符构成  正则表达式的常用操作符     操作符 说明 实例     . 表示任何单个字符">
 
 
 
@@ -180,7 +180,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">Everything that downs me makes me wanna fly.</p>
+        <p class="site-subtitle">杨意不逢，抚凌云而自惜；钟期既遇，奏流水以何惭？</p>
       
   </div>
 
@@ -381,7 +381,13 @@
       
 
       
-        上大学后自学了点爬虫, 下面是我个人的学习总结 ## 正则表达式 #### 基本概念 &gt;正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。 #### 正则表达式的语法 正则表达式语法由字符和操作符构成<br>
+        <p>上大学后自学了点爬虫, 下面是我个人的学习总结</p>
+<h2 id="正则表达式">正则表达式</h2>
+<h4 id="基本概念">基本概念</h4>
+<blockquote>
+<p>正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。 #### 正则表达式的语法</p>
+</blockquote>
+正则表达式语法由字符和操作符构成<br>
 <center>
 <b>正则表达式的常用操作符</b>
 </center>
@@ -455,32 +461,32 @@
 <td style="text-align: center;">(abc)表示abc、(abc|def)表示abc、def</td>
 </tr>
 <tr class="odd">
+<td style="text-align: center;">\d</td>
 <td style="text-align: center;">数字, 等价于[0-9]</td>
-<td style="text-align: center;"></td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
+<td style="text-align: center;">\D</td>
 <td style="text-align: center;">非数字字符, 等价于[^0-9]</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
+<td style="text-align: center;">\w</td>
 <td style="text-align: center;">单词字符(包括下划线), 等价于[A-Za-z0-9_]</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
+<td style="text-align: center;">\W</td>
 <td style="text-align: center;">非单词字符, 等价于[^A-Za-z0-9_]</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;"></td>
+<td style="text-align: center;">\s</td>
 <td style="text-align: center;">空白字符, 等价于[</td>
 <td style="text-align: center;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;"></td>
+<td style="text-align: center;">\S</td>
 <td style="text-align: center;">非空白字符, 等价于[^\f\n\r\t\v]</td>
 <td style="text-align: center;"></td>
 </tr>
@@ -516,7 +522,7 @@ Re库默认采用贪婪匹配, 即输出匹配最长的子串
 </tr>
 </tbody>
 </table>
-始位置匹配一个模式，如果不是起始位置匹配成功的话，match()就返回none。
+<p>始位置匹配一个模式，如果不是起始位置匹配成功的话，match()就返回none。</p>
 <table border="3">
 <tr>
      
@@ -711,8 +717,17 @@ Re库默认采用贪婪匹配, 即输出匹配最长的子串
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -829,6 +844,22 @@ Re库默认采用贪婪匹配, 即输出匹配最长的子串
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#正则表达式"><span class="nav-number">1.</span> <span class="nav-text">正则表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本概念"><span class="nav-number">1.0.1.</span> <span class="nav-text">基本概念</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
