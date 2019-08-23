@@ -10,8 +10,3 @@ Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
-
-Sitemap: https://kivenckl.github.io/sitemap.xml
-Sitemap: https://kivenckl.github.io/baidusitemap.xml
-Sitemap: http://kivenckl.coding.me/sitemap.xml
-Sitemap: http://kivenckl.coding.me/baidusitemap.xml

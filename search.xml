@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[ACM算法模板]]></title>
+    <url>%2F2019%2F08%2F24%2FACM%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF%2F</url>
+    <content type="text"><![CDATA[归并排序 1234567891011121314void mergesort(int l,int r)&#123; if(l == r) return ; int mid=(l+r)&gt;&gt;1; mergesort(l,mid); mergesort(mid+1,r); int p=l,q=mid+1,cnt=l; while(p&lt;=mid&amp;&amp;q&lt;=r)&#123; if(a[p]&lt;a[q]) t[cnt++]=a[p++]; else t[cnt++]=a[q++]; &#125; while(p&lt;=mid) t[cnt++]=a[p++]; while(q&lt;=r) t[cnt++]=a[q++]; for(int i=l;i&lt;=r;i++) a[i]=t[i];&#125;]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[TikZ入门]]></title>
     <url>%2F2019%2F08%2F12%2FTikZ%E5%85%A5%E9%97%A8%2F</url>
     <content type="text"><![CDATA[在\(LaTex​\)中, 要用\(tikz​\)作图, 首先调用\(tikz​\)宏包和有关的程序库 12\usepackage&#123;tikz&#125;\usetikzlibrary&#123;&lt;list of libraries&gt;&#125; 然后开启\({tikzpicture}\)环境作图, 或者用\(\\ tikz\)开始作图. 各种命令必须以分号结束, 否则报错 命令` 下面是一个(需调用\(pattern\)库) 123456\begin&#123;tikzpicture&#125;\def\wall&#123; \fill [fill=black!50] (1,-.5) rectangle (2,.5); \pattern [pattern=bricks] (1,-.5) rectangle (2,.5); \draw [line width=1pt] (1cm+.5pt,-.5) -- ++(0,1);&#125;\wall\end&#123;tikzpicture&#125; bricks_tikz 创建coordinate对象的句法及其命名 1234\path . . . coordinate[&lt;options&gt;](&lt;name&gt;)at(&lt;coordinate&gt;) . . . ;%将路径中的某个对象设置为 coordinate \coordinate [&lt;options&gt;](&lt;name&gt;)at(&lt;coordinate&gt;);%这是上一句法的简写，注意最好不要在该命令后面用 node 命令。 基本的坐标计算]]></content>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://2inf.top/"/>
-  <updated>2019-08-17T08:13:24.856Z</updated>
+  <updated>2019-08-23T16:28:20.800Z</updated>
   <id>http://2inf.top/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ACM算法模板</title>
+    <link href="http://2inf.top/2019/08/24/ACM%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"/>
+    <id>http://2inf.top/2019/08/24/ACM算法模板/</id>
+    <published>2019-08-23T16:15:02.000Z</published>
+    <updated>2019-08-23T16:28:20.800Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="归并排序">归并排序</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mergesort</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l == r) <span class="keyword">return</span> ;</span><br><span class="line">    <span class="keyword">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    mergesort(l,mid);</span><br><span class="line">    mergesort(mid+<span class="number">1</span>,r);</span><br><span class="line">    <span class="keyword">int</span> p=l,q=mid+<span class="number">1</span>,cnt=l;</span><br><span class="line">    <span class="keyword">while</span>(p&lt;=mid&amp;&amp;q&lt;=r)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[p]&lt;a[q]) t[cnt++]=a[p++];</span><br><span class="line">        <span class="keyword">else</span> t[cnt++]=a[q++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(p&lt;=mid) t[cnt++]=a[p++];</span><br><span class="line">    <span class="keyword">while</span>(q&lt;=r) t[cnt++]=a[q++];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=l;i&lt;=r;i++) a[i]=t[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;归并排序&quot;&gt;归并排序&lt;/h4&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>TikZ入门</title>
     <link href="http://2inf.top/2019/08/12/TikZ%E5%85%A5%E9%97%A8/"/>
     <id>http://2inf.top/2019/08/12/TikZ入门/</id>
     <published>2019-08-12T07:42:14.000Z</published>
-    <updated>2019-08-17T08:13:24.856Z</updated>
+    <updated>2019-08-17T08:37:10.652Z</updated>
     
     <content type="html"><![CDATA[<p>在<span class="math inline">\(LaTex​\)</span>中, 要用<span class="math inline">\(tikz​\)</span>作图, 首先调用<span class="math inline">\(tikz​\)</span>宏包和有关的程序库 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;tikz&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usetikzlibrary</span><span class="string">&#123;&lt;list of libraries&gt;&#125;</span></span></span><br></pre></td></tr></table></figure></p><p>然后开启<span class="math inline">\({tikzpicture}\)</span>环境作图, 或者用<span class="math inline">\(\\ tikz\)</span>开始作图. 各种命令必须以分号结束, 否则报错</p><h4 id="命令">命令`</h4><p>下面是一个(需调用<span class="math inline">\(pattern\)</span>库) <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">def</span></span><span class="tag">\<span class="name">wall</span><span class="string">&#123; \fill [fill=black!50] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">\pattern [pattern=bricks] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">\draw [line width=1pt] (1cm+.5pt,-.5) -- ++(0,1);&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">wall</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br></pre></td></tr></table></figure></p><figure><img src="/.top//Users\DELL\Pictures\Camera%20Roll\bricks_tikz.png" alt=""><figcaption>bricks_tikz</figcaption></figure><h4 id="创建coordinate对象的句法及其命名">创建coordinate对象的句法及其命名</h4><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">path</span></span> . . . coordinate[&lt;options&gt;](&lt;name&gt;)at(&lt;coordinate&gt;) . . . ;</span><br><span class="line"><span class="comment">%将路径中的某个对象设置为 coordinate </span></span><br><span class="line"><span class="tag">\<span class="name">coordinate</span></span>  [&lt;options&gt;](&lt;name&gt;)at(&lt;coordinate&gt;);</span><br><span class="line"><span class="comment">%这是上一句法的简写，注意最好不要在该命令后面用 node 命令。</span></span><br></pre></td></tr></table></figure><h2 id="基本的坐标计算">基本的坐标计算</h2><div class="row">    <embed src="blog_3.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
     
