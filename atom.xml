@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://2inf.top/"/>
-  <updated>2019-08-23T16:28:20.800Z</updated>
+  <updated>2019-08-24T17:11:46.988Z</updated>
   <id>http://2inf.top/</id>
   
   <author>
@@ -17,20 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ACM算法模板</title>
-    <link href="http://2inf.top/2019/08/24/ACM%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"/>
-    <id>http://2inf.top/2019/08/24/ACM算法模板/</id>
-    <published>2019-08-23T16:15:02.000Z</published>
-    <updated>2019-08-23T16:28:20.800Z</updated>
+    <title>反演原理及应用</title>
+    <link href="http://2inf.top/2019/08/25/%E5%8F%8D%E6%BC%94%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/"/>
+    <id>http://2inf.top/2019/08/25/反演原理及应用/</id>
+    <published>2019-08-24T16:51:43.000Z</published>
+    <updated>2019-08-24T17:11:46.988Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="归并排序">归并排序</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mergesort</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l == r) <span class="keyword">return</span> ;</span><br><span class="line">    <span class="keyword">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    mergesort(l,mid);</span><br><span class="line">    mergesort(mid+<span class="number">1</span>,r);</span><br><span class="line">    <span class="keyword">int</span> p=l,q=mid+<span class="number">1</span>,cnt=l;</span><br><span class="line">    <span class="keyword">while</span>(p&lt;=mid&amp;&amp;q&lt;=r)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[p]&lt;a[q]) t[cnt++]=a[p++];</span><br><span class="line">        <span class="keyword">else</span> t[cnt++]=a[q++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(p&lt;=mid) t[cnt++]=a[p++];</span><br><span class="line">    <span class="keyword">while</span>(q&lt;=r) t[cnt++]=a[q++];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=l;i&lt;=r;i++) a[i]=t[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="什么是反演">什么是反演</h2><p>  对于数列<span class="math inline">\(\left\{f_n\right\}\)</span>以及数列<span class="math inline">\(\left\{g_n\right\}\)</span>满足</p><p><span class="math display">\[g_n=\sum_{i=0}^na_{ni}f_i\]</span></p><p>  反演便是利用<span class="math inline">\(\left\{g_n\right\}\)</span>反推出<span class="math inline">\(\left\{f_n\right\}\)</span>, 也即</p><p><span class="math display">\[f_n=\sum_{i=0}^nb_{ni}g_i\]</span></p><p>  本质上来说这是一个反解线性方程组的过程, 但观察后会发现整个方程组是一个下三角矩阵, 可以思考出更加快捷的方法</p><h2 id="反演原理">反演原理</h2><p>  为了便于后面的叙述, 首先引入<span class="math inline">\(\delta(i,j)\)</span>函数<span class="math inline">\(( Kronecker&#39;s\ delta)\)</span>, 它的定义为</p><p><span class="math display">\[\delta\left(i,j\right)=\begin{cases}1\quad i=j\\0\quad i\neq j\end{cases}\]</span></p><p>下面考虑反演的过程</p><p><span class="math display">\[g_n=\sum_{i=0}^na_{ni}f_i\]</span></p><h2 id="二项式反演">二项式反演</h2><h2 id="莫比乌斯反演">莫比乌斯反演</h2>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h4 id=&quot;归并排序&quot;&gt;归并排序&lt;/h4&gt;
-&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;
+        &lt;h2 id=&quot;什么是反演&quot;&gt;什么是反演&lt;/h2&gt;
+&lt;p&gt;  对于数列&lt;span class=&quot;math inline&quot;&gt;\(\left\{f_n\right\}\)&lt;/span&gt;以及数列&lt;span class=&quot;math inline&quot;&gt;\(\left\{g_n\right\
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ACM算法模板</title>
+    <link href="http://2inf.top/2019/08/24/ACM%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"/>
+    <id>http://2inf.top/2019/08/24/ACM算法模板/</id>
+    <published>2019-08-23T16:15:02.000Z</published>
+    <updated>2019-08-23T16:30:19.089Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="基础">基础</h2><h4 id="归并排序">归并排序</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mergesort</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l == r) <span class="keyword">return</span> ;</span><br><span class="line">    <span class="keyword">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    mergesort(l,mid);</span><br><span class="line">    mergesort(mid+<span class="number">1</span>,r);</span><br><span class="line">    <span class="keyword">int</span> p=l,q=mid+<span class="number">1</span>,cnt=l;</span><br><span class="line">    <span class="keyword">while</span>(p&lt;=mid&amp;&amp;q&lt;=r)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[p]&lt;a[q]) t[cnt++]=a[p++];</span><br><span class="line">        <span class="keyword">else</span> t[cnt++]=a[q++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(p&lt;=mid) t[cnt++]=a[p++];</span><br><span class="line">    <span class="keyword">while</span>(q&lt;=r) t[cnt++]=a[q++];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=l;i&lt;=r;i++) a[i]=t[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="提高">提高</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;基础&quot;&gt;基础&lt;/h2&gt;
+&lt;h4 id=&quot;归并排序&quot;&gt;归并排序&lt;/h4&gt;
+&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;b
       
     
     </summary>

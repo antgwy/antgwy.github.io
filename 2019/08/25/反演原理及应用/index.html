@@ -80,8 +80,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="2inf's blog" type="application/atom+xml">
 
@@ -90,17 +88,17 @@
 
 
 
-<meta name="description" content="\[There&amp;#39;s\ no\ undo\ and\ there’s\ no\ repeat\] \[Can&amp;#39;t\ go\ back\ to\ how\ we\ used\ to\ be\] \[There&amp;#39;s\ no\ restart\ but\ only\ proceed\] \[Take\ up\ from\ where\ we’ve\ left\ off\ and\">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://2inf.top/about/index.html">
+<meta name="description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i\]   本质上来说这是一个反">
+<meta property="og:type" content="article">
+<meta property="og:title" content="反演原理及应用">
+<meta property="og:url" content="http://2inf.top/2019/08/25/反演原理及应用/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
-<meta property="og:description" content="\[There&amp;#39;s\ no\ undo\ and\ there’s\ no\ repeat\] \[Can&amp;#39;t\ go\ back\ to\ how\ we\ used\ to\ be\] \[There&amp;#39;s\ no\ restart\ but\ only\ proceed\] \[Take\ up\ from\ where\ we’ve\ left\ off\ and\">
+<meta property="og:description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i\]   本质上来说这是一个反">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-12T08:03:42.673Z">
+<meta property="og:updated_time" content="2019-08-24T17:11:46.988Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="\[There&amp;#39;s\ no\ undo\ and\ there’s\ no\ repeat\] \[Can&amp;#39;t\ go\ back\ to\ how\ we\ used\ to\ be\] \[There&amp;#39;s\ no\ restart\ but\ only\ proceed\] \[Take\ up\ from\ where\ we’ve\ left\ off\ and\">
+<meta name="twitter:title" content="反演原理及应用">
+<meta name="twitter:description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i\]   本质上来说这是一个反">
 
 
 
@@ -130,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://2inf.top/about/">
+  <link rel="canonical" href="http://2inf.top/2019/08/25/反演原理及应用/">
 
 
 
 
 
-  <title>about | 2inf's blog</title>
+  <title>反演原理及应用 | 2inf's blog</title>
   
 
 
@@ -293,35 +291,192 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://2inf.top/2019/08/25/反演原理及应用/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ywt">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/portrait.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="2inf's blog">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">about</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p><span class="math display">\[There&#39;s\ no\ undo\ and\ there’s\ no\ repeat\]</span> <span class="math display">\[Can&#39;t\ go\ back\ to\ how\ we\ used\ to\ be\]</span> <span class="math display">\[There&#39;s\ no\ restart\ but\ only\ proceed\]</span> <span class="math display">\[Take\ up\ from\ where\ we’ve\ left\ off\ and\ see\\\]</span></p>
-<p><span class="math display">\[Everything\ that\ downs\ me\ makes\ me\ wanna\ fly\]</span> <span class="math display">\[Everything\ that\ kills\ me\ makes\ me\ feel\ alive\]</span></p>
-
+          <h1 class="post-title" itemprop="name headline">反演原理及应用</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-25T00:51:43+08:00">
+                2019-08-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h2 id="什么是反演">什么是反演</h2>
+<p>  对于数列<span class="math inline">\(\left\{f_n\right\}\)</span>以及数列<span class="math inline">\(\left\{g_n\right\}\)</span>满足</p>
+<p><span class="math display">\[g_n=\sum_{i=0}^na_{ni}f_i\]</span></p>
+<p>  反演便是利用<span class="math inline">\(\left\{g_n\right\}\)</span>反推出<span class="math inline">\(\left\{f_n\right\}\)</span>, 也即</p>
+<p><span class="math display">\[f_n=\sum_{i=0}^nb_{ni}g_i\]</span></p>
+<p>  本质上来说这是一个反解线性方程组的过程, 但观察后会发现整个方程组是一个下三角矩阵, 可以思考出更加快捷的方法</p>
+<h2 id="反演原理">反演原理</h2>
+<p>  为了便于后面的叙述, 首先引入<span class="math inline">\(\delta(i,j)\)</span>函数<span class="math inline">\(( Kronecker&#39;s\ delta)\)</span>, 它的定义为</p>
+<p><span class="math display">\[\delta\left(i,j\right)=\begin{cases}1\quad i=j\\0\quad i\neq j\end{cases}\]</span></p>
+<p>下面考虑反演的过程</p>
+<p><span class="math display">\[g_n=\sum_{i=0}^na_{ni}f_i\]</span></p>
+<h2 id="二项式反演">二项式反演</h2>
+<h2 id="莫比乌斯反演">莫比乌斯反演</h2>
+
       
     </div>
     
     
     
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="ywt 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>
+    ywt
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://2inf.top/2019/08/25/反演原理及应用/" title="反演原理及应用">http://2inf.top/2019/08/25/反演原理及应用/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/08/24/ACM算法模板/" rel="next" title="ACM算法模板">
+                <i class="fa fa-chevron-left"></i> ACM算法模板
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -354,8 +509,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -472,6 +636,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是反演"><span class="nav-number">1.</span> <span class="nav-text">什么是反演</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反演原理"><span class="nav-number">2.</span> <span class="nav-text">反演原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二项式反演"><span class="nav-number">3.</span> <span class="nav-text">二项式反演</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#莫比乌斯反演"><span class="nav-number">4.</span> <span class="nav-text">莫比乌斯反演</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

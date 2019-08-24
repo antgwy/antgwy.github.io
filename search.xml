@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[反演原理及应用]]></title>
+    <url>%2F2019%2F08%2F25%2F%E5%8F%8D%E6%BC%94%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[什么是反演 对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i\] 反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i\] 本质上来说这是一个反解线性方程组的过程, 但观察后会发现整个方程组是一个下三角矩阵, 可以思考出更加快捷的方法 反演原理 为了便于后面的叙述, 首先引入\(\delta(i,j)\)函数\(( Kronecker&#39;s\ delta)\), 它的定义为 \[\delta\left(i,j\right)=\begin{cases}1\quad i=j\\0\quad i\neq j\end{cases}\] 下面考虑反演的过程 \[g_n=\sum_{i=0}^na_{ni}f_i\] 二项式反演 莫比乌斯反演]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[ACM算法模板]]></title>
     <url>%2F2019%2F08%2F24%2FACM%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF%2F</url>
-    <content type="text"><![CDATA[归并排序 1234567891011121314void mergesort(int l,int r)&#123; if(l == r) return ; int mid=(l+r)&gt;&gt;1; mergesort(l,mid); mergesort(mid+1,r); int p=l,q=mid+1,cnt=l; while(p&lt;=mid&amp;&amp;q&lt;=r)&#123; if(a[p]&lt;a[q]) t[cnt++]=a[p++]; else t[cnt++]=a[q++]; &#125; while(p&lt;=mid) t[cnt++]=a[p++]; while(q&lt;=r) t[cnt++]=a[q++]; for(int i=l;i&lt;=r;i++) a[i]=t[i];&#125;]]></content>
+    <content type="text"><![CDATA[基础 归并排序 1234567891011121314void mergesort(int l,int r)&#123; if(l == r) return ; int mid=(l+r)&gt;&gt;1; mergesort(l,mid); mergesort(mid+1,r); int p=l,q=mid+1,cnt=l; while(p&lt;=mid&amp;&amp;q&lt;=r)&#123; if(a[p]&lt;a[q]) t[cnt++]=a[p++]; else t[cnt++]=a[q++]; &#125; while(p&lt;=mid) t[cnt++]=a[p++]; while(q&lt;=r) t[cnt++]=a[q++]; for(int i=l;i&lt;=r;i++) a[i]=t[i];&#125; 提高]]></content>
   </entry>
   <entry>
     <title><![CDATA[TikZ入门]]></title>
