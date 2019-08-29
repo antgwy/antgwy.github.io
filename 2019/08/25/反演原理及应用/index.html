@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-26T16:02:00.817Z">
+<meta property="og:updated_time" content="2019-08-29T15:30:50.495Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="反演原理及应用">
 <meta name="twitter:description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}">
@@ -446,11 +446,59 @@ f_n&amp;=&amp;\displaystyle\sum_{i=0}^n(-1)^{n-i}\begin{pmatrix}n\\i\end{pmatrix
 </ul>
 <p>  <span class="math inline">\(n\)</span>个球排成一行, 有m种颜色, 每个球染一个颜色, 相邻两个球染不同颜色, 每种颜色至少使用一次, 求染色方案数</p>
 <p>  不考虑每种颜色至少用一次这一条件, 那么答案显然是<span class="math inline">\(m(m-1)^{n-1}\)</span>, 设<span class="math inline">\(f_i\)</span>为恰好使用<span class="math inline">\(i(i=0,1,2,\cdots,k)\)</span>种颜色的方案数, 那么</p>
-<p><span class="math display">\[m(m-1)^{n-1}=\sum_{i=0}^m\begin{pmatrix}m\\i\end{pmatrix}f_i\]</span></p>
+<p><span class="math display">\[m(m-1)^{n-1}=\sum_{i=0}^m\begin{pmatrix}m\\i\end{pmatrix}f_i \tag{12}\]</span></p>
 <p>  经过反演得到</p>
-<p><span class="math display">\[f_m=\sum_{i=0}^m(-1)^{m-i}\begin{pmatrix}m\\i\end{pmatrix}g_i\]</span></p>
+<p><span class="math display">\[f_m=\sum_{i=0}^m(-1)^{m-i}\begin{pmatrix}m\\i\end{pmatrix}g_i \tag{13}\]</span></p>
 <p><a href="https://bzoj.zcmimi.tk/p/2839.html" target="_blank" rel="noopener"><span class="math inline">\(BZOJ2839\)</span>:集合计数</a></p>
+<h2 id="斯特林反演">斯特林反演</h2>
+<p>  在这里, 先回顾一下斯特林数(<span class="math inline">\(dalao\)</span>请自动忽略)</p>
+<ul>
+<li><strong>第一类斯特林数</strong></li>
+</ul>
+<p>  <strong>定义:</strong> 将<span class="math inline">\(n\)</span>个元素排成<span class="math inline">\(m\)</span>个轮换的方法数</p>
+<p>  从<span class="math inline">\(n-1\)</span>的情况推过来, 要么将最后一个元素放进自身的轮换, 要么将最后一个元素放进前<span class="math inline">\(n-1\)</span>个元素分成的<span class="math inline">\(\begin{bmatrix}n-1\\m\end{bmatrix}\)</span>个轮换中的一个, 可以得到:</p>
+<p><span class="math display">\[\begin{bmatrix}n\\m\end{bmatrix}=\begin{bmatrix}n-1\\m-1\end{bmatrix}+(n-1)*\begin{bmatrix}n-1\\m\end{bmatrix} \tag{14}\]</span></p>
+<p>  由于<span class="math inline">\(\begin{bmatrix}n\\ k\end{bmatrix}\)</span>是<span class="math inline">\(n\)</span>个元素恰好包含<span class="math inline">\(k\)</span>个轮换的排列个数, 对所有的<span class="math inline">\(k\)</span>求和, 必然得到排列的总数</p>
+<p><span class="math display">\[\sum_{k=0}^n\begin{bmatrix}n\\
+k\end{bmatrix}=n! \tag{15}\]</span></p>
+<p>  下面是与下降幂<span class="math inline">\(x^{\underline{n}}\)</span>和阶乘幂<span class="math inline">\(x^{\overline{n}}\)</span>的关系</p>
+<p><span class="math display">\[x^{\underline{n}}=\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}x^i \tag{16}\]</span></p>
+<p>  用归纳法证明</p>
+<p><span class="math display">\[\begin{array}{l}
+x^{\underline{n+1}}&amp;=&amp;(x-n)x^{\underline{n}}\\
+&amp;=&amp;(x-n)\displaystyle\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}x^i\\
+&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}x^{i+1}-n\sum_{i=0}^{n+1}\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}x^i\\
+&amp;=&amp;\displaystyle\sum_{i=1}^{n+1}\begin{bmatrix}n\\i-1\end{bmatrix}(-1)^{n-i+1}x^{i}+n\sum_{i=0}^{n+1}\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i+1}x^i\\
+&amp;=&amp;\displaystyle\sum_{i=0}^{n+1}\left(\begin{bmatrix}n\\i-1\end{bmatrix}+n\begin{bmatrix}n\\i\end{bmatrix}\right)(-1)^{n-i+1}x^i\\
+&amp;=&amp;\displaystyle\sum_{i=0}^{n+1}\begin{bmatrix}n+1\\i\end{bmatrix}(-1)^{n+1-i}x^i
+\end{array}\]</span></p>
+<p>  类似可以证明</p>
+<p><span class="math display">\[x^{\overline{n}}=\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}x^i \tag{17}\]</span></p>
+<ul>
+<li><strong>第二类斯特林数</strong></li>
+</ul>
+<p>  <strong>定义:</strong> 将一个有<span class="math inline">\(n\)</span>件物品的集合划分成<span class="math inline">\(m\)</span>个非空子集的方法数</p>
+<p>  从<span class="math inline">\(n-1\)</span>的情况推过来, 要么将最后一个元素单独放一类, 要么与前<span class="math inline">\(n-1\)</span>个元素的某个非空子集放一起, 可以得到:</p>
+<p><span class="math display">\[\begin{Bmatrix}n\\m\end{Bmatrix}=\begin{Bmatrix}n-1\\m-1\end{Bmatrix}+m*\begin{Bmatrix}n-1\\m\end{Bmatrix} \tag{18}\]</span></p>
+<p>  下面是与下降幂<span class="math inline">\(x^{\underline{n}}\)</span>和阶乘幂<span class="math inline">\(x^{\overline{n}}\)</span>的关系</p>
+<p><span class="math display">\[m^n=\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\underline{i}} \tag{19}\]</span></p>
+<p>  用归纳法证明, 由于<span class="math inline">\(x*x^{\underline{i}}=x^{\underline{i+1}}+ix^{\underline{i}}\)</span></p>
+<p><span class="math display">\[\begin{array}{l}
+m^{n+1}&amp;=&amp;m\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\underline{i}}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\underline{i+1}}+\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}im^{\underline{i}}\\
+&amp;=&amp;\displaystyle\sum_{i=1}^{n+1}\begin{Bmatrix}n\\i-1\end{Bmatrix}m^{\underline{i}}+\sum_{i=0}^{n+1}\begin{Bmatrix}n\\i\end{Bmatrix}im^{\underline{i}}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^{n+1}\left(\begin{Bmatrix}n\\i-1\end{Bmatrix}+i\begin{Bmatrix}n\\i\end{Bmatrix}\right)m^{\underline{i}}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^{n+1}\begin{Bmatrix}n+1\\i\end{Bmatrix}m^{\underline{i}}
+\end{array}\]</span></p>
+<p>  类似可以证明</p>
+<p><span class="math display">\[m^n=\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}(-1)^{n-i}m^{\overline{i}} \tag{20}\]</span></p>
+<ul>
+<li><strong>斯特林反演</strong></li>
+</ul>
+<p><span class="math display">\[f(n)=\sum_{i=0}^n\begin{Bmatrix}n\\k\end{Bmatrix}g(k) \quad\Leftrightarrow\quad g(n)=\sum_{k=0}^n(-1)^{n-k}\begin{bmatrix}n\\k\end{bmatrix}f(k) \tag{21}\]</span></p>
 <h2 id="莫比乌斯反演">莫比乌斯反演</h2>
+<p><span class="math display">\[g(m)=\sum_{d|m}f(d)\quad\Leftrightarrow\quad f(m)=\sum_{d|m}\mu(d)g(\frac{m}{d}) \tag{22}\]</span></p>
+<p>  <span class="math inline">\((21)\)</span>的证明如下: $$$$</p>
 
       
     </div>
@@ -499,7 +547,7 @@ f_n&amp;=&amp;\displaystyle\sum_{i=0}^n(-1)^{n-i}\begin{pmatrix}n\\i\end{pmatrix
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
-    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！
   </li>
 </ul>
 
@@ -526,6 +574,10 @@ f_n&amp;=&amp;\displaystyle\sum_{i=0}^n(-1)^{n-i}\begin{pmatrix}n\\i\end{pmatrix
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/28/浅谈几个特殊函数/" rel="prev" title="浅谈几个特殊函数">
+                浅谈几个特殊函数 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -604,7 +656,7 @@ f_n&amp;=&amp;\displaystyle\sum_{i=0}^n(-1)^{n-i}\begin{pmatrix}n\\i\end{pmatrix
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -714,7 +766,7 @@ f_n&amp;=&amp;\displaystyle\sum_{i=0}^n(-1)^{n-i}\begin{pmatrix}n\\i\end{pmatrix
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是反演"><span class="nav-number">1.</span> <span class="nav-text">什么是反演</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反演原理"><span class="nav-number">2.</span> <span class="nav-text">反演原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二项式反演"><span class="nav-number">3.</span> <span class="nav-text">二项式反演</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#应用"><span class="nav-number">3.0.1.</span> <span class="nav-text">应用</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#莫比乌斯反演"><span class="nav-number">4.</span> <span class="nav-text">莫比乌斯反演</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是反演"><span class="nav-number">1.</span> <span class="nav-text">什么是反演</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反演原理"><span class="nav-number">2.</span> <span class="nav-text">反演原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二项式反演"><span class="nav-number">3.</span> <span class="nav-text">二项式反演</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#应用"><span class="nav-number">3.0.1.</span> <span class="nav-text">应用</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#斯特林反演"><span class="nav-number">4.</span> <span class="nav-text">斯特林反演</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#莫比乌斯反演"><span class="nav-number">5.</span> <span class="nav-text">莫比乌斯反演</span></a></li></div>
             
 
           </div>
