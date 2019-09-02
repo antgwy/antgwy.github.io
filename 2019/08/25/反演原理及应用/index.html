@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="组合数学,">
 
 
 
@@ -89,13 +89,14 @@
 
 
 <meta name="description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}">
+<meta name="keywords" content="组合数学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="反演原理及应用">
 <meta property="og:url" content="http://2inf.top/2019/08/25/反演原理及应用/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-08-29T15:30:50.495Z">
+<meta property="og:updated_time" content="2019-09-02T05:08:25.099Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="反演原理及应用">
 <meta name="twitter:description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}">
@@ -169,7 +170,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">杨意不逢，抚凌云而自惜；钟期既遇，奏流水以何惭？</p>
+        <p class="site-subtitle">Your efforts Will pay off</p>
       
   </div>
 
@@ -378,7 +379,7 @@
 <p>  本质上来说这是一个反解线性方程组的过程, 但观察后会发现整个方程组是一个下三角矩阵, 可以思考出更加快捷的方法</p>
 <h2 id="反演原理">反演原理</h2>
 <p>  为了便于后面的叙述, 首先引入<span class="math inline">\(\delta(i,j)\)</span>函数<span class="math inline">\((Kronecker&#39;s\ delta)\)</span>, 它的定义为</p>
-<p><span class="math display">\[\delta\left(i,j\right)=\begin{cases}1\quad i=j\\0\quad i\neq j\end{cases}\]</span></p>
+<p><span class="math display">\[\delta\left(i,j\right)=\begin{cases}1\quad i=j\\0\quad i\neq j\end{cases}\qquad(\text{也可记为}[i=j])\]</span></p>
 <p>  下面考虑反演的过程, 考虑下面的式子应该满足什么条件</p>
 <p><span class="math display">\[
 \sum_{i=0}^nb_{ni}g_i=f_n \tag{3}
@@ -492,13 +493,86 @@ m^{n+1}&amp;=&amp;m\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\
 \end{array}\]</span></p>
 <p>  类似可以证明</p>
 <p><span class="math display">\[m^n=\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}(-1)^{n-i}m^{\overline{i}} \tag{20}\]</span></p>
+<p>  当然还有两个比较显然的东西</p>
+<p><span class="math display">\[x^{\underline{n}}=(-1)(-x)^{\overline{n}} \tag{21}\]</span> <span class="math display">\[x^{\overline{n}}=(-1)(-x)^{\underline{n}} \tag{22}\]</span></p>
+<ul>
+<li><strong>反转公式</strong></li>
+</ul>
+<p><span class="math display">\[\sum_{k=m}^n(-1)^{n-k}\begin{bmatrix}n\\k\end{bmatrix}\begin{Bmatrix}k\\m\end{Bmatrix}=[m=n] \tag{23}\]</span></p>
+<p><span class="math display">\[\sum_{k=m}^n(-1)^{n-k}\begin{Bmatrix}n\\k\end{Bmatrix}\begin{bmatrix}k\\m\end{bmatrix}=[m=n] \tag{24}\]</span></p>
+<p><span class="math inline">\(proof\ 1:\)</span></p>
+<p><span class="math display">\[\begin{array}{l}
+m^{\underline{n}}&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}m^i\\
+&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}\sum_{j=0}^i\begin{Bmatrix}i\\j\end{Bmatrix}m^{\underline{j}}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^nm^{\underline{i}}\sum_{j=i}^n(-1)^{n-j}\begin{bmatrix}n\\j\end{bmatrix}\begin{Bmatrix}j\\i\end{Bmatrix}
+\end{array}\]</span></p>
+<p><span class="math inline">\(proof\ 2:\)</span></p>
+<p><span class="math display">\[\begin{array}{l}
+m^n&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\underline{i}}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}\sum_{j=0}^i(-1)^{i-j}\begin{bmatrix}i\\j\end{bmatrix}m^j\\
+&amp;=&amp;\displaystyle\sum_{i=0}^nm^i\sum_{j=i}^n(-1)^{n-j}\begin{Bmatrix}n\\j\end{Bmatrix}\begin{bmatrix}j\\i\end{bmatrix}
+\end{array}\]</span></p>
 <ul>
 <li><strong>斯特林反演</strong></li>
 </ul>
-<p><span class="math display">\[f(n)=\sum_{i=0}^n\begin{Bmatrix}n\\k\end{Bmatrix}g(k) \quad\Leftrightarrow\quad g(n)=\sum_{k=0}^n(-1)^{n-k}\begin{bmatrix}n\\k\end{bmatrix}f(k) \tag{21}\]</span></p>
+<p><span class="math display">\[f(n)=\sum_{i=0}^n\begin{Bmatrix}n\\k\end{Bmatrix}g(k) \quad\Leftrightarrow\quad g(n)=\sum_{k=0}^n(-1)^{n-k}\begin{bmatrix}n\\k\end{bmatrix}f(k) \tag{25}\]</span></p>
+<p>  <span class="math inline">\((25)\)</span>的证明如下:</p>
+<p><span class="math display">\[\begin{array}{l}
+f(n)&amp;=&amp;\displaystyle\sum_{k=0}^n\begin{Bmatrix}n\\k\end{Bmatrix}g(k)\\
+&amp;=&amp;\displaystyle\sum_{k=0}^n\begin{Bmatrix}n\\k\end{Bmatrix}\sum_{j=0}^k(-1)^{k-j}\begin{bmatrix}k\\j\end{bmatrix}f(j)\\
+&amp;=&amp;\displaystyle\sum_{k=0}^n\sum_{j=k}^n\begin{Bmatrix}n\\j\end{Bmatrix}\begin{bmatrix}j\\k\end{bmatrix}(-1)^{j-k}f(k)\\
+&amp;=&amp;\displaystyle\sum_{k=0}^n[k=n]f(k)\\
+&amp;=&amp;f(n)
+\end{array}\]</span></p>
 <h2 id="莫比乌斯反演">莫比乌斯反演</h2>
-<p><span class="math display">\[g(m)=\sum_{d|m}f(d)\quad\Leftrightarrow\quad f(m)=\sum_{d|m}\mu(d)g(\frac{m}{d}) \tag{22}\]</span></p>
-<p>  <span class="math inline">\((21)\)</span>的证明如下: $$$$</p>
+<p>  <strong>莫比乌斯函数<span class="math inline">\(\mu(m)\)</span></strong> 对所有整数<span class="math inline">\(m\geq1由等式\)</span></p>
+<p><span class="math display">\[\sum_{d|m}\mu(d)=\left[m=1\right] \tag{26}\]</span></p>
+<p>来定义, 这个等式是一个递归式, 代入<span class="math inline">\(m=1,2,\cdots,12\)</span>可以得到前12个值:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(m\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(2\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(3\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(4\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(5\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(6\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(7\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(8\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(9\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(10\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(11\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(12\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\mu(m)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[g(m)=\sum_{d|m}f(d)\quad\Leftrightarrow\quad f(m)=\sum_{d|m}\mu(\frac{m}{d})g(d) \tag{27}\]</span></p>
+<p>  <span class="math inline">\((27)\)</span>的证明如下: <span class="math display">\[\begin{array}{l}
+g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
+&amp;=&amp;\displaystyle\sum_{d|m}\sum_{k|d}\mu(\frac{d}{k})g(k)\\
+&amp;=&amp;\displaystyle\sum_{k|m}g(k)\sum_{d|m,k|d}\mu(\frac{d}{k})\\
+&amp;=&amp;\displaystyle\sum_{k|m}g(k)\sum_{d|(m/k)}\mu(d)\\
+&amp;=&amp;\displaystyle\sum_{k|m}[m/k=1]g(k)\\
+&amp;=&amp;g(m)
+\end{array}\]</span></p>
 
       
     </div>
@@ -555,6 +629,12 @@ m^{n+1}&amp;=&amp;m\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/组合数学/" rel="tag"># 组合数学</a>
+          
+        </div>
       
 
       
@@ -667,7 +747,7 @@ m^{n+1}&amp;=&amp;m\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -678,7 +758,7 @@ m^{n+1}&amp;=&amp;m\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
