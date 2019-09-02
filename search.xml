@@ -23,6 +23,9 @@
     <title><![CDATA[ACM算法模板]]></title>
     <url>%2F2019%2F08%2F24%2FACM%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF%2F</url>
     <content type="text"><![CDATA[基础 归并排序 1234567891011121314void mergesort(int l,int r)&#123; if(l == r) return ; int mid=(l+r)&gt;&gt;1; mergesort(l,mid); mergesort(mid+1,r); int p=l,q=mid+1,cnt=l; while(p&lt;=mid&amp;&amp;q&lt;=r)&#123; if(a[p]&lt;a[q]) t[cnt++]=a[p++]; else t[cnt++]=a[q++]; &#125; while(p&lt;=mid) t[cnt++]=a[p++]; while(q&lt;=r) t[cnt++]=a[q++]; for(int i=l;i&lt;=r;i++) a[i]=t[i];&#125; 提高]]></content>
+      <categories>
+        <category>ACM</category>
+      </categories>
   </entry>
   <entry>
     <title><![CDATA[TikZ入门]]></title>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>2inf&#39;s blog</title>
   
-  <subtitle>Your efforts Will pay off</subtitle>
+  <subtitle>Your efforts will pay off</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://2inf.top/"/>
@@ -71,7 +71,7 @@
     <link href="http://2inf.top/2019/08/24/ACM%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/"/>
     <id>http://2inf.top/2019/08/24/ACM算法模板/</id>
     <published>2019-08-23T16:15:02.000Z</published>
-    <updated>2019-08-23T16:30:19.089Z</updated>
+    <updated>2019-09-02T13:25:22.462Z</updated>
     
     <content type="html"><![CDATA[<h2 id="基础">基础</h2><h4 id="归并排序">归并排序</h4><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">mergesort</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(l == r) <span class="keyword">return</span> ;</span><br><span class="line">    <span class="keyword">int</span> mid=(l+r)&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    mergesort(l,mid);</span><br><span class="line">    mergesort(mid+<span class="number">1</span>,r);</span><br><span class="line">    <span class="keyword">int</span> p=l,q=mid+<span class="number">1</span>,cnt=l;</span><br><span class="line">    <span class="keyword">while</span>(p&lt;=mid&amp;&amp;q&lt;=r)&#123;</span><br><span class="line">        <span class="keyword">if</span>(a[p]&lt;a[q]) t[cnt++]=a[p++];</span><br><span class="line">        <span class="keyword">else</span> t[cnt++]=a[q++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">while</span>(p&lt;=mid) t[cnt++]=a[p++];</span><br><span class="line">    <span class="keyword">while</span>(q&lt;=r) t[cnt++]=a[q++];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=l;i&lt;=r;i++) a[i]=t[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="提高">提高</h2>]]></content>
     
@@ -85,6 +85,8 @@
       
     
     </summary>
+    
+      <category term="ACM" scheme="http://2inf.top/categories/ACM/"/>
     
     
   </entry>
