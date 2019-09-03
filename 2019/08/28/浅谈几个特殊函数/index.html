@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:description" content="\(\Gamma函数\)   \(\Gamma\)函数是由如下含参数变量定义的积分, 又称第二类\(Euler\)积分 \[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x} \tag{1}\] 性质:  \(\Gamma(s+1)=s\Gamma(s)\ (s&amp;gt;0)\) \(\Gamma(s)=2\displaystyle\int_0^{+\inft">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-02T07:38:18.600Z">
+<meta property="og:updated_time" content="2019-09-02T15:16:08.909Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈几个特殊函数">
 <meta name="twitter:description" content="\(\Gamma函数\)   \(\Gamma\)函数是由如下含参数变量定义的积分, 又称第二类\(Euler\)积分 \[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x} \tag{1}\] 性质:  \(\Gamma(s+1)=s\Gamma(s)\ (s&amp;gt;0)\) \(\Gamma(s)=2\displaystyle\int_0^{+\inft">
@@ -426,7 +426,9 @@
 <p>证毕.</p>
 <p>   <strong>(余元公式)</strong> 设<span class="math inline">\(0&lt;p&lt;1\)</span>, 则有</p>
 <p><span class="math display">\[{\rm{B}}(p,1-p)=\Gamma(p)\Gamma(1-p)=\frac{\pi}{\sin p\pi}.\]</span></p>
-<p>  <strong>证明:</strong></p>
+<p>  <strong>证明:</strong>  由于<span class="math inline">\({\rm{B}}(p,1-p)=\displaystyle\int_0^{+\infty}\frac{x^{p-1}}{1+x}dx\)</span>, 利用变量替换<span class="math inline">\(x=\frac{1}{t}\)</span>有:</p>
+<p><span class="math display">\[\int_1^{+\infty}\frac{x^{p-1}}{1+x}dx=\int_0^1\frac{x^{-p}}{1+x}dx,\]</span></p>
+<p>将<span class="math inline">\(\displaystyle\frac{1}{1+x}\)</span>展开成幂级数, 从而有</p>
 <p><span class="math display">\[\begin{array}{l}
 {\rm{B}}(p,1-p)&amp;=&amp;\displaystyle\lim_{r\to1^-}\int_0^r\frac{x^{p-1}+x^{-p}}{1+x}dx\\
 &amp;=&amp;\displaystyle\lim_{r\to1^-}\int_0^r\left[\sum_{k=0}^{+\infty}(-1)^kx^{k+p-1}+\sum_{k=0}^{+\infty}(-1)^kx^{k-p}\right]dx\\
