@@ -96,12 +96,10 @@
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:description" content="在\(LaTex​\)中, 要用\(tikz​\)作图, 首先调用\(tikz​\)宏包和有关的程序库 12\usepackage&amp;#123;tikz&amp;#125;\usetikzlibrary&amp;#123;&amp;lt;list of libraries&amp;gt;&amp;#125; 然后开启\({tikzpicture}\)环境作图, 或者用\(\\ tikz\)开始作图. 各种命令必须以分号结束, 否则报错">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://2inf.top/.top//Users/DELL/Pictures/Camera%20Roll/bricks_tikz.png">
-<meta property="og:updated_time" content="2019-09-02T06:52:44.434Z">
+<meta property="og:updated_time" content="2019-10-24T16:25:36.015Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TikZ入门">
 <meta name="twitter:description" content="在\(LaTex​\)中, 要用\(tikz​\)作图, 首先调用\(tikz​\)宏包和有关的程序库 12\usepackage&amp;#123;tikz&amp;#125;\usetikzlibrary&amp;#123;&amp;lt;list of libraries&amp;gt;&amp;#125; 然后开启\({tikzpicture}\)环境作图, 或者用\(\\ tikz\)开始作图. 各种命令必须以分号结束, 否则报错">
-<meta name="twitter:image" content="http://2inf.top/.top//Users/DELL/Pictures/Camera%20Roll/bricks_tikz.png">
 
 
 
@@ -409,9 +407,6 @@
 <p>然后开启<span class="math inline">\({tikzpicture}\)</span>环境作图, 或者用<span class="math inline">\(\\ tikz\)</span>开始作图. 各种命令必须以分号结束, 否则报错</p>
 <h4 id="命令">命令`</h4>
 <p>下面是一个(需调用<span class="math inline">\(pattern\)</span>库) <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">def</span></span><span class="tag">\<span class="name">wall</span><span class="string">&#123; \fill [fill=black!50] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">		\pattern [pattern=bricks] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">		\draw [line width=1pt] (1cm+.5pt,-.5) -- ++(0,1);&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">wall</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br></pre></td></tr></table></figure></p>
-<figure>
-<img src="/.top//Users\DELL\Pictures\Camera%20Roll\bricks_tikz.png" alt=""><figcaption>bricks_tikz</figcaption>
-</figure>
 <h4 id="创建coordinate对象的句法及其命名">创建coordinate对象的句法及其命名</h4>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">path</span></span> . . . coordinate[&lt;options&gt;](&lt;name&gt;)at(&lt;coordinate&gt;) . . . ;</span><br><span class="line"><span class="comment">%将路径中的某个对象设置为 coordinate </span></span><br><span class="line"><span class="tag">\<span class="name">coordinate</span></span>  [&lt;options&gt;](&lt;name&gt;)at(&lt;coordinate&gt;);</span><br><span class="line"><span class="comment">%这是上一句法的简写，注意最好不要在该命令后面用 node 命令。</span></span><br></pre></td></tr></table></figure>
 <h2 id="基本的坐标计算">基本的坐标计算</h2>
@@ -586,7 +581,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

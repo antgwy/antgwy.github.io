@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="\(\Gamma函数\)   \(\Gamma\)函数是由如下含参数变量定义的积分, 又称第二类\(Euler\)积分 \[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}\mathrm{d}x \tag{1}\] 性质:  \(\Gamma(s+1)=s\Gamma(s)\ (s&amp;gt;0)\) \(\Gamma(s)=2\displaystyle\in">
+<meta name="description" content="\(\Gamma函数\)   \(\Gamma\)函数是由如下含参数变量定义的积分, 又称第二类\(Euler\)积分, 其含参积分定义为 \[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}\mathrm{d}x \tag{1}\] 它有 \(Gauss\)无穷乘积分解(\(Euler-Gauss\)公式) \[\Gamma(x)=\lim_{n\to\in">
 <meta name="keywords" content="数学分析">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅谈几个特殊函数">
 <meta property="og:url" content="http://2inf.top/2019/08/28/浅谈几个特殊函数/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
-<meta property="og:description" content="\(\Gamma函数\)   \(\Gamma\)函数是由如下含参数变量定义的积分, 又称第二类\(Euler\)积分 \[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}\mathrm{d}x \tag{1}\] 性质:  \(\Gamma(s+1)=s\Gamma(s)\ (s&amp;gt;0)\) \(\Gamma(s)=2\displaystyle\in">
+<meta property="og:description" content="\(\Gamma函数\)   \(\Gamma\)函数是由如下含参数变量定义的积分, 又称第二类\(Euler\)积分, 其含参积分定义为 \[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}\mathrm{d}x \tag{1}\] 它有 \(Gauss\)无穷乘积分解(\(Euler-Gauss\)公式) \[\Gamma(x)=\lim_{n\to\in">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-08T14:25:00.488Z">
+<meta property="og:updated_time" content="2019-10-24T16:43:06.358Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅谈几个特殊函数">
-<meta name="twitter:description" content="\(\Gamma函数\)   \(\Gamma\)函数是由如下含参数变量定义的积分, 又称第二类\(Euler\)积分 \[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}\mathrm{d}x \tag{1}\] 性质:  \(\Gamma(s+1)=s\Gamma(s)\ (s&amp;gt;0)\) \(\Gamma(s)=2\displaystyle\in">
+<meta name="twitter:description" content="\(\Gamma函数\)   \(\Gamma\)函数是由如下含参数变量定义的积分, 又称第二类\(Euler\)积分, 其含参积分定义为 \[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}\mathrm{d}x \tag{1}\] 它有 \(Gauss\)无穷乘积分解(\(Euler-Gauss\)公式) \[\Gamma(x)=\lim_{n\to\in">
 
 
 
@@ -404,12 +404,15 @@
 
       
         <h2 id="gamma函数"><span class="math inline">\(\Gamma函数\)</span></h2>
-<p>  <span class="math inline">\(\Gamma\)</span>函数是由如下含参数变量定义的积分, 又称第二类<span class="math inline">\(Euler\)</span>积分</p>
+<p>  <span class="math inline">\(\Gamma\)</span>函数是由如下含参数变量定义的积分, 又称第二类<span class="math inline">\(Euler\)</span>积分, 其含参积分定义为</p>
 <p><span class="math display">\[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}\mathrm{d}x \tag{1}\]</span></p>
+<p>它有 <strong><span class="math inline">\(Gauss\)</span>无穷乘积</strong>分解(<span class="math inline">\(Euler-Gauss\)</span>公式)</p>
+<p><span class="math display">\[\Gamma(x)=\lim_{n\to\infty}\frac{n!n^x}{x(x+1)\cdots(x+n)}\]</span></p>
 <p><strong>性质:</strong></p>
 <ol type="1">
 <li><span class="math inline">\(\Gamma(s+1)=s\Gamma(s)\ (s&gt;0)\)</span></li>
 <li><span class="math inline">\(\Gamma(s)=2\displaystyle\int_0^{+\infty}x^{2s-1}e^{-x^2}\mathrm{d}x\)</span></li>
+<li><span class="math inline">\(\Gamma(s)\)</span>在<span class="math inline">\((0,+\infty)\)</span>上为严格下凸函数, 它及其任意阶导数都连续, 且 <span class="math display">\[\Gamma^{(n)}(s)=\int_0^{+\infty}x^{s-1}(\ln x)^ne^{-x}\mathrm{d}x\]</span></li>
 </ol>
 <h2 id="rmb函数"><span class="math inline">\(\rm{B}函数\)</span></h2>
 <p>  <span class="math inline">\({\rm{B}}\)</span>函数是由如下含两个参变量的瑕积分定义的函数</p>
@@ -456,6 +459,7 @@
 <p><strong>注</strong>:令<span class="math inline">\(p=\displaystyle\frac{1}{2}\)</span>, 得 <span class="math display">\[\Gamma^2\left(\frac{1}{2}\right)=\frac{\displaystyle\Gamma\left(\frac{1}{2}\right)\Gamma\left(\frac{1}{2}\right)}{\Gamma(1)}={\rm{B}}(\frac{1}{2},\frac{1}{2})=\pi\]</span> 则<span class="math inline">\(\displaystyle\int_0^{+\infty}e^{-x^2}\mathrm{d}x=\frac{1}{2}\Gamma\left(\frac{1}{2}\right)=\frac{\sqrt\pi}{2}\)</span>, 也是一个得到这个重要等式的方法.</p>
 <hr>
 <p>  求<span class="math inline">\(\Bbb{R}^n\)</span>中单位球体<span class="math inline">\(D:x_1^2+x_2^2+\cdots x_n^2\leq1\)</span>的体积.</p>
+<p>   <strong>分析:</strong> 考虑用与球面类似的换元求解</p>
 <p>   <strong>解:</strong> 由<span class="math inline">\(n\)</span>重积分的集合意义, 所求体积为</p>
 <p><span class="math display">\[V=\iint\cdots\int_D\mathrm{d}x_1\mathrm{d}x_2\cdots\mathrm{d}x_n.\]</span></p>
 <p>作变换</p>
@@ -479,6 +483,21 @@ V &amp;=&amp; \displaystyle\iint\cdots\int_D\mathrm{d}x_1\mathrm{d}x_2\cdots\mat
 &amp;=&amp; \displaystyle\frac{2\pi}{n}\cdot\frac{\displaystyle\Gamma^{n-2}\left(\frac{1}{2}\right)}{\displaystyle\Gamma\left(\frac{n}{2}\right)}\\
 &amp;=&amp; \displaystyle\frac{\displaystyle\pi^{\frac{n}{2}}}{\displaystyle\Gamma\left(\frac{n}{2}+1\right)}.
 \end{array}\]</span></p>
+<h2 id="zeta函数"><span class="math inline">\(\zeta函数\)</span></h2>
+<p>  <strong><span class="math inline">\(Riemann\ zeta\)</span></strong> 函数<span class="math inline">\(\zeta(s)\)</span>, 是一个关于复数<span class="math inline">\(s\)</span>的函数, 在在复平面上, <span class="math inline">\(s\)</span>的实数部分<span class="math inline">\(\sigma=\scr{R}s&gt;1\)</span>时, <span class="math inline">\(\zeta(s)=\displaystyle\sum_{n=1}^\infty\frac{1}{n^s}\)</span></p>
+<h3 id="特殊点取值">特殊点取值</h3>
+<p>  考虑调和级数<span class="math inline">\(\zeta(1)=\displaystyle\sum_{i=1}^\infty\frac{1}{n}\)</span>, 由<span class="math inline">\(Cauchy\)</span>判别法, 级数<span class="math inline">\(S_n\)</span>收敛当且仅当<span class="math inline">\(\forall \epsilon&gt;0, \exists N, st.\ m,n&gt;N, \left|S_m-S_n\right|&lt;\epsilon\)</span></p>
+<p><span class="math display">\[\left|S_{2n}-S_n\right|=\frac{1}{n+1}+\cdots+\frac{1}{2n}&gt;\frac{1}{2n}+\cdots+\frac{1}{2n}=\frac{1}{2}\]</span></p>
+<p>故调和级数发散</p>
+<p><strong><span class="math inline">\(Parseval\)</span>等式</strong></p>
+<p><span class="math display">\[\frac{1}{\pi}\int_{-\pi}^\pi\left|f(x)\right|^2=\frac{a_0^2}{2}+\sum_{n=1}^\infty(a_n^2+b_n^2)\]</span></p>
+<p><span class="math inline">\(\displaystyle\sum_{n=1}^\infty\frac{1}{n^2}=\frac{\pi^2}{6}\)</span></p>
+<p><span class="math inline">\(\displaystyle\sum_{n=1}^\infty\frac{1}{n^4}=\frac{\pi^4}{90}\)</span></p>
+<p>  <span class="math inline">\(zeta\)</span>函数的积分形式 <span class="math display">\[\zeta(s)=\sum_{n=1}^\infty\frac{1}{n^{s}}=\frac{1}{\Gamma(s)}\int_0^{+\infty}\frac{x^{s-1}}{e^x-1}\mathrm{d}x,\quad s&gt;1\]</span></p>
+<p>  求<span class="math inline">\(\displaystyle\int_0^1\frac{\ln x}{1-x}\mathrm{d}x\)</span></p>
+<p>   <strong>解:</strong> 令<span class="math inline">\(x=e^{-t},\)</span> 则 <span class="math display">\[\int_0^1\frac{\ln x}{1-x}\mathrm{d}x=\int_{+\infty}^0\frac{-t}{1-e^{-t}}e^{-t}(-\mathrm{d}t)=-\int_0^{+\infty}\frac{t}{e^t-1}\mathrm{d}t\]</span></p>
+<p>在结论中取<span class="math inline">\(s=2\)</span>, 则</p>
+<p><span class="math display">\[\int_0^1\frac{\ln x}{1-x}\mathrm{d}x=-\Gamma(2)\sum_{n=1}^{\infty}\frac{1}{n^2}=-\frac{\pi^2}{6}\]</span></p>
 
       
     </div>
@@ -642,7 +661,7 @@ V &amp;=&amp; \displaystyle\iint\cdots\int_D\mathrm{d}x_1\mathrm{d}x_2\cdots\mat
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -752,7 +771,7 @@ V &amp;=&amp; \displaystyle\iint\cdots\int_D\mathrm{d}x_1\mathrm{d}x_2\cdots\mat
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#gamma函数"><span class="nav-number">1.</span> <span class="nav-text">\(\Gamma函数\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rmb函数"><span class="nav-number">2.</span> <span class="nav-text">\(\rm{B}函数\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二者的关系"><span class="nav-number">3.</span> <span class="nav-text">二者的关系</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#gamma函数"><span class="nav-number">1.</span> <span class="nav-text">\(\Gamma函数\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#rmb函数"><span class="nav-number">2.</span> <span class="nav-text">\(\rm{B}函数\)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二者的关系"><span class="nav-number">3.</span> <span class="nav-text">二者的关系</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zeta函数"><span class="nav-number">4.</span> <span class="nav-text">\(\zeta函数\)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#特殊点取值"><span class="nav-number">4.1.</span> <span class="nav-text">特殊点取值</span></a></li></ol></li></ol></div>
             
 
           </div>
