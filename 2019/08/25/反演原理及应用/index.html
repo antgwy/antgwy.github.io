@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-29T14:47:50.453Z">
+<meta property="og:updated_time" content="2019-10-29T16:53:38.678Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="反演原理及应用">
 <meta name="twitter:description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}">
@@ -170,7 +170,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">Your efforts will pay off</p>
+        <p class="site-subtitle">落叶他乡树，寒灯独夜人。</p>
       
   </div>
 
@@ -417,7 +417,7 @@ b_{nn}a_{n0}f_0 &amp; b_{nn}a_{n1}f_1 &amp; \cdots &amp; b_{nn}a_{nn}f_n
 <p>  同理, 将<span class="math inline">\(f\)</span>代入带<span class="math inline">\(g\)</span>的求和式中, 可以推出</p>
 <p><span class="math display">\[\sum_{j=i}^na_{nj}b_{ji}=\delta(n,i) \tag{5}\]</span></p>
 <p>  如果某个数列满足上面的条件, 我们便阔以利用反演公式</p>
-<h2 id="二项式反演">二项式反演</h2>
+<h1 id="二项式反演">二项式反演</h1>
 <p>  二项式反演<span class="math inline">\((binomial\ inversion)\)</span>在容斥中经常用到, 可以表示为</p>
 <p><span class="math display">\[
 f_n=\sum_{i=0}^n\left(-1\right)^n\begin{pmatrix}n\\i\end{pmatrix}g_i\Leftrightarrow
@@ -439,7 +439,7 @@ g_n&amp;=&amp;\displaystyle\sum_{i=0}^n\left(-1\right)^{n-i}\begin{pmatrix}n\\i\
 &amp;=&amp;\displaystyle\sum_{i=0}^ng_i\begin{pmatrix}n\\i\end{pmatrix}\left(1-1\right)^{n-i}\\
 &amp;=&amp;g_n
 \end{array}\]</span></p>
-<h4 id="应用">应用</h4>
+<h2 id="应用">应用</h2>
 <ul>
 <li>错位排列</li>
 </ul>
@@ -467,7 +467,7 @@ f_n&amp;=&amp;\displaystyle\sum_{i=0}^n(-1)^{n-i}\begin{pmatrix}n\\i\end{pmatrix
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pii pair<span class="meta-string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> inc(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> dec(i,l,r) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mem(a,v) memset(a,v,sizeof(a))</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">1e6</span>, INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">const</span> ll MOD = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">read</span><span class="params">(T &amp;x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x = <span class="number">0</span>; ll f = <span class="number">1</span>; <span class="keyword">char</span> ch = getchar();</span><br><span class="line">    <span class="keyword">while</span> (!<span class="built_in">isdigit</span>(ch)) &#123;<span class="keyword">if</span>(ch == <span class="string">'-'</span>) f = <span class="number">-1</span>; ch = getchar();&#125;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">isdigit</span>(ch)) x = (x&lt;&lt;<span class="number">3</span>) + (x&lt;&lt;<span class="number">1</span>) + ch - <span class="string">'0'</span>, ch = getchar();</span><br><span class="line">    x *= f;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ll n, k, ans;</span><br><span class="line">ll fac[N], inv[N], p[N];</span><br><span class="line"></span><br><span class="line"><span class="function">ll <span class="title">power</span><span class="params">(ll a, ll b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ll res = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (; b; a = a * a % MOD, b &gt;&gt;= <span class="number">1</span>)</span><br><span class="line">        <span class="keyword">if</span> (b &amp; <span class="number">1</span>) res = res * a % MOD;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">ll <span class="title">C</span><span class="params">(ll n, ll m)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> fac[n] * inv[m] % MOD * inv[n-m] % MOD;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    read(n), read(k);</span><br><span class="line">    fac[<span class="number">0</span>] = inv[<span class="number">0</span>] = p[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    inc(i,<span class="number">1</span>,n) fac[i] = (ll)fac[i<span class="number">-1</span>] * i % MOD, p[i] = (ll)p[i<span class="number">-1</span>] * <span class="number">2</span> % (MOD - <span class="number">1</span>);</span><br><span class="line">    inv[n] = power(fac[n], MOD - <span class="number">2</span>);</span><br><span class="line">    dec(i,<span class="number">1</span>,n<span class="number">-1</span>) inv[i] = (ll)inv[i+<span class="number">1</span>] * (i + <span class="number">1</span>) % MOD;</span><br><span class="line">    inc(i,k,n) &#123;</span><br><span class="line">        (ans += MOD + ((i-k) &amp; <span class="number">1</span> ? <span class="number">-1</span> : <span class="number">1</span>) * (C(i,k) * C(n,i) % MOD * (power(<span class="number">2</span>, p[n-i]) % MOD))) %= MOD;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 </div></div>
-<h2 id="斯特林反演">斯特林反演</h2>
+<h1 id="斯特林反演">斯特林反演</h1>
 <p>  在这里, 先回顾一下斯特林数(<span class="math inline">\(dalao\)</span>请自动忽略)</p>
 <ul>
 <li><strong>第一类斯特林数</strong></li>
@@ -540,7 +540,7 @@ f(n)&amp;=&amp;\displaystyle\sum_{k=0}^n\begin{Bmatrix}n\\k\end{Bmatrix}g(k)\\
 &amp;=&amp;\displaystyle\sum_{k=0}^n[k=n]f(k)\\
 &amp;=&amp;f(n)
 \end{array}\]</span></p>
-<h2 id="莫比乌斯反演">莫比乌斯反演</h2>
+<h1 id="莫比乌斯反演">莫比乌斯反演</h1>
 <p>  <strong>莫比乌斯函数<span class="math inline">\(\mu(m)\)</span></strong> 对所有整数<span class="math inline">\(m\geq1由等式\)</span></p>
 <p><span class="math display">\[\sum_{d|m}\mu(d)=\left[m=1\right] \tag{26}\]</span></p>
 <p>来定义, 这个等式是一个递归式, 代入<span class="math inline">\(m=1,2,\cdots,12\)</span>可以得到前<span class="math inline">\(12\)</span>个值:</p>
@@ -866,7 +866,7 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是反演"><span class="nav-number">1.</span> <span class="nav-text">什么是反演</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反演原理"><span class="nav-number">2.</span> <span class="nav-text">反演原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二项式反演"><span class="nav-number">3.</span> <span class="nav-text">二项式反演</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#应用"><span class="nav-number">3.0.1.</span> <span class="nav-text">应用</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#斯特林反演"><span class="nav-number">4.</span> <span class="nav-text">斯特林反演</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#莫比乌斯反演"><span class="nav-number">5.</span> <span class="nav-text">莫比乌斯反演</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是反演"><span class="nav-number">1.</span> <span class="nav-text">什么是反演</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反演原理"><span class="nav-number">2.</span> <span class="nav-text">反演原理</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#二项式反演"><span class="nav-number"></span> <span class="nav-text">二项式反演</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-number">1.</span> <span class="nav-text">应用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#斯特林反演"><span class="nav-number"></span> <span class="nav-text">斯特林反演</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#莫比乌斯反演"><span class="nav-number"></span> <span class="nav-text">莫比乌斯反演</span></a></li></div>
             
 
           </div>
