@@ -2054,7 +2054,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4dc422;
+  background: #464fd5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3262,4 +3262,14 @@ img:hover {
 }
 .highlight:hover .btn-copy {
   opacity: 1;
+}
+.hider_title {
+  font-family: "Microsoft Yahei";
+  cursor: pointer;
+}
+.close:after {
+  content: "▼";
+}
+.open:after {
+  content: "▲";
 }
