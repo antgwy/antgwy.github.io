@@ -406,7 +406,7 @@
           基础
 排序
 归并排序
-1234567891011121314void mergesort(int l, int r) &#123;    if(l == r) return ;    int m
+1234567891011121314void mergesort(int l, int r) &#123;    if(l == r) return ;    int mid = (l + r) &gt;&gt; 1;    mergesort(l, mid);    mergesort(mid+1, r);    int p = l, q = mid + 1, cn
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -532,7 +532,9 @@
       
         
           
-            据说现在打信息竞赛的初中生都会\(FFT(Fast\ Fourier\ Transform)\)了, 但严格而言这应该是信号里的内容, 在\(OI\)里可以快速求卷积, 下个学期专业课也会有, 于
+            据说现在打信息竞赛的初中生都会\(FFT(Fast\ Fourier\ Transform)\)了, 但严格而言这应该是信号里的内容, 在\(OI\)里可以快速求卷积, 下个学期专业课也会有, 于是前段日子学了一下, 想以此文回顾一下
+快速傅里叶变换
+  快速傅里叶变换可以认为有\(DFT\)和\(IDFT\)两个部分, 分别在\(O(nlogn)\)的复杂度将系数转换成点值表示并转化回来
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -808,7 +810,8 @@
         
           
           \(Manacher\)算法
-  众所周知, \(Manacher\)算法是一个求字符串中最长回文子序列问题的算法, 可以想到一个比较显然的做法: 长度为奇数的回文串以最中间字符的位置为对称轴, 而
+  众所周知, \(Manacher\)算法是一个求字符串中最长回文子序列问题的算法, 可以想到一个比较显然的做法: 长度为奇数的回文串以最中间字符的位置为对称轴, 而长度为偶数的回文串的对称轴在中间两个字符之间的空隙处. 于是我们考虑遍历这些对称轴, 并且同时向左右扩展, 直到左右两边的字符不同或到达边界.
+  这个算法的复杂度是\(O(n^2)\), 是无法过
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -959,7 +962,8 @@
             首先我们回顾一下一些简单性质
 
 \(\begin{pmatrix}n\\k\end{pmatrix}=\displaystyle\frac{n!}{k!(n-k)!}\)
-\(\begin{
+\(\begin{pmatrix}n\\k\end{pmatrix}=\displaystyle\frac{n}{k}\begin{pmatrix}n-1\\k-1\end{pmatrix}\)
+\(\begin{p
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1109,7 +1113,9 @@
           
           \(\Gamma函数\)
   \(\Gamma\)函数是由如下含参数变量定义的积分, 又称第二类\(Euler\)积分, 其含参积分定义为
-\[\Gamma(s)=\int_0^{+\infty}
+\[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}\mathrm{d}x \tag{1}\]
+它有 \(Gauss\)无穷乘积分解(\(Euler-Gauss\)公式)
+\[\Gamma(x)=\lim_{n\to\in
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1237,7 +1243,9 @@
           
           什么是反演
   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足
-\[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}
+\[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]
+  反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即
+\[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1385,7 +1393,8 @@
       
         
           
-          在\(LaTex​\)中, 要用\(tikz​\)作图, 首先调用\(tikz​\)宏包和有关的程序库 12\usepackage&#123;tikz&#125;\usetikzlibrary&#12
+          在\(LaTex​\)中, 要用\(tikz​\)作图, 首先调用\(tikz​\)宏包和有关的程序库 12\usepackage&#123;tikz&#125;\usetikzlibrary&#123;&lt;list of libraries&gt;&#125;
+然后开启\({tikzpicture}\)环境作图, 或者用\(\\ tikz\)开始作图. 各种命令必须以分号结束, 否则报错
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1535,7 +1544,7 @@
           
           \(Sumdiv\)
   题意: 求\(A^B\)的所有约数之和\(\mod{9901}\left(1\leq A,B \leq5*10^7\right)\)
-  分析: A分解质因数为\(p_1
+  分析: A分解质因数为\(p_1^{c_1}\times p_2^{c_2}\times\cdots\times p_n^{c_n}\)。那么\(A^B\)表示为\(p_1^{Bc_1}\times p_2^{Bc_2}\times
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1687,7 +1696,29 @@
 正则表达式
 基本概念
 
-正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则
+正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。
+
+正则表达式的语法
+正则表达式语法由字符和操作符构成
+
+正则表达式的常用操作符
+
+
+
+
+操作符
+说明
+实例
+
+
+
+
+.
+表示任何单个字符
+
+
+
+
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -1826,7 +1857,7 @@
                   <span class="links-of-author-item">
                     <a href="https://me.csdn.net/AbelYang1" target="_blank" title="CSDN">
                       
-                        <i class="fa fa-fw fa-csdn"></i>CSDN</a>
+                        <i class="fa fa-fw fa-globe"></i>CSDN</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -1870,6 +1901,10 @@
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://yuxtech.github.io/" title="向禹老师" target="_blank">向禹老师</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://kuangbin.github.io/" title="kuangbin" target="_blank">kuangbin</a>
                   </li>
                 
               </ul>
