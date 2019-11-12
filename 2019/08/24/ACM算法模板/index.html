@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:description" content="基础 排序 归并排序 [点击显示/隐藏代码] 1234567891011121314void mergesort(int l, int r) &amp;#123;    if(l == r) return ;    int mid = (l + r) &amp;gt;&amp;gt; 1;    mergesort(l, mid);    mergesort(mid + 1, r);    int p = l, q">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-11T16:59:42.037Z">
+<meta property="og:updated_time" content="2019-11-12T16:16:48.003Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ACM算法模板">
 <meta name="twitter:description" content="基础 排序 归并排序 [点击显示/隐藏代码] 1234567891011121314void mergesort(int l, int r) &amp;#123;    if(l == r) return ;    int mid = (l + r) &amp;gt;&amp;gt; 1;    mergesort(l, mid);    mergesort(mid + 1, r);    int p = l, q">
@@ -483,12 +483,15 @@
 </div></div>
 <h5 id="prim算法"><span class="math inline">\(Prim\)</span>算法</h5>
 <div><div class="fold_hider"><div class="close hider_title">[点击显示/隐藏代码]</div></div><div class="fold">
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">5005</span>;</span><br><span class="line"><span class="keyword">int</span> n, m, ans;</span><br><span class="line"><span class="keyword">int</span> a[N][N], d[N], v[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">prim</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">memset</span>(d, <span class="number">0x3f</span>, <span class="keyword">sizeof</span>(d));</span><br><span class="line">    d[<span class="number">1</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">        <span class="keyword">int</span> x = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt;= n; ++j)</span><br><span class="line">            <span class="keyword">if</span> (!v[j] &amp;&amp; (x == <span class="number">0</span> || d[j] &lt; d[x])) x = j;</span><br><span class="line">        v[x] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> y = <span class="number">1</span>; y &lt;= n; ++y)</span><br><span class="line">            <span class="keyword">if</span> (!v[y]) d[y] = min(d[y], a[x][y]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 </div></div>
 <h1 id="提高">提高</h1>
 <h3 id="网络流初步">网络流初步</h3>
+<div><div class="fold_hider"><div class="close hider_title">[点击显示/隐藏代码]</div></div><div class="fold">
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</div></div>
 <h1 id="附录">附录</h1>
 <h4 id="对拍">对拍</h4>
 <p><span class="math inline">\(bat\)</span>语言版本</p>

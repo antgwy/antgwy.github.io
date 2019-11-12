@@ -88,18 +88,18 @@
 
 
 
-<meta name="description" content="待填坑">
+<meta name="description" content="由于\(C_2=C_3=1\) 设\(G(x)=C_2+C_3x+C_4x^2+\cdots\) \[x^2:C_4=C_2C_3+C_3C_2\\ x^3:C_5=C_2C_4+C_3C_3+C_4C_2\\ x^4:C_6=C_2C_5+C_3C_4+C_4C_3+C_5C_2\\ \vdots\] \[\begin{array}{l} G(x)-x-1&amp;amp;=&amp;amp;C_">
 <meta name="keywords" content="组合数学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Catalan数的原理与应用">
 <meta property="og:url" content="https://2inf.top/2019/10/12/Catalan数的原理与应用/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
-<meta property="og:description" content="待填坑">
+<meta property="og:description" content="由于\(C_2=C_3=1\) 设\(G(x)=C_2+C_3x+C_4x^2+\cdots\) \[x^2:C_4=C_2C_3+C_3C_2\\ x^3:C_5=C_2C_4+C_3C_3+C_4C_2\\ x^4:C_6=C_2C_5+C_3C_4+C_4C_3+C_5C_2\\ \vdots\] \[\begin{array}{l} G(x)-x-1&amp;amp;=&amp;amp;C_">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-24T16:36:53.270Z">
+<meta property="og:updated_time" content="2019-11-12T16:15:06.740Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Catalan数的原理与应用">
-<meta name="twitter:description" content="待填坑">
+<meta name="twitter:description" content="由于\(C_2=C_3=1\) 设\(G(x)=C_2+C_3x+C_4x^2+\cdots\) \[x^2:C_4=C_2C_3+C_3C_2\\ x^3:C_5=C_2C_4+C_3C_3+C_4C_2\\ x^4:C_6=C_2C_5+C_3C_4+C_4C_3+C_5C_2\\ \vdots\] \[\begin{array}{l} G(x)-x-1&amp;amp;=&amp;amp;C_">
 
 
 
@@ -381,7 +381,42 @@
       
 
       
-        <p>待填坑</p>
+        <hr>
+<p>由于<span class="math inline">\(C_2=C_3=1\)</span></p>
+<p>设<span class="math inline">\(G(x)=C_2+C_3x+C_4x^2+\cdots\)</span> <span class="math display">\[x^2:C_4=C_2C_3+C_3C_2\\
+x^3:C_5=C_2C_4+C_3C_3+C_4C_2\\
+x^4:C_6=C_2C_5+C_3C_4+C_4C_3+C_5C_2\\
+\vdots\]</span> <span class="math display">\[\begin{array}{l}
+G(x)-x-1&amp;=&amp;C_2(C_3x^2+C_4x^3+\cdots)\\
+&amp;&amp;+C_3x(C_2x+C_3x^2+\cdots)\\
+&amp;&amp;+C_4x^2(C_2x+C_3x^2+\cdots)+\cdots\\
+&amp;=&amp;-x+C_2(C_2x+C_3x^2+\cdots)\\
+&amp;&amp;+C_3x(C_2x+C_3x^2+\cdots)+\cdots
+\end{array}\]</span></p>
+<p><span class="math display">\[\Longrightarrow\quad\quad \begin{array}{l}
+G(x)-1&amp;=&amp;(C_2+C_3x+C_4x^2+\cdots)(C_2x+C_3x^2+\cdots)\\
+&amp;=&amp;x[G(x)]2
+\end{array}\]</span></p>
+<p><span class="math display">\[xG^2(x)-G(x)+1=0\\
+G(x)=\frac{1-\sqrt{1-4x}}{2x}\]</span></p>
+<p>  而<span class="math inline">\(\displaystyle(1-4x)^{\frac{1}{2}}=1+\frac{1}{2}(-4x)-\frac{\displaystyle\frac{1}{2}(\frac{1}{2}-1)}{2!}(-4x)^2+\frac{\displaystyle\frac{1}{2}(\frac{1}{2}-1)(\frac{1}{2}-2)}{3!}(-4x)^3+\cdots\)</span></p>
+<p>所以<span class="math inline">\((1-4x)^{\frac{1}{2}}\)</span>中<span class="math inline">\(x^{n+1}\)</span>项的系数为 <span class="math display">\[\begin{array}{l}
+&amp;&amp;\displaystyle\frac{1}{(n+1)!}\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)\cdots\left(\frac{1}{2}-n\right)(-4)^{n+1}\\
+&amp;=&amp;\displaystyle\frac{(-1)^{2n+1}}{(n+1)!}\frac{1\cdot3\cdot\cdots\cdot(2n-1)}{2^{n+1}}2^{2n+2}\\
+&amp;=&amp;\displaystyle\frac{-2}{n+1}\frac{(2n)!}{(n!)^2}=\frac{-2}{n+1}\begin{pmatrix}2n\\n\end{pmatrix}
+\end{array}\]</span></p>
+<p>故<span class="math inline">\(\displaystyle G(x)=\frac{1-\sqrt{1-4x}}{2x}\)</span>且 <span class="math display">\[C_{n+1}=\frac{1}{n}\begin{pmatrix}2n-2\\n-1\end{pmatrix}\]</span></p>
+<hr>
+<p>由递推关系 <span class="math display">\[nC_{n+1}=(4n-6)C_n\]</span> <span class="math display">\[G(x)=C_2x+C_3x^2+C_4x^3+\cdots\\
+x:2C_3=4\cdot2C_2-6C_2\\
+x^2:3C_4=4\cdot3C_3-6C_3\\
+\vdots\]</span> <span class="math display">\[G&#39;(x)-1=4[xG(x)]&#39;-6G(x)\]</span> <span class="math display">\[G(x)=C\sqrt{1-4x}+\frac{1}{2}\]</span> 由<span class="math inline">\(G(0)=0,\)</span>有<span class="math inline">\(\displaystyle C=-\frac{1}{2},\)</span>即<span class="math inline">\(\displaystyle G(x)=\frac{1-\sqrt{1-4x}}{2}\)</span></p>
+<hr>
+<ol type="1">
+<li><span class="math inline">\(C_{n+1}=C_2C_n+C_3C_{n-1}+\cdots+C_{n-1}C_3+C_nC_2\)</span></li>
+<li><span class="math inline">\((n-3)C_n=\frac{n}{2}(C_3C_{n-1}+C_4C_{n-2}+\cdots+C_{n-1}C_3)\)</span></li>
+</ol>
+<p>待填坑</p>
 
       
     </div>
