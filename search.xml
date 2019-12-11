@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[[BZOJ4755] 扭动的回文串]]></title>
     <url>%2F2019%2F10%2F30%2FBZOJ4755-%E6%89%AD%E5%8A%A8%E7%9A%84%E5%9B%9E%E6%96%87%E4%B8%B2%2F</url>
-    <content type="text"><![CDATA[题目链接 题解: [点击显示/隐藏代码] 12]]></content>
+    <content type="text"><![CDATA[题目链接 题解: [点击显示/隐藏代码] 12345678#include&lt;bits/stdc++.h&gt;using namespace std;int main()&#123; return 0;&#125;]]></content>
       <categories>
         <category>ACM</category>
       </categories>

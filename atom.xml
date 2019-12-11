@@ -47,9 +47,9 @@
     <link href="https://2inf.top/2019/10/30/BZOJ4755-%E6%89%AD%E5%8A%A8%E7%9A%84%E5%9B%9E%E6%96%87%E4%B8%B2/"/>
     <id>https://2inf.top/2019/10/30/BZOJ4755-扭动的回文串/</id>
     <published>2019-10-30T09:05:44.000Z</published>
-    <updated>2019-11-12T13:07:07.351Z</updated>
+    <updated>2019-12-11T15:09:23.390Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=4755" target="_blank" rel="noopener">题目链接</a></p><p>  题解:</p><div><div class="fold_hider"><div class="close hider_title">[点击显示/隐藏代码]</div></div><div class="fold"><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></div></div>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=4755" target="_blank" rel="noopener">题目链接</a></p><p>  题解:</p><div><div class="fold_hider"><div class="close hider_title">[点击显示/隐藏代码]</div></div><div class="fold"><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div></div>]]></content>
     
     <summary type="html">
     
