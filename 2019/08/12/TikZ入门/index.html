@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:description" content="在\(LaTex​\)中, 要用\(tikz​\)作图, 首先调用\(tikz​\)宏包和有关的程序库 12\usepackage&amp;#123;tikz&amp;#125;\usetikzlibrary&amp;#123;&amp;lt;list of libraries&amp;gt;&amp;#125; 然后开启\({tikzpicture}\)环境作图, 或者用\(\\ tikz\)开始作图. 各种命令必须以分号结束, 否则报错">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-24T16:25:36.015Z">
+<meta property="og:updated_time" content="2019-12-11T13:34:40.471Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TikZ入门">
 <meta name="twitter:description" content="在\(LaTex​\)中, 要用\(tikz​\)作图, 首先调用\(tikz​\)宏包和有关的程序库 12\usepackage&amp;#123;tikz&amp;#125;\usetikzlibrary&amp;#123;&amp;lt;list of libraries&amp;gt;&amp;#125; 然后开启\({tikzpicture}\)环境作图, 或者用\(\\ tikz\)开始作图. 各种命令必须以分号结束, 否则报错">
@@ -406,11 +406,11 @@
       
         <p>在<span class="math inline">\(LaTex​\)</span>中, 要用<span class="math inline">\(tikz​\)</span>作图, 首先调用<span class="math inline">\(tikz​\)</span>宏包和有关的程序库 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;tikz&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usetikzlibrary</span><span class="string">&#123;&lt;list of libraries&gt;&#125;</span></span></span><br></pre></td></tr></table></figure></p>
 <p>然后开启<span class="math inline">\({tikzpicture}\)</span>环境作图, 或者用<span class="math inline">\(\\ tikz\)</span>开始作图. 各种命令必须以分号结束, 否则报错</p>
-<h4 id="命令">命令`</h4>
-<p>下面是一个(需调用<span class="math inline">\(pattern\)</span>库) <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">def</span></span><span class="tag">\<span class="name">wall</span><span class="string">&#123; \fill [fill=black!50] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">		\pattern [pattern=bricks] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">		\draw [line width=1pt] (1cm+.5pt,-.5) -- ++(0,1);&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">wall</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br></pre></td></tr></table></figure></p>
+<h4 id="命令def">命令<code>\def</code></h4>
+<p>命令<code>\def</code>用于自定义一个对象, 对象名称以反斜线, 语法为 <code>\def&lt;对象名称&gt;{定义内容}</code></p>
+<p>下面是一个<code>\wall</code>的例子(需调用<span class="math inline">\(pattern\)</span>库) <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">def</span></span><span class="tag">\<span class="name">wall</span><span class="string">&#123; \fill [fill=black!50] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">		\pattern [pattern=bricks] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">		\draw [line width=1pt] (1cm+.5pt,-.5) -- ++(0,1);&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">wall</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br></pre></td></tr></table></figure></p>
 <h4 id="创建coordinate对象的句法及其命名">创建coordinate对象的句法及其命名</h4>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">path</span></span> . . . coordinate[&lt;options&gt;](&lt;name&gt;)at(&lt;coordinate&gt;) . . . ;</span><br><span class="line"><span class="comment">%将路径中的某个对象设置为 coordinate </span></span><br><span class="line"><span class="tag">\<span class="name">coordinate</span></span>  [&lt;options&gt;](&lt;name&gt;)at(&lt;coordinate&gt;);</span><br><span class="line"><span class="comment">%这是上一句法的简写，注意最好不要在该命令后面用 node 命令。</span></span><br></pre></td></tr></table></figure>
-<h2 id="基本的坐标计算">基本的坐标计算</h2>
 
 
 	<div class="row">
@@ -696,7 +696,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#命令"><span class="nav-number">1.</span> <span class="nav-text">命令`</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建coordinate对象的句法及其命名"><span class="nav-number">2.</span> <span class="nav-text">创建coordinate对象的句法及其命名</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#基本的坐标计算"><span class="nav-number"></span> <span class="nav-text">基本的坐标计算</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#命令def"><span class="nav-number">1.</span> <span class="nav-text">命令\def</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建coordinate对象的句法及其命名"><span class="nav-number">2.</span> <span class="nav-text">创建coordinate对象的句法及其命名</span></a></li></ol></div>
             
 
           </div>

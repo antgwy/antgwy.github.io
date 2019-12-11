@@ -96,7 +96,7 @@
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-10-29T16:53:38.678Z">
+<meta property="og:updated_time" content="2019-12-11T13:06:48.248Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="反演原理及应用">
 <meta name="twitter:description" content="什么是反演   对于数列\(\left\{f_n\right\}\)以及数列\(\left\{g_n\right\}\)满足 \[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]   反演便是利用\(\left\{g_n\right\}\)反推出\(\left\{f_n\right\}\), 也即 \[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}">
@@ -382,13 +382,13 @@
       
 
       
-        <h2 id="什么是反演">什么是反演</h2>
+        <h1 id="什么是反演">什么是反演</h1>
 <p>  对于数列<span class="math inline">\(\left\{f_n\right\}\)</span>以及数列<span class="math inline">\(\left\{g_n\right\}\)</span>满足</p>
 <p><span class="math display">\[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]</span></p>
 <p>  反演便是利用<span class="math inline">\(\left\{g_n\right\}\)</span>反推出<span class="math inline">\(\left\{f_n\right\}\)</span>, 也即</p>
 <p><span class="math display">\[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}\]</span></p>
 <p>  本质上来说这是一个反解线性方程组的过程, 但观察后会发现整个方程组是一个下三角矩阵, 可以思考出更加快捷的方法</p>
-<h2 id="反演原理">反演原理</h2>
+<h1 id="反演原理">反演原理</h1>
 <p>  为了便于后面的叙述, 首先引入<span class="math inline">\(\delta(i,j)\)</span>函数<span class="math inline">\((Kronecker&#39;s\ delta)\)</span>, 它的定义为</p>
 <p><span class="math display">\[\delta\left(i,j\right)=\begin{cases}1\quad i=j\\0\quad i\neq j\end{cases}\qquad(\text{也可记为}[i=j])\]</span></p>
 <p>  下面考虑反演的过程, 考虑下面的式子应该满足什么条件</p>
@@ -419,6 +419,7 @@ b_{nn}a_{n0}f_0 &amp; b_{nn}a_{n1}f_1 &amp; \cdots &amp; b_{nn}a_{nn}f_n
 <p><span class="math display">\[\sum_{j=i}^na_{nj}b_{ji}=\delta(n,i) \tag{5}\]</span></p>
 <p>  如果某个数列满足上面的条件, 我们便阔以利用反演公式</p>
 <h1 id="二项式反演">二项式反演</h1>
+<h2 id="原理">原理</h2>
 <p>  二项式反演<span class="math inline">\((binomial\ inversion)\)</span>在容斥中经常用到, 可以表示为</p>
 <p><span class="math display">\[
 f_n=\sum_{i=0}^n\left(-1\right)^n\begin{pmatrix}n\\i\end{pmatrix}g_i\Leftrightarrow
@@ -469,6 +470,7 @@ f_n&amp;=&amp;\displaystyle\sum_{i=0}^n(-1)^{n-i}\begin{pmatrix}n\\i\end{pmatrix
 
 </div></div>
 <h1 id="斯特林反演">斯特林反演</h1>
+<h2 id="原理-1">原理</h2>
 <p>  在这里, 先回顾一下斯特林数(<span class="math inline">\(dalao\)</span>请自动忽略)</p>
 <ul>
 <li><strong>第一类斯特林数</strong></li>
@@ -542,6 +544,7 @@ f(n)&amp;=&amp;\displaystyle\sum_{k=0}^n\begin{Bmatrix}n\\k\end{Bmatrix}g(k)\\
 &amp;=&amp;f(n)
 \end{array}\]</span></p>
 <h1 id="莫比乌斯反演">莫比乌斯反演</h1>
+<h2 id="原理-2">原理</h2>
 <p>  <strong>莫比乌斯函数<span class="math inline">\(\mu(m)\)</span></strong> 对所有整数<span class="math inline">\(m\geq1由等式\)</span></p>
 <p><span class="math display">\[\sum_{d|m}\mu(d)=\left[m=1\right] \tag{26}\]</span></p>
 <p>来定义, 这个等式是一个递归式, 代入<span class="math inline">\(m=1,2,\cdots,12\)</span>可以得到前<span class="math inline">\(12\)</span>个值:</p>
@@ -867,7 +870,7 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是反演"><span class="nav-number">1.</span> <span class="nav-text">什么是反演</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反演原理"><span class="nav-number">2.</span> <span class="nav-text">反演原理</span></a></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#二项式反演"><span class="nav-number"></span> <span class="nav-text">二项式反演</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-number">1.</span> <span class="nav-text">应用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#斯特林反演"><span class="nav-number"></span> <span class="nav-text">斯特林反演</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#莫比乌斯反演"><span class="nav-number"></span> <span class="nav-text">莫比乌斯反演</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#什么是反演"><span class="nav-number">1.</span> <span class="nav-text">什么是反演</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#反演原理"><span class="nav-number">2.</span> <span class="nav-text">反演原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二项式反演"><span class="nav-number">3.</span> <span class="nav-text">二项式反演</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#原理"><span class="nav-number">3.1.</span> <span class="nav-text">原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用"><span class="nav-number">3.2.</span> <span class="nav-text">应用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#斯特林反演"><span class="nav-number">4.</span> <span class="nav-text">斯特林反演</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#原理-1"><span class="nav-number">4.1.</span> <span class="nav-text">原理</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#莫比乌斯反演"><span class="nav-number">5.</span> <span class="nav-text">莫比乌斯反演</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#原理-2"><span class="nav-number">5.1.</span> <span class="nav-text">原理</span></a></li></ol></li></ol></div>
             
 
           </div>
