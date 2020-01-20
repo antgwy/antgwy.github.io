@@ -6,16 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://2inf.top">
-  <title>tags | 2inf&#39;s blog</title>
+  <title>2inf&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="https://2inf.top/tags/index.html">
+<meta property="og:title" content="2inf&#39;s blog">
+<meta property="og:url" content="https://2inf.top/page/2/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-29T14:15:36.146Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="2inf&#39;s blog">
   
     <link rel="alternative" href="/atom.xml" title="2inf&#39;s blog" type="application/atom+xml">
   
@@ -155,118 +154,410 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-Python正则表达式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      tags
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/27/Python正则表达式/">Python简易网络爬虫</a>
     </h1>
   
 
         
-        <a href="/tags/index.html" class="archive-article-date">
-  	<time datetime="2018-12-29T14:08:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-29</time>
+        <a href="/2019/04/27/Python正则表达式/" class="archive-article-date">
+  	<time datetime="2019-04-27T06:13:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-27</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>上大学后自学了点爬虫, 下面是我个人的学习总结</p>
+<h2 id="正则表达式">正则表达式</h2>
+<h3 id="基本概念">基本概念</h3>
+<blockquote>
+<p>正则表达式(regular expression)，又称规则表达式。正则表达式通常被用来检索、替换那些符合某个模式(规则)的文本。</p>
+</blockquote>
+<h3 id="正则表达式的语法">正则表达式的语法</h3>
+正则表达式语法由字符和操作符构成<br>
+<center>
+<b>正则表达式的常用操作符</b>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">操作符</th>
+<th style="text-align: center;">说明</th>
+<th style="text-align: center;">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">.</td>
+<td style="text-align: center;">表示任何单个字符</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">[ ]</td>
+<td style="text-align: center;">字符集, 对单个字符给出取值范围</td>
+<td style="text-align: center;">[abc]表示a、b、c, [a-z]表示a到z单个字符</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">[^ ]</td>
+<td style="text-align: center;">非字符集, 对单个字符给出排除范围</td>
+<td style="text-align: center;">[^abc]表示非a或b或c的单个字符</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">*</td>
+<td style="text-align: center;">前一个字符0次或无限次扩展</td>
+<td style="text-align: center;">abc*表示ab、abc、abcc、abccc等</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">+</td>
+<td style="text-align: center;">前一个字符1次或无限次扩展</td>
+<td style="text-align: center;">abc+表示abc、abcc、abccc等</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">前一个字符0次或1次扩展</td>
+<td style="text-align: center;">abc?表示ab、abc</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">|</td>
+<td style="text-align: center;">左右表达式任意一个</td>
+<td style="text-align: center;">abc|def表示abc、def</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">{m}</td>
+<td style="text-align: center;">扩展前一个字符m次</td>
+<td style="text-align: center;">ab{2}c表示abbc</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">{m,n}</td>
+<td style="text-align: center;">扩展前一个字符m至n次(含n)</td>
+<td style="text-align: center;">ab{1,2}表示abc、abbc</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">^</td>
+<td style="text-align: center;">匹配字符串开头</td>
+<td style="text-align: center;">^abc表示abc且在一个字符串的开头</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">$</td>
+<td style="text-align: center;">匹配字符串结尾</td>
+<td style="text-align: center;">abc&amp;表示abc且在一个字符串的结尾</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">( )</td>
+<td style="text-align: center;">分组标记, 内部只能使用|操作符</td>
+<td style="text-align: center;">(abc)表示abc、(abc|def)表示abc、def</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">\d</td>
+<td style="text-align: center;">数字, 等价于[0-9]</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">\D</td>
+<td style="text-align: center;">非数字字符, 等价于[^0-9]</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">\w</td>
+<td style="text-align: center;">单词字符(包括下划线), 等价于[A-Za-z0-9_]</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">\W</td>
+<td style="text-align: center;">非单词字符, 等价于[^A-Za-z0-9_]</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">\s</td>
+<td style="text-align: center;">空白字符, 等价于[\f\n\r\t\v]</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">\S</td>
+<td style="text-align: center;">非空白字符, 等价于[^\f\n\r\t\v]</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+Re库默认采用贪婪匹配, 即输出匹配最长的子串
+<center>
+<b>最小匹配操作符</b>
+</center>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">操作符</th>
+<th style="text-align: center;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">*?</td>
+<td style="text-align: center;">前1个字符0次或无限次扩展</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">+?</td>
+<td style="text-align: center;">前1个字符1次或无限次扩展</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">??</td>
+<td style="text-align: center;">前1个字符0次或1次扩展</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">{m,n}?</td>
+<td style="text-align: center;">扩展前1个字符m次至n次</td>
+</tr>
+</tbody>
+</table>
+<p>始位置匹配一个模式，如果不是起始位置匹配成功的话，match()就返回none。</p>
+<table border="3">
+<tr>
+     
+<th>
+<center>
+表达式
+</center>
+</th>
+<th>
+<center>
+意义
+</center>
+</th>
+</tr>
+<tr>
+       
+<td>
+<center>
+<code>^[A-Za-z]+$</code>
+</center>
+</td>
+<td>
+<center>
+由26个字母组成的字符串
+</center>
+</td>
+</tr>
+<tr>
+       
+<td>
+<center>
+<code>^[A-Za-z0-9]+$</code>
+</center>
+</td>
+<td>
+<center>
+由26个字母和数字组成的字符串
+</center>
+</td>
+</tr>
+<tr>
+       
+<td>
+<center>
+<code>^-?\d+$</code>
+</center>
+</td>
+<td>
+<center>
+整数形式的字符串
+</center>
+</td>
+</tr>
+<tr>
+       
+<td>
+<center>
+<code>^[0-9]\*[1-9][0-9]*$</code>
+</center>
+</td>
+<td>
+<center>
+正整数形式的字符串
+</center>
+</td>
+</tr>
+<tr>
+       
+<td>
+<center>
+<code>[1-9]\d{5}</code>
+</center>
+</td>
+<td>
+<center>
+中国境内邮政编码, 6位
+</center>
+</td>
+</tr>
+<tr>
+       
+<td>
+<center>
+<code>[\u4e00-\u9fa5]</code>
+</center>
+</td>
+<td>
+<center>
+匹配中文字符
+</center>
+</td>
+</tr>
+<tr>
+       
+<td>
+<center>
+<code>\d{3}-\d{8}|\d{4}-\d{7}</code>
+</center>
+</td>
+<td>
+<center>
+国内电话号码, 010-68913536
+</center>
+</td>
+</tr>
+<tr>
+       
+<td>
+<center>
+<code>(([1-9]?\d|1\d{2}|2[0-4]\d|25[0-5]).){3}(([1-9]?\d|1\d{2}|2[0-4]\d|25[0-5]))</code>
+</center>
+</td>
+<td>
+<center>
+匹配IP地址
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center>
+</center>
+</td>
+<td>
+<center>
+</center>
+</td>
+</tr>
+<tr>
+<td>
+<center>
+</center>
+</td>
+<td>
+<center>
+</center>
+</td>
+</tr>
+</table>
+<h3 id="re库的基本使用">Re库的基本使用</h3>
+<ul>
+<li>raw string类型, 是不包含对转义符再次转义的字符串: r'text'</li>
+</ul>
+<h4 id="re.searchpattern-string-flags0">re.search(pattern, string, flags=0)</h4>
+<p>从字符串的起始位置匹配, 如果不是起始位置匹配成功的话, match()就返回none</p>
+<ul>
+<li>
+<font color="red">pattern</font>: 正则表达式的字符串或原生字符串表示
+</li>
+<li>
+<font color="red">string</font>: 待匹配字符串
+</li>
+<li>
+<font color="red">flags</font>: 正则表达式使用时的控制标记
+</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">修饰符</th>
+<th style="text-align: center;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">re.I<br>(re.IGNORECASE)</td>
+<td style="text-align: center;">使匹配对大小写不敏感</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">re.M<br>(re.MULTILINE)</td>
+<td style="text-align: center;">多行匹配, 正则表达式的^操作符能将给定字符串的每行当作匹配开始</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">re.S<br>(re.DOTALL)</td>
+<td style="text-align: center;">正则表达式的.操作符能够匹配所有字符串, 默认匹配除换行外的所有字符</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match = re.search(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz 425000'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> match:</span><br><span class="line">		print(match.group(<span class="number">0</span>))</span><br><span class="line"></span><br><span class="line"><span class="number">425000</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/python3</span></span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line">line = <span class="string">"Cats are smarter than dogs"</span>;</span><br><span class="line">searchObj = re.search( <span class="string">r'(.*) are (.*?) .*'</span>, line, re.M|re.I)</span><br><span class="line"><span class="keyword">if</span> searchObj:</span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"searchObj.group() : "</span>, searchObj.group())</span><br><span class="line"><span class="comment">#searchObj.group() :  Cats are smarter than dogs</span></span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"searchObj.group(1) : "</span>, searchObj.group(<span class="number">1</span>))</span><br><span class="line"><span class="comment">#searchObj.group(1) :  Cats</span></span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"searchObj.group(2) : "</span>, searchObj.group(<span class="number">2</span>))</span><br><span class="line"><span class="comment">#searchObj.group(2) :  smarter</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">   <span class="keyword">print</span> (<span class="string">"Nothing found!!"</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="re.matchpattern-string-flags0">re.match(pattern, string, flags=0)</h4>
+<p>re.match 从第一个字符串的开始位置起匹配正则表达式, 返回match对象</p>
+<ul>
+<li>group(num=0): 匹配的整个表达式的字符串，group() 可以一次输入多个组号，在这种情况下它将返回一个包含那些组所对应值的元组。</li>
+<li>groups(): 返回一个包含所有小组字符串的元组，从 1 到 所含的小组号。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match = re.match(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz 425000'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> match:</span><br><span class="line">		match.group(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match.group(<span class="number">0</span>)</span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"&lt;pyshell#15&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    match.group(<span class="number">0</span>)</span><br><span class="line">AttributeError: <span class="string">'NoneType'</span> object has no attribute <span class="string">'group'</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>match = re.match(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'425000 Hunanyz'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">if</span> match:</span><br><span class="line">		match.group(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="string">'425000'</span></span><br></pre></td></tr></table></figure>
+<p>函数式用法: 一次性操作 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>rst = re.search(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz 425000'</span>)</span><br></pre></td></tr></table></figure></p>
+<p>面向对象用法: 编译后的多次操作 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span>pat = re.compile(<span class="string">r'[1-9]\d&#123;5&#125;'</span>)</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>rst = pat.search(<span class="string">'Hunanyz 425000'</span>)</span><br></pre></td></tr></table></figure></p>
+<h4 id="re.findallpattern-string-flags0">re.findall(pattern, string, flags=0)</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.findall(<span class="string">r'[1-9]\d&#123;5&#125;'</span>,<span class="string">'Hunanyz425000 ywt666666'</span>)</span><br><span class="line">[<span class="string">'425000'</span>, <span class="string">'666666'</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="re.splitpattern-string-maxsplit0-flags0">re.split(pattern, string, maxsplit=0, flags=0)</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'[1-9]\d&#123;5&#125;'</span>,<span class="string">'Hunanyz425000 ywt666666'</span>)</span><br><span class="line">[<span class="string">'Hunanyz'</span>, <span class="string">' ywt'</span>, <span class="string">''</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.split(<span class="string">r'[1-9]\d&#123;5&#125;'</span>,<span class="string">'Hunanyz425000 ywt666666'</span>, maxsplit=<span class="number">1</span>)</span><br><span class="line">[<span class="string">'Hunanyz'</span>, <span class="string">' ywt666666'</span>]</span><br></pre></td></tr></table></figure>
+<h4 id="re.finditerpattern-string-flags0">re.finditer(pattern, string, flags=0)</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> m <span class="keyword">in</span> re.finditer(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">'Hunanyz425000 ywt666666'</span>):</span><br><span class="line">		<span class="keyword">if</span> m:</span><br><span class="line">			print(m.group(<span class="number">0</span>))</span><br><span class="line">	</span><br><span class="line"><span class="number">425000</span></span><br><span class="line"><span class="number">666666</span></span><br></pre></td></tr></table></figure>
+<h4 id="re.subpattern-repl-string-count0-flags0">re.sub(pattern, repl, string, count=0, flags=0)</h4>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">import</span> re</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>re.sub(<span class="string">r'[1-9]\d&#123;5&#125;'</span>, <span class="string">':zipcode'</span>,<span class="string">'Hunanyz425000 ywt666666'</span>)</span><br><span class="line"><span class="string">'Hunanyz:zipcode ywt:zipcode'</span></span><br></pre></td></tr></table></figure>
+<p>可以在<a href="https://regex101.com/" class="uri" target="_blank" rel="noopener">https://regex101.com/</a>进行练习</p>
+<h2 id="简单应用举例">简单应用举例</h2>
+<h3 id="淘宝商品比价定向爬虫">淘宝商品比价定向爬虫</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#CrawTaobaoPrice.py</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> re</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getHTMLText</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        cookies = &#123;&#125;</span><br><span class="line">        cookiestext = <span class="string">'miid=447214471620210220; t=daacc1adb7b8d8ce463fc06d0450c7ce; _m_h5_tk=002873f26cfc1e420ff3122c5492c7c9_1557484529238; _m_h5_tk_enc=65acce1ae24f182e94781af0151760a8; cna=eEfQE0Z7LH0CAXFJnusRzYTI; thw=cn; v=0; cookie2=1daeaf566f932421be0293c558854e53; _tb_token_=e4714b1e4b700; skt=fe7483af86fc3fa7; csg=c58e3cb2; uc3=vt3=F8dBy3qLpz1EFG7igHg%3D&amp;id2=Uone%2BIX5BNoxeA%3D%3D&amp;nk2=F5RMHlysDcyBUg%3D%3D&amp;lg2=VFC%2FuZ9ayeYq2g%3D%3D; existShop=MTU1NzQ3NDQ5MA%3D%3D; tracknick=tb97668932; lgc=tb97668932; _cc_=W5iHLLyFfA%3D%3D; dnk=tb97668932; tg=0; enc=3ukH3QlCeyiQ6MFTauMNgLvWKWnuXa3Jw3n2WhkpKJAmlq33XogQu8U1mIK3erlfcBDcFlwD%2B0PqC6mRrGzvUQ%3D%3D; mt=ci=110_1; hng=CN%7Czh-CN%7CCNY%7C156; x=e%3D1%26p%3D*%26s%3D0%26c%3D0%26f%3D0%26g%3D0%26t%3D0; swfstore=213919; uc1=cookie15=U%2BGCWk%2F75gdr5Q%3D%3D&amp;cookie14=UoTZ48F1Orvnkg%3D%3D; alitrackid=www.taobao.com; lastalitrackid=www.taobao.com; JSESSIONID=779A7AFFB8D472B89FE1153556AA5258; l=bBxX6XbVv0FzD8MSBOCg5uI8aPbOSLAAIuPRwNcXi_5N-6L6Vd_OlL6deFp6Vj5RO6TB4XEDz5w9-etui; isg=BGRk0tuo5AKzCBDOAudCpWpJIGKWVYgCO075jX6F8C_yKQTzpg1Y95oL6cGU0MC_'</span></span><br><span class="line">        kv = &#123;<span class="string">'user-agent'</span>: <span class="string">'Mozilla/5.0'</span>&#125;</span><br><span class="line">        <span class="keyword">for</span> line <span class="keyword">in</span> cookiestext.split(<span class="string">';'</span>):</span><br><span class="line">            name,value = line.strip().split(<span class="string">'='</span>,<span class="number">1</span>)</span><br><span class="line">            cookies[name] = value</span><br><span class="line">        r = requests.get(url,headers = kv, cookies=cookies, timeout=<span class="number">30</span>)</span><br><span class="line">        r.raise_for_status()</span><br><span class="line">        r.encoding = r.apparent_encoding</span><br><span class="line">        <span class="keyword">return</span> r.text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">""</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parsePage</span><span class="params">(ilt, html)</span>:</span></span><br><span class="line">    plt = re.findall(<span class="string">r'\"view_price\"\:\"[\d\.]*\"'</span>,html)</span><br><span class="line">    tlt = re.findall(<span class="string">r'\"raw_title\"\:\".*?\"'</span>,html)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(plt)):</span><br><span class="line">        price = eval(plt[i].split(<span class="string">':'</span>)[<span class="number">1</span>])</span><br><span class="line">        title = eval(tlt[i].split(<span class="string">':'</span>)[<span class="number">1</span>])</span><br><span class="line">        ilt.append([price, title])</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">printGoodsList</span><span class="params">(ilt)</span>:</span></span><br><span class="line">    tplt = <span class="string">"&#123;:4&#125;\t&#123;:8&#125;\t&#123;:16&#125;"</span></span><br><span class="line">    print(tplt.format(<span class="string">"序号"</span>, <span class="string">"价格"</span>, <span class="string">"商品名称"</span>))</span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> g <span class="keyword">in</span> ilt:</span><br><span class="line">        count = count + <span class="number">1</span></span><br><span class="line">        print(tplt.format(count, g[<span class="number">0</span>], g[<span class="number">1</span>]))</span><br><span class="line">         </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span><span class="params">()</span>:</span></span><br><span class="line">    goods = <span class="string">'书包'</span></span><br><span class="line">    depth = <span class="number">3</span></span><br><span class="line">    start_url = <span class="string">'https://s.taobao.com/search?q='</span> + goods</span><br><span class="line">    infoList = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(depth):</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            url = start_url + <span class="string">'&amp;s='</span> + str(<span class="number">44</span>*i)</span><br><span class="line">            html = getHTMLText(url)</span><br><span class="line">            parsePage(infoList, html)</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">    printGoodsList(infoList)</span><br><span class="line"></span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+<p><a href="https://www.icourse163.org/learn/BIT-1001870001?from=study#/learn/forumdetail?pid=1212153268" target="_blank" rel="noopener">关于淘宝反爬的解决</a></p>
+<p>关于爬虫的深入学习将在后续发布</p>
 
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
       
       
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Python//" class="article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/27/Python正则表达式/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://2inf.top/tags/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
-
-  
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -285,6 +576,749 @@
 </aside>
 
 
+
+
+  
+    <article id="post-博客写作小结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/03/博客写作小结/">部分写作知识点小结</a>
+    </h1>
+  
+
+        
+        <a href="/2019/01/03/博客写作小结/" class="archive-article-date">
+  	<time datetime="2019-01-03T14:55:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-01-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本文是一篇测试博文</p>
+<p><a href="https://pandoc.org/MANUAL.html#pandocs-markdown" target="_blank" rel="noopener">pandoc教程</a></p>
+<h1 id="latex"><span class="math inline">\(LaTex\)</span></h1>
+<p>下面教程摘自MITOPENCOURSEWARE</p>
+<ul>
+<li><a href="https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/" target="_blank" rel="noopener"><u>LaTeX Tutorial</u></a></li>
+<li><a href="http://detexify.kirelabs.org/classify.html" target="_blank" rel="noopener"><u>Draw a symbol to get its LaTeX command</u></a></li>
+<li><a href="https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols" target="_blank" rel="noopener"><u>LaTeX Symbols</u></a></li>
+</ul>
+<h1 id="markdown">Markdown</h1>
+<p>Markdown教程现在已经烂大街了，在这里主要是作为备忘录进行查阅。</p>
+<h2 id="公式">公式</h2>
+<p>插入公式与代码分别是用$与 ` 符号(～键)包裹所写部分</p>
+<ul>
+<li>在需要高亮的代码块的前一行及后一行使用三个反引号。</li>
+<li>同时第一行反引号后面，写代码块所使用的语言。</li>
+<li>使用 <code>\left</code>和 <code>\right</code>来创建自动匹配高度的 ()，[] 和 {} 。 在每个公式末尾前使用<code>\tag{行标}</code>来实现行标。</li>
+</ul>
+<h3 id="希腊字母">希腊字母</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">显示</th>
+<th style="text-align: center;">大写</th>
+<th style="text-align: center;">命令</th>
+<th style="text-align: center;">显示</th>
+<th style="text-align: center;">大写</th>
+<th style="text-align: center;">命令</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\alpha\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{A}\)</span></td>
+<td style="text-align: center;"><code>$\alpha$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\beta\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{B}\)</span></td>
+<td style="text-align: center;"><code>$\beta$</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\gamma\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Gamma\)</span></td>
+<td style="text-align: center;"><code>$\gamma$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\delta\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Delta\)</span></td>
+<td style="text-align: center;"><code>$\delta$</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\epsilon\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{E}\)</span></td>
+<td style="text-align: center;"><code>$\epsilon$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\zeta\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{Z}\)</span></td>
+<td style="text-align: center;"><code>$\zeta$</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\eta\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{H}\)</span></td>
+<td style="text-align: center;"><code>$\eta$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\theta\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Theta\)</span></td>
+<td style="text-align: center;"><code>$\theta$</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\iota\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{I}\)</span></td>
+<td style="text-align: center;"><code>$\iota$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\kappa\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{K}\)</span></td>
+<td style="text-align: center;"><code>$\kappa$</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\lambda\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Lambda\)</span></td>
+<td style="text-align: center;"><code>$\lambda$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\mu\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{M}\)</span></td>
+<td style="text-align: center;"><code>$\mu$</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\nu\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{N}\)</span></td>
+<td style="text-align: center;"><code>$\nu$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\xi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Xi\)</span></td>
+<td style="text-align: center;"><code>$\xi$</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\pi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Pi\)</span></td>
+<td style="text-align: center;"><code>$\pi$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\rho\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{R}\)</span></td>
+<td style="text-align: center;"><code>$\rho$</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\sigma\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Sigma\)</span></td>
+<td style="text-align: center;"><code>$\sigma$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\tau\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{T}\)</span></td>
+<td style="text-align: center;"><code>$\tau$</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\upsilon\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Upsilon\)</span></td>
+<td style="text-align: center;"><code>$\upsilon$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\phi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Phi\)</span></td>
+<td style="text-align: center;"><code>$\phi$</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\chi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\rm{X}\)</span></td>
+<td style="text-align: center;"><code>$\chi$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\psi\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Psi\)</span></td>
+<td style="text-align: center;"><code>$\psi$</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\omega\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\Omega\)</span></td>
+<td style="text-align: center;"><code>$\omega$</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>:只需将命令的首字母大写即可得大写希腊字母，在命令前加上var前缀即可得到斜体希腊字母如: <span class="math inline">\(\Gamma\phi\)</span> &amp; <span class="math inline">\(\varGamma\varphi​\)</span></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$\Gamma\phi$ &amp; $\varGamma\varphi​$</span><br></pre></td></tr></table></figure>
+<h3 id="运算">运算</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">命令</th>
+<th style="text-align: center;">显示</th>
+<th style="text-align: center;">命令</th>
+<th style="text-align: center;">显示</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>$\pm$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\pm\)</span></td>
+<td style="text-align: center;"><code>$\mp$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\mp\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\neq$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\neq\)</span></td>
+<td style="text-align: center;"><code>$\times$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\times\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\div$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\div\)</span></td>
+<td style="text-align: center;"><code>$\leq$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\leq\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\geq$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\geq\)</span></td>
+<td style="text-align: center;"><code>$\ngeq$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\ngeq\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\ast$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\ast\)</span></td>
+<td style="text-align: center;"><code>$\approx$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\approx\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\equiv$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\equiv\)</span></td>
+<td style="text-align: center;"><code>$bigcup$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\bigcup\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\iint$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\iint\)</span></td>
+<td style="text-align: center;"><code>$\iiint$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\iiint\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\oint$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\oint\)</span></td>
+<td style="text-align: center;"><code>$\mid$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\mid\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\because$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\because\)</span></td>
+<td style="text-align: center;"><code>\therefore</code></td>
+<td style="text-align: center;"><span class="math inline">\(\therefore\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="特殊符号">特殊符号</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">显示</th>
+<th style="text-align: center;">命令</th>
+<th style="text-align: center;">显示</th>
+<th style="text-align: center;">命令</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\infty\)</span></td>
+<td style="text-align: center;"><code>$\infty$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\cup\)</span></td>
+<td style="text-align: center;"><code>$\cup$</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\cap\)</span></td>
+<td style="text-align: center;"><code>$\cap$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\subset\)</span></td>
+<td style="text-align: center;"><code>$\subset$</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\subseteq\)</span></td>
+<td style="text-align: center;"><code>$\subseteq$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\supset\)</span></td>
+<td style="text-align: center;"><code>$\supset$</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\in\)</span></td>
+<td style="text-align: center;"><code>$\in$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\notin\)</span></td>
+<td style="text-align: center;"><code>$\notin$</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\varnothing\)</span></td>
+<td style="text-align: center;"><code>$\varnothing$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\forall\)</span></td>
+<td style="text-align: center;"><code>$\forall$</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\exists\)</span></td>
+<td style="text-align: center;"><code>$\exists$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\lnot\)</span></td>
+<td style="text-align: center;"><code>$\lnot$</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\nabla\)</span></td>
+<td style="text-align: center;"><code>$\nabla$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\partial\)</span></td>
+<td style="text-align: center;"><code>$\partial$</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\angle\)</span></td>
+<td style="text-align: center;"><code>$\angle$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\bot\)</span></td>
+<td style="text-align: center;"><code>$\bot$</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\bigodot\)</span></td>
+<td style="text-align: center;"><code>$\bigodot$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\bigotimes\)</span></td>
+<td style="text-align: center;"><code>$\bigotimes$</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="空格">空格</h3>
+<ul>
+<li><code>$\,$</code> <span class="math inline">\(\frac{1}{6}\)</span>m宽度</li>
+<li><code>$\;$</code> <span class="math inline">\(\frac{2}{7}\)</span>m宽度</li>
+<li><code>$\$</code> <span class="math inline">\(\frac{1}{3}\)</span>m宽度</li>
+<li><code>$\quad$</code> m宽度</li>
+<li><code>$\qquad$</code> 2m宽度</li>
+</ul>
+<h3 id="矢量与箭头">矢量与箭头</h3>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 31%">
+<col style="width: 18%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">命令</th>
+<th style="text-align: center;">显示</th>
+<th style="text-align: center;">命令</th>
+<th style="text-align: center;">显示</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>$\vec{a}$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\vec{a}\)</span></td>
+<td style="text-align: center;"><code>$\bar{s}$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\bar{s}\)</span> (平均值)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\rightarrow$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\rightarrow\)</span></td>
+<td style="text-align: center;"><code>$\Rightarrow$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\Rightarrow\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\overrightarrow{a}$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\overrightarrow{a}\)</span></td>
+<td style="text-align: center;"><code>$\overleftrightarrow{a}$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\overleftrightarrow{a}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\overleftarrow{a}$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\overleftarrow{a}\)</span></td>
+<td style="text-align: center;"><code>$\longrightarrow$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\longrightarrow\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\overline{a+b}$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{a+b}\)</span></td>
+<td style="text-align: center;"><code>$\underline{a+b}$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\underline{a+b}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\overbrace{a+\underbrace{b+c}_{1.0}+d}^{2.0}\)</span></td>
+<td style="text-align: center;"><code>$\hat{y}$</code></td>
+<td style="text-align: center;"><span class="math inline">\(\hat{y}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="矩阵与方程组">矩阵与方程组</h3>
+<ul>
+<li>pmatrix: <code>$\begin{pmatrix}1 &amp; 2 \\ 3 &amp; 4\\ \end{pmatrix}$</code> :
+<span class="math display">\[\begin{pmatrix}1 &amp; 2 \\ 3 &amp; 4\\ \end{pmatrix}\]</span></li>
+<li>bmatrix: <code>$\begin{bmatrix}1 &amp; 2 \\ 3 &amp; 4\\ \end{bmatrix}$</code> :
+<span class="math display">\[\begin{bmatrix}1 &amp; 2 \\ 3 &amp; 4\\ \end{bmatrix}\]</span></li>
+<li>Bmatrix: <code>$\begin{Bmatrix}1 &amp; 2 \\ 3 &amp; 4\\ \end{Bmatrix}$</code> :
+<span class="math display">\[\begin{Bmatrix}1 &amp; 2 \\ 3 &amp; 4\\ \end{Bmatrix}\]</span></li>
+<li>vmatrix: <code>$\begin{vmatrix}1 &amp; 2 \\ 3 &amp; 4\\ \end{vmatrix}$</code> :
+<span class="math display">\[\begin{vmatrix}1 &amp; 2 \\ 3 &amp; 4\\ \end{vmatrix}\]</span></li>
+<li>Vmatrix: <code>$\begin{Vmatrix}1 &amp; 2 \\ 3 &amp; 4\\ \end{Vmatrix}$</code> :
+<span class="math display">\[\begin{Vmatrix}1 &amp; 2 \\ 3 &amp; 4\\ \end{Vmatrix}\]</span></li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">$$\begin&#123;matrix&#125;</span><br><span class="line">a<span class="emphasis">_&#123;11&#125;&amp;a_</span>&#123;12&#125;&amp;\cdots&amp;a_&#123;1n&#125;\\</span><br><span class="line">a<span class="emphasis">_&#123;21&#125;&amp;a_</span>&#123;21&#125;&amp;\cdots&amp;a_&#123;2n&#125;\\</span><br><span class="line">\vdots&amp;\vdots&amp;\ddots&amp;\vdots\\</span><br><span class="line">a<span class="emphasis">_&#123;n1&#125;&amp;a_</span>&#123;n2&#125;&amp;\cdots&amp;a_&#123;nn&#125;\\</span><br><span class="line">\end&#123;matrix&#125;$$(类似有\ldots底端对齐)</span><br><span class="line">$$</span><br><span class="line">\left\&#123;</span><br><span class="line">\begin&#123;array&#125;\</span><br><span class="line">a<span class="emphasis">_1x + a_</span>2y + a<span class="emphasis">_3z = d_</span>1 \\</span><br><span class="line">b<span class="emphasis">_1x + b_</span>2y + b<span class="emphasis">_3z = d_</span>2 \\</span><br><span class="line">\end&#123;array&#125;</span><br><span class="line">\right.</span><br><span class="line">$$(array亦可改为cases)</span><br><span class="line">$$\begin&#123;cases&#125; </span><br><span class="line"><span class="code">		a_&#123;11&#125;x_1&amp;+&amp;a_&#123;12&#125;x_2&amp;+&amp;\cdots&amp;+a_&#123;1n&#125;x_n&amp;=&amp;b_1\\</span></span><br><span class="line"><span class="code">		&amp;&amp;&amp;&amp;\vdots\\</span></span><br><span class="line"><span class="code">		a_&#123;n1&#125;x_1&amp;+&amp;a_&#123;n2&#125;x_2&amp;+&amp;\cdots&amp;+a_&#123;nn&#125;x_n&amp;=&amp;b_n&amp;			</span></span><br><span class="line">\end&#123;cases&#125;$$</span><br></pre></td></tr></table></figure>
+<p><span class="math display">\[\begin{matrix}a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\\ \ a_{21}&amp;a_{21}&amp;\cdots&amp;a_{2n}\\\ \ \vdots &amp; \vdots &amp; \ddots &amp; \vdots\\\ \ a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\\ \end{matrix}\]</span></p>
+<p><span class="math display">\[\begin{cases} 
+​       a_{11}x_1&amp;+&amp;a_{12}x_2&amp;+&amp;\cdots&amp;+a_{1n}x_n&amp;=&amp;b_1\\\ &amp;&amp;&amp;&amp;\vdots\\\ a_{n1}x_1&amp;+&amp;a_{n2}x_2&amp;+&amp;\cdots&amp;+a_{nn}x_n&amp;=&amp;b_n&amp;           
+\end{cases}\]</span></p>
+<p><a href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">公式快速参考</a></p>
+<h2 id="表情">表情</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">syntax</th>
+<th style="text-align: center;">preview</th>
+<th style="text-align: center;">syntax</th>
+<th style="text-align: center;">preview</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>:sun_with_face:</code></td>
+<td style="text-align: center;">🌞</td>
+<td style="text-align: center;"><code>:smile:</code></td>
+<td style="text-align: center;">😄</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>:laughing:</code></td>
+<td style="text-align: center;">😆</td>
+<td style="text-align: center;"><code>:blush:</code></td>
+<td style="text-align: center;">😊</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>:smiley:</code></td>
+<td style="text-align: center;">😃</td>
+<td style="text-align: center;"><code>:relaxed:</code></td>
+<td style="text-align: center;">☺️</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>:smirk:</code></td>
+<td style="text-align: center;">😏</td>
+<td style="text-align: center;"><code>:heart_eyes:</code></td>
+<td style="text-align: center;">😍</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>:kissing_heart:</code></td>
+<td style="text-align: center;">😘</td>
+<td style="text-align: center;"><code>:kissing_closed_eyes:</code></td>
+<td style="text-align: center;">😚</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>:flushed:</code></td>
+<td style="text-align: center;">😳</td>
+<td style="text-align: center;"><code>:relieved:</code></td>
+<td style="text-align: center;">😌</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>:satisfied:</code></td>
+<td style="text-align: center;">😆</td>
+<td style="text-align: center;"><code>:grin:</code></td>
+<td style="text-align: center;">😁</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>:wink:</code></td>
+<td style="text-align: center;">😉</td>
+<td style="text-align: center;"><code>:stuck_out_tongue_winking_eye:</code></td>
+<td style="text-align: center;">😜</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>:stuck_out_tongue_closed_eyes:</code></td>
+<td style="text-align: center;">😝</td>
+<td style="text-align: center;"><code>:grinning:</code></td>
+<td style="text-align: center;">😀</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>:kissing:</code></td>
+<td style="text-align: center;">😗</td>
+<td style="text-align: center;"><code>:kissing_smiling_eyes:</code></td>
+<td style="text-align: center;">😙</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>:stuck_out_tongue:</code></td>
+<td style="text-align: center;">😛</td>
+<td style="text-align: center;"><code>:sleeping:</code></td>
+<td style="text-align: center;">😴</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>:worried:</code></td>
+<td style="text-align: center;">😟</td>
+<td style="text-align: center;"><code>:frowning:</code></td>
+<td style="text-align: center;">😦</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>:anguished:</code></td>
+<td style="text-align: center;">😧</td>
+<td style="text-align: center;"><code>:open_mouth:</code></td>
+<td style="text-align: center;">😮</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>:confused:</code></td>
+<td style="text-align: center;">😕</td>
+<td style="text-align: center;"><code>:hushed:</code></td>
+<td style="text-align: center;">😯</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>:expressionless:</code></td>
+<td style="text-align: center;">😑</td>
+<td style="text-align: center;"><code>:unamused:</code></td>
+<td style="text-align: center;">😒</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>:sweat_smile:</code></td>
+<td style="text-align: center;">😅</td>
+<td style="text-align: center;"><code>:sweat:</code></td>
+<td style="text-align: center;">😓</td>
+</tr>
+</tbody>
+</table>
+<h2 id="字体">字体</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">输入</th>
+<th style="text-align: center;">说明</th>
+<th style="text-align: center;">实例</th>
+<th style="text-align: center;">输入</th>
+<th style="text-align: center;">说明</th>
+<th style="text-align: center;">实例</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>$\rm{D}$</code></td>
+<td style="text-align: center;">罗马体</td>
+<td style="text-align: center;"><span class="math inline">\(\rm{D}\)</span></td>
+<td style="text-align: center;"><code>$\cal{D}$</code></td>
+<td style="text-align: center;">花体</td>
+<td style="text-align: center;"><span class="math inline">\(\cal{D}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\it{D}$</code></td>
+<td style="text-align: center;">意大利体</td>
+<td style="text-align: center;"><span class="math inline">\(\it{D}\)</span></td>
+<td style="text-align: center;"><code>$\Bbb{D}$</code></td>
+<td style="text-align: center;">黑板粗体</td>
+<td style="text-align: center;"><span class="math inline">\(\Bbb{D}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\bf{D}$</code></td>
+<td style="text-align: center;">粗体</td>
+<td style="text-align: center;"><span class="math inline">\(\bf{D}\)</span></td>
+<td style="text-align: center;"><code>$\mit{D}$</code></td>
+<td style="text-align: center;">数学斜体</td>
+<td style="text-align: center;"><span class="math inline">\(\mit{D}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\sf{D}$</code></td>
+<td style="text-align: center;">等线体</td>
+<td style="text-align: center;"><span class="math inline">\(\sf{D}\)</span></td>
+<td style="text-align: center;"><code>$\scr{D}$</code></td>
+<td style="text-align: center;">手写体</td>
+<td style="text-align: center;"><span class="math inline">\(\scr{D}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\tt{D}$</code></td>
+<td style="text-align: center;">打字机体</td>
+<td style="text-align: center;"><span class="math inline">\(\tt{D}\)</span></td>
+<td style="text-align: center;"><code>$\boldsymbol{D}$</code></td>
+<td style="text-align: center;">黑体</td>
+<td style="text-align: center;"><span class="math inline">\(\boldsymbol{D}\)</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="颜色">颜色</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">命令</th>
+<th style="text-align: center;">命令</th>
+<th style="text-align: center;">显示</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>$\color{red}{红色}$</code></td>
+<td style="text-align: center;"><code>&lt;font color=#FF0000&gt;红色&lt;/font&gt;</code></td>
+<td style="text-align: center;"><font color="#FF0000">红色</font></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\color{green}{绿色}$</code></td>
+<td style="text-align: center;"><code>&lt;font color=#00FF00&gt;绿色&lt;/font&gt;</code></td>
+<td style="text-align: center;"><font color="#00FF00">绿色</font></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\color{blue}{蓝色}$</code></td>
+<td style="text-align: center;"><code>&lt;font color=#0000FF&gt;蓝色&lt;/font&gt;</code></td>
+<td style="text-align: center;"><font color="#0000FF">蓝色</font></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\color{cyan}{青色}$</code></td>
+<td style="text-align: center;"><code>&lt;font color=#00FFFF&gt;青色&lt;/font&gt;</code></td>
+<td style="text-align: center;"><font color="#00FFFF">青色</font></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\color{yellow}{黄色}$</code></td>
+<td style="text-align: center;"><code>&lt;font color=#FFFF00&gt;黄色&lt;/font&gt;</code></td>
+<td style="text-align: center;"><font color="#FFFF00">黄色</font></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$\color{purple}{紫色}$</code></td>
+<td style="text-align: center;"><code>&lt;font color=#FF00FF&gt;紫色&lt;/font&gt;</code></td>
+<td style="text-align: center;"><font color="#FF00FF">紫色</font></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>$\color{orange}{橙色}$</code></td>
+<td style="text-align: center;"><code>&lt;font color=#FF6100&gt;橙色&lt;/font&gt;</code></td>
+<td style="text-align: center;"><font color="#FF6100">橙色</font></td>
+</tr>
+</tbody>
+</table>
+<h2 id="标题">标题</h2>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+<h2 id="字体-1">字体</h2>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="strong">**加粗文字**</span> 对应 &lt;b&gt;加粗文字&lt;/b&gt; 及 &lt;strong&gt;加粗文字&lt;/strong&gt;</span><br><span class="line"><span class="emphasis">*倾斜文字*</span> 对应 &lt;i&gt;倾斜文字&lt;/i&gt; 及 &lt;em&gt;倾斜文字&lt;/em&gt;</span><br><span class="line"><span class="strong">***斜体加粗文字**</span>* </span><br><span class="line">~~加删除线文字~~ 对应 &lt;del&gt;加删除线文字&lt;/del&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="引用">引用</h2>
+<p>多个&gt;用于逐层嵌套</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;引用内容</span><br><span class="line">&gt;&gt;引用内容</span><br></pre></td></tr></table></figure>
+<h2 id="分割线">分割线</h2>
+<p>三个或者三个以上的 - 或者 *,效果一样</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="emphasis">***</span></span><br></pre></td></tr></table></figure>
+<h2 id="图片或链接">图片或链接</h2>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片说明</span>](<span class="link">图片地址 ''title''</span>)</span><br><span class="line">[<span class="string">超链接名</span>](<span class="link">超链接地址 "title"</span>)</span><br><span class="line">title可加可不加</span><br><span class="line">如:</span><br><span class="line">[<span class="string">百度</span>](<span class="link">http://www.baidu.com</span>)</span><br><span class="line">&lt;a href="http://www.baidu.com"&gt;百度&lt;/a&gt;</span><br><span class="line">![<span class="string">风景</span>](<span class="link">https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240</span>)</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.baidu.com" target="_blank" rel="noopener">百度</a> <img src="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="风景"></p>
+<h2 id="列表">列表</h2>
+<ul>
+<li>无序列表使用*或+或-标识</li>
+<li>有序列表使用数字加.标识，例如：1.</li>
+</ul>
+<h2 id="表格">表格</h2>
+<p>短斜杠(数量至少有一个)左右的冒号用于控制对齐方式，只放置左边冒号表示文字居左，只放置右边冒号表示文字居右，如果两边都放置冒号表示文字居中。</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">表头|条目一|条目二</span><br><span class="line">:-:|:-:|:-:</span><br><span class="line">1|2|3</span><br><span class="line">4|5|6</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">表头</th>
+<th style="text-align: center;">条目一</th>
+<th style="text-align: center;">条目二</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">6</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pandoc版markdown与标准版的区别"><span class="math inline">\(pandoc\)</span>版<span class="math inline">\(markdown\)</span>与标准版的区别</h2>
+<p>标准Markdown语法并不要求在标题前添加一个空行，但是Pandoc语法却要求标题前添加一个空行（除了文档开头）</p>
+<h1 id="html">Html</h1>
+<p><a href="https://www.w3school.com.cn/tags/index.asp" target="_blank" rel="noopener">学习的地方</a></p>
+<h2 id="基本文档">基本文档</h2>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;title&gt;文档标题&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		可见文本...</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">    &lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">	&lt;br&gt; （换行）</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="基本元素">基本元素</h2>
+<b>粗体文<b>粗体文本</b> <code class="language-cpp"> int exgcd(int x, int y, int &amp;a, int &amp;b) { if (y == 0) { return a = 1, b = 0, x; } else { int g = exgcd(y, x % y, b, a); b -= x / y * a; return g; } }</code><br> <em>强调文本</em><br> <i>斜体文本</i><br> <kbd>键盘输入</kbd><br>
+<pre>预格式化文本</pre>
+<br> <small>更小的文本</small><br> <strong>重要的文本</strong><br> <abbr>缩写</abbr><br>
+<address>
+联系信息
+</address>
+<bdo>文字方向</bdo>
+<blockquote>
+从另一个源引用的部分
+</blockquote>
+<p><cite>工作的名称</cite> <del>删除的文本</del> <ins>插入的文本</ins><sub>下标文本</sub><sup>上标文本</sup>本</p></b> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;b&gt;粗体文本&lt;/b&gt;</span><br><span class="line">&lt;code class=&quot;language-cpp&quot;&gt;</span><br><span class="line">int exgcd(int x, int y, int &amp;a, int &amp;b) &#123;</span><br><span class="line">    if (y == 0) &#123;</span><br><span class="line">        return a = 1, b = 0, x;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        int g = exgcd(y, x % y, b, a);</span><br><span class="line">        b -= x / y * a;</span><br><span class="line">        return g;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;&lt;/code&gt;</span><br><span class="line">&lt;em&gt;强调文本&lt;/em&gt;</span><br><span class="line">&lt;i&gt;斜体文本&lt;/i&gt;</span><br><span class="line">&lt;kbd&gt;键盘输入&lt;/kbd&gt; </span><br><span class="line">&lt;pre&gt;预格式化文本&lt;/pre&gt;</span><br><span class="line">&lt;small&gt;更小的文本&lt;/small&gt;</span><br><span class="line">&lt;strong&gt;重要的文本&lt;/strong&gt;</span><br><span class="line">&lt;abbr&gt;缩写&lt;/abbr&gt;&lt;br&gt;</span><br><span class="line">&lt;address&gt;联系信息&lt;/address&gt;</span><br><span class="line">&lt;bdo&gt;文字方向&lt;/bdo&gt;</span><br><span class="line">&lt;blockquote&gt;从另一个源引用的部分&lt;/blockquote&gt;</span><br><span class="line">&lt;cite&gt;工作的名称&lt;/cite&gt; </span><br><span class="line">&lt;del&gt;删除的文本&lt;/del&gt; </span><br><span class="line">&lt;ins&gt;插入的文本&lt;/ins&gt;</span><br><span class="line">&lt;sub&gt;下标文本&lt;/sub&gt;</span><br><span class="line">&lt;sup&gt;上标文本&lt;/sup&gt;本&lt;/b&gt;</span><br></pre></td></tr></table></figure><p></p>
+<h2 id="列表与表格">列表与表格</h2>
+<ul>
+<li>
+Coffee
+</li>
+<li>
+Milk
+</li>
+</ul>
+<ol>
+<li>
+Cola
+</li>
+<li>
+sara
+</li>
+</ol>
+<dl>
+<!--定义列表-->
+<pre><code>&lt;dt&gt;Coffee&lt;/dt&gt;&lt;!--自定义列表项目--&gt;&lt;dd&gt;- Black hot drink&lt;/dd&gt;&lt;!--自定义列表项目--&gt;
+&lt;dt&gt;Milk&lt;/dt&gt;&lt;dd&gt;- White cold drink&lt;/dd&gt;</code></pre>
+</dl>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span><span class="comment">&lt;!--无序列表--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ol</span>&gt;</span><span class="comment">&lt;!--有序列表--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>Cola<span class="tag">&lt;/<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">li</span>&gt;</span>sara<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span><span class="comment">&lt;!--定义列表--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Coffee<span class="tag">&lt;/<span class="name">dt</span>&gt;</span><span class="comment">&lt;!--自定义列表项目--&gt;</span><span class="tag">&lt;<span class="name">dd</span>&gt;</span>- Black hot drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span><span class="comment">&lt;!--自定义列表项目--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>Milk<span class="tag">&lt;/<span class="name">dt</span>&gt;</span><span class="tag">&lt;<span class="name">dd</span>&gt;</span>- White cold drink<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">"1"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span>Header 1<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>Header 2<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>row 1, cell 1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>row 1, cell 2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>row 2, cell 1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>row 2, cell 2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="图片">图片</h2>
+<p>普通的链接：<a href="https://www.baidu.com/" target="_blank" rel="noopener">百度</a></p>
+<p>图像链接： <a href="http://www.example.com/" target="_blank" rel="noopener"><img src="https://upload-images.jianshu.io/upload_images/703764-605e3cc2ecb664f6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="替换文本"></a></p>
+<p>邮件链接： <a href="2247389338@qq.com">发送e-mail</a> 书签： <a id="tips">提示部分</a> <a href="#tips">跳到提示部分</a> #### 框架 <iframe src="https://blog.csdn.net/AbelYang1" width="400" height="300"></iframe></p>
+<script>
+    document.write("Hello World!")
+</script>
+<noscript>
+抱歉，你的浏览器不支持 JavaScript!
+</noscript>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">小知识</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/其他//" class="article-tag-list-link color3">其他</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/01/03/博客写作小结/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
 
           </div>
@@ -306,7 +1340,7 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: false,
+		isHome: true,
 		isPost: false,
 		isArchive: false,
 		isTag: false,
