@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://2inf.top">
   <title>TikZ入门 | 2inf&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在$LaTex​$中, 要用$tikz​$作图, 首先调用$tikz​$宏包和有关的程序库 12\usepackage&amp;#123;tikz&amp;#125;\usetikzlibrary&amp;#123;&amp;lt;list of libraries&amp;gt;&amp;#125; 然后开启${tikzpicture}$环境作图, 或者用$\ tikz$开始作图. 各种命令必须以分号结束, 否则报错 ¶命令\def 命令\d">
+  <meta name="description" content="在\(LaTex​\)中, 要用\(tikz​\)作图, 首先调用\(tikz​\)宏包和有关的程序库 12\usepackage&amp;#123;tikz&amp;#125;\usetikzlibrary&amp;#123;&amp;lt;list of libraries&amp;gt;&amp;#125; 然后开启\({tikzpicture}\)环境作图, 或者用\(\\ tikz\)开始作图. 各种命令必须以分号结束, 否则报错">
 <meta name="keywords" content="LaTex包">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TikZ入门">
 <meta property="og:url" content="https://2inf.top/2019/08/12/TikZ入门/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
-<meta property="og:description" content="在$LaTex​$中, 要用$tikz​$作图, 首先调用$tikz​$宏包和有关的程序库 12\usepackage&amp;#123;tikz&amp;#125;\usetikzlibrary&amp;#123;&amp;lt;list of libraries&amp;gt;&amp;#125; 然后开启${tikzpicture}$环境作图, 或者用$\ tikz$开始作图. 各种命令必须以分号结束, 否则报错 ¶命令\def 命令\d">
+<meta property="og:description" content="在\(LaTex​\)中, 要用\(tikz​\)作图, 首先调用\(tikz​\)宏包和有关的程序库 12\usepackage&amp;#123;tikz&amp;#125;\usetikzlibrary&amp;#123;&amp;lt;list of libraries&amp;gt;&amp;#125; 然后开启\({tikzpicture}\)环境作图, 或者用\(\\ tikz\)开始作图. 各种命令必须以分号结束, 否则报错">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-12-11T13:34:40.471Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TikZ入门">
-<meta name="twitter:description" content="在$LaTex​$中, 要用$tikz​$作图, 首先调用$tikz​$宏包和有关的程序库 12\usepackage&amp;#123;tikz&amp;#125;\usetikzlibrary&amp;#123;&amp;lt;list of libraries&amp;gt;&amp;#125; 然后开启${tikzpicture}$环境作图, 或者用$\ tikz$开始作图. 各种命令必须以分号结束, 否则报错 ¶命令\def 命令\d">
+<meta name="twitter:description" content="在\(LaTex​\)中, 要用\(tikz​\)作图, 首先调用\(tikz​\)宏包和有关的程序库 12\usepackage&amp;#123;tikz&amp;#125;\usetikzlibrary&amp;#123;&amp;lt;list of libraries&amp;gt;&amp;#125; 然后开启\({tikzpicture}\)环境作图, 或者用\(\\ tikz\)开始作图. 各种命令必须以分号结束, 否则报错">
   
     <link rel="alternative" href="/atom.xml" title="2inf&#39;s blog" type="application/atom+xml">
   
@@ -175,16 +175,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在$LaTex​$中, 要用$tikz​$作图, 首先调用$tikz​$宏包和有关的程序库</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;tikz&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usetikzlibrary</span><span class="string">&#123;&lt;list of libraries&gt;&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p>然后开启${tikzpicture}$环境作图, 或者用$\ tikz$开始作图.<br>
-各种命令必须以分号结束, 否则报错</p>
-<h4 id="命令-def"><a class="header-anchor" href="#命令-def">¶</a>命令<code>\def</code></h4>
-<p>命令<code>\def</code>用于自定义一个对象, 对象名称以反斜线\开头, 语法为<br>
-<code>\def&lt;对象名称&gt;{定义内容}</code></p>
-<p>下面是一个<code>\wall</code>的例子(需调用$pattern$库)</p>
-<figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">def</span></span><span class="tag">\<span class="name">wall</span><span class="string">&#123; \fill [fill=black!50] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">		\pattern [pattern=bricks] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">		\draw [line width=1pt] (1cm+.5pt,-.5) -- ++(0,1);&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">wall</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br></pre></td></tr></table></figure>
-<h4 id="创建coordinate对象的句法及其命名"><a class="header-anchor" href="#创建coordinate对象的句法及其命名">¶</a>创建coordinate对象的句法及其命名</h4>
+        <p>在<span class="math inline">\(LaTex​\)</span>中, 要用<span class="math inline">\(tikz​\)</span>作图, 首先调用<span class="math inline">\(tikz​\)</span>宏包和有关的程序库 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">usepackage</span><span class="string">&#123;tikz&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">usetikzlibrary</span><span class="string">&#123;&lt;list of libraries&gt;&#125;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>然后开启<span class="math inline">\({tikzpicture}\)</span>环境作图, 或者用<span class="math inline">\(\\ tikz\)</span>开始作图. 各种命令必须以分号结束, 否则报错</p>
+<h4 id="命令def">命令<code>\def</code></h4>
+<p>命令<code>\def</code>用于自定义一个对象, 对象名称以反斜线, 语法为 <code>\def&lt;对象名称&gt;{定义内容}</code></p>
+<p>下面是一个<code>\wall</code>的例子(需调用<span class="math inline">\(pattern\)</span>库) <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">begin</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">def</span></span><span class="tag">\<span class="name">wall</span><span class="string">&#123; \fill [fill=black!50] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">		\pattern [pattern=bricks] (1,-.5) rectangle (2,.5);</span></span></span><br><span class="line"><span class="tag"><span class="string">		\draw [line width=1pt] (1cm+.5pt,-.5) -- ++(0,1);&#125;</span></span></span><br><span class="line"><span class="tag">\<span class="name">wall</span></span></span><br><span class="line"><span class="tag">\<span class="name">end</span><span class="string">&#123;tikzpicture&#125;</span></span></span><br></pre></td></tr></table></figure></p>
+<h4 id="创建coordinate对象的句法及其命名">创建coordinate对象的句法及其命名</h4>
 <figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">\<span class="name">path</span></span> . . . coordinate[&lt;options&gt;](&lt;name&gt;)at(&lt;coordinate&gt;) . . . ;</span><br><span class="line"><span class="comment">%将路径中的某个对象设置为 coordinate </span></span><br><span class="line"><span class="tag">\<span class="name">coordinate</span></span>  [&lt;options&gt;](&lt;name&gt;)at(&lt;coordinate&gt;);</span><br><span class="line"><span class="comment">%这是上一句法的简写，注意最好不要在该命令后面用 node 命令。</span></span><br></pre></td></tr></table></figure>
 
 
@@ -475,11 +471,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分治</a>
+                <a href="javascript:void(0)" class="js-tag color5">组合数学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">组合数学</a>
+                <a href="javascript:void(0)" class="js-tag color3">分治</a>
               </li>
              
               <li class="article-tag-list-item">

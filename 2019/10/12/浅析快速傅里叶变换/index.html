@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="https://2inf.top">
   <title>浅析快速傅里叶变换 | 2inf&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="据说现在打信息竞赛的初中生都会$FFT(Fast\ Fourier\ Transform)$了, 但严格而言这应该是信号里的内容, 在$OI$里可以快速求卷积, 下个学期专业课也会有, 于是前段日子学了一下, 想以此文回顾一下 ¶快速傅里叶变换   快速傅里叶变换可以认为有$DFT$和$IDFT$两个部分, 分别在$O(nlogn)$的复杂度将系数转换成点值表示并转化回来. ¶$Cooley-">
+  <meta name="description" content="据说现在打信息竞赛的初中生都会\(FFT(Fast\ Fourier\ Transform)\)了, 但严格而言这应该是信号里的内容, 在\(OI\)里可以快速求卷积, 下个学期专业课也会有, 于是前段日子学了一下, 想以此文回顾一下 快速傅里叶变换   快速傅里叶变换可以认为有\(DFT\)和\(IDFT\)两个部分, 分别在\(O(nlogn)\)的复杂度将系数转换成点值表示并转化回来">
 <meta property="og:type" content="article">
 <meta property="og:title" content="浅析快速傅里叶变换">
 <meta property="og:url" content="https://2inf.top/2019/10/12/浅析快速傅里叶变换/index.html">
 <meta property="og:site_name" content="2inf&#39;s blog">
-<meta property="og:description" content="据说现在打信息竞赛的初中生都会$FFT(Fast\ Fourier\ Transform)$了, 但严格而言这应该是信号里的内容, 在$OI$里可以快速求卷积, 下个学期专业课也会有, 于是前段日子学了一下, 想以此文回顾一下 ¶快速傅里叶变换   快速傅里叶变换可以认为有$DFT$和$IDFT$两个部分, 分别在$O(nlogn)$的复杂度将系数转换成点值表示并转化回来. ¶$Cooley-">
+<meta property="og:description" content="据说现在打信息竞赛的初中生都会\(FFT(Fast\ Fourier\ Transform)\)了, 但严格而言这应该是信号里的内容, 在\(OI\)里可以快速求卷积, 下个学期专业课也会有, 于是前段日子学了一下, 想以此文回顾一下 快速傅里叶变换   快速傅里叶变换可以认为有\(DFT\)和\(IDFT\)两个部分, 分别在\(O(nlogn)\)的复杂度将系数转换成点值表示并转化回来">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-12-12T15:10:51.619Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅析快速傅里叶变换">
-<meta name="twitter:description" content="据说现在打信息竞赛的初中生都会$FFT(Fast\ Fourier\ Transform)$了, 但严格而言这应该是信号里的内容, 在$OI$里可以快速求卷积, 下个学期专业课也会有, 于是前段日子学了一下, 想以此文回顾一下 ¶快速傅里叶变换   快速傅里叶变换可以认为有$DFT$和$IDFT$两个部分, 分别在$O(nlogn)$的复杂度将系数转换成点值表示并转化回来. ¶$Cooley-">
+<meta name="twitter:description" content="据说现在打信息竞赛的初中生都会\(FFT(Fast\ Fourier\ Transform)\)了, 但严格而言这应该是信号里的内容, 在\(OI\)里可以快速求卷积, 下个学期专业课也会有, 于是前段日子学了一下, 想以此文回顾一下 快速傅里叶变换   快速傅里叶变换可以认为有\(DFT\)和\(IDFT\)两个部分, 分别在\(O(nlogn)\)的复杂度将系数转换成点值表示并转化回来">
   
     <link rel="alternative" href="/atom.xml" title="2inf&#39;s blog" type="application/atom+xml">
   
@@ -174,14 +174,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>  据说现在打信息竞赛的初中生都会$FFT(Fast\ Fourier\ Transform)$了, 但严格而言这应该是信号里的内容, 在$OI$里可以快速求卷积, 下个学期专业课也会有, 于是前段日子学了一下, 想以此文回顾一下</p>
-<h2 id="快速傅里叶变换"><a class="header-anchor" href="#快速傅里叶变换">¶</a>快速傅里叶变换</h2>
-<p>  快速傅里叶变换可以认为有$DFT$和$IDFT$两个部分, 分别在$O(nlogn)$的复杂度将系数转换成点值表示并转化回来.</p>
-<h4 id="cooley-turkey-算法"><a class="header-anchor" href="#cooley-turkey-算法">¶</a>$Cooley-Turkey$算法</h4>
-<p>  $Cooley-Turkey$是FFT中最常见的的算法, 基本思想由$J.W.Cooley$和$J.W.Tukey$在$1965$年提出, 是一个基于分治策略的算法, 假设现在有一个$n-1$次多项式$A(x) = \displaystyle\sum_{i=0}<sup>{n-1}a_ix</sup>i$, 为方便叙述, 假设$n=2^m,m\in\mathbb{Z}$, 如果系数不足可以在高次项补$0$.</p>
-<p>  设$n$个单位根$w_n<sup>0,w_n</sup>1,\cdots,w_n^{n-1}$代入$A(x)$转化成点值表达,<br>
-$$A(w_n<sup>k)=\sum_{i=0}</sup>{n-1}a_iw^{ki}, k = 0,1,\cdots,n-1$$<br>
-  点值向量$\vec y=\left(A(w_n<sup>0),A(w_n</sup>1),\cdots,A(w_n^{n-1}))\right)$称作系数向量$\vec a=(a_0,a_1,\cdots,a_n)$的<strong>离散傅里叶变换</strong>(Discrete Fourier Transform, DFT), 记作$\vec y = DFT_n(\vec a)$</p>
+        <p>  据说现在打信息竞赛的初中生都会<span class="math inline">\(FFT(Fast\ Fourier\ Transform)\)</span>了, 但严格而言这应该是信号里的内容, 在<span class="math inline">\(OI\)</span>里可以快速求卷积, 下个学期专业课也会有, 于是前段日子学了一下, 想以此文回顾一下</p>
+<h2 id="快速傅里叶变换">快速傅里叶变换</h2>
+<p>  快速傅里叶变换可以认为有<span class="math inline">\(DFT\)</span>和<span class="math inline">\(IDFT\)</span>两个部分, 分别在<span class="math inline">\(O(nlogn)\)</span>的复杂度将系数转换成点值表示并转化回来.</p>
+<h4 id="cooley-turkey算法"><span class="math inline">\(Cooley-Turkey\)</span>算法</h4>
+<p>  <span class="math inline">\(Cooley-Turkey\)</span>是FFT中最常见的的算法, 基本思想由<span class="math inline">\(J.W.Cooley\)</span>和<span class="math inline">\(J.W.Tukey\)</span>在<span class="math inline">\(1965\)</span>年提出, 是一个基于分治策略的算法, 假设现在有一个<span class="math inline">\(n-1\)</span>次多项式<span class="math inline">\(A(x) = \displaystyle\sum_{i=0}^{n-1}a_ix^i\)</span>, 为方便叙述, 假设<span class="math inline">\(n=2^m,m\in\mathbb{Z}\)</span>, 如果系数不足可以在高次项补<span class="math inline">\(0\)</span>.</p>
+<p>  设<span class="math inline">\(n\)</span>个单位根<span class="math inline">\(w_n^0,w_n^1,\cdots,w_n^{n-1}\)</span>代入<span class="math inline">\(A(x)\)</span>转化成点值表达, <span class="math display">\[A(w_n^k)=\sum_{i=0}^{n-1}a_iw^{ki}, k = 0,1,\cdots,n-1\]</span>   点值向量<span class="math inline">\(\vec y=\left(A(w_n^0),A(w_n^1),\cdots,A(w_n^{n-1}))\right)\)</span>称作系数向量<span class="math inline">\(\vec a=(a_0,a_1,\cdots,a_n)\)</span>的<strong>离散傅里叶变换</strong>(Discrete Fourier Transform, DFT), 记作<span class="math inline">\(\vec y = DFT_n(\vec a)\)</span></p>
 
       
 
@@ -452,11 +450,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">分治</a>
+                <a href="javascript:void(0)" class="js-tag color5">组合数学</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">组合数学</a>
+                <a href="javascript:void(0)" class="js-tag color3">分治</a>
               </li>
              
               <li class="article-tag-list-item">
