@@ -2,12 +2,12 @@
 <search>
   <entry>
     <title>跳舞链</title>
-    <url>/2020/04/05/%E8%B7%B3%E8%88%9E%E9%93%BE/</url>
+    <url>/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E8%B7%B3%E8%88%9E%E9%93%BE/</url>
     <content><![CDATA[<h1 id="精确覆盖问题exact-cover">精确覆盖问题<a href="https://en.wikipedia.org/wiki/Exact_cover" target="_blank" rel="noopener">(Exact Cover)</a></h1>
 <p>  定义:给定一个<span class="math inline">\(R\times C\)</span>的<span class="math inline">\(0,1\)</span>矩阵，问是否存在一个行集合，使得集合每一列恰有一个<span class="math inline">\(1\)</span></p>
-<figure>
-<img src="/.top//fig1.jpg" title="1" alt=""><figcaption>1</figcaption>
-</figure>
+<p>
+<img src="/.top//fig1.jpg" alt="1">
+</p>
 <ul>
 <li>穷举法</li>
 </ul>
@@ -48,7 +48,7 @@
   </entry>
   <entry>
     <title>Catalan数的原理与应用</title>
-    <url>/2019/10/12/Catalan%E6%95%B0%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/</url>
+    <url>/%E6%95%B0%E5%AD%A6/Catalan%E6%95%B0%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/</url>
     <content><![CDATA[<hr>
 <p>由于<span class="math inline">\(C_2=C_3=1\)</span></p>
 <p>设<span class="math inline">\(G(x)=C_2+C_3x+C_4x^2+\cdots\)</span> <span class="math display">\[x^2:C_4=C_2C_3+C_3C_2\\
@@ -96,7 +96,7 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
   </entry>
   <entry>
     <title>一些字符串算法小结</title>
-    <url>/2019/09/08/%E4%B8%80%E4%BA%9B%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%97%E6%B3%95%E5%B0%8F%E7%BB%93/</url>
+    <url>/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E4%B8%80%E4%BA%9B%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%97%E6%B3%95%E5%B0%8F%E7%BB%93/</url>
     <content><![CDATA[<h2 id="manacher算法"><span class="math inline">\(Manacher\)</span>算法</h2>
 <p>  <del>众所周知</del>, <span class="math inline">\(Manacher\)</span>算法是一个求字符串中最长回文子序列问题的算法, 可以想到一个比较显然的做法: 长度为奇数的回文串以最中间字符的位置为对称轴, 而长度为偶数的回文串的对称轴在中间两个字符之间的空隙处. 于是我们考虑遍历这些对称轴, 并且同时向左右扩展, 直到左右两边的字符不同或到达边界.</p>
 <p>  这个算法的复杂度是<span class="math inline">\(O(n^2)\)</span>, 是无法过一些较大数据范围的题, 我们来思考一下这个算法的缺点, 显然, 回文串长度的奇偶性造成了对称轴的位置可能在某字符上, 也可能在两个字符之间的空隙处，要对两种情况分别处理. 为了解决这个问题, 可以强行在原字符串中插入其他本字符串不会出现的字符, 如<code>"#"</code>.</p>
@@ -133,7 +133,7 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
   </entry>
   <entry>
     <title>组合数性质探究</title>
-    <url>/2019/09/06/%E7%BB%84%E5%90%88%E6%95%B0%E6%80%A7%E8%B4%A8%E6%8E%A2%E7%A9%B6/</url>
+    <url>/%E6%95%B0%E5%AD%A6/%E7%BB%84%E5%90%88%E6%95%B0%E6%80%A7%E8%B4%A8%E6%8E%A2%E7%A9%B6/</url>
     <content><![CDATA[<p>  首先我们回顾一下一些简单性质</p>
 <ol type="1">
 <li><span class="math inline">\(\begin{pmatrix}n\\k\end{pmatrix}=\displaystyle\frac{n!}{k!(n-k)!}\)</span></li>
@@ -179,7 +179,7 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
   </entry>
   <entry>
     <title>浅谈几个特殊函数</title>
-    <url>/2019/08/28/%E6%B5%85%E8%B0%88%E5%87%A0%E4%B8%AA%E7%89%B9%E6%AE%8A%E5%87%BD%E6%95%B0/</url>
+    <url>/%E6%95%B0%E5%AD%A6/%E6%B5%85%E8%B0%88%E5%87%A0%E4%B8%AA%E7%89%B9%E6%AE%8A%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<h2 id="gamma函数"><span class="math inline">\(\Gamma函数\)</span></h2>
 <p>  <span class="math inline">\(\Gamma\)</span>函数是由如下含参数变量定义的积分, 又称第二类<span class="math inline">\(Euler\)</span>积分, 其含参积分定义为</p>
 <p><span class="math display">\[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}\mathrm{d}x \tag{1}\]</span></p>
@@ -286,7 +286,7 @@ V &amp;=&amp; \displaystyle\iint\cdots\int_D\mathrm{d}x_1\mathrm{d}x_2\cdots\mat
   </entry>
   <entry>
     <title>反演原理及应用</title>
-    <url>/2019/08/25/%E5%8F%8D%E6%BC%94%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/</url>
+    <url>/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E5%8F%8D%E6%BC%94%E5%8E%9F%E7%90%86%E5%8F%8A%E5%BA%94%E7%94%A8/</url>
     <content><![CDATA[<h1 id="什么是反演">什么是反演</h1>
 <p>  对于数列<span class="math inline">\(\left\{f_n\right\}\)</span>以及数列<span class="math inline">\(\left\{g_n\right\}\)</span>满足</p>
 <p><span class="math display">\[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]</span></p>
@@ -506,7 +506,7 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
   </entry>
   <entry>
     <title>算法模板</title>
-    <url>/2019/08/24/ACM%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/</url>
+    <url>/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/ACM%E7%AE%97%E6%B3%95%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<h1 id="基础">基础</h1>
 <h2 id="排序">排序</h2>
 <h3 id="归并排序">归并排序</h3>
@@ -582,7 +582,7 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
   </entry>
   <entry>
     <title>POJ1845 Sumdiv</title>
-    <url>/2019/07/17/POJ1845%20Sumdiv/</url>
+    <url>/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/POJ1845%20Sumdiv/</url>
     <content><![CDATA[<p><a href="http://poj.org/problem?id=1845" target="_blank" rel="noopener"><span class="math inline">\(Sumdiv\)</span></a></p>
 <p>  <strong>题意</strong>: 求<span class="math inline">\(A^B\)</span>的所有约数之和<span class="math inline">\(\mod{9901}\left(1\leq A,B \leq5*10^7\right)\)</span></p>
 <p>  <strong>分析</strong>: A分解质因数为<span class="math inline">\(p_1^{c_1}\times p_2^{c_2}\times\cdots\times p_n^{c_n}\)</span>。那么<span class="math inline">\(A^B\)</span>表示为<span class="math inline">\(p_1^{Bc_1}\times p_2^{Bc_2}\times\cdots\times p_n^{Bc_n}\)</span>。<span class="math inline">\(A^B\)</span>的所有约数表示为集合<span class="math inline">\(\{p_1^{k_1}\times p_2^{k_2}\times\cdots\times p_n^{k_n}\}\)</span>，其中<span class="math inline">\(0\leq k_i \leq B\times c_i\left(1\leq i \leq n\right)\)</span></p>
@@ -604,7 +604,7 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
   </entry>
   <entry>
     <title>部分写作知识点小结</title>
-    <url>/2019/01/03/%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C%E5%B0%8F%E7%BB%93/</url>
+    <url>/%E5%85%B6%E4%BB%96/%E5%8D%9A%E5%AE%A2%E5%86%99%E4%BD%9C%E5%B0%8F%E7%BB%93/</url>
     <content><![CDATA[<p>本文是一篇测试博文</p>
 <p><a href="https://pandoc.org/MANUAL.html#pandocs-markdown" target="_blank" rel="noopener">pandoc教程</a></p>
 <h1 id="latex"><span class="math inline">\(LaTex\)</span></h1>
@@ -1211,7 +1211,7 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
 <h1 id="html">Html</h1>
 <p><a href="https://www.w3school.com.cn/tags/index.asp" target="_blank" rel="noopener">学习的地方</a></p>
 <h2 id="基本文档">基本文档</h2>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;title&gt;文档标题&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		可见文本...</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">    &lt;p&gt;这是一个段落。&lt;/p&gt;</span><br><span class="line">	&lt;br&gt; （换行）</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;title&gt;文档标题&lt;&#x2F;title&gt;</span><br><span class="line">	&lt;&#x2F;head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		可见文本...</span><br><span class="line">	&lt;&#x2F;body&gt;</span><br><span class="line">    &lt;p&gt;这是一个段落。&lt;&#x2F;p&gt;</span><br><span class="line">	&lt;br&gt; （换行）</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="基本元素">基本元素</h2>
 <b>粗体文<b>粗体文本</b> <code class="language-cpp"> int exgcd(int x, int y, int &amp;a, int &amp;b) { if (y == 0) { return a = 1, b = 0, x; } else { int g = exgcd(y, x % y, b, a); b -= x / y * a; return g; } }</code><br> <em>强调文本</em><br> <i>斜体文本</i><br> <kbd>键盘输入</kbd><br>
 <pre>预格式化文本</pre>
@@ -1223,7 +1223,7 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
 <blockquote>
 从另一个源引用的部分
 </blockquote>
-<p><cite>工作的名称</cite> <del>删除的文本</del> <ins>插入的文本</ins><sub>下标文本</sub><sup>上标文本</sup>本</p></b> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;b&gt;粗体文本&lt;/b&gt;</span><br><span class="line">&lt;code class=&quot;language-cpp&quot;&gt;</span><br><span class="line">int exgcd(int x, int y, int &amp;a, int &amp;b) &#123;</span><br><span class="line">    if (y == 0) &#123;</span><br><span class="line">        return a = 1, b = 0, x;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        int g = exgcd(y, x % y, b, a);</span><br><span class="line">        b -= x / y * a;</span><br><span class="line">        return g;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;&lt;/code&gt;</span><br><span class="line">&lt;em&gt;强调文本&lt;/em&gt;</span><br><span class="line">&lt;i&gt;斜体文本&lt;/i&gt;</span><br><span class="line">&lt;kbd&gt;键盘输入&lt;/kbd&gt; </span><br><span class="line">&lt;pre&gt;预格式化文本&lt;/pre&gt;</span><br><span class="line">&lt;small&gt;更小的文本&lt;/small&gt;</span><br><span class="line">&lt;strong&gt;重要的文本&lt;/strong&gt;</span><br><span class="line">&lt;abbr&gt;缩写&lt;/abbr&gt;&lt;br&gt;</span><br><span class="line">&lt;address&gt;联系信息&lt;/address&gt;</span><br><span class="line">&lt;bdo&gt;文字方向&lt;/bdo&gt;</span><br><span class="line">&lt;blockquote&gt;从另一个源引用的部分&lt;/blockquote&gt;</span><br><span class="line">&lt;cite&gt;工作的名称&lt;/cite&gt; </span><br><span class="line">&lt;del&gt;删除的文本&lt;/del&gt; </span><br><span class="line">&lt;ins&gt;插入的文本&lt;/ins&gt;</span><br><span class="line">&lt;sub&gt;下标文本&lt;/sub&gt;</span><br><span class="line">&lt;sup&gt;上标文本&lt;/sup&gt;本&lt;/b&gt;</span><br></pre></td></tr></table></figure><p></p>
+<p><cite>工作的名称</cite> <del>删除的文本</del> <ins>插入的文本</ins><sub>下标文本</sub><sup>上标文本</sup>本</p></b> <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;b&gt;粗体文本&lt;&#x2F;b&gt;</span><br><span class="line">&lt;code class&#x3D;&quot;language-cpp&quot;&gt;</span><br><span class="line">int exgcd(int x, int y, int &amp;a, int &amp;b) &#123;</span><br><span class="line">    if (y &#x3D;&#x3D; 0) &#123;</span><br><span class="line">        return a &#x3D; 1, b &#x3D; 0, x;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        int g &#x3D; exgcd(y, x % y, b, a);</span><br><span class="line">        b -&#x3D; x &#x2F; y * a;</span><br><span class="line">        return g;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;&lt;&#x2F;code&gt;</span><br><span class="line">&lt;em&gt;强调文本&lt;&#x2F;em&gt;</span><br><span class="line">&lt;i&gt;斜体文本&lt;&#x2F;i&gt;</span><br><span class="line">&lt;kbd&gt;键盘输入&lt;&#x2F;kbd&gt; </span><br><span class="line">&lt;pre&gt;预格式化文本&lt;&#x2F;pre&gt;</span><br><span class="line">&lt;small&gt;更小的文本&lt;&#x2F;small&gt;</span><br><span class="line">&lt;strong&gt;重要的文本&lt;&#x2F;strong&gt;</span><br><span class="line">&lt;abbr&gt;缩写&lt;&#x2F;abbr&gt;&lt;br&gt;</span><br><span class="line">&lt;address&gt;联系信息&lt;&#x2F;address&gt;</span><br><span class="line">&lt;bdo&gt;文字方向&lt;&#x2F;bdo&gt;</span><br><span class="line">&lt;blockquote&gt;从另一个源引用的部分&lt;&#x2F;blockquote&gt;</span><br><span class="line">&lt;cite&gt;工作的名称&lt;&#x2F;cite&gt; </span><br><span class="line">&lt;del&gt;删除的文本&lt;&#x2F;del&gt; </span><br><span class="line">&lt;ins&gt;插入的文本&lt;&#x2F;ins&gt;</span><br><span class="line">&lt;sub&gt;下标文本&lt;&#x2F;sub&gt;</span><br><span class="line">&lt;sup&gt;上标文本&lt;&#x2F;sup&gt;本&lt;&#x2F;b&gt;</span><br></pre></td></tr></table></figure><p></p>
 <h2 id="列表与表格">列表与表格</h2>
 <ul>
 <li>
