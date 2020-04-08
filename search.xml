@@ -142,9 +142,10 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
       </tags>
   </entry>
   <entry>
-    <title>组合数性质探究</title>
-    <url>/%E6%95%B0%E5%AD%A6/%E7%BB%84%E5%90%88%E6%95%B0%E6%80%A7%E8%B4%A8%E6%8E%A2%E7%A9%B6/</url>
-    <content><![CDATA[<p>  首先我们回顾一下一些简单性质</p>
+    <title>组合数学基础</title>
+    <url>/%E6%95%B0%E5%AD%A6/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<h1 id="组合数">组合数</h1>
+<p>  首先我们回顾一下一些简单性质</p>
 <ol type="1">
 <li><span class="math inline">\(\begin{pmatrix}n\\k\end{pmatrix}=\displaystyle\frac{n!}{k!(n-k)!}\)</span></li>
 <li><span class="math inline">\(\begin{pmatrix}n\\k\end{pmatrix}=\displaystyle\frac{n}{k}\begin{pmatrix}n-1\\k-1\end{pmatrix}\)</span></li>
@@ -179,6 +180,18 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
 <li>勒让德定理<span class="math inline">\((\)</span>或者叫扩展<span class="math inline">\(Lucas\)</span><span class="math inline">\()\)</span></li>
 </ul>
 <p>  勒让德定理：在正数<span class="math inline">\(n!\)</span>的素因子标准分解式中，素数<span class="math inline">\(p\)</span>的最高指数为<span class="math inline">\((n!)=\displaystyle\sum_{m=1}^\infty\left[\frac{n}{p^m}\right]\)</span></p>
+<h1 id="母函数">母函数</h1>
+<p>  对于有限数列<span class="math inline">\(a_0,a_1,a_2,\cdots,a_n,\)</span>多项式<span class="math inline">\(f(x)=\displaystyle\sum_{k=0}^na_kx^k\)</span>称为数列<span class="math inline">\(\{a_k\}\)</span>的母函数。无穷数列相关定义类似。</p>
+<p><span class="math display">\[(1)\sum_{k=1}^nC_n^kC_n^{n+1-k}=C_{2n}^{n+1}\]</span></p>
+<p><span class="math inline">\(proof:\displaystyle\left(\sum_{i=0}^nC_n^ix^i\right)\left(\sum_{j=0}^nC_n^jx^j\right)=(1+x)^{2n}=\sum_{k=0}^{2n}C_{2n}^kx^k\)</span>, 两边<span class="math inline">\(x^{n+1}\)</span>系数相等。</p>
+<p><span class="math display">\[(2)\sum_{k=0}^{[\frac{n}{2}]}(-1)^kC_{n+1}^kC_{2n-2k}^n=n+1\]</span></p>
+<p><span class="math inline">\(proof:\displaystyle\sum_{k=0}^{n+1}C_{n+1}^kx^k=(1+x)^{n+1}=\frac{(1-x^2)^{n+1}}{(1-x)^{n+1}}=\left(\sum_{k=0}^{n+1}(-1)^kC_{n+1}^kx^{2k}\right)\left(\sum_{j=0}^\infty C_{n+j}^nx^j\right),\)</span></p>
+<p>右边<span class="math inline">\(x^n\)</span>系数<span class="math inline">\(=\displaystyle\sum_{k=0}^{[\frac{n}{2}]}(-1)^kC_{n+1}^kC_{n+(n-2k)}^n=\sum_{k=0}^{[\frac{n}{2}]}(-1)^kC_{n+1}^kC_{2n-2k}^n=\)</span>左边<span class="math inline">\(x^n\)</span>系数<span class="math inline">\(=n+1\)</span></p>
+<p><span class="math display">\[(3)\sum_{k=p}^n(-1)^kC_n^kC_k^p=(-1)^n\delta_{pn},\text{其中}\delta_{ij}=\begin{cases}1\quad ,i=j\\0\quad ,i\neq j\end{cases}\]</span></p>
+<p><span class="math inline">\(proof:\displaystyle\because k\geq p\text{时}(1+x)^k=\sum_{i=0}^kC_k^ix^i\text{中}x^p\text{系数}C_k^p,0\leq k &lt; p\text{时}(1+x)^k\text{中}x^p\text{系数}0\)</span> <span class="math inline">\(\displaystyle\therefore\sum_{k=0}^n(-1)^kC_n^k(1+x)^k中x^p系数为\sum_{k=p}^n(-1)^kC_n^kC_k^p\)</span>并且<span class="math inline">\(\displaystyle\sum_{k=0}^n(-1)^kC_n^k(1+x)^k=[1-(1+x)]^n=(-1)^nx^n\)</span>中<span class="math inline">\(x^p\)</span>系数为<span class="math inline">\((-1)\delta_{pn}\)</span>,即证。</p>
+<h2 id="应用">应用</h2>
+<p>  将一张<span class="math inline">\(n\)</span>元的纸币全部兑换为1元和2元的纸币，问有多少种不同的兑换方法?</p>
+<p>  所求方法数为下列多项式中<span class="math inline">\(x^n\)</span>的系数<span class="math inline">\(a_n\)</span> <span class="math display">\[f(x)=\sum_{n=0}^\infty a_nx^n=\left(\sum_{i=0}^\infty x^i\right)\left(\sum_{j=0}^\infty x^{2j}\right)=\left(\frac{1}{1-x}\right)\left(\frac{1}{1-x^2}\right)\\=\frac{1}{4(1+x)}+\frac{1}{2(1-x^2)}+\frac{1}{4(1-x)}=\sum_{n=0}^\infty\left(\frac{n+1}{2}+\frac{1+(-1)^n}{4}\right)x^n\]</span> 故所求方法数为<span class="math inline">\(\displaystyle a_n=\frac{n+1}{2}+\frac{1+(-1)^n}{4}=\left[\frac{n+2}{2}\right]\)</span></p>
 ]]></content>
       <categories>
         <category>数学</category>
@@ -191,20 +204,58 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
     <title>浅谈几个特殊函数</title>
     <url>/%E6%95%B0%E5%AD%A6/%E6%B5%85%E8%B0%88%E5%87%A0%E4%B8%AA%E7%89%B9%E6%AE%8A%E5%87%BD%E6%95%B0/</url>
     <content><![CDATA[<h2 id="gamma函数"><span class="math inline">\(\Gamma函数\)</span></h2>
-<p>  <span class="math inline">\(\Gamma\)</span>函数是由如下含参数变量定义的积分, 又称第二类<span class="math inline">\(Euler\)</span>积分, 其含参积分定义为</p>
-<p><span class="math display">\[\Gamma(s)=\int_0^{+\infty}x^{s-1}e^{-x}\mathrm{d}x \tag{1}\]</span></p>
-<p>它有 <strong><span class="math inline">\(Gauss\)</span>无穷乘积</strong>分解(<span class="math inline">\(Euler-Gauss\)</span>公式)</p>
-<p><span class="math display">\[\Gamma(x)=\lim_{n\to\infty}\frac{n!n^x}{x(x+1)\cdots(x+n)}\]</span></p>
-<a id="more"></a>
+<p>  在数学中，<span class="math inline">\(\Gamma\)</span>函数，是<strong>阶乘函数</strong>在实数与复数域上的扩展。</p>
+<p>  <span class="math inline">\(\Gamma\)</span>函数可通过第二类<span class="math inline">\(Euler\)</span>积分定义:</p>
+<p><span class="math display">\[\Gamma(z)=\int_0^{\infty}t^{z-1}e^{-t}\mathrm{d}t\]</span></p>
+<p>我们考察被积函数<span class="math inline">\(f(t)=t^{z-1}e^{-t}\)</span>，设函数序列<span class="math inline">\(f_n(t):[0,+\infty)\rightarrow\Bbb{C}\)</span>,且<span class="math inline">\(\displaystyle f_n(t)=\begin{cases}t^{z-1}(1-\frac{t}{n})^n\quad ,t\in[0,n]\\0\quad,\text{其他}\end{cases}\)</span>，显然<span class="math inline">\(\displaystyle\lim_{n\to\infty}f_n(t)=f(t)\)</span>，且<span class="math inline">\(|Re[f_n(t)]|\leq t^{Re(z)-1}e^{-t}, |Im[f_n(t)]|\leq t^{Im(z)-1}e^{-t}\)</span>，由<strong>控制收敛定理</strong>得</p>
+<p><span class="math display">\[\lim_{n\to\infty}\int_0^{\infty}f_n(t)\mathrm{d}t=\int_0^{\infty}f(t)\mathrm{d}t\]</span></p>
+<p>又因为<span class="math inline">\(\displaystyle f_n(t)\equiv0\forall t\notin[0,n],\therefore \int_0^{\infty}f_n(t)\mathrm{d}t=\int_0^{n}f_n(t)\mathrm{d}t\)</span>,，所以</p>
+<p><span class="math display">\[\lim_{n\to\infty}\int_0^{n}f_n(t)\mathrm{d}t=\int_0^{\infty}f(t)\mathrm{d}t\]</span></p>
+<p>定义<span class="math inline">\(\displaystyle P_n(z)=\int_0^{n}t^{z-1}\left(1-\frac{t}{n}\right)^n\mathrm{d}t\)</span>，我们由以上结论可得</p>
+<p><span class="math display">\[\lim_{n\to\infty}P_n(z)=\Gamma(z)\]</span></p>
+<p>当然我们也可以按如下方式证明：</p>
+<p><span class="math display">\[\Gamma(z)-P_n(z)=\int_0^n[e^{-t}-(1-\frac{t}{n})]t^{z-1}\mathrm{d}t+\int_n^{\infty}e^{-t}t^{z-1}\mathrm{d}t\]</span></p>
+<p>易知<span class="math inline">\(RHS\)</span>第二项极限<span class="math inline">\(n\to\infty\)</span>为0，对第一项，我们由以下引理</p>
+<p><span class="math display">\[0\leq e^{-t}-\left(1-\frac{t}{n}\right)^n\leq \frac{t^2}{n}e^{-t}\]</span></p>
+<p>得</p>
+<p><span class="math display">\[\left|\int_0^n[e^{-t}-(1-\frac{t}{n})]t^{z-1}\mathrm{d}t\right|\leq\int_0^n\frac{1}{n}e^{-t}t^{x+1}\mathrm{d}t&lt;\frac{1}{n}\int_0^{\infty}e^{-t}t^{x+1}\mathrm{d}t\rightarrow0\]</span></p>
+<p>其中<span class="math inline">\(x=Re(z)\)</span>，这样就证明了<span class="math inline">\(\displaystyle\lim_{n\to\infty}P_n(z)=\Gamma(z)\)</span></p>
+<p>  下面证明引理，<span class="math inline">\(0&lt;y&lt;1\)</span>时有<span class="math inline">\(1+y\leq e^y\leq(1-y)^{-1}\)</span>，令<span class="math inline">\(t=\frac{t}{n}\)</span>得</p>
+<p><span class="math display">\[\left(1+\frac{t}{n}\right)^{-n}\geq e^{-t}\geq\left(1-\frac{t}{n}\right)^n\]</span></p>
+<p>故</p>
+<p><span class="math display">\[0\leq e^{-t}-\left(1-\frac{t}{n}\right)^n=e^{-t}\left[1-e^t\left(1-\frac{t}{n}\right)^n\right]\leq e^{-t}\left[1-\left(1-\frac{t^2}{n^2}\right)^n\right]\]</span></p>
+<p>又由伯努利不等式<span class="math inline">\(0\leq\alpha\leq1\)</span>有<span class="math inline">\((1-n\alpha)^n\geq1-n\alpha\)</span>得</p>
+<p><span class="math display">\[1-\left(1-\frac{t^2}{n^2}\right)^n\leq\frac{t^2}{n}\]</span></p>
+<p>即证</p>
+<p>在<span class="math inline">\(P_n(z)\)</span>中令<span class="math inline">\(t=nx\)</span>得</p>
+<p><span class="math display">\[\int_0^{n}t^{z-1}\left(1-\frac{t}{n}\right)^n\mathrm{d}t=n^z\int_0^1x^{z-1}(1-x)^n\mathrm{d}x=n^zI_{n,z}\]</span></p>
+<p>分部积分得</p>
+<p><span class="math display">\[\begin{array}{l}I_{n,z}&amp;=&amp;\displaystyle\int_0^1(1-x)^n\mathrm{d}\left(\frac{x^z}{z}\right)\\
+&amp;=&amp;\displaystyle\frac{x^z(1-x)^n}{z}|+\frac{n}{z}\int_0^1x^z(1-x)^{n-1}\mathrm{d}x\\
+&amp;=&amp;\displaystyle\frac{n}{z}I_{n-1,z+1}\end{array}\]</span></p>
+<p>而</p>
+<p><span class="math display">\[I_{0,z+n}=\int_0^1x^{z+n-1}\mathrm{d}x=\frac{1}{z+n}\]</span></p>
+<p>从而</p>
+<p><span class="math display">\[I_{n,z}=\frac{n!}{z(z+1)\cdots(z+n)}\]</span></p>
+<p>得到<span class="math inline">\(\Gamma\)</span>函数另一个定义: <strong><span class="math inline">\(Gauss\)</span>无穷乘积</strong>分解</p>
+<p><span class="math display">\[\Gamma(z)=\lim_{n\to\infty}\frac{n!n^z}{z(z+1)\cdots(z+n)}\]</span></p>
+<p>这就是著名的<span class="math inline">\(Euler-Gauss\)</span>公式</p>
+<p>又因为<span class="math inline">\(\displaystyle n^z=\prod_{k=1}^{n-1}\left(1+\frac{1}{k}\right)\)</span>, 极限可以改写成</p>
+<p><span class="math display">\[\Gamma(z)=\lim_{n\to\infty}\frac{1}{z}\prod_{k=1}^n(1+\frac{z}{k})^{-1}(1+\frac{1}{k})^z\]</span></p>
+<p>我们得到<span class="math inline">\(\gamma\)</span>函数的欧拉乘积形式</p>
+<p><span class="math display">\[\Gamma(z)=\frac{1}{z}\prod_{k=1}^\infty\frac{\left(1+\frac{1}{k}\right)^z}{1+\frac{z}{k}}\]</span></p>
 <p><strong>性质:</strong></p>
 <ol type="1">
-<li><span class="math inline">\(\Gamma(s+1)=s\Gamma(s)\ (s&gt;0)\)</span></li>
-<li><span class="math inline">\(\Gamma(s)=2\displaystyle\int_0^{+\infty}x^{2s-1}e^{-x^2}\mathrm{d}x\)</span></li>
-<li><span class="math inline">\(\Gamma(s)\)</span>在<span class="math inline">\((0,+\infty)\)</span>上为严格下凸函数, 它及其任意阶导数都连续, 且 <span class="math display">\[\Gamma^{(n)}(s)=\int_0^{+\infty}x^{s-1}(\ln x)^ne^{-x}\mathrm{d}x\]</span></li>
+<li><span class="math inline">\(\displaystyle\Gamma(z+1)=\int_0^{\infty}t^{z}e^{-t}\mathrm{d}t=t^z(-e^{-t})|_0^\infty+z\int_0^\infty t^{z-1}e^{-t}\mathrm{d}t=z\Gamma(z)\ (z&gt;0)\)</span></li>
+</ol>
+<p>  从而<span class="math inline">\(\Gamma(z)=(z-1)!\)</span></p>
+<ol start="2" type="1">
+<li><p><span class="math inline">\(\Gamma(z)=2\displaystyle\int_0^{+\infty}t^{2z-1}e^{-t^2}\mathrm{d}t\)</span></p></li>
+<li><p><span class="math inline">\(\Gamma(z)\)</span>在<span class="math inline">\((0,+\infty)\)</span>上为严格下凸函数, 它及其任意阶导数都连续, 且 <span class="math display">\[\Gamma^{(n)}(z)=\int_0^{+\infty}t^{z-1}(\ln t)^ne^{-t}\mathrm{d}t\]</span></p></li>
 </ol>
 <h2 id="rmb函数"><span class="math inline">\(\rm{B}函数\)</span></h2>
 <p>  <span class="math inline">\({\rm{B}}\)</span>函数是由如下含两个参变量的瑕积分定义的函数</p>
-<p><span class="math display">\[{\rm{B}}\left(p,q\right)=\int_0^1x^{p-1}(1-x)^{q-1}\mathrm{d}x,\quad p,q&gt;0 \tag{2}\]</span></p>
+<p><span class="math display">\[{\rm{B}}\left(p,q\right)=\int_0^1x^{p-1}(1-x)^{q-1}\mathrm{d}x,\quad p,q&gt;0\]</span></p>
 <p><strong>性质:</strong></p>
 <ol type="1">
 <li><span class="math inline">\({\rm{B}}(p,q)={\rm{B}}(q,p)\)</span></li>
