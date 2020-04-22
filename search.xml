@@ -216,7 +216,7 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
 <p><span class="math display">\[mp_1\equiv{a_2-a_1}\pmod{p_2}\]</span></p>
 <p>即</p>
 <p><span class="math display">\[mp_1-np_2=a_2-a_1\]</span></p>
-<p>由贝祖定理(<a href="https://en.wikipedia.org/wiki/Bézout' target=" _blank" rel="noopener" s_identity">Bezout's identity</a>)，若<span class="math inline">\(m\)</span>有解<span class="math inline">\(m_0\)</span>(即<span class="math inline">\(\gcd(p_1,p_2)|a_2-a_1,m_0\)</span>可用exgcd求)，则<span class="math inline">\(m\)</span>满足通项</p>
+<p>由贝祖定理(<a href="https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity" target="_blank" rel="noopener">Bezout's identity</a>)，若<span class="math inline">\(m\)</span>有解<span class="math inline">\(m_0\)</span>(即<span class="math inline">\(\gcd(p_1,p_2)|a_2-a_1,m_0\)</span>可用exgcd求)，则<span class="math inline">\(m\)</span>满足通项</p>
 <p><span class="math display">\[m=m_0+k\frac{p_2}{\gcd(p_1,p_2)}\quad k\in\Bbb{Z}\]</span></p>
 <p>代入<span class="math inline">\(x\)</span>表达式有</p>
 <p><span class="math display">\[x=m_0p_1+k{\rm{lcm}}(p_1,p_2)+a_1\]</span></p>
@@ -229,7 +229,7 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
 <p>设<span class="math inline">\(\displaystyle P=\prod_{i=1}^np_i,\ P_i=\frac{P}{p_i}\)</span>，则方程组有通解</p>
 <p><span class="math display">\[x\equiv\sum_{i=1}^na_iP_i{\rm inv}(P_i)\pmod{P}\]</span></p>
 <p><a href="https://www.luogu.com.cn/problem/P2480" target="_blank" rel="noopener">P2840</a></p>
-<h3 id="勒让德定理legendres-formula-或者叫扩展lucas">勒让德定理(<a href="https://en.wikipedia.org/wiki/Legendre' target=" _blank" rel="noopener" s_formula">Legendre's formula</a>) (或者叫扩展Lucas)</h3>
+<h3 id="勒让德定理legendres-formula-或者叫扩展lucas">勒让德定理(<a href="https://en.wikipedia.org/wiki/Legendre%27s_formula" target="_blank" rel="noopener">Legendre's formula</a>) (或者叫扩展Lucas)</h3>
 <p>  考虑计算</p>
 <p><span class="math display">\[\begin{pmatrix}n\\m\end{pmatrix}\mod{p}\]</span></p>
 <p>对<span class="math inline">\(p\)</span>进行唯一分解<span class="math inline">\(p=\prod p_i^{c_i}\)</span></p>
