@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>线段树学习</title>
-    <url>/uncategorized/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%AD%A6%E4%B9%A0/</url>
+    <url>/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<h1 id="基础">基础</h1>
 <h2 id="概念">概念</h2>
 <p>  线段树(<a href="https://en.wikipedia.org/wiki/Segment_tree" target="_blank" rel="noopener">Segment tree</a>)是基于分治的二叉树，用于在区间上进行信息统计。线段树每个节点都代表一个区间，每个叶节点代表长度为1的区间，每个内部节点<span class="math inline">\([l,r]\)</span>，左子节点<span class="math inline">\([l,mid]\)</span>，右子节点<span class="math inline">\([mid+1,r]\)</span>，其中<span class="math inline">\(mid=\lfloor\frac{l+r}{2}\rfloor\)</span>。</p>
@@ -25,6 +25,9 @@
 <h2 id="经典应用">经典应用</h2>
 <h3 id="区间最值">区间最值</h3>
 ]]></content>
+      <categories>
+        <category>算法竞赛</category>
+      </categories>
   </entry>
   <entry>
     <title>跳舞链</title>
