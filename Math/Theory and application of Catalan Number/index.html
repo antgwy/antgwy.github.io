@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>Catalan数的原理与应用 | 2inf</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Catalan数的原理与应用</h1><a id="logo" href="/.">2inf</a><p class="description">unprecedented</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">Catalan数的原理与应用</h1><div class="post-meta">2019-10-12<span> | </span><span class="category"><a href="/categories/Math/">Math</a></span></div><a class="disqus-comment-count" data-disqus-identifier="Math/Theory and application of Catalan Number/" href="/Math/Theory%20and%20application%20of%20Catalan%20Number/#disqus_thread"></a><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div></div></div><div class="post-content"><hr>
+<p>由于<span class="math inline">\(C_2=C_3=1\)</span></p>
+<p>设<span class="math inline">\(G(x)=C_2+C_3x+C_4x^2+\cdots\)</span> <span class="math display">\[x^2:C_4=C_2C_3+C_3C_2\\
+x^3:C_5=C_2C_4+C_3C_3+C_4C_2\\
+x^4:C_6=C_2C_5+C_3C_4+C_4C_3+C_5C_2\\
+\vdots\]</span> <span class="math display">\[\begin{array}{l}
+G(x)-x-1&amp;=&amp;C_2(C_3x^2+C_4x^3+\cdots)\\
+&amp;&amp;+C_3x(C_2x+C_3x^2+\cdots)\\
+&amp;&amp;+C_4x^2(C_2x+C_3x^2+\cdots)+\cdots\\
+&amp;=&amp;-x+C_2(C_2x+C_3x^2+\cdots)\\
+&amp;&amp;+C_3x(C_2x+C_3x^2+\cdots)+\cdots
+\end{array}\]</span></p>
+<a id="more"></a>
+<p><span class="math display">\[\Longrightarrow\quad\quad \begin{array}{l}
+G(x)-1&amp;=&amp;(C_2+C_3x+C_4x^2+\cdots)(C_2x+C_3x^2+\cdots)\\
+&amp;=&amp;x[G(x)]2
+\end{array}\]</span></p>
+<p><span class="math display">\[xG^2(x)-G(x)+1=0\\
+G(x)=\frac{1-\sqrt{1-4x}}{2x}\]</span></p>
+<p>  而<span class="math inline">\(\displaystyle(1-4x)^{\frac{1}{2}}=1+\frac{1}{2}(-4x)-\frac{\displaystyle\frac{1}{2}(\frac{1}{2}-1)}{2!}(-4x)^2+\frac{\displaystyle\frac{1}{2}(\frac{1}{2}-1)(\frac{1}{2}-2)}{3!}(-4x)^3+\cdots\)</span></p>
+<p>所以<span class="math inline">\((1-4x)^{\frac{1}{2}}\)</span>中<span class="math inline">\(x^{n+1}\)</span>项的系数为 <span class="math display">\[\begin{array}{l}
+&amp;&amp;\displaystyle\frac{1}{(n+1)!}\frac{1}{2}\left(\frac{1}{2}-1\right)\left(\frac{1}{2}-2\right)\cdots\left(\frac{1}{2}-n\right)(-4)^{n+1}\\
+&amp;=&amp;\displaystyle\frac{(-1)^{2n+1}}{(n+1)!}\frac{1\cdot3\cdot\cdots\cdot(2n-1)}{2^{n+1}}2^{2n+2}\\
+&amp;=&amp;\displaystyle\frac{-2}{n+1}\frac{(2n)!}{(n!)^2}=\frac{-2}{n+1}\begin{pmatrix}2n\\n\end{pmatrix}
+\end{array}\]</span></p>
+<p>故<span class="math inline">\(\displaystyle G(x)=\frac{1-\sqrt{1-4x}}{2x}\)</span>且 <span class="math display">\[C_{n+1}=\frac{1}{n}\begin{pmatrix}2n-2\\n-1\end{pmatrix}\]</span></p>
+<hr>
+<p>由递推关系 <span class="math display">\[nC_{n+1}=(4n-6)C_n\]</span> <span class="math display">\[G(x)=C_2x+C_3x^2+C_4x^3+\cdots\\
+x:2C_3=4\cdot2C_2-6C_2\\
+x^2:3C_4=4\cdot3C_3-6C_3\\
+\vdots\]</span> <span class="math display">\[G&#39;(x)-1=4[xG(x)]&#39;-6G(x)\]</span> <span class="math display">\[G(x)=C\sqrt{1-4x}+\frac{1}{2}\]</span> 由<span class="math inline">\(G(0)=0,\)</span>有<span class="math inline">\(\displaystyle C=-\frac{1}{2},\)</span>即<span class="math inline">\(\displaystyle G(x)=\frac{1-\sqrt{1-4x}}{2}\)</span></p>
+<hr>
+<ol type="1">
+<li><span class="math inline">\(C_{n+1}=C_2C_n+C_3C_{n-1}+\cdots+C_{n-1}C_3+C_nC_2\)</span></li>
+<li><span class="math inline">\((n-3)C_n=\frac{n}{2}(C_3C_{n-1}+C_4C_{n-2}+\cdots+C_{n-1}C_3)\)</span></li>
+</ol>
+<p>待填坑</p>
+</div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>Catalan数的原理与应用</p><p><span>文章作者：</span>wtyang</p><!--pspan= __('copyright_date_prefix')
+= page.date.format(config.date_format)--><!--pspan= __('copyright_update_prefix')
+= page.updated.format(config.date_format)--><p><span>原始链接：</span><a href="/Math/Theory and application of Catalan Number/">https://2inf.top/Math/Theory%20and%20application%20of%20Catalan%20Number/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://2inf.top/Math/Theory%20and%20application%20of%20Catalan%20Number/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" rel="noopener">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！</p></div><br><script type="text/javascript" src="/js/share.js?v=0.0.0" async></script><a class="article-share-link" data-url="https://2inf.top/Math/Theory%20and%20application%20of%20Catalan%20Number/" data-id="ck9v606o8000aw0v16hj83jvz" data-qrcode="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACvElEQVR42u3aQW7jMAwF0Nz/0h1gVjNArXySYpDF8ypobEtPBSSG5OsVXz9/r/zOf6/z257u/3m4XhsXHh4eXmvq59c9fU6W4NY7E/wv78HDw8Nb4+WvTrb4819ywGQ+eHh4eN/AOw+Zh9R5sJ4cKnh4eHjfzLuVtsiTDhfCejw8PLw1XjJMsoknB8n58JgkefHw8PA+w6tu99/webG+h4eHhzeoqk8KY9VNPA/ECzPEw8PDW+Dl4fJ5sF6LQB5SJ+MWJoqHh4c35vUY1QPgvIj5t/OiGh4eHt6Elzc5Vcv5eeJ10lLwZoHw8PDwFnj5plxN7/ZSEvmIhZ8BeHh4eFd5SWl/PvAkjM5bE96ce3h4eHiXeHkSIUm8zhMK+fIVjig8PDy8q7xeMiIvX1VTG5P7R/E+Hh4eXqcTIGInn6ttAbfavPDw8PA+w6smAvKCVq9Zqtee9YjEw8PD+wgvL1D12gJ6R0uztQsPDw9vgddLlZ4Hyw+DXtNVUgYbdUng4eHhHXlVTDU4nh8hedL2sTMCDw8Pb42XtzTdKpvlAXGV998vBjw8PLyrvF46tZe2yBMK+aJECV88PDy8q7x5gFvNfEyOn+rb8PDw8PZ4+WZdLURVN/d83CglgYeHh7fAy2/q/aWaPri1WIWB8fDw8Ma8JMC9FRBfSNFWDwY8PDy8NV6+Ec+D4Gp3WDUFjIeHh7fBywtX1aD21mL1QnY8PDy8bV71sY1CVzXUjv5heHh4eFd5vUTqBJYE0HnJ7c0c8PDw8BZ4k7C7+m3vAJiw8fDw8PZ4t9qt8jREfsDMC2x4eHh4e7xJumEyoXlA/Ga58fDw8L6G1zsAes9Wl/LCwYCHh4d3iVcNrHtlrSS4L6Q28PDw8NZ41ZdWh0+Wpjp6tGR4eHh4C7xeAWxe7E+eqs7hWn0PDw8P7/en/gDcgnOoAI71JwAAAABJRU5ErkJggg==">分享</a><div class="tags"><a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"><i class="fa fa-tag"></i>组合数学</a></div><div class="post-nav"><a class="pre" href="/Algorithm/Dancing%20Links/">跳舞链</a><a class="next" href="/Algorithm/summary%20of%20string%20algorithm/">一些字符串算法小结</a></div><div id="disqus_thread"><div class="btn_click_load"><button class="disqus_click_btn">阅读评论（请确保 Disqus 可以正常加载）</button></div><script type="text/javascript">var disqus_config = function () {
+    this.page.url = 'https://2inf.top/Math/Theory and application of Catalan Number/';
+    this.page.identifier = 'Math/Theory and application of Catalan Number/';
+    this.page.title = 'Catalan数的原理与应用';
+  };</script><script type="text/javascript" id="disqus-lazy-load-script">$.ajax({
+url: 'https://disqus.com/next/config.json',
+timeout: 2500,
+type: 'GET',
+success: function(){
+  var d = document;
+  var s = d.createElement('script');
+  s.src = '//2inf.disqus.com/embed.js';
+  s.setAttribute('data-timestamp', + new Date());
+  (d.head || d.body).appendChild(s);
+  $('.disqus_click_btn').css('display', 'none');
+},
+error: function() {
+  $('.disqus_click_btn').css('display', 'block');
+}
+});</script><script type="text/javascript" id="disqus-click-load">$('.btn_click_load').click(() => {  //click to load comments
+    (() => { // DON'T EDIT BELOW THIS LINE
+        var d = document;
+        var s = d.createElement('script');
+        s.src = '//2inf.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', + new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    $('.disqus_click_btn').css('display','none');
+});</script><script type="text/javascript" id="disqus-count-script">$(function() {
+     var xhr = new XMLHttpRequest();
+     xhr.open('GET', '//disqus.com/next/config.json', true);
+     xhr.timeout = 2500;
+     xhr.onreadystatechange = function () {
+       if (xhr.readyState === 4 && xhr.status === 200) {
+         $('.post-meta .post-comments-count').show();
+         var s = document.createElement('script');
+         s.id = 'dsq-count-scr';
+         s.src = 'https://2inf.disqus.com/count.js';
+         s.async = true;
+         (document.head || document.body).appendChild(s);
+       }
+     };
+     xhr.ontimeout = function () { xhr.abort(); };
+     xhr.send(null);
+   });
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://2inf.top"/></form></div><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Algorithm/">Algorithm</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Math/">Math</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/Algorithm/Learing%20Segment%20Tree/">线段树学习</a></li><li class="post-list-item"><a class="post-list-link" href="/Algorithm/Dancing%20Links/">跳舞链</a></li><li class="post-list-item"><a class="post-list-link" href="/Math/Theory%20and%20application%20of%20Catalan%20Number/">Catalan数的原理与应用</a></li><li class="post-list-item"><a class="post-list-link" href="/Algorithm/summary%20of%20string%20algorithm/">一些字符串算法小结</a></li><li class="post-list-item"><a class="post-list-link" href="/Math/The%20basis%20of%20combinatorics/">组合数学基础</a></li><li class="post-list-item"><a class="post-list-link" href="/Math/Talk%20about%20a%20few%20special%20functions/">浅谈几个特殊函数</a></li><li class="post-list-item"><a class="post-list-link" href="/Algorithm/Theory%20of%20Inversion/">反演原理及应用</a></li><li class="post-list-item"><a class="post-list-link" href="/Algorithm/Algorithm%20template/">算法模板</a></li><li class="post-list-item"><a class="post-list-link" href="/Algorithm/POJ1845%20Sumdiv/">POJ1845 Sumdiv</a></li><li class="post-list-item"><a class="post-list-link" href="/Others/Test%20post/">Test post</a></li></ul></div><!--if theme.disqus.widget
+  .widget-title
+    i(class='fa fa-comment-o')= ' ' + __('recent_comments')
+  script(type='text/javascript', src='//' + theme.disqus + '.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=20&hide_mods=1')--><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://www.cnblogs.com/2inf/" title="cnblogs" target="_blank">cnblogs</a><ul></ul><a href="https://blog.csdn.net/AbelYang1" title="CSDN" target="_blank">CSDN</a><ul></ul><a href="https://math.stackexchange.com/" title="math exchange" target="_blank">math exchange</a><ul></ul><a href="https://proofwiki.org/wiki/Main_Page" title="proofwiki" target="_blank">proofwiki</a><ul></ul><a href="https://mathworld.wolfram.com/" title="wolfram mathworld" target="_blank">wolfram mathworld</a><ul></ul><a href="https://www.agefans.tv/" title="age动漫" target="_blank">age动漫</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">2inf.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=0.0.0"><script type="text/javascript" src="/js/search.js?v=0.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" color="0,0,100" opacity="0.3" zIndex="-1" count="100" src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script><!--script(type='text/javascript', src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML', async)--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
