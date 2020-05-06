@@ -42,7 +42,7 @@ type: 'GET',
 success: function(){
   var d = document;
   var s = d.createElement('script');
-  s.src = '//wt yang.disqus.com/embed.js';
+  s.src = '//2inf.disqus.com/embed.js';
   s.setAttribute('data-timestamp', + new Date());
   (d.head || d.body).appendChild(s);
   $('.disqus_click_btn').css('display', 'none');
@@ -54,7 +54,7 @@ error: function() {
     (() => { // DON'T EDIT BELOW THIS LINE
         var d = document;
         var s = d.createElement('script');
-        s.src = '//wt yang.disqus.com/embed.js';
+        s.src = '//2inf.disqus.com/embed.js';
         s.setAttribute('data-timestamp', + new Date());
         (d.head || d.body).appendChild(s);
     })();
@@ -68,7 +68,7 @@ error: function() {
          $('.post-meta .post-comments-count').show();
          var s = document.createElement('script');
          s.id = 'dsq-count-scr';
-         s.src = 'https://wt yang.disqus.com/count.js';
+         s.src = 'https://2inf.disqus.com/count.js';
          s.async = true;
          (document.head || document.body).appendChild(s);
        }
