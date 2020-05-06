@@ -22,7 +22,7 @@ textarea,
   font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif !important; }
 
 body {
-  background-color: #FFF;
+  background-color: #FFFFF0;
   color: #444;
   font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -71,7 +71,8 @@ div {
       padding: 0;
       margin: 0;
       height: 0;
-      overflow: hidden; }
+      overflow: hidden;
+      background: #2B6695; }
     #header .site-name #logo {
       font: bold 38px/1.12 "Times New Roman", Georgia, Times, sans-serif;
       color: #555; }
@@ -96,8 +97,9 @@ div {
       #header #nav-menu a:hover {
         border-bottom-color: #444; }
       #header #nav-menu a.current {
-        border: 1px solid #ddd;
-        border-bottom-color: #fff; }
+        border: 1px solid #86ffdb;
+        border-bottom-color: #86ffdb;
+        background-color: #86ffdb; }
 
 #sidebar {
   border-left: 1px solid #ddd;
@@ -245,7 +247,7 @@ div {
         display: inline-block;
         margin: 0 5px;
         padding: 0 5px;
-        background: #f7f8f8;
+        background: #08e5ec;
         font-family: Menlo, Consolas, monospace !important; }
       .post .post-content p a {
         color: #01579f;
@@ -282,7 +284,7 @@ div {
         display: inline-block;
         margin: 0 5px;
         padding: 0px 5px;
-        background: #f7f8f8;
+        background: #08e5ec;
         font-family: Menlo, Consolas, monospace !important; }
       .post .post-content ul a,
       .post .post-content ol a {
@@ -417,12 +419,11 @@ blockquote,
   box-sizing: border-box;
   margin: 2.5em 0;
   padding: 0 0 0 50px;
-  color: #555;
-  border-left: none; }
+  color: #d16544;
+  border-left: 4px solid #b4b4b4; }
 
 blockquote::before,
 .stressed-quote::before {
-  content: "\201C";
   display: block;
   font-family: times;
   font-style: normal;
