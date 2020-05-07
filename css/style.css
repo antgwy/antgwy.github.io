@@ -19,15 +19,15 @@ textarea,
 .MJXc-TeX-unknown-R,
 .pure-g [class*="pure-u"] {
   /* Set your content font stack here: */
-  font-family: "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif !important; }
+  font-family: "Times New Roman", "PingFangSC-Regular", Helvetica, "Helvetica Neue", "Segoe UI", "Hiragino Sans GB", "Source Han Sans CN", "Microsoft YaHei", "STHeiti", "WenQuanYi Micro Hei", sans-serif !important; }
 
 body {
   background-color: #FFFFF0;
   color: #444;
-  font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
+  font-family: "Times New Roman", "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 14px; }
+  font-size: 15px; }
 
 .body_container {
   padding: 0 60px;
@@ -108,12 +108,15 @@ div {
   padding-bottom: 20px;
   word-wrap: break-word; }
   #sidebar .widget {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    background-color: #DEEBF7;
+    padding: 1em;
+    border-radius: 1em; }
     #sidebar .widget .widget-title {
       color: #6E7173;
       line-height: 2.7;
       margin-top: 0;
-      font-size: 16px;
+      font-size: 18px;
       border-bottom: 1px solid #ddd;
       display: block;
       font-weight: normal; }
@@ -174,7 +177,7 @@ div {
     margin: 0;
     color: #555;
     text-align: left;
-    font: bold 25px/1.1 "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; }
+    font: bold 27px/1.1 "Times New Roman", "ff-tisa-web-pro", Cambria, "Times New Roman", Georgia, Times, sans-serif; }
     .post .post-title a {
       color: #555; }
   .post .post-meta {
@@ -224,7 +227,7 @@ div {
       color: #444; }
   .post .post-content {
     clear: left;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.77;
     color: #444;
     padding-top: 15px;
@@ -247,8 +250,11 @@ div {
         display: inline-block;
         margin: 0 5px;
         padding: 0 5px;
-        background: #08e5ec;
-        font-family: Menlo, Consolas, monospace !important; }
+        background: #f7f8f8;
+        border: solid 1px #08e5ec;
+        border-radius: 5px;
+        font-family: Menlo, Consolas, monospace !important;
+        cursor: text; }
       .post .post-content p a {
         color: #01579f;
         padding-bottom: 2px;
@@ -269,9 +275,12 @@ div {
       position: relative; }
     .post .post-content img {
       max-width: 100%;
+      width: 400px;
       padding: 0.5em 0;
       margin: auto;
-      display: block; }
+      display: block;
+      border: 0.3em solid #e0dfcc;
+      border-radius: 1em; }
     .post .post-content ul,
     .post .post-content ol {
       border-radius: 3px;
@@ -284,8 +293,11 @@ div {
         display: inline-block;
         margin: 0 5px;
         padding: 0px 5px;
-        background: #08e5ec;
-        font-family: Menlo, Consolas, monospace !important; }
+        background: #f7f8f8;
+        border: solid 1px #08e5ec;
+        border-radius: 5px;
+        font-family: Menlo, Consolas, monospace !important;
+        cursor: text; }
       .post .post-content ul a,
       .post .post-content ol a {
         color: #01579f;
@@ -420,12 +432,14 @@ blockquote,
   margin: 2.5em 0;
   padding: 0 0 0 50px;
   color: #d16544;
-  border-left: 4px solid #b4b4b4; }
+  border-left: 4px solid rgba(147, 181, 224, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); }
 
 blockquote::before,
 .stressed-quote::before {
   display: block;
-  font-family: times;
+  font-family: Times New Roman, times;
   font-style: normal;
   font-size: 48px;
   color: #444;
@@ -776,7 +790,7 @@ pre {
   color: #444;
   margin: -10px 0;
   padding: 5px 10px;
-  border: 1px solid #ddd;
+  border: 3px solid #f4f4f4;
   border-radius: 5px;
   float: right; }
   .readmore a:after {
@@ -785,7 +799,7 @@ pre {
     padding-left: 0.3em; }
   .readmore a:hover {
     background: #F8F8F8;
-    border-bottom-color: #D26911; }
+    border-bottom-color: #86ffdb; }
 
 /* syntax highlight*/
 figure.highlight,
@@ -795,7 +809,22 @@ figure.highlight,
   line-height: 1.1em;
   color: #333;
   padding-top: 15px;
-  overflow: hidden; }
+  overflow: hidden;
+  border: solid 1px #2c2c2c;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #888888; }
+  figure.highlight ::-webkit-scrollbar,
+  .codeblock ::-webkit-scrollbar {
+    height: 10px;
+    width: 10px; }
+  figure.highlight ::-webkit-scrollbar-track,
+  .codeblock ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; }
+  figure.highlight ::-webkit-scrollbar-thumb,
+  .codeblock ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
   figure.highlight table,
   .codeblock table {
     display: block;
@@ -809,7 +838,7 @@ figure.highlight,
   .codeblock .code,
   .codeblock .tag {
     background-color: inherit;
-    font-family: Menlo, Consolas, monospace;
+    font-family: Consolas, Menlo, monospace;
     border: none;
     padding: 0;
     margin: 0;
@@ -845,7 +874,7 @@ figure.highlight,
     width: 100%; }
     figure.highlight .code pre,
     .codeblock .code pre {
-      max-width: 700px;
+      max-width: 880px;
       overflow-x: auto;
       overflow-y: hidden; }
   figure.highlight .line,
@@ -855,7 +884,7 @@ figure.highlight,
 
 .gist .line,
 .gist .line-number {
-  font-family: Menlo, Consolas, monospace;
+  font-family: Consolas, Menlo, monospace;
   font-size: 1em;
   margin: 0 0 5px 0;
   user-select: none; }

@@ -68,7 +68,9 @@
 <li><span class="math inline">\([4N,6N-2]\)</span>表示棋盘2N-1条副对角线的占据情况</li>
 </ol>
 <p>故共有<span class="math inline">\(6N-2\)</span>列。</p>
-<p><img src="/Algorithm/Dancing%20Links/queen.jpg"></p>
+<div style="width: 400px; margin: auto">
+<img src="/Algorithm/Dancing%20Links/queen.jpg">
+</div>
 <p>  对于<span class="math inline">\((i,j)\)</span>的位置，占据的行为<span class="math inline">\(i\)</span>；占据的列为<span class="math inline">\(j\)</span>；主对角线可以通过<span class="math inline">\(i\)</span>和<span class="math inline">\(j\)</span>的相对情况来判断，所有<span class="math inline">\(i-j\)</span>相同的占据的主对角线为<span class="math inline">\(N+i-j\)</span>；副对角线类似，所有<span class="math inline">\(i+j\)</span>相同的位置占据的副对角线为<span class="math inline">\(i+j-1\)</span>；</p>
 <p>  然而，N皇后问题不能直接求精确覆盖，这是因为行和列必须完全覆盖到，但是主和副对角线没有要求一定要全部覆盖，所以算法走到N步停止, 每次消除代表着行或者列的那些列的1, 而不是优先考虑对角线。</p>
 <p><a href="https://paste.ubuntu.com/p/NHwtvcKpqn/" target="_blank" rel="noopener">代码</a></p>
@@ -1627,7 +1629,7 @@ March
 <noscript>
 抱歉，你的浏览器不支持 JavaScript!
 </noscript>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">details</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">summary</span>&gt;</span>Copyright 1999-2018.<span class="tag">&lt;/<span class="name">summary</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span> - by Refsnes Data. All Rights Reserved.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>All content and graphics on this web site are the property of the company Refsnes Data.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">details</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">details</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">summary</span>&gt;</span>Copyright 1999-2018.<span class="tag">&lt;/<span class="name">summary</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span> - by Refsnes Data. All Rights Reserved.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>All content and graphics on this web site are the property of the company Refsnes Data.<span class="tag">&lt;/<span class="name">p</span>&gt;</span> //长度测试////////////////////////////////////</span><br><span class="line"><span class="tag">&lt;/<span class="name">details</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <details>
 <summary>Copyright 1999-2018.</summary>
 <p>
