@@ -1,0 +1,217 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>反演原理及应用 | 2inf</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><!--script(type='text/javascript', src='//lib.baomitu.com/jquery/3.4.1/jquery.min.js')--><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"><meta name="generator" content="Hexo 4.2.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">反演原理及应用</h1><a id="logo" href="/.">2inf</a><p class="description">unprecedented</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">反演原理及应用</h1><div class="post-meta">2019-08-25<span> | </span><span class="category"><a href="/categories/Algorithm/">Algorithm</a></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#什么是反演"><span class="toc-number">1.</span> <span class="toc-text">什么是反演</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#反演原理"><span class="toc-number">2.</span> <span class="toc-text">反演原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二项式反演"><span class="toc-number">3.</span> <span class="toc-text">二项式反演</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#原理"><span class="toc-number">3.1.</span> <span class="toc-text">原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用"><span class="toc-number">3.2.</span> <span class="toc-text">应用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#斯特林反演"><span class="toc-number">4.</span> <span class="toc-text">斯特林反演</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#原理-1"><span class="toc-number">4.1.</span> <span class="toc-text">原理</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#莫比乌斯反演"><span class="toc-number">5.</span> <span class="toc-text">莫比乌斯反演</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#原理-2"><span class="toc-number">5.1.</span> <span class="toc-text">原理</span></a></li></ol></li></ol></div></div><div class="post-content"><h1 id="什么是反演">什么是反演</h1>
+<p>  对于数列<span class="math inline">\(\left\{f_n\right\}\)</span>以及数列<span class="math inline">\(\left\{g_n\right\}\)</span>满足</p>
+<p><span class="math display">\[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]</span></p>
+<p>  反演便是利用<span class="math inline">\(\left\{g_n\right\}\)</span>反推出<span class="math inline">\(\left\{f_n\right\}\)</span>, 也即</p>
+<p><span class="math display">\[f_n=\sum_{i=0}^nb_{ni}g_i \tag{2}\]</span></p>
+<p>  本质上来说这是一个反解线性方程组的过程, 但观察后会发现整个方程组是一个下三角矩阵, 可以思考出更加快捷的方法</p>
+<a id="more"></a>
+<h1 id="反演原理">反演原理</h1>
+<p>  为了便于后面的叙述, 首先引入<span class="math inline">\(\delta(i,j)\)</span>函数<span class="math inline">\((Kronecker&#39;s\ delta)\)</span>, 它的定义为</p>
+<p><span class="math display">\[\delta\left(i,j\right)=\begin{cases}1\quad i=j\\0\quad i\neq j\end{cases}\qquad(\text{也可记为}[i=j])\]</span></p>
+<p>  下面考虑反演的过程, 考虑下面的式子应该满足什么条件</p>
+<p><span class="math display">\[
+\sum_{i=0}^nb_{ni}g_i=f_n \tag{3}
+\]</span></p>
+<p><span class="math display">\[
+\begin{array}{l}
+LHS&amp;=&amp;\displaystyle\sum_{i=0}^nb_{ni}g_i\\ 
+&amp;=&amp;\displaystyle\sum_{i=0}^nb_{ni}\sum_{j=0}^ia_{ij}f_j\\
+&amp;=&amp;\displaystyle\sum_{i=0}^nf_i\sum_{j=i}^nb_{nj}a_{ji}
+\end{array}
+\]</span></p>
+<p>  为了便于理解最后一步, 我们用矩阵进行表示</p>
+<p><span class="math display">\[
+\begin{bmatrix}
+b_{n0}a_{00}f_0\\
+b_{n1}a_{10}f_0 &amp; b_{n1}a_{11}f_1\\
+b_{n2}a_{20}f_0 &amp; b_{n2}a_{21}f_1 &amp; b_{n2}a_{22}f_2\\
+\vdots &amp; \vdots &amp; \ddots \\
+b_{nn}a_{n0}f_0 &amp; b_{nn}a_{n1}f_1 &amp; \cdots &amp; b_{nn}a_{nn}f_n
+\end{bmatrix}
+\]</span></p>
+<p>  前一个是<strong>对行</strong>进行, 再将行加起来, 后一个是<strong>对列</strong>进行, 再将列加起来</p>
+<p>  因此, 式<span class="math inline">\((3)\)</span>成立的条件等价于</p>
+<p><span class="math display">\[\sum_{j=i}^nb_{nj}a_{ji}=\delta(n,i) \tag{4}\]</span></p>
+<p>  同理, 将<span class="math inline">\(f\)</span>代入带<span class="math inline">\(g\)</span>的求和式中, 可以推出</p>
+<p><span class="math display">\[\sum_{j=i}^na_{nj}b_{ji}=\delta(n,i) \tag{5}\]</span></p>
+<p>  如果某个数列满足上面的条件, 我们便阔以利用反演公式</p>
+<h1 id="二项式反演">二项式反演</h1>
+<h2 id="原理">原理</h2>
+<p>  二项式反演<span class="math inline">\((binomial\ inversion)\)</span>在容斥中经常用到, 可以表示为</p>
+<p><span class="math display">\[
+f_n=\sum_{i=0}^n\left(-1\right)^n\begin{pmatrix}n\\i\end{pmatrix}g_i\Leftrightarrow
+g_n=\sum_{i=0}^n\left(-1\right)^n\begin{pmatrix}n\\i\end{pmatrix}
+f_i \tag{6}
+\]</span></p>
+<p>  可以写成另一种常见形式</p>
+<p><span class="math display">\[
+f_n=\sum_{i=0}^n\begin{pmatrix}n\\i\end{pmatrix}g_i\Leftrightarrow
+g_n=\sum_{i=0}^n\left(-1\right)^{n-i}\begin{pmatrix}n\\i\end{pmatrix}f_i \tag{7}
+\]</span></p>
+<p><strong>证明:</strong></p>
+<p><span class="math display">\[\begin{array}{l}
+g_n&amp;=&amp;\displaystyle\sum_{i=0}^n\left(-1\right)^{n-i}\begin{pmatrix}n\\i\end{pmatrix}f_i\\
+&amp;=&amp;\displaystyle\sum_{i=0}^n\left(-1\right)^{n-i}\begin{pmatrix}n\\i\end{pmatrix}\sum_{j=0}^i\begin{pmatrix}i\\j\end{pmatrix}g_j\\
+&amp;=&amp;\displaystyle\sum_{i=0}^ng_i\sum_{j=i}^n\begin{pmatrix}n\\j\end{pmatrix}\begin{pmatrix}j\\i\end{pmatrix}\left(-1\right)^{n-j}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^ng_i\sum_{j=i}^n\begin{pmatrix}n\\i\end{pmatrix}\begin{pmatrix}n-i\\j-i\end{pmatrix}\left(-1\right)^{n-j}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^ng_i\begin{pmatrix}n\\i\end{pmatrix}\sum_{j=0}^{n-i}\begin{pmatrix}n-i\\j\end{pmatrix}\left(-1\right)^{n-i-j}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^ng_i\begin{pmatrix}n\\i\end{pmatrix}\left(1-1\right)^{n-i}\\
+&amp;=&amp;g_n
+\end{array}\]</span></p>
+<h2 id="应用">应用</h2>
+<ul>
+<li>错位排列</li>
+</ul>
+<p>  对于长度为<span class="math inline">\(n\)</span>的序列<span class="math inline">\(\{a_i\}\)</span>, 求所有满足<span class="math inline">\(1\leq i\leq n\)</span>, 使得<span class="math inline">\(a_i\neq i\)</span>的种类数</p>
+<p>  一个高中生想到的常规方法可能是利用递推, 记所求为<span class="math inline">\(D_n\)</span>, <span class="math inline">\(n\)</span>个错位排列按照第一位是<span class="math inline">\(2,3,\cdots,n\)</span>分成<span class="math inline">\(n-1\)</span>, 每个组排列个数一样多, 考虑其中一组, 不妨设第一位为<span class="math inline">\(2\)</span>, 若第<span class="math inline">\(2\)</span>位是<span class="math inline">\(1\)</span>,有<span class="math inline">\(D_{n-2}\)</span>种, 否则有<span class="math inline">\(D_{n-1}\)</span>种, 结合<span class="math inline">\(D_1=0,\ D_2=1\)</span>, 从而有</p>
+<p><span class="math display">\[D_n=(n-1)(D_{n-1}+D_{n-2}) \tag{8}\]</span> <span class="math display">\[D_n-nD_{n-1}=-\left(D_{n-1}-(n-1)D_{n-2}\right)=\cdots=(-1)^{n-2} \tag{9}\]</span> <span class="math display">\[D_n=nD_{n-1}+(-1)^n=\cdots=n!\sum_{i=0}^n\frac{(-1)^i}{i!} \tag{10}\]</span></p>
+<p>  回到正题, 我们有一个有意思的解法, 设<span class="math inline">\(f_i\)</span>为恰好有<span class="math inline">\(i\)</span>个位置是不变的排列, 那么 <span class="math display">\[n!=\sum_{i=0}^n\begin{pmatrix}n\\i\end{pmatrix}f_i \tag{11}\]</span>   可以看粗其形式和反演公式很像, 令<span class="math inline">\(g_i=i!\)</span>, 有二项式反演 <span class="math display">\[\begin{array}{l}
+f_n&amp;=&amp;\displaystyle\sum_{i=0}^n(-1)^{n-i}\begin{pmatrix}n\\i\end{pmatrix}g_i\\
+&amp;=&amp;\displaystyle\sum_{i=0}^n(-1)^{n-i}\frac{n!}{(n-i)!}\\
+&amp;=&amp;n!\displaystyle\sum_{i=0}^n\frac{(-1)^i}{i!}
+\end{array}
+\]</span></p>
+<ul>
+<li>染色问题</li>
+</ul>
+<p>  <span class="math inline">\(n\)</span>个球排成一行, 有<span class="math inline">\(m\)</span>种颜色, 每个球染一个颜色, 相邻两个球染不同颜色, 每种颜色至少使用一次, 求染色方案数</p>
+<p>  不考虑每种颜色至少用一次这一条件, 那么答案显然是<span class="math inline">\(m(m-1)^{n-1}\)</span>, 设<span class="math inline">\(f_i\)</span>为恰好使用<span class="math inline">\(i(i=0,1,2,\cdots,k)\)</span>种颜色的方案数, 那么</p>
+<p><span class="math display">\[m(m-1)^{n-1}=\sum_{i=0}^m\begin{pmatrix}m\\i\end{pmatrix}f_i \tag{12}\]</span></p>
+<p>  经过反演得到</p>
+<p><span class="math display">\[f_m=\sum_{i=0}^m(-1)^{m-i}\begin{pmatrix}m\\i\end{pmatrix}g_i \tag{13}\]</span></p>
+<p><a href="https://bzoj.zcmimi.tk/p/2839.html" target="_blank" rel="noopener"><span class="math inline">\(BZOJ2839\)</span>:集合计数</a></p>
+<p>  记<span class="math inline">\(b_i\)</span>为交集有至少<span class="math inline">\(i\)</span>个集合的个数, 枚举<span class="math inline">\(i\)</span>个交集后, 共有<span class="math inline">\(2^{n-i}\)</span>个互不相同的集合, 每个集合又有选与不选两种方案, 故<span class="math inline">\(b_i=\begin{pmatrix}n\\i\end{pmatrix}2^{2^{n-i}}\)</span>, 那么我们开始演了</p>
+<p><span class="math display">\[b_k=\sum_{i=k}^n\begin{pmatrix}i\\k\end{pmatrix}a_i\quad\Leftrightarrow\quad a_k=\sum_{i=k}^n(-1)^{n-k}\begin{pmatrix}i\\k\end{pmatrix}b_i\]</span></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> ll long long</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> pii pair<span class="meta-string">&lt;int,int&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> inc(i,l,r) for(int i=l;i&lt;=r;++i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> dec(i,l,r) for(int i=r;i&gt;=l;--i)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> mem(a,v) memset(a,v,sizeof(a))</span></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N = <span class="number">1e6</span>, INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="keyword">const</span> ll MOD = <span class="number">1e9</span> + <span class="number">7</span>;</span><br><span class="line"><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">read</span><span class="params">(T &amp;x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    x = <span class="number">0</span>; ll f = <span class="number">1</span>; <span class="keyword">char</span> ch = getchar();</span><br><span class="line">    <span class="keyword">while</span> (!<span class="built_in">isdigit</span>(ch)) &#123;<span class="keyword">if</span>(ch == <span class="string">'-'</span>) f = <span class="number">-1</span>; ch = getchar();&#125;</span><br><span class="line">    <span class="keyword">while</span> (<span class="built_in">isdigit</span>(ch)) x = (x&lt;&lt;<span class="number">3</span>) + (x&lt;&lt;<span class="number">1</span>) + ch - <span class="string">'0'</span>, ch = getchar();</span><br><span class="line">    x *= f;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ll n, k, ans;</span><br><span class="line">ll fac[N], inv[N], p[N];</span><br><span class="line"></span><br><span class="line"><span class="function">ll <span class="title">power</span><span class="params">(ll a, ll b)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ll res = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span> (; b; a = a * a % MOD, b &gt;&gt;= <span class="number">1</span>)</span><br><span class="line">        <span class="keyword">if</span> (b &amp; <span class="number">1</span>) res = res * a % MOD;</span><br><span class="line">    <span class="keyword">return</span> res;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function">ll <span class="title">C</span><span class="params">(ll n, ll m)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> fac[n] * inv[m] % MOD * inv[n-m] % MOD;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    read(n), read(k);</span><br><span class="line">    fac[<span class="number">0</span>] = inv[<span class="number">0</span>] = p[<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">    inc(i,<span class="number">1</span>,n) fac[i] = (ll)fac[i<span class="number">-1</span>] * i % MOD, p[i] = (ll)p[i<span class="number">-1</span>] * <span class="number">2</span> % (MOD - <span class="number">1</span>);</span><br><span class="line">    inv[n] = power(fac[n], MOD - <span class="number">2</span>);</span><br><span class="line">    dec(i,<span class="number">1</span>,n<span class="number">-1</span>) inv[i] = (ll)inv[i+<span class="number">1</span>] * (i + <span class="number">1</span>) % MOD;</span><br><span class="line">    inc(i,k,n) &#123;</span><br><span class="line">        (ans += MOD + ((i-k) &amp; <span class="number">1</span> ? <span class="number">-1</span> : <span class="number">1</span>) * (C(i,k) * C(n,i) % MOD * (power(<span class="number">2</span>, p[n-i]) % MOD))) %= MOD;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>, ans);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="斯特林反演">斯特林反演</h1>
+<h2 id="原理-1">原理</h2>
+<p>  在这里, 先回顾一下斯特林数(<span class="math inline">\(dalao\)</span>请自动忽略)</p>
+<ul>
+<li><strong>第一类斯特林数</strong></li>
+</ul>
+<p>  <strong>定义:</strong> 将<span class="math inline">\(n\)</span>个元素排成<span class="math inline">\(m\)</span>个轮换的方法数</p>
+<p>  从<span class="math inline">\(n-1\)</span>的情况推过来, 要么将最后一个元素放进自身的轮换, 要么将最后一个元素放进前<span class="math inline">\(n-1\)</span>个元素分成的<span class="math inline">\(\begin{bmatrix}n-1\\m\end{bmatrix}\)</span>个轮换中的一个, 可以得到:</p>
+<p><span class="math display">\[\begin{bmatrix}n\\m\end{bmatrix}=\begin{bmatrix}n-1\\m-1\end{bmatrix}+(n-1)*\begin{bmatrix}n-1\\m\end{bmatrix} \tag{14}\]</span></p>
+<p>  由于<span class="math inline">\(\begin{bmatrix}n\\ k\end{bmatrix}\)</span>是<span class="math inline">\(n\)</span>个元素恰好包含<span class="math inline">\(k\)</span>个轮换的排列个数, 对所有的<span class="math inline">\(k\)</span>求和, 必然得到排列的总数</p>
+<p><span class="math display">\[\sum_{k=0}^n\begin{bmatrix}n\\
+k\end{bmatrix}=n! \tag{15}\]</span></p>
+<p>  下面是与下降幂<span class="math inline">\(x^{\underline{n}}\)</span>和阶乘幂<span class="math inline">\(x^{\overline{n}}\)</span>的关系</p>
+<p><span class="math display">\[x^{\underline{n}}=\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}x^i \tag{16}\]</span></p>
+<p>  用归纳法证明</p>
+<p><span class="math display">\[\begin{array}{l}
+x^{\underline{n+1}}&amp;=&amp;(x-n)x^{\underline{n}}\\
+&amp;=&amp;(x-n)\displaystyle\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}x^i\\
+&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}x^{i+1}-n\sum_{i=0}^{n+1}\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}x^i\\
+&amp;=&amp;\displaystyle\sum_{i=1}^{n+1}\begin{bmatrix}n\\i-1\end{bmatrix}(-1)^{n-i+1}x^{i}+n\sum_{i=0}^{n+1}\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i+1}x^i\\
+&amp;=&amp;\displaystyle\sum_{i=0}^{n+1}\left(\begin{bmatrix}n\\i-1\end{bmatrix}+n\begin{bmatrix}n\\i\end{bmatrix}\right)(-1)^{n-i+1}x^i\\
+&amp;=&amp;\displaystyle\sum_{i=0}^{n+1}\begin{bmatrix}n+1\\i\end{bmatrix}(-1)^{n+1-i}x^i
+\end{array}\]</span></p>
+<p>  类似可以证明</p>
+<p><span class="math display">\[x^{\overline{n}}=\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}x^i \tag{17}\]</span></p>
+<ul>
+<li><strong>第二类斯特林数</strong></li>
+</ul>
+<p>  <strong>定义:</strong> 将一个有<span class="math inline">\(n\)</span>件物品的集合划分成<span class="math inline">\(m\)</span>个非空子集的方法数</p>
+<p>  从<span class="math inline">\(n-1\)</span>的情况推过来, 要么将最后一个元素单独放一类, 要么与前<span class="math inline">\(n-1\)</span>个元素的某个非空子集放一起, 可以得到:</p>
+<p><span class="math display">\[\begin{Bmatrix}n\\m\end{Bmatrix}=\begin{Bmatrix}n-1\\m-1\end{Bmatrix}+m*\begin{Bmatrix}n-1\\m\end{Bmatrix} \tag{18}\]</span></p>
+<p>  下面是与下降幂<span class="math inline">\(x^{\underline{n}}\)</span>和阶乘幂<span class="math inline">\(x^{\overline{n}}\)</span>的关系</p>
+<p><span class="math display">\[m^n=\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\underline{i}} \tag{19}\]</span></p>
+<p>  用归纳法证明, 由于<span class="math inline">\(x*x^{\underline{i}}=x^{\underline{i+1}}+ix^{\underline{i}}\)</span></p>
+<p><span class="math display">\[\begin{array}{l}
+m^{n+1}&amp;=&amp;m\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\underline{i}}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\underline{i+1}}+\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}im^{\underline{i}}\\
+&amp;=&amp;\displaystyle\sum_{i=1}^{n+1}\begin{Bmatrix}n\\i-1\end{Bmatrix}m^{\underline{i}}+\sum_{i=0}^{n+1}\begin{Bmatrix}n\\i\end{Bmatrix}im^{\underline{i}}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^{n+1}\left(\begin{Bmatrix}n\\i-1\end{Bmatrix}+i\begin{Bmatrix}n\\i\end{Bmatrix}\right)m^{\underline{i}}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^{n+1}\begin{Bmatrix}n+1\\i\end{Bmatrix}m^{\underline{i}}
+\end{array}\]</span></p>
+<p>  类似可以证明</p>
+<p><span class="math display">\[m^n=\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}(-1)^{n-i}m^{\overline{i}} \tag{20}\]</span></p>
+<p>  当然还有两个比较显然的东西</p>
+<p><span class="math display">\[x^{\underline{n}}=(-1)(-x)^{\overline{n}} \tag{21}\]</span> <span class="math display">\[x^{\overline{n}}=(-1)(-x)^{\underline{n}} \tag{22}\]</span></p>
+<ul>
+<li><strong>反转公式</strong></li>
+</ul>
+<p><span class="math display">\[\sum_{k=m}^n(-1)^{n-k}\begin{bmatrix}n\\k\end{bmatrix}\begin{Bmatrix}k\\m\end{Bmatrix}=[m=n] \tag{23}\]</span></p>
+<p><span class="math display">\[\sum_{k=m}^n(-1)^{n-k}\begin{Bmatrix}n\\k\end{Bmatrix}\begin{bmatrix}k\\m\end{bmatrix}=[m=n] \tag{24}\]</span></p>
+<p><span class="math inline">\(proof\ 1:\)</span></p>
+<p><span class="math display">\[\begin{array}{l}
+m^{\underline{n}}&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}m^i\\
+&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{bmatrix}n\\i\end{bmatrix}(-1)^{n-i}\sum_{j=0}^i\begin{Bmatrix}i\\j\end{Bmatrix}m^{\underline{j}}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^nm^{\underline{i}}\sum_{j=i}^n(-1)^{n-j}\begin{bmatrix}n\\j\end{bmatrix}\begin{Bmatrix}j\\i\end{Bmatrix}
+\end{array}\]</span></p>
+<p><span class="math inline">\(proof\ 2:\)</span></p>
+<p><span class="math display">\[\begin{array}{l}
+m^n&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}m^{\underline{i}}\\
+&amp;=&amp;\displaystyle\sum_{i=0}^n\begin{Bmatrix}n\\i\end{Bmatrix}\sum_{j=0}^i(-1)^{i-j}\begin{bmatrix}i\\j\end{bmatrix}m^j\\
+&amp;=&amp;\displaystyle\sum_{i=0}^nm^i\sum_{j=i}^n(-1)^{n-j}\begin{Bmatrix}n\\j\end{Bmatrix}\begin{bmatrix}j\\i\end{bmatrix}
+\end{array}\]</span></p>
+<ul>
+<li><strong>斯特林反演</strong></li>
+</ul>
+<p><span class="math display">\[f(n)=\sum_{i=0}^n\begin{Bmatrix}n\\k\end{Bmatrix}g(k) \quad\Leftrightarrow\quad g(n)=\sum_{k=0}^n(-1)^{n-k}\begin{bmatrix}n\\k\end{bmatrix}f(k) \tag{25}\]</span></p>
+<p>  <span class="math inline">\((25)\)</span>的证明如下:</p>
+<p><span class="math display">\[\begin{array}{l}
+f(n)&amp;=&amp;\displaystyle\sum_{k=0}^n\begin{Bmatrix}n\\k\end{Bmatrix}g(k)\\
+&amp;=&amp;\displaystyle\sum_{k=0}^n\begin{Bmatrix}n\\k\end{Bmatrix}\sum_{j=0}^k(-1)^{k-j}\begin{bmatrix}k\\j\end{bmatrix}f(j)\\
+&amp;=&amp;\displaystyle\sum_{k=0}^n\sum_{j=k}^n\begin{Bmatrix}n\\j\end{Bmatrix}\begin{bmatrix}j\\k\end{bmatrix}(-1)^{j-k}f(k)\\
+&amp;=&amp;\displaystyle\sum_{k=0}^n[k=n]f(k)\\
+&amp;=&amp;f(n)
+\end{array}\]</span></p>
+<h1 id="莫比乌斯反演">莫比乌斯反演</h1>
+<h2 id="原理-2">原理</h2>
+<p>  <strong>莫比乌斯函数<span class="math inline">\(\mu(m)\)</span></strong> 对所有整数<span class="math inline">\(m\geq1由等式\)</span></p>
+<p><span class="math display">\[\sum_{d|m}\mu(d)=\left[m=1\right] \tag{26}\]</span></p>
+<p>来定义, 这个等式是一个递归式, 代入<span class="math inline">\(m=1,2,\cdots,12\)</span>可以得到前<span class="math inline">\(12\)</span>个值:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(m\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(2\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(3\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(4\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(5\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(6\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(7\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(8\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(9\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(10\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(11\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(12\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\mu(m)\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(-1\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math display">\[g(m)=\sum_{d|m}f(d)\quad\Leftrightarrow\quad f(m)=\sum_{d|m}\mu(\frac{m}{d})g(d) \tag{27}\]</span></p>
+<p>  <span class="math inline">\((27)\)</span>的证明如下: <span class="math display">\[\begin{array}{l}
+g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
+&amp;=&amp;\displaystyle\sum_{d|m}\sum_{k|d}\mu(\frac{d}{k})g(k)\\
+&amp;=&amp;\displaystyle\sum_{k|m}g(k)\sum_{d|m,k|d}\mu(\frac{d}{k})\\
+&amp;=&amp;\displaystyle\sum_{k|m}g(k)\sum_{d|(m/k)}\mu(d)\\
+&amp;=&amp;\displaystyle\sum_{k|m}[m/k=1]g(k)\\
+&amp;=&amp;g(m)
+\end{array}\]</span></p>
+</div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>反演原理及应用</p><p><span>文章作者：</span>wtyang</p><!--pspan= __('copyright_date_prefix')
+= page.date.format(config.date_format)--><!--pspan= __('copyright_update_prefix')
+= page.updated.format(config.date_format)--><p><span>原始链接：</span><a href="/Algorithm/Theory-of-Inversion/">https://2inf.top/Algorithm/Theory-of-Inversion/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://2inf.top/Algorithm/Theory-of-Inversion/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" rel="noopener">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！</p></div><br><div class="tags"><a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"><i class="fa fa-tag"></i>组合数学</a></div><div class="post-nav"><a class="pre" href="/Math/Talk-about-a-few-special-functions/">浅谈几个特殊函数</a><a class="next" href="/Algorithm/Algorithm-template/">算法模板</a></div></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">2inf.</a><div><link rel="stylesheet" type="text/css" href="/css/badge.css"/><div class="github-badge"><a rel="nofollow" target="_blank" href="https://hexo.io"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hexo</span></a></div>
+<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"><span class="badge-subject">Theme</span><span class="badge-value bg-orange">maupassant</span></a></div>
+<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://www.cnblogs.com/2inf/"><span class="badge-subject">cnblogs</span><span class="badge-value bg-blueviolet">2inf</span></a></div></div></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script><!--script(type='text/javascript', src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML', async)--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
