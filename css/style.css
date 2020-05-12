@@ -438,15 +438,8 @@ blockquote,
 
 blockquote::before,
 .stressed-quote::before {
-  display: block;
-  font-family: Times New Roman, times;
-  font-style: normal;
-  font-size: 48px;
-  color: #444;
-  font-weight: bold;
-  line-height: 30px;
-  margin-left: -50px;
-  position: absolute; }
+  padding: 0 1em;
+  color: #6a737d; }
 
 strong,
 b,
@@ -1403,11 +1396,12 @@ figure.highlight,
 /* table*/
 table {
   margin: auto auto 15px;
-  width: 80%;
+  width: 100%;
   background: transparent;
   border-collapse: collapse;
   border-spacing: 0;
-  text-align: left; }
+  text-align: left;
+  line-height: 20px; }
   table th {
     font-weight: bold;
     padding: 5px 10px;
