@@ -429,8 +429,8 @@ blockquote,
 .stressed {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 2.5em 0;
-  padding: 0 50px 0 50px;
+  margin: 1em 0;
+  padding: 12px 50px 1px 50px;
   color: #d16544;
   border-left: 4px solid rgba(147, 181, 224, 0.4);
   background: rgba(255, 255, 255, 0.4);
@@ -841,6 +841,9 @@ figure.highlight,
   .codeblock .gutter,
   .codeblock .code {
     vertical-align: top; }
+  figure.highlight .gutter,
+  .codeblock .gutter {
+    color: #514883; }
   figure.highlight.plain .gutter,
   .codeblock.plain .gutter {
     display: none; }
@@ -875,6 +878,169 @@ figure.highlight,
     height: 1.3em;
     font-size: 13px; }
 
+/*
+figure.highlight,
+.highlight-wrap,
+.codeblock {
+    background: #f7f8f8;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    // box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.4);
+    box-shadow:18px 18px 15px 0px rgba(0,0,0,.4);
+    margin: 35px 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+    ::-webkit-scrollbar {
+      height: 10px;
+      //width: 10px;
+    }
+  
+    ::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+
+    &::before {
+        content: attr(data-rel);
+        height: 38px;
+        line-height: 38px;
+        background: #21252b;
+        // background: #108414de;
+        color: #fff;
+        font-size: 16px;
+        // position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        // font-family: 'Source Sans Pro', sans-serif;
+        font-weight: bold;
+        padding: 0px 80px;
+        text-indent: 15px;
+        float: left;
+      }
+      &::after {
+        content: ' ';
+        position: absolute;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #fc625d;
+        width: 12px;
+        height: 12px;
+        top: 0;
+        left: 20px;
+        margin-top: 13px;
+        -webkit-box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
+        box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
+        z-index: 3;
+      }
+      .code-expand {
+        position: inherit;
+        float: left;
+        height: 0;
+        top: -27px;
+        z-index: 1;
+        padding: 0 3px;
+        color: #ff0000;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 18px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    .code-closed{
+        top:-18px;
+        margin-left:-8px;
+        -moz-transition:all .3s;
+        -o-transition:all .3s;
+        -ms-transition:all .3s;
+        -moz-transform:rotate(-90deg)!important;
+        -o-transform:rotate(-90deg)!important;
+        -ms-transform:rotate(-90deg)!important;
+        -webkit-transform:rotate(-90deg)!important;
+        -moz-transform:rotate(-90deg)!important;
+        -ms-transform:rotate(-90deg)!important;
+        -o-transform:rotate(-90deg)!important;
+        transform:rotate(-90deg)!important
+    }
+    //
+    table {
+        display: block;
+        width: 100%;
+    }
+    // Reset for tag `pre` and  for class `.gutter`, `.code`, `.tag`
+    pre,
+    .gutter,
+    .code,
+    .tag {
+        background-color: inherit;
+        font-family: Consolas, Menlo, monospace;
+        border: none;
+        padding: 0;
+        margin: 0;
+        // To override cursor attribute of `.tag` components
+        cursor: text;
+    }
+    // To align line number and line of code regardless if there is a scroll bar or not
+    .gutter,
+    .code {
+        vertical-align: top;
+    }
+    .gutter {
+        color: #514883;
+    }
+    // hide gutter when code is plain text
+    &.plain {
+        .gutter {
+            display: none;
+        }
+    }
+    // Meta bar which contains name of the file and his link
+    figcaption {
+        font-size: 13px;
+        padding: 0 15px 20px;
+        margin: 0;
+        background: #f7f8f8;
+        color: #999999;
+        a {
+            float: right;
+            color: #01579f;
+        }
+    }
+    // Gutter which contains line numbers
+    .gutter {
+        background: #f7f8f8;
+        border-right: 1px solid #e6e6e6;
+        padding: 0.3em 15px;
+        user-select: none;
+    }
+    // Code container
+    .code {
+        padding: 0.3em 15px 0.3em 1em;
+        width: 100%;
+        pre {
+            // max-width: 700px;
+            max-width: 880px;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    }
+    // All lines in gutter and code container
+    .line {
+        height: 1.3em;
+        font-size: 13px;
+    }
+}
+*/
 .gist .line,
 .gist .line-number {
   font-family: Consolas, Menlo, monospace;

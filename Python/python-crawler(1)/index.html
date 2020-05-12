@@ -1,11 +1,12 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>python爬虫-基础 | 2inf</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><!--script(type='text/javascript', src='//cdn.bootcss.com/jquery/3.3.1/jquery.min.js')--><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/2.0.4/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/2.1.4/toastr.min.css"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">python爬虫-基础</h1><a id="logo" href="/.">2inf</a><p class="description">unprecedented</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">python爬虫-基础</h1><div class="post-meta">2020-05-11<span> | </span><span class="category"><a href="/categories/Python/">Python</a></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#python"><span class="toc-number">1.</span> <span class="toc-text">python</span></a></li></ol></div></div><div class="post-content"><h1 id="python">python</h1>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>python爬虫-基础 | 2inf</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/3.4.1/jquery.min.js"></script><!--script(type='text/javascript', src='//cdn.bootcss.com/jquery/3.3.1/jquery.min.js')--><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">python爬虫-基础</h1><a id="logo" href="/.">2inf</a><p class="description">unprecedented</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">python爬虫-基础</h1><div class="post-meta">2020-05-11<span> | </span><span class="category"><a href="/categories/Python/">Python</a></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#urllib库的使用"><span class="toc-number">1.</span> <span class="toc-text">urllib库的使用</span></a></li></ol></div></div><div class="post-content"><h1 id="urllib库的使用">urllib库的使用</h1>
 <script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
 
+<div class="auto-resizable-iframe"><div>
 <iframe id="ipynb" marginheight="0" frameborder="0" width="924px" height="680px" srcdoc="<!DOCTYPE html>
 <html>
 <head><meta charset='utf-8' />
 
-<title>Python-numpy</title>
+<title>Pythoncrawler(1)</title>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'></script>
@@ -13116,51 +13117,197 @@ div#notebook {
   <div tabindex='-1' id='notebook' class='border-box-sizing'>
     <div class='container' id='notebook-container'>
 
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<h2 id='urllib.request.urlopen()'>urllib.request.urlopen()<a class='anchor-link' href='#urllib.request.urlopen()'>&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<p><code>urllib.request.urlopen(url, data=None, [timeout, ]*, cafile=None, capath=None, cadefault=False, context=None)</code></p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[1]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='kn'>import</span> <span class='nn'>urllib.request</span>
+
+<span class='n'>response</span> <span class='o'>=</span> <span class='n'>urllib</span><span class='o'>.</span><span class='n'>request</span><span class='o'>.</span><span class='n'>urlopen</span><span class='p'>(</span><span class='s1'>&#39;https://www.python.org&#39;</span><span class='p'>)</span>
+<span class='c1'>#print(response.read().decode(&#39;utf-8&#39;)) #返回网页内容</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='nb'>type</span><span class='p'>(</span><span class='n'>response</span><span class='p'>))</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='n'>response</span><span class='o'>.</span><span class='n'>status</span><span class='p'>)</span> <span class='c1'>#返回状态码</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='n'>response</span><span class='o'>.</span><span class='n'>getheaders</span><span class='p'>())</span> <span class='c1'>#以列表元祖对的形式返回响应头信息</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='n'>response</span><span class='o'>.</span><span class='n'>getheader</span><span class='p'>(</span><span class='s1'>&#39;server&#39;</span><span class='p'>))</span> <span class='c1'>#返回响应头中的server值</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt'></div>
+
+
+<div class='output_subarea output_stream output_stdout output_text'>
+<pre>&lt;class &#39;http.client.HTTPResponse&#39;&gt;
+200
+[(&#39;Connection&#39;, &#39;close&#39;), (&#39;Content-Length&#39;, &#39;49103&#39;), (&#39;Server&#39;, &#39;nginx&#39;), (&#39;Content-Type&#39;, &#39;text/html; charset=utf-8&#39;), (&#39;X-Frame-Options&#39;, &#39;DENY&#39;), (&#39;Via&#39;, &#39;1.1 vegur&#39;), (&#39;Via&#39;, &#39;1.1 varnish&#39;), (&#39;Accept-Ranges&#39;, &#39;bytes&#39;), (&#39;Date&#39;, &#39;Tue, 12 May 2020 16:35:02 GMT&#39;), (&#39;Via&#39;, &#39;1.1 varnish&#39;), (&#39;Age&#39;, &#39;234&#39;), (&#39;X-Served-By&#39;, &#39;cache-bwi5129-BWI, cache-tyo19946-TYO&#39;), (&#39;X-Cache&#39;, &#39;HIT, HIT&#39;), (&#39;X-Cache-Hits&#39;, &#39;1, 239&#39;), (&#39;X-Timer&#39;, &#39;S1589301303.875535,VS0,VE0&#39;), (&#39;Vary&#39;, &#39;Cookie&#39;), (&#39;Strict-Transport-Security&#39;, &#39;max-age=63072000; includeSubDomains&#39;)]
+nginx
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<ul>
+<li>data参数</li>
+</ul>
+<p>data参数是可选的，内容为字节流编码格式的即bytes类型，如果传递data参数，urlopen将使用Post方式请求</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[2]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='kn'>from</span> <span class='nn'>urllib.request</span> <span class='k'>import</span> <span class='n'>urlopen</span>
+<span class='kn'>import</span> <span class='nn'>urllib.parse</span>
+
+<span class='n'>data</span> <span class='o'>=</span> <span class='nb'>bytes</span><span class='p'>(</span><span class='n'>urllib</span><span class='o'>.</span><span class='n'>parse</span><span class='o'>.</span><span class='n'>urlencode</span><span class='p'>({</span><span class='s1'>&#39;word&#39;</span><span class='p'>:</span><span class='s1'>&#39;hello&#39;</span><span class='p'>}),</span><span class='n'>encoding</span><span class='o'>=</span><span class='s1'>&#39;utf-8&#39;</span><span class='p'>)</span> 
+<span class='n'>response</span> <span class='o'>=</span> <span class='n'>urlopen</span><span class='p'>(</span><span class='s1'>&#39;http://httpbin.org/post&#39;</span><span class='p'>,</span><span class='n'>data</span><span class='o'>=</span><span class='n'>data</span><span class='p'>)</span>
+<span class='nb'>print</span><span class='p'>(</span><span class='n'>response</span><span class='o'>.</span><span class='n'>read</span><span class='p'>())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt'></div>
+
+
+<div class='output_subarea output_stream output_stdout output_text'>
+<pre>b&#39;{\n  &#34;args&#34;: {}, \n  &#34;data&#34;: &#34;&#34;, \n  &#34;files&#34;: {}, \n  &#34;form&#34;: {\n    &#34;word&#34;: &#34;hello&#34;\n  }, \n  &#34;headers&#34;: {\n    &#34;Accept-Encoding&#34;: &#34;identity&#34;, \n    &#34;Content-Length&#34;: &#34;10&#34;, \n    &#34;Content-Type&#34;: &#34;application/x-www-form-urlencoded&#34;, \n    &#34;Host&#34;: &#34;httpbin.org&#34;, \n    &#34;User-Agent&#34;: &#34;Python-urllib/3.7&#34;, \n    &#34;X-Amzn-Trace-Id&#34;: &#34;Root=1-5ebad038-bb46c790fa161d54507c10fc&#34;\n  }, \n  &#34;json&#34;: null, \n  &#34;origin&#34;: &#34;110.53.234.238&#34;, \n  &#34;url&#34;: &#34;http://httpbin.org/post&#34;\n}\n&#39;
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<ul>
+<li>timeout参数</li>
+</ul>
+<p>timeout参数用于设置超时时间，单位为秒，如果请求超出了设置时间还未得到响应则抛出异常，支持HTTP,HTTPS,FTP请求</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing code_cell rendered'>
+<div class='input'>
+<div class='prompt input_prompt'>In&nbsp;[3]:</div>
+<div class='inner_cell'>
+    <div class='input_area'>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='kn'>import</span> <span class='nn'>socket</span>
+<span class='kn'>import</span> <span class='nn'>urllib.request</span>
+<span class='kn'>import</span> <span class='nn'>urllib.error</span>
+
+<span class='k'>try</span><span class='p'>:</span>
+    <span class='n'>response</span><span class='o'>=</span><span class='n'>urllib</span><span class='o'>.</span><span class='n'>request</span><span class='o'>.</span><span class='n'>urlopen</span><span class='p'>(</span><span class='s1'>&#39;http://httpbin.org/get&#39;</span><span class='p'>,</span><span class='n'>timeout</span><span class='o'>=</span><span class='mf'>0.1</span><span class='p'>)</span>
+    <span class='nb'>print</span><span class='p'>(</span><span class='n'>response</span><span class='o'>.</span><span class='n'>read</span><span class='p'>())</span>
+<span class='k'>except</span> <span class='n'>urllib</span><span class='o'>.</span><span class='n'>error</span><span class='o'>.</span><span class='n'>URLError</span> <span class='k'>as</span> <span class='n'>e</span><span class='p'>:</span>
+    <span class='k'>if</span> <span class='nb'>isinstance</span><span class='p'>(</span><span class='n'>e</span><span class='o'>.</span><span class='n'>reason</span><span class='p'>,</span><span class='n'>socket</span><span class='o'>.</span><span class='n'>timeout</span><span class='p'>):</span> <span class='c1'>#判断对象是否为socket.timeout类型</span>
+        <span class='nb'>print</span><span class='p'>(</span><span class='n'>e</span><span class='o'>.</span><span class='n'>reason</span><span class='p'>)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class='output_wrapper'>
+<div class='output'>
+
+
+<div class='output_area'>
+
+    <div class='prompt'></div>
+
+
+<div class='output_subarea output_stream output_stdout output_text'>
+<pre>timed out
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<ul>
+<li>其他参数</li>
+</ul>
+<p>context参数，她必须是ssl.SSLContext类型，用来指定SSL设置，此外,cafile和capath这两个参数分别指定CA证书和它的路径，会在https链接时用到。</p>
+
+</div>
+</div>
+</div>
+<div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
+</div><div class='inner_cell'>
+<div class='text_cell_render border-box-sizing rendered_html'>
+<h2 id='Request'>Request<a class='anchor-link' href='#Request'>&#182;</a></h2>
+</div>
+</div>
+</div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
 <div class='prompt input_prompt'>In&nbsp;[4]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='kn'>import</span> <span class='nn'>numpy</span> <span class='k'>as</span> <span class='nn'>np</span>
-</pre></div>
+<div class=' highlight hl-ipython3'><pre><span></span><span class='kn'>from</span> <span class='nn'>urllib</span> <span class='k'>import</span> <span class='n'>request</span><span class='p'>,</span> <span class='n'>parse</span>
 
-    </div>
-</div>
-</div>
+<span class='n'>url</span><span class='o'>=</span><span class='s1'>&#39;http://httpbin.org/post&#39;</span>
+<span class='n'>headers</span><span class='o'>=</span><span class='p'>{</span>
+    <span class='s1'>&#39;User-Agent&#39;</span><span class='p'>:</span> <span class='s1'>&#39;Mozilla/5.0 (compatible; MSIE 5.5; Windows NT)&#39;</span><span class='p'>,</span>
+    <span class='s1'>&#39;Host&#39;</span><span class='p'>:</span> <span class='s1'>&#39;httpbin.org&#39;</span>
+<span class='p'>}</span>
+<span class='nb'>dict</span><span class='o'>=</span><span class='p'>{</span><span class='s1'>&#39;name&#39;</span><span class='p'>:</span> <span class='s1'>&#39;germey&#39;</span><span class='p'>}</span>
 
-</div>
-<div class='cell border-box-sizing code_cell rendered'>
-<div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[5]:</div>
-<div class='inner_cell'>
-    <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>my_arr</span> <span class='o'>=</span> <span class='n'>np</span><span class='o'>.</span><span class='n'>arange</span><span class='p'>(</span><span class='mi'>1000000</span><span class='p'>)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class='cell border-box-sizing code_cell rendered'>
-<div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[6]:</div>
-<div class='inner_cell'>
-    <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>my_list</span> <span class='o'>=</span> <span class='nb'>list</span><span class='p'>(</span><span class='nb'>range</span><span class='p'>(</span><span class='mi'>1000000</span><span class='p'>))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class='cell border-box-sizing code_cell rendered'>
-<div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[9]:</div>
-<div class='inner_cell'>
-    <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='o'>%</span><span class='k'>time</span> for _ in range(10): my_arr2 = my_arr * 2
+<span class='n'>data</span> <span class='o'>=</span> <span class='nb'>bytes</span><span class='p'>(</span><span class='n'>parse</span><span class='o'>.</span><span class='n'>urlencode</span><span class='p'>(</span><span class='nb'>dict</span><span class='p'>),</span><span class='n'>encoding</span><span class='o'>=</span><span class='s1'>&#39;utf-8&#39;</span><span class='p'>)</span>
+<span class='n'>req</span> <span class='o'>=</span> <span class='n'>request</span><span class='o'>.</span><span class='n'>Request</span><span class='p'>(</span><span class='n'>url</span><span class='o'>=</span><span class='n'>url</span><span class='p'>,</span><span class='n'>data</span><span class='o'>=</span><span class='n'>data</span><span class='p'>,</span><span class='n'>headers</span><span class='o'>=</span><span class='n'>headers</span><span class='p'>,</span><span class='n'>method</span><span class='o'>=</span><span class='s1'>&#39;POST&#39;</span><span class='p'>)</span>
+<span class='c1'>#req.add_header(&#39;User-Agent&#39;,&#39;Mozilla/5.0 (compatible; MSIE 8.4; Windows NT&#39;) #也可以request的方法来添加</span>
+<span class='n'>response</span> <span class='o'>=</span> <span class='n'>request</span><span class='o'>.</span><span class='n'>urlopen</span><span class='p'>(</span><span class='n'>req</span><span class='p'>)</span> 
+<span class='nb'>print</span><span class='p'>(</span><span class='n'>response</span><span class='o'>.</span><span class='n'>read</span><span class='p'>())</span>
 </pre></div>
 
     </div>
@@ -13177,7 +13324,7 @@ div#notebook {
 
 
 <div class='output_subarea output_stream output_stdout output_text'>
-<pre>Wall time: 39.2 ms
+<pre>b&#39;{\n  &#34;args&#34;: {}, \n  &#34;data&#34;: &#34;&#34;, \n  &#34;files&#34;: {}, \n  &#34;form&#34;: {\n    &#34;name&#34;: &#34;germey&#34;\n  }, \n  &#34;headers&#34;: {\n    &#34;Accept-Encoding&#34;: &#34;identity&#34;, \n    &#34;Content-Length&#34;: &#34;11&#34;, \n    &#34;Content-Type&#34;: &#34;application/x-www-form-urlencoded&#34;, \n    &#34;Host&#34;: &#34;httpbin.org&#34;, \n    &#34;User-Agent&#34;: &#34;Mozilla/5.0 (compatible; MSIE 5.5; Windows NT)&#34;, \n    &#34;X-Amzn-Trace-Id&#34;: &#34;Root=1-5ebad039-d7bcea7114a68f428cc5e837&#34;\n  }, \n  &#34;json&#34;: null, \n  &#34;origin&#34;: &#34;110.53.234.238&#34;, \n  &#34;url&#34;: &#34;http://httpbin.org/post&#34;\n}\n&#39;
 </pre>
 </div>
 </div>
@@ -13188,132 +13335,39 @@ div#notebook {
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[10]:</div>
+<div class='prompt input_prompt'>In&nbsp;[&nbsp;]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='o'>%</span><span class='k'>time</span> for _ in range(10): my_list2 = [x * 2 for x in my_list]
+<div class=' highlight hl-ipython3'><pre><span></span> 
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class='output_wrapper'>
-<div class='output'>
-
-
-<div class='output_area'>
-
-    <div class='prompt'></div>
-
-
-<div class='output_subarea output_stream output_stdout output_text'>
-<pre>Wall time: 1.93 s
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[12]:</div>
+<div class='prompt input_prompt'>In&nbsp;[&nbsp;]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>data</span> <span class='o'>=</span> <span class='n'>np</span><span class='o'>.</span><span class='n'>random</span><span class='o'>.</span><span class='n'>randn</span><span class='p'>(</span><span class='mi'>2</span><span class='p'>,</span> <span class='mi'>3</span><span class='p'>)</span>
-<span class='n'>data</span>
+<div class=' highlight hl-ipython3'><pre><span></span> 
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class='output_wrapper'>
-<div class='output'>
-
-
-<div class='output_area'>
-
-    <div class='prompt output_prompt'>Out[12]:</div>
-
-
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>array([[-0.16273119, -1.51477894,  0.36518076],
-       [ 0.33487394,  0.30255155, -0.70515167]])</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
 </div>
 <div class='cell border-box-sizing code_cell rendered'>
 <div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[13]:</div>
+<div class='prompt input_prompt'>In&nbsp;[&nbsp;]:</div>
 <div class='inner_cell'>
     <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>data</span><span class='o'>.</span><span class='n'>shape</span>
+<div class=' highlight hl-ipython3'><pre><span></span> 
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class='output_wrapper'>
-<div class='output'>
-
-
-<div class='output_area'>
-
-    <div class='prompt output_prompt'>Out[13]:</div>
-
-
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>(2, 3)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class='cell border-box-sizing code_cell rendered'>
-<div class='input'>
-<div class='prompt input_prompt'>In&nbsp;[14]:</div>
-<div class='inner_cell'>
-    <div class='input_area'>
-<div class=' highlight hl-ipython3'><pre><span></span><span class='n'>data</span><span class='o'>.</span><span class='n'>dtype</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class='output_wrapper'>
-<div class='output'>
-
-
-<div class='output_area'>
-
-    <div class='prompt output_prompt'>Out[14]:</div>
-
-
-
-
-<div class='output_text output_subarea output_execute_result'>
-<pre>dtype(&#39;float64&#39;)</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13351,11 +13405,11 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 </script> 
     
 
-</div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>python爬虫-基础</p><p><span>文章作者：</span>wtyang</p><!--pspan= __('copyright_date_prefix')
+</div></div></div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><p><span>本文标题：</span>python爬虫-基础</p><p><span>文章作者：</span>wtyang</p><!--pspan= __('copyright_date_prefix')
 = page.date.format(config.date_format)--><!--pspan= __('copyright_update_prefix')
 = page.updated.format(config.date_format)--><p><span>原始链接：</span><a href="/Python/python-crawler(1)/">https://2inf.top/Python/python-crawler(1)/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://2inf.top/Python/python-crawler(1)/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" rel="noopener">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！</p></div><br><div class="tags"></div><div class="post-nav"><a class="next" href="/Algorithm/Learing-Segment-Tree/">线段树学习</a></div></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">2inf.</a><div><link rel="stylesheet" type="text/css" href="/css/badge.css"/><div class="github-badge"><a rel="nofollow" target="_blank" href="https://hexo.io"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hexo</span></a></div>
 <div class="github-badge"> <a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"><span class="badge-subject">Theme</span><span class="badge-value bg-orange">maupassant</span></a></div>
-<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://www.cnblogs.com/2inf/"><span class="badge-subject">cnblogs</span><span class="badge-value bg-blueviolet">2inf</span></a></div></div></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://www.cnblogs.com/2inf/"><span class="badge-subject">cnblogs</span><span class="badge-value bg-blueviolet">2inf</span></a></div></div></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
   });
-</script><!--script(type='text/javascript', src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML', async)--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
+</script><!--script(type='text/javascript', src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML', async)--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script><!--script(type='text/javascript', src=url_for(theme.js) + '/fold.js' + '?v=' + theme.version)--></div></body></html>
