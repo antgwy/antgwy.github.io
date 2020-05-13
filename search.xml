@@ -4,9 +4,8 @@
     <title>python爬虫-基础</title>
     <url>/Python/python-crawler(1)/</url>
     <content><![CDATA[<h1 id="urllib库的使用">urllib库的使用</h1>
-<script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+<!--<script src="https://libs.baidu.com/jquery/2.0.0/jquery.js"></script>-->
 
-<div class="auto-resizable-iframe"><div>
 <iframe id="ipynb" marginheight="0" frameborder="0" width="924px" height="680px" srcdoc="<!DOCTYPE html>
 <html>
 <head><meta charset='utf-8' />
@@ -13125,7 +13124,7 @@ div#notebook {
 <div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
 </div><div class='inner_cell'>
 <div class='text_cell_render border-box-sizing rendered_html'>
-<h2 id='urllib.request.urlopen()'>urllib.request.urlopen()<a class='anchor-link' href='#urllib.request.urlopen()'>&#182;</a></h2>
+<h2 id='urllib.request.urlopen()'>urllib.request.urlopen()</h2>
 </div>
 </div>
 </div>
@@ -13290,7 +13289,7 @@ nginx
 <div class='cell border-box-sizing text_cell rendered'><div class='prompt input_prompt'>
 </div><div class='inner_cell'>
 <div class='text_cell_render border-box-sizing rendered_html'>
-<h2 id='Request'>Request<a class='anchor-link' href='#Request'>&#182;</a></h2>
+<h2 id='Request'>Request</h2>
 </div>
 </div>
 </div>
@@ -13410,7 +13409,7 @@ document.getElementById('ipynb').height=$("#ipynb").contents().find("#notebook")
 </script> 
     
 
-</div></div>]]></content>
+]]></content>
       <categories>
         <category>Python</category>
       </categories>
