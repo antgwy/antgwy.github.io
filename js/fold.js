@@ -1,4 +1,5 @@
-macPanelMan();
+
+/*macPanelMan();
 function macPanelMan(){
   // macPanel 展开折叠
   $('.highlight-wrap i').on('click', function(){
@@ -13,4 +14,4 @@ function macPanelMan(){
       $(this).attr('class', 'fa fa-angle-down code-expand');
     }
   });
-}
+}*/
