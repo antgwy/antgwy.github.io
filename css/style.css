@@ -449,7 +449,7 @@ div {
   .body_container {
     padding: 0 30px; }
   .content_container {
-    padding-right: 15px; }
+    padding-right: 0px; }
   .hidden_mid_and_down {
     display: none !important; }
   #sidebar {
@@ -845,12 +845,11 @@ pre {
 /* syntax highlight*/
 figure.highlight,
 .codeblock {
-  background: #f7f8f8;
+  background: #282c34;
   margin: 10px 0;
   line-height: 1.1em;
-  color: #333;
-  padding-top: 15px;
-  overflow: hidden;
+  color: #abb2bf;
+  overflow-x: hidden;
   border: solid 1px #2c2c2c;
   border-radius: 10px;
   box-shadow: 10px 10px 5px #888888; }
@@ -891,7 +890,7 @@ figure.highlight,
     vertical-align: top; }
   figure.highlight .gutter,
   .codeblock .gutter {
-    color: #514883; }
+    color: #abb2bf; }
   figure.highlight.plain .gutter,
   .codeblock.plain .gutter {
     display: none; }
@@ -908,7 +907,7 @@ figure.highlight,
       color: #01579f; }
   figure.highlight .gutter,
   .codeblock .gutter {
-    background: #f7f8f8;
+    background: #282c34;
     border-right: 1px solid #e6e6e6;
     padding: 0.3em 15px;
     user-select: none; }
@@ -918,7 +917,7 @@ figure.highlight,
     width: 100%; }
     figure.highlight .code pre,
     .codeblock .code pre {
-      max-width: 880px;
+      max-width: 940px;
       overflow-x: auto;
       overflow-y: hidden; }
   figure.highlight .line,
@@ -930,9 +929,12 @@ figure.highlight,
 figure.highlight,
 .highlight-wrap,
 .codeblock {
-    background: #f7f8f8;
+    background: #282c34;
+    //background: #f7f8f8;
+    color: #abb2bf;
+    //color: #333;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
     border-radius: 5px;
     // box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.4);
     box-shadow:18px 18px 15px 0px rgba(0,0,0,.4);
@@ -1044,7 +1046,8 @@ figure.highlight,
         vertical-align: top;
     }
     .gutter {
-        color: #514883;
+        //color: #514883;
+        color: #abb2bf;
     }
     // hide gutter when code is plain text
     &.plain {
@@ -1066,7 +1069,8 @@ figure.highlight,
     }
     // Gutter which contains line numbers
     .gutter {
-        background: #f7f8f8;
+        //background: #f7f8f8;
+        background: #282c34;
         border-right: 1px solid #e6e6e6;
         padding: 0.3em 15px;
         user-select: none;
@@ -1615,7 +1619,7 @@ screen and (max-width: 48em) {
 }*/
 /* table*/
 table {
-  margin: auto auto 15px;
+  margin: auto auto;
   width: 100%;
   background: transparent;
   border-collapse: collapse;
