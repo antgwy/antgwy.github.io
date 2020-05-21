@@ -60,6 +60,19 @@ a:focus {
 div {
   box-sizing: border-box; }
 
+#header,
+#layout,
+#footer {
+  opacity: 0;
+  transform: translate3d(0, -20px, 0);
+  transition: all .5s ease; }
+
+#header.loaded,
+#layout.loaded,
+#footer.loaded {
+  transform: translate3d(0, 0, 0);
+  opacity: 1; }
+
 #header {
   padding: 58px 0 0;
   text-align: left;
@@ -864,7 +877,11 @@ figure.highlight,
   figure.highlight table,
   .codeblock table {
     display: block;
-    width: 100%; }
+    width: 100%;
+    max-width: 2080px; }
+    figure.highlight table tr:hover,
+    .codeblock table tr:hover {
+      background: #282c34; }
   figure.highlight pre,
   figure.highlight .gutter,
   figure.highlight .code,
@@ -1720,15 +1737,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   text-align: left;
+  max-width: 768px;
   line-height: 20px; }
   table th {
     font-weight: bold;
     padding: 5px 10px;
-    border-bottom: 2px solid #909ba2; }
+    border-bottom: 2px solid #909ba2;
+    text-align: center !important;
+    background: rgba(158, 188, 226, 0.2);
+    white-space: nowrap; }
   table td {
     padding: 5px 10px; }
   table tr:nth-child(2n) {
-    background: #f7f8f8; }
+    background: rgba(158, 188, 226, 0.12); }
+  table tr:hover {
+    background: #efefef; }
 
 table tr th, table tr td {
   font-size: 1em;
