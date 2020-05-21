@@ -1003,42 +1003,16 @@ figure.highlight,
         box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
         z-index: 3;
       }
-      .code-expand {
-        position: inherit;
-        float: left;
-        height: 0;
-        top: -27px;
-        z-index: 1;
-        padding: 0 3px;
-        color: #ff0000;
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 18px;
-        -webkit-transform: rotate(0);
-        -moz-transform: rotate(0);
-        -ms-transform: rotate(0);
-        -o-transform: rotate(0);
-        transform: rotate(0);
-    }
-    .code-closed{
-        top:-18px;
-        margin-left:-8px;
-        -moz-transition:all .3s;
-        -o-transition:all .3s;
-        -ms-transition:all .3s;
-        -moz-transform:rotate(-90deg)!important;
-        -o-transform:rotate(-90deg)!important;
-        -ms-transform:rotate(-90deg)!important;
-        -webkit-transform:rotate(-90deg)!important;
-        -moz-transform:rotate(-90deg)!important;
-        -ms-transform:rotate(-90deg)!important;
-        -o-transform:rotate(-90deg)!important;
-        transform:rotate(-90deg)!important
-    }
     //
     table {
         display: block;
         width: 100%;
+        // modified
+        max-width: 2080px;
+        tr:hover {
+            background: #282c34;;
+        }
+        //
     }
     // Reset for tag `pre` and  for class `.gutter`, `.code`, `.tag`
     pre,
