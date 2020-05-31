@@ -404,11 +404,13 @@ div {
     line-height: 25px;
     padding: 5px 9px;
     border: 1px solid #DDD;
-    text-align: center; }
+    text-align: center;
+    border: 3px solid #f4f4f4;
+    border-radius: 5px; }
     .page-navigator a:hover,
     .page-navigator span:hover {
       background: #F8F8F8;
-      border-bottom-color: #D26911; }
+      border-bottom-color: #1abc9c; }
     .page-navigator a.prev,
     .page-navigator span.prev {
       float: left; }
@@ -427,7 +429,7 @@ div {
         padding-left: 0.3em; }
   .page-navigator .current {
     background: #F8F8F8;
-    border-bottom-color: #D26911; }
+    border-bottom-color: #1abc9c; }
   .page-navigator .space {
     border: none;
     padding: 5px 5px; }
