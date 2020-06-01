@@ -1,0 +1,116 @@
+{
+    "data": [
+        {
+            "title": "某科学的超电磁炮T",
+            "type": "番剧",
+            "date": "2020-01-10",
+            "official": "https://toaru-project.com/railgun_t/",
+            "summary": "占坑",
+            "other": "とある科学の超電磁砲T"
+        },
+        {
+            "title": "某科学的超电磁炮S",
+            "type": "番剧",
+            "date": "2013-04-12",
+            "official": "https://toaru-project.com/railgun_s/",
+            "summary": "炮姐第二季 O(∩_∩)O哈哈~",
+            "other": "とある科学の超電磁砲S"
+        },
+        {
+            "title": "某科学的超电磁炮",
+            "type": "番剧",
+            "date": "2009-10-02",
+            "official": "https://toaru-project.com/railgun/",
+            "summary": "炮姐拯救世界，信炮姐得永生。",
+            "other": "とある科学の超電磁砲"
+        },
+        {
+            "title": "一拳超人",
+            "type": "漫画 & 番剧",
+            "date": "2009-07",
+            "official": "https://onepunchman-anime.net/",
+            "summary": "占坑",
+            "other": "ワンパンマン"
+        },
+        {
+            "title": "JOJO的奇妙冒险 第五部(黄金之风)",
+            "type": "番剧",
+            "date": "2018-10-05",
+            "official": "http://jojo-animation.com/",
+            "summary": "占坑",
+            "other": "ジョジョの奇妙な冒険 ダイヤモンドは砕けない"
+        },
+        {
+            "title": "JOJO的奇妙冒险 第四部(不灭钻石)",
+            "type": "番剧",
+            "date": "2016-04-01",
+            "official": "http://jojo-animation.com/",
+            "summary": "占坑",
+            "other": "ジョジョの奇妙な冒険 ダイヤモンドは砕けない"
+        },
+        {
+            "title": "JOJO的奇妙冒险 第三部(星尘斗士+埃及篇)",
+            "type": "番剧",
+            "date": "2014-04-04",
+            "official": "http://jojo-animation.com/",
+            "summary": "占坑",
+            "other": "ジョジョの奇妙な冒険 ダイヤモンドは砕けない"
+        },
+        {
+            "title": "JOJO的奇妙冒险 第一二部(幻影之血+战斗潮流)",
+            "type": "番剧",
+            "date": "2012-10-05",
+            "official": "http://jojo-animation.com/",
+            "summary": "占坑",
+            "other": "ジョジョの奇妙な冒険"
+        },
+        {
+            "title": "魔法禁书目录 第三季",
+            "type": "番剧",
+            "date": "2018-10-05",
+            "official": "https://toaru-project.com/index_3/",
+            "summary": "占坑",
+            "other": "とある魔術の禁書目録Ⅲ"
+        },
+        {
+            "title": "四月是你的谎言",
+            "type": "番剧",
+            "date": "2014-10-09",
+            "official": "http://www.kimiuso.jp/",
+            "summary": "占坑",
+            "other": "四月は君の嘘"
+        },
+        {
+            "title": "千与千寻",
+            "type": "剧场版",
+            "date": "2001-07-20",
+            "official": "暂无",
+            "summary": "主题曲好听",
+            "other": "千と千尋の神隠し"
+        },
+        {
+            "title": "偷星九月天",
+            "type": "漫画",
+            "date": "2007",
+            "official": "暂无",
+            "summary": "小学时的回忆",
+            "other": "知音漫客上的连载"
+        },
+        {
+            "title": "名侦探柯南",
+            "type": "番剧 & 剧场版",
+            "date": "1996-01-08",
+            "official": "https://www.conan-movie.jp/",
+            "summary": "目前还没有结局",
+            "other": "名探偵コナン"
+        },
+        {
+            "title": "哆啦A梦",
+            "type": "漫画 & 番剧 & 剧场版",
+            "date": "1974-07-31",
+            "official": "https://dora-world.com/",
+            "summary": "占坑",
+            "other": "ドラえもん"
+        }
+    ]
+}

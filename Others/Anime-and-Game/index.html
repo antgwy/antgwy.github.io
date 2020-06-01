@@ -1,0 +1,131 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>My fun | 2inf</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/8.0.1/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/pure-min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/1.0.1/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><!-- modified--><link rel="stylesheet" type="text/css" href="/css/atom-one-dark.min.css?v=0.0.0"><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script><!----><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">My fun</h1><a id="logo" href="/.">2inf</a><p class="description">2inf's blog</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/tags/"><i class="fa fa-tags"> 标签</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">My fun</h1><div class="post-meta">2020-06-01<span> | </span><span class="category"><a href="/categories/Others/">Others</a></span></div><!--if page.toc--><!--  div(class='clear')--><!--    div(id='toc' class='toc-article')--><!--      div(class='toc-title')= __('contents')--><!--      != toc(page.content, {list_number: theme.toc_number})--><div class="post-content"><h1 id="动漫">动漫</h1>
+<p>  记录一些在看或看完的动漫 :stuck_out_tongue_winking_eye:</p>
+<link rel="stylesheet" href="https://unpkg.com/element-ui@2.9.2/lib/theme-chalk/index.css">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui@2.9.2/lib/index.js"></script>
+<div id="app1">
+<pre><code>&lt;template&gt;
+    &lt;el-table :data=&quot;watchesData&quot; border=&quot;&quot; style=&quot;width: 100%&quot;&gt;
+        &lt;el-table-column type=&quot;expand&quot;&gt;
+            &lt;template slot-scope=&quot;props&quot;&gt;
+                &lt;el-form label-position=&quot;left&quot;&gt;
+                    &lt;el-form-item label=&quot;总结&quot;&gt;
+                        &lt;span v-html=&quot;props.row.summary&quot;&gt;&lt;/span&gt;
+                    &lt;/el-form-item&gt;
+                    &lt;el-form-item label=&quot;其它&quot;&gt;
+                        &lt;span v-html=&quot;props.row.other&quot;&gt;&lt;/span&gt;
+                    &lt;/el-form-item&gt;
+                &lt;/el-form&gt;
+            &lt;/template&gt;
+        &lt;/el-table-column&gt;
+        &lt;el-table-column type=&quot;index&quot; width=&quot;50&quot; align=&quot;center&quot;&gt;&lt;/el-table-column&gt;
+        &lt;el-table-column prop=&quot;title&quot; sortable=&quot;&quot; label=&quot;标题&quot; align=&quot;center&quot;&gt;&lt;/el-table-column&gt;
+        &lt;el-table-column prop=&quot;type&quot; label=&quot;类型&quot; width=&quot;180&quot; align=&quot;center&quot;&gt;&lt;/el-table-column&gt;
+        &lt;el-table-column prop=&quot;date&quot; sortable=&quot;&quot; label=&quot;首播时间&quot; width=&quot;120&quot; align=&quot;center&quot;&gt;&lt;/el-table-column&gt;
+        &lt;el-table-column prop=&quot;official&quot; label=&quot;官网&quot; width=&quot;250&quot;&gt;&lt;/el-table-column&gt;
+    &lt;/el-table&gt;
+&lt;/template&gt;</code></pre>
+</div>
+<script>
+    new Vue({
+        el: '#app1',
+        data: {
+            watchesData: []
+        },
+        mounted: function () {
+            var that = this;
+            $.ajax({
+                type: 'get',
+                url: 'anime._json',
+                dataType: 'json',
+                success: function (data) {
+                    for (var i = 0; i < data.data.length; i++) {
+                        var x = data.data[i];
+                        if (x.total == 'unknown') {
+                            x.state = null;
+                            x.percentage = parseInt(Math.random() * 100);
+                        } else {
+                            if (x.total == x.now) {
+                                x.state = 'success';
+                                x.percentage = 100;
+                            } else {
+                                x.state = 'exception';
+                                x.percentage = parseInt(100.0 * x.now / x.total);
+                            }
+                        }
+                    }
+                    that.watchesData = data.data;
+                }
+            })
+        }
+    });
+</script>
+<h1 id="游戏">游戏</h1>
+<p>  游戏记录</p>
+<div id="app2">
+<pre><code>&lt;template&gt;
+    &lt;el-table :data=&quot;watchesData&quot; border=&quot;&quot; style=&quot;width: 100%&quot;&gt;
+        &lt;el-table-column type=&quot;expand&quot;&gt;
+            &lt;template slot-scope=&quot;props&quot;&gt;
+                &lt;el-form label-position=&quot;left&quot;&gt;
+                    &lt;el-form-item label=&quot;总结&quot;&gt;
+                        &lt;span v-html=&quot;props.row.summary&quot;&gt;&lt;/span&gt;
+                    &lt;/el-form-item&gt;
+                    &lt;el-form-item label=&quot;其它&quot;&gt;
+                        &lt;span v-html=&quot;props.row.other&quot;&gt;&lt;/span&gt;
+                    &lt;/el-form-item&gt;
+                &lt;/el-form&gt;
+            &lt;/template&gt;
+        &lt;/el-table-column&gt;
+        &lt;el-table-column type=&quot;index&quot; width=&quot;50&quot; align=&quot;center&quot;&gt;&lt;/el-table-column&gt;
+        &lt;el-table-column prop=&quot;title&quot; sortable=&quot;&quot; label=&quot;标题&quot; align=&quot;center&quot;&gt;&lt;/el-table-column&gt;
+        &lt;el-table-column prop=&quot;type&quot; label=&quot;类型&quot; width=&quot;180&quot; align=&quot;center&quot;&gt;&lt;/el-table-column&gt;
+        &lt;el-table-column prop=&quot;date&quot; sortable=&quot;&quot; label=&quot;发行时间&quot; width=&quot;120&quot; align=&quot;center&quot;&gt;&lt;/el-table-column&gt;
+        &lt;el-table-column prop=&quot;official&quot; label=&quot;官网&quot; width=&quot;250&quot;&gt;&lt;/el-table-column&gt;
+    &lt;/el-table&gt;
+&lt;/template&gt;</code></pre>
+</div>
+<script>
+    new Vue({
+        el: '#app2',
+        data: {
+            watchesData: []
+        },
+        mounted: function () {
+            var that = this;
+            $.ajax({
+                type: 'get',
+                url: 'game._json',
+                dataType: 'json',
+                success: function (data) {
+                    for (var i = 0; i < data.data.length; i++) {
+                        var x = data.data[i];
+                        if (x.total == 'unknown') {
+                            x.state = null;
+                            x.percentage = parseInt(Math.random() * 100);
+                        } else {
+                            if (x.total == x.now) {
+                                x.state = 'success';
+                                x.percentage = 100;
+                            } else {
+                                x.state = 'exception';
+                                x.percentage = parseInt(100.0 * x.now / x.total);
+                            }
+                        }
+                    }
+                    that.watchesData = data.data;
+                }
+            })
+        }
+    });
+</script>
+</div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><!--pspan= __('copyright_title_prefix')
+= page.title--><p><span>文章作者：</span>wtyang</p><!--pspan= __('copyright_date_prefix')
+= page.date.format(config.date_format)--><!--pspan= __('copyright_update_prefix')
+= page.updated.format(config.date_format)--><p><span>原始链接：</span><a href="/Others/Anime-and-Game/">https://2inf.top/Others/Anime-and-Game/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://2inf.top/Others/Anime-and-Game/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 许可协议。转载请注明出处！</p></div><br><div class="tags"></div><div class="post-nav"><a class="next" href="/Python/Python-NumPy/">Python科学计算-NumPy</a></div></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">2inf.</a>&nbsp;|&nbsp;
+<a href="/atom.xml" target="_blank"><i class="fa fa-rss"></i>&nbsp;RSS Feed</a><div><link rel="stylesheet" type="text/css" href="/css/badge.css"/><div class="github-badge"><a rel="nofollow" target="_blank" href="https://hexo.io"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hexo</span></a></div>
+<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"><span class="badge-subject">Theme</span><span class="badge-value bg-orange">maupassant</span></a></div>
+<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://www.cnblogs.com/2inf/"><span class="badge-subject">cnblogs</span><span class="badge-value bg-blueviolet">2inf</span></a></div></div></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script><!--script(type='text/javascript', src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML', async)--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script><script>hljs.initHighlightingOnLoad();</script><script type="text/javascript" src="/js/app.js?v=0.0.0"></script></div></body></html>
