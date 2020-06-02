@@ -2,7 +2,11 @@
 .post-copyright  {
   margin: 2em 0 0;
   padding: 0.5em 1.0em;
-  border-left: 3px solid #FF1700;
+  /*border-left: 3px solid #FF1700;*/
+  /*modified*/
+  border-left: 3px solid #555;
+  border-radius: 3px;
+  /**/
   background-color: #F9F9F9;
   font-size: 0.93rem;
   line-height: 1.6em;

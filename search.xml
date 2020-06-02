@@ -8,6 +8,7 @@
 <li><p><a href="https://numpy.org/doc/stable/reference/index.html" target="_blank" rel="noopener">NumPy Reference</a></p></li>
 <li><p><a href="https://numpy.org/doc/stable/user/index.html" target="_blank" rel="noopener">NumPy User Guide</a></p></li>
 <li><p><a href="https://cs231n.github.io/python-numpy-tutorial/" target="_blank" rel="noopener">Python Numpy Tutorial (with Jupyter and Colab)</a></p></li>
+<li><p><a href="https://www.runoob.com/numpy/numpy-tutorial.html" target="_blank" rel="noopener">菜鸟教程</a></p></li>
 </ol>
 <hr>
 <p>  我们知道 Python 用 list 结构保存一组值，可以当作数组用，列表的元素可以是任何对象，因此列表中保存的是对象的指针。对数值运算而言，这种结构比较耗费内存和CPU。此外还有 array 模块，能直接保存数值，但不支持多维数组，也没有各种运算函数，也不适合做数值运算。</p>
@@ -1070,33 +1071,6 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
     <title>算法模板</title>
     <url>/Algorithm/Algorithm-template/</url>
     <content><![CDATA[<h1 id="基础">基础</h1>
-<div id="app">
-<pre><code>&lt;template&gt;
-    &lt;el-table :data=&quot;watchesData&quot; border=&quot;&quot; style=&quot;width: 100%&quot;&gt;
-        &lt;el-table-column type=&quot;expand&quot;&gt;
-            &lt;template slot-scope=&quot;props&quot;&gt;
-                &lt;el-form label-position=&quot;left&quot;&gt;
-                    &lt;el-form-item label=&quot;总结&quot;&gt;
-                        &lt;span v-html=&quot;props.row.summary&quot;&gt;&lt;/span&gt;
-                    &lt;/el-form-item&gt;
-                    &lt;el-form-item label=&quot;其它&quot;&gt;
-                        &lt;span v-html=&quot;props.row.other&quot;&gt;&lt;/span&gt;
-                    &lt;/el-form-item&gt;
-                &lt;/el-form&gt;
-            &lt;/template&gt;
-        &lt;/el-table-column&gt;
-        &lt;el-table-column type=&quot;index&quot; width=&quot;50&quot; align=&quot;center&quot;&gt;
-        &lt;/el-table-column&gt;
-        &lt;el-table-column prop=&quot;title&quot; sortable=&quot;&quot; label=&quot;标题&quot; align=&quot;center&quot;&gt;
-        &lt;/el-table-column&gt;
-        &lt;el-table-column prop=&quot;type&quot; label=&quot;类型&quot; width=&quot;180&quot; align=&quot;center&quot;&gt;&lt;/el-table-column&gt;
-        &lt;el-table-column prop=&quot;date&quot; sortable=&quot;&quot; label=&quot;首播时间&quot; width=&quot;120&quot; align=&quot;center&quot;&gt;
-        &lt;/el-table-column&gt;
-        &lt;el-table-column prop=&quot;official&quot; label=&quot;官网&quot; width=&quot;250&quot;&gt;
-        &lt;/el-table-column&gt;
-    &lt;/el-table&gt;
-&lt;/template&gt;</code></pre>
-</div>
 <h2 id="排序">排序</h2>
 <h3 id="归并排序">归并排序</h3>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">mergesort</span><span class="hljs-params">(<span class="hljs-keyword">int</span> l, <span class="hljs-keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span>(l == r) <span class="hljs-keyword">return</span> ;</span><br><span class="line">    <span class="hljs-keyword">int</span> mid = (l + r) &gt;&gt; <span class="hljs-number">1</span>;</span><br><span class="line">    mergesort(l, mid);</span><br><span class="line">    mergesort(mid + <span class="hljs-number">1</span>, r);</span><br><span class="line">    <span class="hljs-keyword">int</span> p = l, q = mid + <span class="hljs-number">1</span>, cnt = l;</span><br><span class="line">    <span class="hljs-keyword">while</span>(p &lt;= mid &amp;&amp; q &lt;= r)&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(a[p] &lt; a[q]) t[cnt++] = a[p++];</span><br><span class="line">        <span class="hljs-keyword">else</span> t[cnt++] = a[q++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="hljs-keyword">while</span>(p &lt;= mid) t[cnt++] = a[p++];</span><br><span class="line">    <span class="hljs-keyword">while</span>(q &lt;= r) t[cnt++] = a[q++];</span><br><span class="line">    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = l; i &lt;= r; ++i) a[i] = t[i];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
