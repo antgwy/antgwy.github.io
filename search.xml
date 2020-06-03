@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Python科学计算-NumPy</title>
-    <url>/Python/Python-NumPy/</url>
+    <url>/index.html/Python/Python-NumPy/</url>
     <content><![CDATA[<p>参考文献:</p>
 <ol type="1">
 <li><p><a href="https://numpy.org/doc/stable/reference/index.html" target="_blank" rel="noopener">NumPy Reference</a></p></li>
@@ -82,7 +82,7 @@
 <p>  用 Python 内置的 slice() 函数创建下标比较麻烦，因此 NumPy 提供了一个 s_对象来帮助我们创建数组下标，s_实际上是 IndexExpression 类的一个对象：</p>
 <figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="hljs-meta">&gt;&gt;&gt; </span>np.s_[::<span class="hljs-number">2</span>, <span class="hljs-number">2</span>:]</span><br><span class="line">(slice(<span class="hljs-keyword">None</span>, <span class="hljs-keyword">None</span>, <span class="hljs-number">2</span>), slice(<span class="hljs-number">2</span>, <span class="hljs-keyword">None</span>, <span class="hljs-keyword">None</span>))</span><br></pre></td></tr></table></figure>
 <p>  在多维数组的下标元组中，也可以使用整数元组或列表、整数数组和布尔数组。当在下标中使用这些对象时，所获得的数据是原始数据的副本，因此修改结果数组不会改变原始数组。</p>
-<p><img src="/Python/Python-NumPy/Python_NumPy1.jpg"></p>
+<p><img src="/index.html/Python/Python-NumPy/Python_NumPy1.jpg"></p>
 <h2 id="结构数组">结构数组</h2>
 <p>  在C语言中可以通过 struct 关键字定义结构类型，结构中的字段占据连续的内存空间。类型相同的两个结构体所占用的内存大小相同，因此可以很容易定义结构数组。与C语言类似，NumPy 中也很容易对这种结构数组进行操作。</p>
 <figure class="highlight py"><table><tr><td class="code"><pre><span class="line">persontype = np.dtype(&#123;</span><br><span class="line">    <span class="hljs-string">'names'</span>:[<span class="hljs-string">'name'</span>, <span class="hljs-string">'age'</span>, <span class="hljs-string">'weight'</span>],</span><br><span class="line">    <span class="hljs-string">'formats'</span>:[<span class="hljs-string">'S32'</span>,<span class="hljs-string">'i'</span>, <span class="hljs-string">'f'</span>]&#125;, align=<span class="hljs-keyword">True</span>)</span><br><span class="line">a = np.array([(<span class="hljs-string">"Zhang"</span>, <span class="hljs-number">32</span>, <span class="hljs-number">75.5</span>), (<span class="hljs-string">"Wang"</span>, <span class="hljs-number">24</span>, <span class="hljs-number">65.2</span>)], </span><br><span class="line">             dtype = persontype)</span><br></pre></td></tr></table></figure>
@@ -97,7 +97,7 @@
   </entry>
   <entry>
     <title>线段树学习</title>
-    <url>/Algorithm/Learing-Segment-Tree/</url>
+    <url>/index.html/Algorithm/Learing-Segment-Tree/</url>
     <content><![CDATA[<h1 id="基础">基础</h1>
 <h2 id="概念">概念</h2>
 <p>  线段树(<a href="https://en.wikipedia.org/wiki/Segment_tree" target="_blank" rel="noopener">Segment tree</a>)是基于分治的二叉树，用于在区间上进行信息统计。线段树每个节点都代表一个区间，每个叶节点代表长度为1的区间，每个内部节点<span class="math inline">\([l,r]\)</span>，左子节点<span class="math inline">\([l,mid]\)</span>，右子节点<span class="math inline">\([mid+1,r]\)</span>，其中<span class="math inline">\(mid=\lfloor\frac{l+r}{2}\rfloor\)</span>。</p>
@@ -170,10 +170,10 @@
   </entry>
   <entry>
     <title>跳舞链</title>
-    <url>/Algorithm/Dancing-Links/</url>
+    <url>/index.html/Algorithm/Dancing-Links/</url>
     <content><![CDATA[<h1 id="精确覆盖问题exact-cover">精确覆盖问题<a href="https://en.wikipedia.org/wiki/Exact_cover" target="_blank" rel="noopener">(Exact Cover)</a></h1>
 <p>  定义:给定一个<span class="math inline">\(R\times C\)</span>的<span class="math inline">\(0,1\)</span>矩阵，问是否存在一个行集合，使得集合每一列<strong>恰好</strong>有一个<span class="math inline">\(1\)</span>。</p>
-<p><img src="/Algorithm/Dancing-Links/fig1.jpg"></p>
+<p><img src="/index.html/Algorithm/Dancing-Links/fig1.jpg"></p>
 <ul>
 <li>穷举法</li>
 </ul>
@@ -182,11 +182,11 @@
 <li>状态压缩</li>
 </ul>
 <p>  把每一行看作一个<span class="math inline">\(C\)</span>位二进制数，问题转化为在<span class="math inline">\(R\)</span>个<span class="math inline">\(C\)</span>位二进制数中, 选择数使得 (1)任意两个数的与为0；(2)所有数的或为<span class="math inline">\(2^C-1\)</span>；令<span class="math inline">\(tmp\)</span>表示当前所有被选择了的<span class="math inline">\(C\)</span>位二进制数的或。时间复杂度<span class="math inline">\(O(R\times 2^R)\)</span></p>
-<p><img src="/Algorithm/Dancing-Links/fig2.jpg"></p>
+<p><img src="/index.html/Algorithm/Dancing-Links/fig2.jpg"></p>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="hljs-keyword">int</span> n, m;</span><br><span class="line"><span class="hljs-keyword">int</span> a[N][N], num[N];</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span> </span>&#123;</span><br><span class="line">	<span class="hljs-keyword">int</span> ok = <span class="hljs-number">0</span>;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; ++i)</span><br><span class="line">    	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = m; j &gt;= <span class="hljs-number">1</span>; --j)</span><br><span class="line">        	num[i] = num[i] &lt;&lt; <span class="hljs-number">1</span> | a[i][j];</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> state = <span class="hljs-number">1</span>; state &lt; <span class="hljs-number">1</span> &lt;&lt; n; ++state) &#123;</span><br><span class="line">    	<span class="hljs-keyword">int</span> tmp = <span class="hljs-number">0</span>;</span><br><span class="line">    	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; ++i)  <span class="hljs-keyword">if</span>((<span class="hljs-number">1</span> &lt;&lt; i - <span class="hljs-number">1</span>) &amp; state) &#123;</span><br><span class="line">        	<span class="hljs-keyword">if</span>(tmp &amp; num[i]) <span class="hljs-keyword">break</span>;</span><br><span class="line">        	tmp |= num[i];</span><br><span class="line">    	&#125;</span><br><span class="line">    	<span class="hljs-keyword">if</span>(tmp == (<span class="hljs-number">1</span> &lt;&lt; m) - <span class="hljs-number">1</span>) &#123;</span><br><span class="line">        	ok = <span class="hljs-number">1</span>;</span><br><span class="line">        	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= n; ++i) <span class="hljs-keyword">if</span>((<span class="hljs-number">1</span> &lt;&lt; i - <span class="hljs-number">1</span>) &amp; state)</span><br><span class="line">            	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>, i);</span><br><span class="line">        	<span class="hljs-built_in">puts</span>(<span class="hljs-string">""</span>);</span><br><span class="line">   		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="hljs-keyword">if</span>(!ok) <span class="hljs-built_in">puts</span>(<span class="hljs-string">"No Solution!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="dancing-linksalgorithm-x">Dancing Links(<a href="https://en.wikipedia.org/wiki/Knuth%27s_Algorithm_X" target="_blank" rel="noopener">Algorithm X</a>)</h1>
 <p>红色的框代表选中的行，蓝色的框代表删除的列，绿色的框代表删除的行</p>
-<p><img src="/Algorithm/Dancing-Links/fig3.jpg"></p>
+<p><img src="/index.html/Algorithm/Dancing-Links/fig3.jpg"></p>
 <p><a href="https://www.youtube.com/watch?v=R9gRLnddOBg" target="_blank" rel="noopener">Dancing Links(2000)</a></p>
 <p><a href="https://www.youtube.com/watch?v=_cR9zDlvP88" target="_blank" rel="noopener">Dancing Links(2018)</a></p>
 <p>  算法大师Donald Knuth提出了“X算法”，Dancing Links翻译成舞蹈链，并不是算法本身，而是一种链式的数据结构，利用<strong>十字链表</strong>缓存和回溯矩阵，不需要额外开辟空间。</p>
@@ -206,7 +206,7 @@
 </ol>
 <p>故共有<span class="math inline">\(6N-2\)</span>列。</p>
 <div style="width: 400px; margin: auto">
-<img src="/Algorithm/Dancing-Links/queen.jpg">
+<img src="/index.html/Algorithm/Dancing-Links/queen.jpg">
 </div>
 <p>  对于<span class="math inline">\((i,j)\)</span>的位置，占据的行为<span class="math inline">\(i\)</span>；占据的列为<span class="math inline">\(j\)</span>；主对角线可以通过<span class="math inline">\(i\)</span>和<span class="math inline">\(j\)</span>的相对情况来判断，所有<span class="math inline">\(i-j\)</span>相同的占据的主对角线为<span class="math inline">\(N+i-j\)</span>；副对角线类似，所有<span class="math inline">\(i+j\)</span>相同的位置占据的副对角线为<span class="math inline">\(i+j-1\)</span>；</p>
 <p>  然而，N皇后问题不能直接求精确覆盖，这是因为行和列必须完全覆盖到，但是主和副对角线没有要求一定要全部覆盖，所以算法走到N步停止, 每次消除代表着行或者列的那些列的1, 而不是优先考虑对角线。</p>
@@ -263,15 +263,15 @@
   </entry>
   <entry>
     <title>Catalan数的原理与应用</title>
-    <url>/Math/Theory-and-application-of-Catalan-Number/</url>
+    <url>/index.html/Math/Theory-and-application-of-Catalan-Number/</url>
     <content><![CDATA[<h1 id="卡特兰数catalan-number的原理">卡特兰数(<a href="https://en.wikipedia.org/wiki/Catalan_number" target="_blank" rel="noopener">Catalan number</a>)的原理</h1>
 <h2 id="问题引入">问题引入</h2>
 <p>  在一个平面直角坐标系中，只能往右或往上走一个单位长度。问有多少种不同的路径可以从左下角 <span class="math inline">\((0,0)\)</span> 走到右上角 <span class="math inline">\((n,n)\)</span>，并且要求路径不能经过直线 <span class="math inline">\(y=x\)</span> 上方的点。</p>
-<p><img src="/Math/Theory-and-application-of-Catalan-Number/Catalan1.png"></p>
+<p><img src="/index.html/Math/Theory-and-application-of-Catalan-Number/Catalan1.png"></p>
 <p>  总方案数为<span class="math inline">\(\binom{2n}{n}\)</span>，考虑不合法方案数，不合法路径必然经过<span class="math inline">\(y=x+1\)</span>，找到该路径与<span class="math inline">\(y=x+1\)</span>的第一个交点，将后面的路径关于<span class="math inline">\(y=x+1\)</span>对称，每一条不合法方案对应一条 <span class="math inline">\((0,0)\)</span> 到 <span class="math inline">\((n-1,n+1)\)</span> 的路径，故不合法方案数为<span class="math inline">\(\binom{2n}{n-1}\)</span>。</p>
 <p>  卡特兰数即为： <span class="math display">\[C_n=\binom{2n}{n}-\binom{2n}{n-1}=\frac{1}{n+1}\binom{2n}{n}\]</span> 它的前几项为：<span class="math inline">\(1,1,2,5,14,42,132,429,1430,4862,16796,58786\cdots\)</span></p>
 <p>  若终点为<span class="math inline">\((m,n)\)</span>，同理有方案数为 <span class="math display">\[\binom{m+n}{n}-\binom{m+n}{n-1}\]</span></p>
-<p><img src="/Math/Theory-and-application-of-Catalan-Number/Catalan2.png"></p>
+<p><img src="/index.html/Math/Theory-and-application-of-Catalan-Number/Catalan2.png"></p>
 <h2 id="其他形式">其他形式</h2>
 <h3 id="括号序列">括号序列</h3>
 <p>求由<span class="math inline">\(n\)</span>对括号形成的合法括号表达式？</p>
@@ -281,18 +281,18 @@
 <p>  进栈看作左括号，出栈看作右括号，方案数为<span class="math inline">\(C_n\)</span>。</p>
 <h3 id="二叉树计数">二叉树计数</h3>
 <p>有多少种不同的 <span class="math inline">\(n\)</span> 个节点的二叉树？<span class="math inline">\(n=3\)</span>时如图所示。</p>
-<p><img src="/Math/Theory-and-application-of-Catalan-Number/Catalan3.png"></p>
+<p><img src="/index.html/Math/Theory-and-application-of-Catalan-Number/Catalan3.png"></p>
 <p>  定义<span class="math inline">\(f_n\)</span>表示有<span class="math inline">\(n\)</span>个节点的二叉树，那么枚举子树大小可得方程： <span class="math display">\[f_n=\sum_{i=0}^{n-1}f_if_{n-i-1}\quad(f_0=1)\]</span></p>
 <p>  直接计算时间为<span class="math inline">\(O(n^2)\)</span>，对二叉树进行遍历，当第一次遇到节点表示加一个左括号，从左子树返回在序列加一个右括号，对应为括号序列问题，故 <span class="math inline">\(n\)</span> 个节点的二叉树种数为 <span class="math inline">\(C_n\)</span>。</p>
 <h3 id="凸多边形剖分">凸多边形剖分</h3>
 <p>求 <span class="math inline">\(n+2\)</span> 条边的凸多边形的三角剖分方案数？下图为 <span class="math inline">\(n=4\)</span> 的情况。</p>
-<p><img src="/Math/Theory-and-application-of-Catalan-Number/Catalan4.png"></p>
+<p><img src="/index.html/Math/Theory-and-application-of-Catalan-Number/Catalan4.png"></p>
 <p>  设<span class="math inline">\(f_n\)</span>为<span class="math inline">\(n\)</span>边的方案数，取多边形一条边，从剩余顶点选一个，多边形分成三部分，则</p>
 <p><span class="math display">\[f_n=\sum_{i=2}^{n-1}f_if_{n-i+1}\quad(f_2=1)\]</span></p>
 <p>故<span class="math inline">\(n+2\)</span>条边的凸多边形三角剖分方案数为 <span class="math inline">\(C_n\)</span>。</p>
 <h3 id="n阶梯状图填充"><span class="math inline">\(n\)</span>阶梯状图填充</h3>
 <p>求用<span class="math inline">\(n\)</span>个长方形去填充一个高度为<span class="math inline">\(n\)</span>的阶梯图形的方法数。下图为 <span class="math inline">\(n=4\)</span> 的情况。</p>
-<p><img src="/Math/Theory-and-application-of-Catalan-Number/Catalan5.png"></p>
+<p><img src="/index.html/Math/Theory-and-application-of-Catalan-Number/Catalan5.png"></p>
 <p>  方案数为<span class="math inline">\(f_n\)</span>，取包含左上角的矩形，同理得递推可得其为卡特兰数。</p>
 <p><span class="math display">\[f_n=\sum_{i=0}^{n-1}f_if_{n-i-1}\quad(f_0=1)\]</span></p>
 <h2 id="性质">性质</h2>
@@ -348,14 +348,14 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
   </entry>
   <entry>
     <title>一些字符串算法小结</title>
-    <url>/Algorithm/Summary-of-string-algorithm/</url>
+    <url>/index.html/Algorithm/Summary-of-string-algorithm/</url>
     <content><![CDATA[<h1 id="回文串">回文串</h1>
 <h2 id="manacher算法"><span class="math inline">\(Manacher\)</span>算法</h2>
 <p>  <del>众所周知</del>, <span class="math inline">\(Manacher\)</span>算法是一个求字符串中最长回文子序列问题的算法, 可以想到一个比较显然的做法: 长度为奇数的回文串以最中间字符的位置为对称轴, 而长度为偶数的回文串的对称轴在中间两个字符之间的空隙处. 于是我们考虑遍历这些对称轴, 并且同时向左右扩展, 直到左右两边的字符不同或到达边界.</p>
 <p>  这个算法的复杂度是<span class="math inline">\(O(n^2)\)</span>, 是无法过一些较大数据范围的题, 我们来思考一下这个算法的缺点, 显然, 回文串长度的奇偶性造成了对称轴的位置可能在某字符上, 也可能在两个字符之间的空隙处，要对两种情况分别处理. 为了解决这个问题, 可以强行在原字符串中插入其他本字符串不会出现的字符, 如<code>"#"</code>.</p>
 <a id="more"></a>
 <p>  对于整个算法的主体, 定义<span class="math inline">\(p[i]\)</span>表示以字符<span class="math inline">\(i\)</span>为回文中心的最长回文串的半径, 那么<span class="math inline">\(p[i]-1\)</span>就是字符串中最长回文串的长度(除去<code>'#'</code>), 定义<span class="math inline">\(maxr\)</span>为目前找到回文串的最右端, 中心为<span class="math inline">\(id\)</span>, 当我们扫描到的位置<span class="math inline">\(i\)</span>, 若<span class="math inline">\(id\leq i\leq maxr\)</span>, 可以找到对称点<span class="math inline">\(2*id-i\)</span>求出其最长半径, 那么<span class="math inline">\(p[i] = \min(p[2*id-i], maxr-i)\)</span></p>
-<p><img src="/Algorithm/Summary-of-string-algorithm/manacher1.png"></p>
+<p><img src="/index.html/Algorithm/Summary-of-string-algorithm/manacher1.png"></p>
 <p><a href="https://www.luogu.org/problem/P3805" target="_blank" rel="noopener">[模板]<span class="math inline">\(Manacher\)</span>算法</a></p>
 <figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;</span><br><span class="line"><span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> N = <span class="hljs-number">3e7</span> + <span class="hljs-number">5</span>;</span><br><span class="line"><span class="hljs-keyword">int</span> n, ans, p[N];</span><br><span class="line"><span class="hljs-keyword">char</span> s[N], str[N];</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">()</span> </span>&#123;</span><br><span class="line">    str[<span class="hljs-number">0</span>] = str[<span class="hljs-number">1</span>] = <span class="hljs-string">'#'</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; ++i) &#123;</span><br><span class="line">        str[(i&lt;&lt;<span class="hljs-number">1</span>)+<span class="hljs-number">2</span>] = s[i];</span><br><span class="line">        str[(i&lt;&lt;<span class="hljs-number">1</span>)+<span class="hljs-number">3</span>] = <span class="hljs-string">'#'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    n = (n&lt;&lt;<span class="hljs-number">1</span>) + <span class="hljs-number">2</span>; str[n] = <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">manacher</span><span class="hljs-params">()</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">int</span> maxr = <span class="hljs-number">0</span>, id = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = n; str[i] != <span class="hljs-number">0</span>; ++i) str[i] = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; n; ++i) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span> (maxr &gt; i) p[i] = min(p[<span class="hljs-number">2</span>*id-i], maxr - i);</span><br><span class="line">        <span class="hljs-keyword">else</span> p[i] = <span class="hljs-number">1</span>;</span><br><span class="line">        <span class="hljs-keyword">for</span> (; str[i+p[i]] == str[i-p[i]]; ++p[i]);</span><br><span class="line">        <span class="hljs-keyword">if</span> (p[i] + i &gt; maxr) &#123; maxr = p[i] + i; id = i; &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span></span><br><span class="line"><span class="hljs-function"></span>&#123;</span><br><span class="line">    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%s"</span>, s);</span><br><span class="line">    n = <span class="hljs-built_in">strlen</span>(s);</span><br><span class="line">    init();</span><br><span class="line">    manacher();</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; ++i) ans = max(ans, p[i]);</span><br><span class="line">    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, ans - <span class="hljs-number">1</span>);</span><br><span class="line">    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="string-matching-problem">String Matching Problem</h1>
@@ -427,7 +427,7 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
 </tbody>
 </table>
 <p> In the former problem <span class="math inline">\(\pi=(0,0,0,0,1,2,0)\)</span>, we define<span class="math inline">\(\pi[0]=-1\)</span>，Let's see why this is useful in the .gif below.</p>
-<p><img src="/Algorithm/Summary-of-string-algorithm/KMP1.gif"></p>
+<p><img src="/index.html/Algorithm/Summary-of-string-algorithm/KMP1.gif"></p>
 <p>Obviously, we can get some conclusions as follows</p>
 <ul>
 <li><p>if <span class="math inline">\(P_1\dots P_{\pi[i]}\)</span> is a suffix of <span class="math inline">\(P_1\dots P_i\)</span>, then <span class="math inline">\(P_1\dots P_{\pi[i]-1}\)</span> is a suffix of <span class="math inline">\(P_1\dots P_{i-1}\)</span></p></li>
@@ -467,7 +467,7 @@ x^2:3C_4=4\cdot3C_3-6C_3\\
   </entry>
   <entry>
     <title>组合数学基础</title>
-    <url>/Math/The-basis-of-combinatorics/</url>
+    <url>/index.html/Math/The-basis-of-combinatorics/</url>
     <content><![CDATA[<h1 id="组合数binomial-coefficient">组合数(<a href="https://en.wikipedia.org/wiki/Binomial_coefficient" target="_blank" rel="noopener">Binomial coefficient</a>)</h1>
 <h2 id="性质">性质</h2>
 <p>  首先我们回顾一下一些简单性质</p>
@@ -626,12 +626,12 @@ a_1=8,\ b_1=1
   </entry>
   <entry>
     <title>浅谈几个特殊函数</title>
-    <url>/Math/Talk-about-a-few-special-functions/</url>
+    <url>/index.html/Math/Talk-about-a-few-special-functions/</url>
     <content><![CDATA[<h1 id="gamma函数"><span class="math inline">\(\Gamma函数\)</span></h1>
 <p>  在数学中，<span class="math inline">\(\Gamma\)</span>函数，是<strong>阶乘函数</strong>在实数与复数域上的扩展。</p>
 <p>  <span class="math inline">\(\Gamma\)</span>函数可通过第二类<span class="math inline">\(Euler\)</span>积分定义:</p>
 <p><span class="math display">\[\Gamma(z)=\int_0^{\infty}t^{z-1}e^{-t}\mathrm{d}t\]</span></p>
-<p><img src="/Math/Talk-about-a-few-special-functions/gamma1.jpg"></p>
+<p><img src="/index.html/Math/Talk-about-a-few-special-functions/gamma1.jpg"></p>
 <h2 id="简单性质">简单性质</h2>
 <ol type="1">
 <li><span class="math inline">\(\displaystyle\Gamma(z+1)=\int_0^{\infty}t^{z}e^{-t}\mathrm{d}t=t^z(-e^{-t})|_0^\infty+z\int_0^\infty t^{z-1}e^{-t}\mathrm{d}t=z\Gamma(z)\ (z&gt;0)\)</span></li>
@@ -849,7 +849,7 @@ V &amp;=&amp; \displaystyle\iint\cdots\int_D\mathrm{d}x_1\mathrm{d}x_2\cdots\mat
   </entry>
   <entry>
     <title>反演原理及应用</title>
-    <url>/Algorithm/Theory-of-Inversion/</url>
+    <url>/index.html/Algorithm/Theory-of-Inversion/</url>
     <content><![CDATA[<h1 id="什么是反演">什么是反演</h1>
 <p>  对于数列<span class="math inline">\(\left\{f_n\right\}\)</span>以及数列<span class="math inline">\(\left\{g_n\right\}\)</span>满足</p>
 <p><span class="math display">\[g_n=\sum_{i=0}^na_{ni}f_i \tag{1}\]</span></p>
@@ -1069,7 +1069,7 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
   </entry>
   <entry>
     <title>算法模板</title>
-    <url>/Algorithm/Algorithm-template/</url>
+    <url>/index.html/Algorithm/Algorithm-template/</url>
     <content><![CDATA[<h1 id="基础">基础</h1>
 <h2 id="排序">排序</h2>
 <h3 id="归并排序">归并排序</h3>
@@ -1145,7 +1145,7 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
   </entry>
   <entry>
     <title>POJ1845 Sumdiv</title>
-    <url>/Algorithm/POJ1845-Sumdiv/</url>
+    <url>/index.html/Algorithm/POJ1845-Sumdiv/</url>
     <content><![CDATA[<p><a href="http://poj.org/problem?id=1845" target="_blank" rel="noopener"><span class="math inline">\(Sumdiv\)</span></a></p>
 <p>  <strong>题意</strong>: 求<span class="math inline">\(A^B\)</span>的所有约数之和<span class="math inline">\(\mod{9901}\left(1\leq A,B \leq5*10^7\right)\)</span></p>
 <p>  <strong>分析</strong>: A分解质因数为<span class="math inline">\(p_1^{c_1}\times p_2^{c_2}\times\cdots\times p_n^{c_n}\)</span>。那么<span class="math inline">\(A^B\)</span>表示为<span class="math inline">\(p_1^{Bc_1}\times p_2^{Bc_2}\times\cdots\times p_n^{Bc_n}\)</span>。<span class="math inline">\(A^B\)</span>的所有约数表示为集合<span class="math inline">\(\{p_1^{k_1}\times p_2^{k_2}\times\cdots\times p_n^{k_n}\}\)</span>，其中<span class="math inline">\(0\leq k_i \leq B\times c_i\left(1\leq i \leq n\right)\)</span></p>
@@ -1167,7 +1167,7 @@ g(m)&amp;=&amp;\displaystyle\sum_{d|m}f(d)\\
   </entry>
   <entry>
     <title>Test post</title>
-    <url>/Others/Test-post/</url>
+    <url>/index.html/Others/Test-post/</url>
     <content><![CDATA[<p>本文是一篇测试博文</p>
 <p><a href="https://pandoc.org/MANUAL.html#pandocs-markdown" target="_blank" rel="noopener">pandoc教程</a></p>
 <h1 id="latex"><span class="math inline">\(LaTex\)</span></h1>
