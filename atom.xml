@@ -5,9 +5,9 @@
   <subtitle>2inf&#39;s blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://2inf.github.io/"/>
+  <link href="https://2inf.top/"/>
   <updated>2020-06-02T10:46:40.365Z</updated>
-  <id>https://2inf.github.io/</id>
+  <id>https://2inf.top/</id>
   
   <author>
     <name>小蒟蒻ywt</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Python科学计算-NumPy</title>
-    <link href="https://2inf.github.io/Python/Python-NumPy/"/>
-    <id>https://2inf.github.io/Python/Python-NumPy/</id>
+    <link href="https://2inf.top/Python/Python-NumPy/"/>
+    <id>https://2inf.top/Python/Python-NumPy/</id>
     <published>2020-05-31T09:54:32.000Z</published>
     <updated>2020-06-02T10:46:40.365Z</updated>
     
@@ -31,17 +31,17 @@
     
     </summary>
     
-      <category term="Python" scheme="https://2inf.github.io/categories/Python/"/>
+      <category term="Python" scheme="https://2inf.top/categories/Python/"/>
     
     
-      <category term="NumPy" scheme="https://2inf.github.io/tags/NumPy/"/>
+      <category term="NumPy" scheme="https://2inf.top/tags/NumPy/"/>
     
   </entry>
   
   <entry>
     <title>线段树学习</title>
-    <link href="https://2inf.github.io/Algorithm/Learing-Segment-Tree/"/>
-    <id>https://2inf.github.io/Algorithm/Learing-Segment-Tree/</id>
+    <link href="https://2inf.top/Algorithm/Learing-Segment-Tree/"/>
+    <id>https://2inf.top/Algorithm/Learing-Segment-Tree/</id>
     <published>2020-04-22T14:06:00.000Z</published>
     <updated>2020-05-20T09:37:22.225Z</updated>
     
@@ -53,17 +53,17 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="https://2inf.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="https://2inf.top/categories/Algorithm/"/>
     
     
-      <category term="数据结构-线段树" scheme="https://2inf.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+      <category term="数据结构-线段树" scheme="https://2inf.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
   </entry>
   
   <entry>
     <title>跳舞链</title>
-    <link href="https://2inf.github.io/Algorithm/Dancing-Links/"/>
-    <id>https://2inf.github.io/Algorithm/Dancing-Links/</id>
+    <link href="https://2inf.top/Algorithm/Dancing-Links/"/>
+    <id>https://2inf.top/Algorithm/Dancing-Links/</id>
     <published>2020-04-05T08:20:11.000Z</published>
     <updated>2020-05-10T07:50:58.970Z</updated>
     
@@ -75,17 +75,17 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="https://2inf.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="https://2inf.top/categories/Algorithm/"/>
     
     
-      <category term="搜索-DLX" scheme="https://2inf.github.io/tags/%E6%90%9C%E7%B4%A2-DLX/"/>
+      <category term="搜索-DLX" scheme="https://2inf.top/tags/%E6%90%9C%E7%B4%A2-DLX/"/>
     
   </entry>
   
   <entry>
     <title>Catalan数的原理与应用</title>
-    <link href="https://2inf.github.io/Math/Theory-and-application-of-Catalan-Number/"/>
-    <id>https://2inf.github.io/Math/Theory-and-application-of-Catalan-Number/</id>
+    <link href="https://2inf.top/Math/Theory-and-application-of-Catalan-Number/"/>
+    <id>https://2inf.top/Math/Theory-and-application-of-Catalan-Number/</id>
     <published>2019-10-12T07:30:20.000Z</published>
     <updated>2020-05-22T09:56:06.819Z</updated>
     
@@ -97,17 +97,17 @@
     
     </summary>
     
-      <category term="Math" scheme="https://2inf.github.io/categories/Math/"/>
+      <category term="Math" scheme="https://2inf.top/categories/Math/"/>
     
     
-      <category term="组合数学" scheme="https://2inf.github.io/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+      <category term="组合数学" scheme="https://2inf.top/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>一些字符串算法小结</title>
-    <link href="https://2inf.github.io/Algorithm/Summary-of-string-algorithm/"/>
-    <id>https://2inf.github.io/Algorithm/Summary-of-string-algorithm/</id>
+    <link href="https://2inf.top/Algorithm/Summary-of-string-algorithm/"/>
+    <id>https://2inf.top/Algorithm/Summary-of-string-algorithm/</id>
     <published>2019-09-08T07:52:32.000Z</published>
     <updated>2020-05-22T16:52:41.042Z</updated>
     
@@ -119,17 +119,17 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="https://2inf.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="https://2inf.top/categories/Algorithm/"/>
     
     
-      <category term="字符串" scheme="https://2inf.github.io/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+      <category term="字符串" scheme="https://2inf.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
     
   </entry>
   
   <entry>
     <title>组合数学基础</title>
-    <link href="https://2inf.github.io/Math/The-basis-of-combinatorics/"/>
-    <id>https://2inf.github.io/Math/The-basis-of-combinatorics/</id>
+    <link href="https://2inf.top/Math/The-basis-of-combinatorics/"/>
+    <id>https://2inf.top/Math/The-basis-of-combinatorics/</id>
     <published>2019-09-06T15:51:48.000Z</published>
     <updated>2020-05-06T11:13:48.514Z</updated>
     
@@ -141,17 +141,17 @@
     
     </summary>
     
-      <category term="Math" scheme="https://2inf.github.io/categories/Math/"/>
+      <category term="Math" scheme="https://2inf.top/categories/Math/"/>
     
     
-      <category term="组合数学" scheme="https://2inf.github.io/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+      <category term="组合数学" scheme="https://2inf.top/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>浅谈几个特殊函数</title>
-    <link href="https://2inf.github.io/Math/Talk-about-a-few-special-functions/"/>
-    <id>https://2inf.github.io/Math/Talk-about-a-few-special-functions/</id>
+    <link href="https://2inf.top/Math/Talk-about-a-few-special-functions/"/>
+    <id>https://2inf.top/Math/Talk-about-a-few-special-functions/</id>
     <published>2019-08-27T16:14:43.000Z</published>
     <updated>2020-05-06T16:23:14.357Z</updated>
     
@@ -163,17 +163,17 @@
     
     </summary>
     
-      <category term="Math" scheme="https://2inf.github.io/categories/Math/"/>
+      <category term="Math" scheme="https://2inf.top/categories/Math/"/>
     
     
-      <category term="数学分析" scheme="https://2inf.github.io/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
+      <category term="数学分析" scheme="https://2inf.top/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/"/>
     
   </entry>
   
   <entry>
     <title>反演原理及应用</title>
-    <link href="https://2inf.github.io/Algorithm/Theory-of-Inversion/"/>
-    <id>https://2inf.github.io/Algorithm/Theory-of-Inversion/</id>
+    <link href="https://2inf.top/Algorithm/Theory-of-Inversion/"/>
+    <id>https://2inf.top/Algorithm/Theory-of-Inversion/</id>
     <published>2019-08-24T16:51:43.000Z</published>
     <updated>2020-05-06T11:14:09.291Z</updated>
     
@@ -185,17 +185,17 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="https://2inf.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="https://2inf.top/categories/Algorithm/"/>
     
     
-      <category term="组合数学" scheme="https://2inf.github.io/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
+      <category term="组合数学" scheme="https://2inf.top/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
   <entry>
     <title>算法模板</title>
-    <link href="https://2inf.github.io/Algorithm/Algorithm-template/"/>
-    <id>https://2inf.github.io/Algorithm/Algorithm-template/</id>
+    <link href="https://2inf.top/Algorithm/Algorithm-template/"/>
+    <id>https://2inf.top/Algorithm/Algorithm-template/</id>
     <published>2019-08-23T16:15:02.000Z</published>
     <updated>2020-06-02T14:25:15.882Z</updated>
     
@@ -207,15 +207,15 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="https://2inf.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="https://2inf.top/categories/Algorithm/"/>
     
     
   </entry>
   
   <entry>
     <title>POJ1845 Sumdiv</title>
-    <link href="https://2inf.github.io/Algorithm/POJ1845-Sumdiv/"/>
-    <id>https://2inf.github.io/Algorithm/POJ1845-Sumdiv/</id>
+    <link href="https://2inf.top/Algorithm/POJ1845-Sumdiv/"/>
+    <id>https://2inf.top/Algorithm/POJ1845-Sumdiv/</id>
     <published>2019-07-17T02:47:04.000Z</published>
     <updated>2020-05-06T11:14:59.199Z</updated>
     
@@ -227,17 +227,17 @@
     
     </summary>
     
-      <category term="Algorithm" scheme="https://2inf.github.io/categories/Algorithm/"/>
+      <category term="Algorithm" scheme="https://2inf.top/categories/Algorithm/"/>
     
     
-      <category term="分治" scheme="https://2inf.github.io/tags/%E5%88%86%E6%B2%BB/"/>
+      <category term="分治" scheme="https://2inf.top/tags/%E5%88%86%E6%B2%BB/"/>
     
   </entry>
   
   <entry>
     <title>Test post</title>
-    <link href="https://2inf.github.io/Others/Test-post/"/>
-    <id>https://2inf.github.io/Others/Test-post/</id>
+    <link href="https://2inf.top/Others/Test-post/"/>
+    <id>https://2inf.top/Others/Test-post/</id>
     <published>2019-01-03T14:55:00.000Z</published>
     <updated>2020-06-01T17:08:59.987Z</updated>
     
@@ -249,10 +249,10 @@
     
     </summary>
     
-      <category term="Others" scheme="https://2inf.github.io/categories/Others/"/>
+      <category term="Others" scheme="https://2inf.top/categories/Others/"/>
     
     
-      <category term="小知识" scheme="https://2inf.github.io/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
+      <category term="小知识" scheme="https://2inf.top/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
