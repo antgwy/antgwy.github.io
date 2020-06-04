@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>2inf</title>
   
-  <subtitle>2inf&#39;s blog</subtitle>
+  <subtitle>wtyang的数学与cs之旅</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://2inf.top/"/>
