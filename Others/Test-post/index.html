@@ -10,10 +10,22 @@
 <a id="more"></a>
 <h1 id="markdown">Markdown</h1>
 <p>Markdown教程现在已经烂大街了，在这里主要是作为备忘录进行查阅。</p>
+<h2 id="typographic-replacements">Typographic replacements</h2>
+<p>Enable typographer option to see result.</p>
+<ol start="3" type="a">
+<li><ol start="3" type="A">
+<li><ol start="18" type="a">
+<li><ol start="18" type="A">
+<li>(tm) (TM) (p) (P) +-</li>
+</ol></li>
+</ol></li>
+</ol></li>
+</ol>
+<p>test.. test... test..... test?..... test!....</p>
+<p>!!!!!! ???? ,, -- ---</p>
 <h2 id="公式">公式</h2>
 <p>插入公式与代码分别是用$与 ` 符号(～键)包裹所写部分</p>
 <ul>
-<li>在需要高亮的代码块的前一行及后一行使用三个反引号。</li>
 <li>同时第一行反引号后面，写代码块所使用的语言。</li>
 <li>使用 <code>\left</code>和 <code>\right</code>来创建自动匹配高度的 ()，[] 和 {} 。 在每个公式末尾前使用<code>\tag{行标}</code>来实现行标。</li>
 </ul>
@@ -529,6 +541,10 @@
 </tr>
 </tbody>
 </table>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-strong">**加粗文字**</span> 对应 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span></span>加粗文字<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span> 及 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span></span>加粗文字<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span></span></span><br><span class="line"><span class="hljs-emphasis">*倾斜文字*</span> 对应 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span></span>倾斜文字<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></span> 及 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span></span>倾斜文字<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span></span></span><br><span class="line"><span class="hljs-strong">***斜体加粗文字**</span>* </span><br><span class="line">~~加删除线文字~~ 对应 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">del</span>&gt;</span></span>加删除线文字<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">del</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p><strong>bold</strong> <strong>bold</strong></p>
+<p><em>italic</em> <em>italic</em></p>
+<p><del>Strikethrough</del></p>
 <h2 id="颜色">颜色</h2>
 <table>
 <thead>
@@ -576,19 +592,51 @@
 </tr>
 </tbody>
 </table>
-<h2 id="字体-1">字体</h2>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-strong">**加粗文字**</span> 对应 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span></span>加粗文字<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span></span> 及 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span></span>加粗文字<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span></span></span><br><span class="line"><span class="hljs-emphasis">*倾斜文字*</span> 对应 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">i</span>&gt;</span></span>倾斜文字<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></span> 及 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span></span>倾斜文字<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span></span></span><br><span class="line"><span class="hljs-strong">***斜体加粗文字**</span>* </span><br><span class="line">~~加删除线文字~~ 对应 <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">del</span>&gt;</span></span>加删除线文字<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">del</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <h2 id="引用">引用</h2>
 <p>多个&gt;用于逐层嵌套</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt;引用内容</span><br><span class="line">&gt;&gt;引用内容</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Blockquotes can also be nested... &gt; ...by using additional greater-than signs right next to each other... &gt; &gt; ...or with spaces between arrows.</p>
 <h2 id="分割线">分割线</h2>
-<p>三个或者三个以上的 - 或者 *,效果一样</p>
-<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line"><span class="hljs-emphasis">***</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr class="header">
+<th>___</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>***</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
 <h2 id="列表">列表</h2>
 <ul>
 <li>无序列表使用*或+或-标识</li>
 <li>有序列表使用数字加.标识，例如：1.</li>
 </ul>
+<p>Unordered</p>
+<ul>
+<li>Create a list by starting a line with <code>+</code>, <code>-</code>, or <code>*</code></li>
+<li>Sub-lists are made by indenting 2 spaces:
+<ul>
+<li>Marker character change forces new list start:
+<ul>
+<li>Ac tristique libero volutpat at</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+</ul></li>
+</ul></li>
+<li>Very easy!</li>
+</ul>
+<p>Ordered</p>
+<ol type="1">
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>You can use sequential numbers...</li>
+<li>...or keep all the numbers as <code>1.</code></li>
+</ol>
 <h2 id="表格">表格</h2>
 <p>短斜杠(数量至少有一个)左右的冒号用于控制对齐方式，只放置左边冒号表示文字居左，只放置右边冒号表示文字居右，如果两边都放置冒号表示文字居中。</p>
 <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">表头|条目一|条目二</span><br><span class="line">:-:|:-:|:-:</span><br><span class="line">1|2|3</span><br><span class="line">4|5|6</span><br></pre></td></tr></table></figure>
@@ -620,7 +668,9 @@
 <h2 id="基本文档">基本文档</h2>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span></span><br><span class="line">	<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span></span><br><span class="line">		<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>文档标题<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span></span><br><span class="line">	<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></span><br><span class="line">	<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span></span><br><span class="line">		可见文本...</span><br><span class="line">	<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></span><br><span class="line">    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>这是一个段落。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span><br><span class="line">	<span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span> （换行）</span><br><span class="line"><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h2 id="基本元素">基本元素</h2>
-<b>粗体文本</b> <code class="language-cpp"> int exgcd(int x, int y, int &amp;a, int &amp;b) { if (y == 0) { return a = 1, b = 0, x; } else { int g = exgcd(y, x % y, b, a); b -= x / y * a; return g; } }</code> <em>强调文本</em> <i>斜体文本</i> <kbd>键盘输入</kbd>
+<p><b>粗体文本</b></p>
+<p><code class="language-cpp">int exgcd(int x, int y, int &amp;a, int &amp;b) { if (y == 0) { return a = 1, b = 0, x; } else { int g = exgcd(y, x % y, b, a); b -= x / y * a; return g; } }</code></p>
+<em>强调文本</em> <i>斜体文本</i> <kbd>键盘输入</kbd>
 <pre>预格式化文本</pre>
 <small>更小的文本</small> <strong>重要的文本</strong> <abbr>缩写</abbr><br>
 <address>
@@ -753,7 +803,7 @@ Contact information: <a href="2inf.top@gmail.com"> 2inf.top@gmail.com</a>.
 = page.updated.format(config.date_format)--><p><span>原始链接：</span><a href="/Others/Test-post/">https://2inf.top/Others/Test-post/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://2inf.top/Others/Test-post/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 许可协议。转载请注明出处！</p></div><br><div class="tags"><a href="/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/"><i class="fa fa-tag"></i>小知识</a></div><div class="post-nav"><a class="pre" href="/Algorithm/POJ1845-Sumdiv/">POJ1845 Sumdiv</a></div></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">2inf</a>&nbsp;|&nbsp;<a href="http://www.beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">湘ICP备20012049号-1 </a>|&nbsp;
 <a href="/atom.xml" target="_blank"><i class="fa fa-rss"></i>&nbsp;RSS Feed</a><div><link rel="stylesheet" type="text/css" href="/css/badge.css"/><div class="github-badge"><a rel="nofollow" target="_blank" href="https://hexo.io"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hexo</span></a></div>
 <div class="github-badge"> <a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"><span class="badge-subject">Theme</span><span class="badge-value bg-orange">maupassant</span></a></div>
-<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://www.cnblogs.com/2inf/"><span class="badge-subject">cnblogs</span><span class="badge-value bg-blueviolet">2inf</span></a></div></div></div></div></div><div class="post-toc"><div class="post-toc-wrap"><div class="post-toc" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#latex"><span class="toc-number">1.</span> <span class="toc-text">\(LaTex\)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown"><span class="toc-number">2.</span> <span class="toc-text">Markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#公式"><span class="toc-number">2.1.</span> <span class="toc-text">公式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#希腊字母"><span class="toc-number">2.1.1.</span> <span class="toc-text">希腊字母</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运算"><span class="toc-number">2.1.2.</span> <span class="toc-text">运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特殊符号"><span class="toc-number">2.1.3.</span> <span class="toc-text">特殊符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#空格"><span class="toc-number">2.1.4.</span> <span class="toc-text">空格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#括号"><span class="toc-number">2.1.5.</span> <span class="toc-text">括号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#矢量与箭头"><span class="toc-number">2.1.6.</span> <span class="toc-text">矢量与箭头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#矩阵与方程组"><span class="toc-number">2.1.7.</span> <span class="toc-text">矩阵与方程组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表情"><span class="toc-number">2.2.</span> <span class="toc-text">表情</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字体"><span class="toc-number">2.3.</span> <span class="toc-text">字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#颜色"><span class="toc-number">2.4.</span> <span class="toc-text">颜色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字体-1"><span class="toc-number">2.5.</span> <span class="toc-text">字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用"><span class="toc-number">2.6.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分割线"><span class="toc-number">2.7.</span> <span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表"><span class="toc-number">2.8.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表格"><span class="toc-number">2.9.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pandoc版markdown与标准版的区别"><span class="toc-number">2.10.</span> <span class="toc-text">\(pandoc\)版\(markdown\)与标准版的区别</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#html"><span class="toc-number">3.</span> <span class="toc-text">Html</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本文档"><span class="toc-number">3.1.</span> <span class="toc-text">基本文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本元素"><span class="toc-number">3.2.</span> <span class="toc-text">基本元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表与表格"><span class="toc-number">3.3.</span> <span class="toc-text">列表与表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片"><span class="toc-number">3.4.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#框架"><span class="toc-number">3.5.</span> <span class="toc-text">框架</span></a></li></ol></li></ol></div></div><div class="post-toc-toggle-wrap open" id="right-toggle"><div class="post-toc-toggle-first post-toc-toggle"></div><div class="post-toc-toggle-second post-toc-toggle"></div><div class="post-toc-toggle-thrid post-toc-toggle"></div></div><script type="text/javascript" src="/js/sidebar.js?v=0.0.0" async></script></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://www.cnblogs.com/2inf/"><span class="badge-subject">cnblogs</span><span class="badge-value bg-blueviolet">2inf</span></a></div></div></div></div></div><div class="post-toc"><div class="post-toc-wrap"><div class="post-toc" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#latex"><span class="toc-number">1.</span> <span class="toc-text">\(LaTex\)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#markdown"><span class="toc-number">2.</span> <span class="toc-text">Markdown</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#typographic-replacements"><span class="toc-number">2.1.</span> <span class="toc-text">Typographic replacements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#公式"><span class="toc-number">2.2.</span> <span class="toc-text">公式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#希腊字母"><span class="toc-number">2.2.1.</span> <span class="toc-text">希腊字母</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运算"><span class="toc-number">2.2.2.</span> <span class="toc-text">运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特殊符号"><span class="toc-number">2.2.3.</span> <span class="toc-text">特殊符号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#空格"><span class="toc-number">2.2.4.</span> <span class="toc-text">空格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#括号"><span class="toc-number">2.2.5.</span> <span class="toc-text">括号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#矢量与箭头"><span class="toc-number">2.2.6.</span> <span class="toc-text">矢量与箭头</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#矩阵与方程组"><span class="toc-number">2.2.7.</span> <span class="toc-text">矩阵与方程组</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表情"><span class="toc-number">2.3.</span> <span class="toc-text">表情</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字体"><span class="toc-number">2.4.</span> <span class="toc-text">字体</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#颜色"><span class="toc-number">2.5.</span> <span class="toc-text">颜色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用"><span class="toc-number">2.6.</span> <span class="toc-text">引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分割线"><span class="toc-number">2.7.</span> <span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表"><span class="toc-number">2.8.</span> <span class="toc-text">列表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表格"><span class="toc-number">2.9.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pandoc版markdown与标准版的区别"><span class="toc-number">2.10.</span> <span class="toc-text">\(pandoc\)版\(markdown\)与标准版的区别</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#html"><span class="toc-number">3.</span> <span class="toc-text">Html</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本文档"><span class="toc-number">3.1.</span> <span class="toc-text">基本文档</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本元素"><span class="toc-number">3.2.</span> <span class="toc-text">基本元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表与表格"><span class="toc-number">3.3.</span> <span class="toc-text">列表与表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片"><span class="toc-number">3.4.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#框架"><span class="toc-number">3.5.</span> <span class="toc-text">框架</span></a></li></ol></li></ol></div></div><div class="post-toc-toggle-wrap open" id="right-toggle"><div class="post-toc-toggle-first post-toc-toggle"></div><div class="post-toc-toggle-second post-toc-toggle"></div><div class="post-toc-toggle-thrid post-toc-toggle"></div></div><script type="text/javascript" src="/js/sidebar.js?v=0.0.0" async></script></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
   });
 </script><!--script(type='text/javascript', src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML', async)--><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script><script>hljs.initHighlightingOnLoad();</script><script type="text/javascript" src="/js/app.js?v=0.0.0"></script></div></body></html>

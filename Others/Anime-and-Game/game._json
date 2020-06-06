@@ -1,0 +1,124 @@
+{
+    "data": [
+        {
+            "title": "BRAID",
+            "type": "独立",
+            "date": "2009-04-11",
+            "official": "http://braid-game.com/",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/26800/Braid/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "MINECRAFT",
+            "type": "沙盒",
+            "date": "2009-05-17",
+            "official": "https://www.minecraft.net/",
+            "summary": "占坑",
+            "other": "null"
+        },
+        {
+            "title": "洞窟物语",
+            "type": "独立",
+            "date": "2004-12-20",
+            "official": "https://www.cavestory.org/",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/200900/Cave_Story/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Euro Truck Simulator 2",
+            "type": "模拟",
+            "date": "2012-10-18",
+            "official": "https://eurotrucksimulator2.com/",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "ISLANDERS",
+            "type": "独立",
+            "date": "2019-04-04",
+            "official": "https://en.wikipedia.org/wiki/Islanders_(video_game)",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/1046030/ISLANDERS/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Borderlands 2",
+            "type": "动作",
+            "date": "2012-09-21",
+            "official": "https://borderlands.com/zh-CN/",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/49520/Borderlands_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Grand Theft Auto V",
+            "type": "动作",
+            "date": "2015-04-14",
+            "official": "https://www.rockstargames.com/V/",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "The Witcher3: Wild Hunt",
+            "type": "角色扮演",
+            "date": "2015-05-18",
+            "official": "https://thewitcher.com/zh-cn/witcher3",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Civilization VI",
+            "type": "策略",
+            "date": "2016-10-21",
+            "official": "https://civilization.com/",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Human: Fall Flat",
+            "type": "独立",
+            "date": "2016-07-22",
+            "official": "http://curve-digital.com/en-gb/games/detail/6/human-fall-flat/",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/477160/Human_Fall_Flat/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Cube Escape",
+            "type": "独立",
+            "date": "null",
+            "official": "http://www.rustylake.com/",
+            "summary": "部分画面有点恐怖",
+            "other": "<a href='https://store.steampowered.com/app/909080/Cube_Escape_Paradox/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Duet",
+            "type": "动作",
+            "date": "2015-08-04",
+            "official": "https://www.duetgame.com/",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/292600/Duet/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Counter-Strike: Global Offensive",
+            "type": "FPS",
+            "date": "2012-08-22",
+            "official": "https://blog.counter-strike.net/",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Grand Theft Auto: Vice City",
+            "type": "动作",
+            "date": "2002-10-27",
+            "official": "https://www.rockstargames.com/vicecity/",
+            "summary": "没记错的话因该是玩的第一部GTA系列",
+            "other": "<a href='https://store.steampowered.com/app/12110/Grand_Theft_Auto_Vice_City/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "真·三国无双部分系列",
+            "type": "动作",
+            "date": "2000",
+            "official": "https://en.wikipedia.org/wiki/Dynasty_Warriors",
+            "summary": "占坑",
+            "other": "null"
+        }
+    ]
+}
