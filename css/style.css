@@ -264,9 +264,9 @@ div {
         margin: 0 5px;
         padding: 0 5px;
         background: #f7f8f8;
-        color: #f76262;
         border: solid 1px #08e5ec;
         border-radius: 5px;
+        color: #f76262;
         font-family: Menlo, Consolas, monospace !important;
         cursor: text; }
       .post .post-content p a {
@@ -310,6 +310,7 @@ div {
         background: #f7f8f8;
         border: solid 1px #08e5ec;
         border-radius: 5px;
+        color: #f76262;
         font-family: Menlo, Consolas, monospace !important;
         cursor: text; }
       .post .post-content ul a,
