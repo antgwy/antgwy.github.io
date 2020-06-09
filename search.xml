@@ -28,7 +28,7 @@
             <el-table-column prop="title" sortable label="标题" align="center"></el-table-column>
             <el-table-column prop="type" label="类型" width="160" align="center"></el-table-column>
             <el-table-column prop="date" sortable label="首播时间" width="140" align="center"></el-table-column>
-            <el-table-column prop="official" label="官网" width="300"></el-table-column>
+            <el-table-column prop="official" label="官网(或相关链接)" width="300"></el-table-column>
         </el-table>
     </template>
 </div>
