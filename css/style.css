@@ -292,9 +292,7 @@ div {
       width: 600px;
       padding: 0.5em 0;
       margin: auto;
-      display: block;
-      border: 0.3em solid #e0dfcc;
-      border-radius: 1em; }
+      display: block; }
     .post .post-content ul,
     .post .post-content ol {
       border-radius: 3px;
