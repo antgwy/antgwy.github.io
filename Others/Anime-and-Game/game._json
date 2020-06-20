@@ -1,6 +1,14 @@
 {
     "data": [
         {
+            "title": "Oxygen Not Included",
+            "type": "模拟",
+            "date": "2019-07-31",
+            "official": "https://klei.com/games/oxygen-not-included",
+            "summary": "Klei的一款太空殖民生存游戏，涉及到了一些物理知识与化学知识，游戏的目的就是建立一个循环以生存，最后还可以发射火箭，当然我玩到人造蒸汽失败导致火箭造出来了发射失败就弃坑了。",
+            "other": "<a href='https://store.steampowered.com/app/26800/Braid/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "ARK: Survival Evolved",
             "type": "生存",
             "date": "2017-08-28",
@@ -29,7 +37,7 @@
             "type": "独立",
             "date": "2004-12-20",
             "official": "https://www.cavestory.org/",
-            "summary": "占坑",
+            "summary": "构思精巧，多个不同的结局。",
             "other": "<a href='https://store.steampowered.com/app/200900/Cave_Story/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -37,7 +45,7 @@
             "type": "模拟",
             "date": "2012-10-18",
             "official": "https://eurotrucksimulator2.com/",
-            "summary": "占坑",
+            "summary": "欧卡不能像GTA5里那样开卡车，倒车是个挺大的麻烦，买车库雇佣人开卡车，以后有时间再继续玩。",
             "other": "<a href='https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -61,7 +69,7 @@
             "type": "动作",
             "date": "2015-04-14",
             "official": "https://www.rockstargames.com/V/",
-            "summary": "占坑",
+            "summary": "对游戏细节制作很用心，还原了一部分真实的洛杉矶，当然为了防沉迷已经退坑。",
             "other": "<a href='https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -69,15 +77,23 @@
             "type": "角色扮演",
             "date": "2015-05-18",
             "official": "https://thewitcher.com/zh-cn/witcher3",
-            "summary": "占坑",
+            "summary": "波兰人的游戏风格，主线故事十分有趣，猎魔人不但不受人敬仰，而是受人歧视，有一些怪外貌真的恐怖，在游戏里学会了玩昆特牌。",
             "other": "<a href='https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Don't Starve",
+            "type": "独立",
+            "date": "2009-04-11",
+            "official": "https://www.klei.com/games/dont-starve",
+            "summary": "自由度高，玩法很多，初入手时玩的大力士，作为活了一百天就退了的轻度玩家就不多说了。",
+            "other": "<a href='https://store.steampowered.com/app/26800/Braid/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Civilization VI",
             "type": "策略",
             "date": "2016-10-21",
             "official": "https://civilization.com/",
-            "summary": "占坑",
+            "summary": "AI初期好战有点过分，前一秒还是欢迎代表，后一秒就谴责你了，一直玩下去可能会沉迷。",
             "other": "<a href='https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -85,7 +101,7 @@
             "type": "独立",
             "date": "2016-07-22",
             "official": "http://curve-digital.com/en-gb/games/detail/6/human-fall-flat/",
-            "summary": "占坑",
+            "summary": "开发者脑洞很大，许多关卡可以用一些奇怪的方法通关，爬墙可以解决很多问题，可以安装一些很有趣的mod玩。",
             "other": "<a href='https://store.steampowered.com/app/477160/Human_Fall_Flat/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -93,7 +109,7 @@
             "type": "独立",
             "date": "null",
             "official": "http://www.rustylake.com/",
-            "summary": "部分画面有点恐怖",
+            "summary": "故事很精彩，部分画面有点恐怖。",
             "other": "<a href='https://store.steampowered.com/app/909080/Cube_Escape_Paradox/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -101,7 +117,7 @@
             "type": "动作",
             "date": "2015-08-04",
             "official": "https://www.duetgame.com/",
-            "summary": "占坑",
+            "summary": "一款优秀的手游，通过不断犯错去学习各种技巧来通关。",
             "other": "<a href='https://store.steampowered.com/app/292600/Duet/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -117,7 +133,7 @@
             "type": "动作",
             "date": "2002-10-27",
             "official": "https://www.rockstargames.com/vicecity/",
-            "summary": "没记错的话因该是玩的第一部GTA系列",
+            "summary": "没记错的话因该是玩的第一部GTA系列。",
             "other": "<a href='https://store.steampowered.com/app/12110/Grand_Theft_Auto_Vice_City/' target='_blank'><b>Steam</b></a>"
         },
         {

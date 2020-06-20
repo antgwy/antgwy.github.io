@@ -1726,3 +1726,8 @@ em.search-keyword {
   color: #fff;
   background-color: #999999;
   text-shadow: 0; }
+
+.MathJax_Display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-right: 1px; }
