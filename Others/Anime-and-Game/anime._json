@@ -21,7 +21,7 @@
             "type": "番剧",
             "date": "2013-04-12",
             "official": "https://toaru-project.com/railgun_s/",
-            "summary": "炮姐第二季 O(∩_∩)O哈哈~",
+            "summary": "主体是妹妹篇。不管学园都市有什么样的不堪事件，御坂相信都是有善意存在的，她没有逃避自己的过去，尽力不让妹妹们的悲剧继续发生，呱太医生问美琴：“你有决心面对这座都市的黑暗吗？即使你自己将承受痛苦”，她说：“只要能拯救菲布里”。",
             "other": "とある科学の超電磁砲S"
         },
         {
@@ -29,7 +29,7 @@
             "type": "番剧",
             "date": "2009-10-02",
             "official": "https://toaru-project.com/railgun/",
-            "summary": "炮姐拯救世界，信炮姐得永生。",
+            "summary": "木山为了救孩子们和御坂产生冲突，引起了额外的灾难，即幻想御手和杂乱开放。幕后黑手木原家族的特雷斯蒂娜透露出学园都市的真面目：为了培养出绝对能力者，所有超能力者都是小白鼠。这也让木山和御坂联合起来。",
             "other": "とある科学の超電磁砲"
         },
         {
@@ -55,6 +55,14 @@
             "official": "http://jojo-animation.com/",
             "summary": "第五部角色画风一改往常，多了分时尚。“我乔鲁诺.乔巴纳有一个梦想！就是成为黑帮巨星！”",
             "other": "ジョジョの奇妙な冒険 ダイヤモンドは砕けない"
+        },
+        {
+            "title": "紫罗兰永恒花园",
+            "type": "番剧",
+            "date": "2018-01-11",
+            "official": "http://violet-evergarden.jp/",
+            "summary": "占坑",
+            "other": "ヴァイオレット・エヴァーガーデン"
         },
         {
             "title": "JOJO的奇妙冒险 第四部(不灭钻石)",
@@ -93,8 +101,32 @@
             "type": "番剧",
             "date": "2008-10-04",
             "official": "https://toaru-project.com/index_1_2/",
-            "summary": "占坑",
+            "summary": "剧情和超炮2以及某科学的一方通行有交叉，炮姐不是女主，和超炮性格有点不同，index一路绿，动画塑造还是有很多不足，可以看看小说，据说小说里当麻是个男神，因为人格魅力而被人喜欢，到了动画里就成了屌丝，顺便吐槽下男主嘴炮多。",
             "other": "とある魔術の禁書目録"
+        },
+        {
+            "title": "小林家的龙女仆",
+            "type": "番剧",
+            "date": "2017-01-11",
+            "official": "http://maidragon.jp/",
+            "summary": "占坑",
+            "other": "小林さんちのメイドラゴン"
+        },
+        {
+            "title": "干物妹！小埋",
+            "type": "番剧",
+            "date": "2015-07-08",
+            "official": "https://umaru-ani.me/",
+            "summary": "占坑",
+            "other": "干物妹! うまるちゃん"
+        },
+        {
+            "title": "OVERLORD",
+            "type": "番剧",
+            "date": "2015-07-07",
+            "official": "http://overlord-anime.com/",
+            "summary": "占坑",
+            "other": "オーバーロード"
         },
         {
             "title": "血界战线",
@@ -113,6 +145,14 @@
             "other": "四月は君の嘘"
         },
         {
+            "title": "Fate/stay night -UBW-",
+            "type": "番剧",
+            "date": "2014-10-04",
+            "official": "https://www.fate-sn.com/ubw/",
+            "summary": "占坑",
+            "other": "Fate/stay night [Unlimited Blade Works]"
+        },
+        {
             "title": "革命机Valvrave",
             "type": "番剧",
             "date": "2013-04-11",
@@ -121,12 +161,36 @@
             "other": "革命機ヴァルヴレイヴ"
         },
         {
+            "title": "Love Live! School Idol Project",
+            "type": "番剧",
+            "date": "2013-01-06",
+            "official": "http://www.lovelive-anime.jp/",
+            "summary": "占坑",
+            "other": "ラブライブ! School idol project"
+        },
+        {
+            "title": "樱花庄的宠物女孩",
+            "type": "番剧",
+            "date": "2012-10-08",
+            "official": "http://sakurasou.tv/",
+            "summary": "占坑",
+            "other": "さくら荘のペットな彼女"
+        },
+        {
             "title": "来自新世界",
             "type": "番剧",
             "date": "2012-09-28",
             "official": "https://www.tv-asahi.co.jp/shinsekaiyori/",
             "summary": "占坑",
             "other": "新世界より"
+        },
+        {
+            "title": "Fate/Zero",
+            "type": "番剧",
+            "date": "2011-10-01",
+            "official": "https://www.fate-zero.jp/",
+            "summary": "占坑",
+            "other": "Fate/Zero"
         },
         {
             "title": "海马",
@@ -153,6 +217,22 @@
             "other": "BACCANO! -バッカーノ!-"
         },
         {
+            "title": "你的名字。",
+            "type": "剧场版",
+            "date": "2016-08-26",
+            "official": "http://kiminona.com/",
+            "summary": "神作，细节刻画深刻，优美的背景描绘，情感音乐交汇在了一起。描述了一个时空穿梭灵魂互换的爱情故事，泷(Taki)在繁华的东京都，而三叶(Mitsuha)在一个可以说是穷乡僻野的小镇糸守町，通过互换身体，以对方的角度看世界，牵起了两人的爱情红线，最终新海诚也给了我们一个happy ending。但是剧中我的一个疑问是主人公一开始为什么没有注意到三年的时差呢？",
+            "other": "君の名は。"
+        },
+        {
+            "title": "言叶之庭",
+            "type": "剧场版",
+            "date": "2013-05-31",
+            "official": "http://www.kotonohanoniwa.jp/",
+            "summary": "占坑",
+            "other": "言の葉の庭"
+        },
+        {
             "title": "千与千寻",
             "type": "剧场版",
             "date": "2001-07-20",
@@ -173,7 +253,7 @@
             "type": "番剧 & 剧场版",
             "date": "1996-01-08",
             "official": "https://www.conan-movie.jp/",
-            "summary": "目前还没有结局",
+            "summary": "目前还没有结局。",
             "other": "名探偵コナン"
         },
         {

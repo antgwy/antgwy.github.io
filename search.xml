@@ -1162,24 +1162,24 @@ m&amp;=&amp;\displaystyle\prod_{k=1}^{m-1}\left(1-e^{\frac{2k\pi i}{m}}\right)\\
 <p>证毕.</p>
 <hr>
 <p>   <strong>(余元公式)</strong> 设<span class="math inline">\(0&lt;p&lt;1\)</span>, 则有</p>
-<p><span class="math display">\[{\rm{B}}(p,1-p)=\Gamma(p)\Gamma(1-p)=\frac{\pi}{\sin p\pi}.\]</span></p>
-<p>  <strong>证明:</strong>  由于<span class="math inline">\({\rm{B}}(p,1-p)=\displaystyle\int_0^{+\infty}\frac{x^{p-1}}{1+x}\mathrm{d}x\)</span>, 利用变量替换<span class="math inline">\(x=\frac{1}{t}\)</span>有:</p>
-<p><span class="math display">\[\int_1^{+\infty}\frac{x^{p-1}}{1+x}\mathrm{d}x=\int_0^1\frac{x^{-p}}{1+x}\mathrm{d}x,\]</span></p>
+<p><span class="math display">\[{\rm{B} }(p,1-p)=\Gamma(p)\Gamma(1-p)=\frac{\pi}{\sin p\pi}.\]</span></p>
+<p>  <strong>证明:</strong>  由于<span class="math inline">\({\rm{B}}(p,1-p)=\displaystyle\int_0^\infty\frac{x^{p-1}}{1+x}\mathrm{d}x\)</span>, 利用变量替换<span class="math inline">\(x=\frac{1}{t}\)</span>有:</p>
+<p><span class="math display">\[\int_1^\infty\frac{x^{p-1}}{1+x}\mathrm{d}x=\int_0^1\frac{x^{-p}}{1+x}\mathrm{d}x,\]</span></p>
 <p>将<span class="math inline">\(\displaystyle\frac{1}{1+x}\)</span>展开成幂级数, 从而有</p>
 <p><span class="math display">\[\begin{array}{l}
-{\rm{B}}(p,1-p)&amp;=&amp;\displaystyle\lim_{r\to1^-}\int_0^r\frac{x^{p-1}+x^{-p}}{1+x}\mathrm{d}x\\
-&amp;=&amp;\displaystyle\lim_{r\to1^-}\int_0^r\left[\sum_{k=0}^{+\infty}(-1)^kx^{k+p-1}+\sum_{k=0}^{+\infty}(-1)^kx^{k-p}\right]\mathrm{d}x\\
-&amp;=&amp;\displaystyle\lim_{r\to1^-}\left[\sum_{k=0}^{+\infty}\frac{(-1)^k}{k+p}r^{k+p}+\sum_{k=0}^{+\infty}\frac{(-1)^k}{k-p+1}r^{k-p+1}\right]\\
-&amp;=&amp;\displaystyle\sum_{k=0}^{+\infty}\frac{(-1)^k}{k+p}+\sum_{k=0}^{+\infty}\frac{(-1)^k}{k-p+1}\\
-&amp;=&amp;\displaystyle\frac{1}{p}+\sum_{k=1}^{+\infty}(-1)^k\left(\frac{1}{k+p}+\frac{1}{p-k}\right)\\
-&amp;=&amp;\displaystyle\frac{1}{p}+\sum_{k=1}^{+\infty}(-1)^k\frac{2p}{p^2-k^2}.
+{\rm{B} }(p,1-p)&amp;=&amp;\displaystyle\lim_{r\to1^-}\int_0^r\frac{x^{p-1}+x^{-p}}{1+x}\mathrm{d}x\\
+&amp;=&amp;\displaystyle\lim_{r\to1^-}\int_0^r\left[\sum_{k=0}^\infty(-1)^kx^{k+p-1}+\sum_{k=0}^\infty(-1)^kx^{k-p}\right]\mathrm{d}x\\
+&amp;=&amp;\displaystyle\lim_{r\to1^-}\left[\sum_{k=0}^\infty\frac{(-1)^k}{k+p}r^{k+p}+\sum_{k=0}^\infty\frac{(-1)^k}{k-p+1}r^{k-p+1}\right]\\
+&amp;=&amp;\displaystyle\sum_{k=0}^\infty\frac{(-1)^k}{k+p}+\sum_{k=0}^\infty\frac{(-1)^k}{k-p+1}\\
+&amp;=&amp;\displaystyle\frac{1}{p}+\sum_{k=1}^\infty(-1)^k\left(\frac{1}{k+p}+\frac{1}{p-k}\right)\\
+&amp;=&amp;\displaystyle\frac{1}{p}+\sum_{k=1}^\infty(-1)^k\frac{2p}{p^2-k^2}.
 \end{array}\]</span></p>
 <p>而<span class="math inline">\(\cos px\)</span>的<span class="math inline">\(Fourier\)</span>级数为</p>
-<p><span class="math display">\[\cos px=\frac{\sin px}{\pi}\left[\frac{1}{p}+\sum_{k=1}^{+\infty}(-1)^k\frac{2p}{p^2-k^2}\cos kx\right]\]</span></p>
+<p><span class="math display">\[\cos px=\frac{\sin px}{\pi}\left[\frac{1}{p}+\sum_{k=1}^\infty(-1)^k\frac{2p}{p^2-k^2}\cos kx\right]\]</span></p>
 <p>在<span class="math inline">\(\left|x\right|\leq\pi\)</span>处处收敛, 令<span class="math inline">\(x=0\)</span>即得</p>
-<p><span class="math display">\[{\rm{B}}(p,1-p)=\frac{1}{p}+\sum_{k=1}^{+\infty}(-1)^k\frac{2p}{p^2-k^2}=\frac{\pi}{\sin p\pi}.\]</span></p>
+<p><span class="math display">\[{\rm{B}}(p,1-p)=\frac{1}{p}+\sum_{k=1}^\infty(-1)^k\frac{2p}{p^2-k^2}=\frac{\pi}{\sin p\pi}.\]</span></p>
 <p>证毕.</p>
-<p><strong>注</strong>:令<span class="math inline">\(p=\displaystyle\frac{1}{2}\)</span>, 得 <span class="math display">\[\Gamma^2\left(\frac{1}{2}\right)=\frac{\displaystyle\Gamma\left(\frac{1}{2}\right)\Gamma\left(\frac{1}{2}\right)}{\Gamma(1)}={\rm{B}}(\frac{1}{2},\frac{1}{2})=\pi\]</span> 则<span class="math inline">\(\displaystyle\int_0^{+\infty}e^{-x^2}\mathrm{d}x=\frac{1}{2}\Gamma\left(\frac{1}{2}\right)=\frac{\sqrt\pi}{2}\)</span>, 也是一个得到这个重要等式的方法.</p>
+<p><strong>注</strong>:令<span class="math inline">\(p=\displaystyle\frac{1}{2}\)</span>, 得 <span class="math display">\[\Gamma^2\left(\frac{1}{2}\right)=\frac{\displaystyle\Gamma\left(\frac{1}{2}\right)\Gamma\left(\frac{1}{2}\right)}{\Gamma(1)}={\rm{B}}(\frac{1}{2},\frac{1}{2})=\pi\]</span> 则<span class="math inline">\(\displaystyle\int_0^\infty e^{-x^2}\mathrm{d}x=\frac{1}{2}\Gamma\left(\frac{1}{2}\right)=\frac{\sqrt\pi}{2}\)</span>, 也是一个得到这个重要等式的方法.</p>
 <hr>
 <p>  求<span class="math inline">\(\Bbb{R}^n\)</span>中单位球体<span class="math inline">\(D:x_1^2+x_2^2+\cdots x_n^2\leq1\)</span>的体积.</p>
 <p>   <strong>分析:</strong> 考虑用与球面类似的换元求解</p>
@@ -1216,11 +1216,49 @@ V &amp;=&amp; \displaystyle\iint\cdots\int_D\mathrm{d}x_1\mathrm{d}x_2\cdots\mat
 <p><span class="math display">\[\frac{1}{\pi}\int_{-\pi}^\pi\left|f(x)\right|^2=\frac{a_0^2}{2}+\sum_{n=1}^\infty(a_n^2+b_n^2)\]</span></p>
 <p><span class="math inline">\(\displaystyle\sum_{n=1}^\infty\frac{1}{n^2}=\frac{\pi^2}{6}\)</span></p>
 <p><span class="math inline">\(\displaystyle\sum_{n=1}^\infty\frac{1}{n^4}=\frac{\pi^4}{90}\)</span></p>
-<p>  <span class="math inline">\(zeta\)</span>函数的积分形式 <span class="math display">\[\zeta(s)=\sum_{n=1}^\infty\frac{1}{n^{s}}=\frac{1}{\Gamma(s)}\int_0^{+\infty}\frac{x^{s-1}}{e^x-1}\mathrm{d}x,\quad s&gt;1\]</span></p>
+<hr>
+<p>  <span class="math inline">\(zeta\)</span>函数的积分形式 <span class="math display">\[\zeta(s)=\sum_{n=1}^\infty\frac{1}{n^{s}}=\frac{1}{\Gamma(s)}\int_0^\infty\frac{x^{s-1}}{e^x-1}\mathrm{d}x,\quad s&gt;1\]</span></p>
+<p>  <strong>证:</strong> 对<span class="math inline">\(x\gt0\)</span>有展开式</p>
+<p><span class="math display">\[\begin{array}{l}
+\displaystyle\frac{1}{e^x-1}&amp;=&amp;\displaystyle\frac{e^{-x} }{1-e^{-x} }\\
+&amp;=&amp;\displaystyle e^{-x}(1+e^{-x}+e^{-2x}+\cdots)=\sum_{n=1}^\infty e^{-nx}
+\end{array}\]</span></p>
+<p>于是<span class="math inline">\(\forall A\gt0\)</span>有</p>
+<p><span class="math display">\[\int_0^A\frac{x^{s-1} }{e^x-1}\mathrm{d}x=\int_0^Ax^{s-1}\left(\sum_{n=1}^\infty e^{-nx}\right)\mathrm{d}x\]</span></p>
+<p>对于固定的<span class="math inline">\(s&gt;1\)</span>, 级数<span class="math inline">\(\sum\limits_{n=1}^\infty x^{s-1}e^{-nx}\)</span>关于<span class="math inline">\(x\in[0,+\infty)\)</span>是一致收敛的, 所以</p>
+<p><span class="math display">\[\begin{array}{l}
+\displaystyle\int_0^A\frac{x^{s-1} }{e^x-1}\mathrm{d}x&amp;=&amp;\displaystyle\sum_{n=1}^\infty\int_0^A x^{s-1}e^{-nx}\mathrm{d}x\\
+&amp;=&amp;\displaystyle\int_0^{nA}\left(\frac{y}{n}\right)^{s-1}\left(\frac{e^{-y} }{n}\right)\mathrm{d}y\\
+&amp;=&amp;\displaystyle\sum_{n=1}^\infty\frac{1}{n^s}\int_0^{nA}y^{s-1}e^{-y}\mathrm{d}y
+\end{array}\]</span></p>
+<p>该级数对于<span class="math inline">\(A\in[0,\infty)\)</span>是一致收敛的, 于是令<span class="math inline">\(A\to\infty\)</span>, 得</p>
+<p><span class="math display">\[\int_0^\infty\frac{x^{s-1} }{e^x-1}\mathrm{d}x=\Gamma(s)\sum_{n=1}^\infty\frac{1}{n^s}\]</span></p>
+<hr>
 <p>  求<span class="math inline">\(\displaystyle\int_0^1\frac{\ln x}{1-x}\mathrm{d}x\)</span></p>
 <p>   <strong>解:</strong> 令<span class="math inline">\(x=e^{-t},\)</span> 则 <span class="math display">\[\int_0^1\frac{\ln x}{1-x}\mathrm{d}x=\int_{+\infty}^0\frac{-t}{1-e^{-t}}e^{-t}(-\mathrm{d}t)=-\int_0^{+\infty}\frac{t}{e^t-1}\mathrm{d}t\]</span></p>
 <p>在结论中取<span class="math inline">\(s=2\)</span>, 则</p>
 <p><span class="math display">\[\int_0^1\frac{\ln x}{1-x}\mathrm{d}x=-\Gamma(2)\sum_{n=1}^{\infty}\frac{1}{n^2}=-\frac{\pi^2}{6}\]</span></p>
+<h1 id="习题">习题</h1>
+<ol type="1">
+<li>计算级数<span class="math inline">\(\displaystyle\sum_{n=1}^\infty\frac{1}{n\binom{2n}{n}}\)</span>的和。</li>
+</ol>
+<p>  <strong>解:</strong> 利用<span class="math inline">\({\rm{B} }(p,q)=\frac{\Gamma(p)\Gamma(q)}{\Gamma(p+q)}\)</span>得</p>
+<p><span class="math display">\[\begin{array}{l}
+\displaystyle\sum_{n=1}^\infty\frac{1}{n\binom{2n}{n} }&amp;=&amp;\displaystyle\sum_{n=1}^\infty\frac{1}{n}\frac{n!n!}{(2n)!}\\
+&amp;=&amp;\displaystyle\sum_{n=1}^\infty\frac{\Gamma(n)\Gamma(n+1)}{\Gamma(2n+1)}\\
+&amp;=&amp;\displaystyle\sum_{n=1}^\infty{\rm{B} }(n+1,n)\\
+&amp;=&amp;\displaystyle\sum_{n=1}^\infty\int_0^1t^n(1-t)^{n-1}\mathrm{d}t
+\end{array}\]</span></p>
+<p>由于当<span class="math inline">\(0\le t\le 1\)</span>时, <span class="math inline">\(0\le t(1-t)\le\frac{1}{4}\)</span>, 所以</p>
+<p><span class="math display">\[0\le t^n(1-t)^{n-1}\le\left(\frac{1}{4}\right)^{n-1}\]</span></p>
+<p>因此级数<span class="math inline">\(\displaystyle\sum_{n=1}^\infty t^n(1-t)^{n-1}\)</span>在<span class="math inline">\([0,1]\)</span>一致收敛, 于是有</p>
+<p><span class="math display">\[\begin{array}{l}
+\displaystyle\sum_{n=1}^\infty\frac{1}{n\binom{2n}{n} }&amp;=&amp;\displaystyle\int_0^1\sum_{n=1}^\infty t^n(1-t)^{n-1}\mathrm{d}t\\
+&amp;=&amp;\displaystyle\int_0^1t\sum_{n=1}^\infty(t(1-t))^{n-1}\mathrm{d}t\\
+&amp;=&amp;\displaystyle\int_0^1\frac{t}{1-t(1-t)}\mathrm{d}t\\
+&amp;=&amp;\displaystyle\int_0^1\frac{t}{t^2-t+1}\mathrm{d}t\\
+&amp;=&amp;\displaystyle\frac{\pi}{3\sqrt{3}}
+\end{array}\]</span></p>
 ]]></content>
       <categories>
         <category>Math</category>
