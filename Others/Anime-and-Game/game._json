@@ -1,12 +1,36 @@
 {
     "data": [
         {
+            "title": "Assassin's Creed Origins",
+            "type": "动作",
+            "date": "2017-10-27",
+            "official": "https://assassinscreed.ubisoft.com/origins/en-us/home/",
+            "summary": "游戏时间54h，风景很漂亮，骑着骆驼漫游沙漠，登上过胡夫金字塔，站在法罗斯灯塔顶俯瞰地中海，游戏还原了很多遗迹，带我游览了埃及的各种美景，有很强的代入感。主角巴耶克因为儿子的死而与“维序者”展开了斗争，每次打死一个boss都会出现一个相当于人间与地狱交界的地方，巴爷挥了挥羽毛boss就走了，最难打的boss可以说是战象。巴爷可以与鹰共享它的视野有点奇怪，巴爷的攀爬能力惊人，一个细节是每次巴爷从高处落下腿会瘸着走几步，Alt+w信仰之跃都会掉到草堆或者水里，打怪很少用刺杀，感觉玩的不是刺客而是战士，在金字塔及及各种古墓探险时怪物似乎只有罐子里的蛇，在沙漠会遭遇沙尘暴、海市蜃楼、虫雨等自然奇观，地图最下面的一个沙漠有个裂谷会冒出很多死而复生的战士。<br>&nbsp;&nbsp;前期开各种问号，做任务升级，因为一般差2级就打不过，支线人物都有独立的剧情，但大部分是平民给你个任务，让你救出或刺杀某人，到了30多级就少做很多支线任务，差不多40h主线全通关，后期做做限时任务(阿努比斯的试炼什么的)开开问号什么的就退坑了，信条是什么，可以概括为“Nothing is true, everything is permitted.”。整体来说还是很棒的，期待以中国为背景的刺客信条。",
+            "other": "<a href='https://store.steampowered.com/app/582160/Assassins_Creed_Origins/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Tomb Raider",
+            "type": "动作",
+            "date": "2013-03-05",
+            "official": "https://www.tombraider.com/",
+            "summary": "《古墓丽影9》背景是一个刚大学毕业的妹子劳拉提议去日本邪马台岛，即将到达时发生海难，劳拉被打昏绑架，最后开始逃生之路，英文原名没有后缀，是整个系列重启之作。游戏有不少惊悚画面，让人不寒而栗。记得劳拉第一次杀死鹿的时候说了声sorry，可是最后她杀死了岛上的所有敌人。<br>&nbsp;&nbsp;卡关的时候可以参考<a href='https://www.bilibili.com/video/BV1Js411b76M' target='_blank'><b>B站攻略</b></a>",
+            "other": "<a href='https://store.steampowered.com/app/203160/Tomb_Raider/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Shadow Tactics: Blades of the Shogun",
+            "type": "潜行",
+            "date": "2016-12-06",
+            "official": "https://www.mimimi.games/shadow_tactics_micro/",
+            "summary": "《影子战术：将军之刃》算是我比较喜欢的暗杀类游戏，由德国的mimimi公司设计，背景在日本幕府时期（第一关背景是1615年的大坂夏之阵，德川家族战胜了丰臣家，结束了日本的战国时代，统一了日本），新的幕府将军为了和平及镇压叛变，招募了五位暗杀人才，最后发现叛变的竟是将军的弟弟。游戏的关卡设定十分精巧，游戏里的平民设定很烦，一看见你就通风报信，玩的过程中可以参考<a href='https://www.bilibili.com/video/BV1ps41187D6' target='_blank'><b>B站攻略</b></a>，不禁让人感叹原来还有这种操作。",
+            "other": "<a href='https://store.steampowered.com/app/418240/Shadow_Tactics_Blades_of_the_Shogun/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Oxygen Not Included",
             "type": "模拟",
             "date": "2019-07-31",
             "official": "https://klei.com/games/oxygen-not-included",
             "summary": "Klei的一款太空殖民生存游戏，涉及到了一些物理知识与化学知识，游戏的目的就是建立一个循环以生存，最后还可以发射火箭，当然我玩到人造蒸汽失败导致火箭造出来了发射失败就弃坑了。",
-            "other": "<a href='https://store.steampowered.com/app/26800/Braid/' target='_blank'><b>Steam</b></a>"
+            "other": "<a href='https://store.steampowered.com/app/457140/Oxygen_Not_Included/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "ARK: Survival Evolved",
@@ -19,17 +43,41 @@
         {
             "title": "BRAID",
             "type": "独立",
-            "date": "2009-04-11",
+            "date": "2011-04-11",
             "official": "http://braid-game.com/",
-            "summary": "占坑",
+            "summary": "可以说是神作吧，通关后，拿了一半的星星，但游戏告诉我要节省时间，so不打算拿剩下的就退坑了。<br>&nbsp;&nbsp;时空幻境，表面上是一个西装革履的男孩找公主的故事，却隐含着一个令人深思的主题。游戏结尾书上写着有人说：“成功了”，令一个人说：“我们都成了混蛋”，而另一本书则提到曼哈顿，而曼哈顿计划就是为了研制原子弹，那两句话便是在场科学家说的，游戏中提姆是一个科学家，寻找着原子弹这个“公主”，但成功后却懊悔不已，希望通过时间倒流将其抹杀。这部优秀的游戏艺术品不仅仅是在说原子弹，更是与作者Jonathan Blow的亲身经历相关联。",
             "other": "<a href='https://store.steampowered.com/app/26800/Braid/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "LIMBO",
+            "type": "独立",
+            "date": "2011-08-13",
+            "official": "https://playdead.com/games/limbo/",
+            "summary": "一部独立游戏的神作，小男孩进入了地狱边境，姐姐命运不明。游戏物理引擎很好，手残党还是可以通关滴，卡关的话可以看<a href='https://www.speedrun.com/Limbo' target='_blank'><b>speedrun</b></a>上的视频。",
+            "other": "<a href='https://store.steampowered.com/app/48000/LIMBO/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Stardew Valley",
+            "type": "独立",
+            "date": "2016-02-27",
+            "official": "https://www.stardewvalley.net/",
+            "summary": "休闲游戏，适合妹子玩。前期钓鱼赚钱，刷等级，目前在玩，可以参考<a href='https://stardewvalleywiki.com/Stardew_Valley_Wiki' target='_blank'><b>stadew valley wiki</b></a>",
+            "other": "<a href='https://store.steampowered.com/app/413150/Stardew_Valley/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Terraria",
+            "type": "独立",
+            "date": "2011-05-17",
+            "official": "https://terraria.org/",
+            "summary": "比较喜欢，2D版的minecraft，就是挖掘、合成、建造，玩多了就没啥意思了。",
+            "other": "<a href='https://store.steampowered.com/app/105600/Terraria/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "MINECRAFT",
             "type": "沙盒",
             "date": "2009-05-17",
             "official": "https://www.minecraft.net/",
-            "summary": "占坑",
+            "summary": "几乎每个人都知道吧，游戏史上的里程碑。",
             "other": "null"
         },
         {
@@ -37,7 +85,7 @@
             "type": "独立",
             "date": "2004-12-20",
             "official": "https://www.cavestory.org/",
-            "summary": "构思精巧，多个不同的结局。",
+            "summary": "游戏构思精巧，由天谷大辅利用5年业余时间开发而成，算是我最喜欢的游戏之一，有多个不同的结局，玩了3遍，第一遍没看攻略选了坏结局，最后的洞穴与圣境可以说是像我这种手残党的噩梦。独立游戏中文杂志给出了评语：<blockquote>有很多优秀的游戏，你玩过之后还是会毫不犹豫地从硬盘中删除，特别是那些动辄n个G以上的所谓大作。但有些游戏，你却会想永远珍藏，因为你知道这是一辈子都难得一见的珍品。洞窟物语就是这样一款游戏。当然或许还因为它不到1M的容量。</blockquote>",
             "other": "<a href='https://store.steampowered.com/app/200900/Cave_Story/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -45,7 +93,7 @@
             "type": "模拟",
             "date": "2012-10-18",
             "official": "https://eurotrucksimulator2.com/",
-            "summary": "欧卡不能像GTA5里那样开卡车，倒车是个挺大的麻烦，买车库雇佣人开卡车，以后有时间再继续玩。",
+            "summary": "欧卡不能像GTA5里那样开卡车，倒车是个挺大的麻烦，买车库雇佣人开卡车，欧洲公路风景不错，以后有时间再继续玩。",
             "other": "<a href='https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -53,15 +101,23 @@
             "type": "独立",
             "date": "2019-04-04",
             "official": "https://en.wikipedia.org/wiki/Islanders_(video_game)",
-            "summary": "占坑",
+            "summary": "休闲养老类游戏，在随机生成的岛屿上安放尽可能多的建筑同时达到分数目标。",
             "other": "<a href='https://store.steampowered.com/app/1046030/ISLANDERS/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "风之旅人(Journey)",
+            "type": "冒险",
+            "date": "2012-03-15",
+            "official": "https://thatgamecompany.com/journey/",
+            "summary": "2020-06-11上线steam，游戏画面精美，让人感叹：“游戏还能这么玩”，一个人走在沙漠中，不经意间，有可能遇到另一个同行者，互助着登上圣山。主题曲很好，配上《平凡之路》也挺好。人生如逆旅，我亦是行人。",
+            "other": "<a href='https://store.steampowered.com/app/638230/Journey/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Borderlands 2",
             "type": "动作",
             "date": "2012-09-21",
             "official": "https://borderlands.com/zh-CN/",
-            "summary": "占坑",
+            "summary": "fps游戏，不是我喜欢的类型。",
             "other": "<a href='https://store.steampowered.com/app/49520/Borderlands_2/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -97,6 +153,14 @@
             "other": "<a href='https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/' target='_blank'><b>Steam</b></a>"
         },
         {
+            "title": "Europa Universalis IV",
+            "type": "策略",
+            "date": "2013-08-13",
+            "official": "https://www.paradoxplaza.com/europa-universalis-all/",
+            "summary": "P社游戏，一开始玩的时候汉化mod用不了，自己强忍着很多单词看不懂玩的，开局选的卡斯提尔，在南美开辟殖民地被盟友葡萄牙好感度下降后打了，后悔扩张没打葡萄牙打的阿拉贡。以后有时间再玩。",
+            "other": "<a href='https://store.steampowered.com/app/236850/Europa_Universalis_IV/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Human: Fall Flat",
             "type": "独立",
             "date": "2016-07-22",
@@ -106,11 +170,27 @@
         },
         {
             "title": "Cube Escape",
-            "type": "独立",
-            "date": "null",
+            "type": "解谜",
+            "date": "2018-09-20",
             "official": "http://www.rustylake.com/",
-            "summary": "故事很精彩，部分画面有点恐怖。",
+            "summary": "故事很精彩，部分画面有点恐怖，最后查了查攻略全成就达成。",
             "other": "<a href='https://store.steampowered.com/app/909080/Cube_Escape_Paradox/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "机械迷城 (Machinarium)",
+            "type": "解谜",
+            "date": "2009-10-16",
+            "official": "https://amanita-design.net/games/machinarium.html",
+            "summary": "游戏很有趣，由捷克Amanita Design开发，一个叫Josef的机器人被吸垃圾的机器人吸走遗弃在城郊废墟，为了救出被邪恶机器人绑架的女朋友Berta，他再次回到机械迷城。PS：算是steam里全成就最容易达成之一，BGM很好听。",
+            "other": "<a href='https://store.steampowered.com/app/40700/_Machinarium/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "theHunter: Call of the Wild",
+            "type": "冒险",
+            "date": "2017-02-16",
+            "official": "http://callofthewild.thehunter.com/",
+            "summary": "游戏音效画面不错，细节做得好，不是fps游戏，对新手有点难度，不过不是我感冒的游戏。",
+            "other": "<a href='https://store.steampowered.com/app/518790/theHunter_Call_of_the_Wild/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Duet",
@@ -125,7 +205,7 @@
             "type": "FPS",
             "date": "2012-08-22",
             "official": "https://blog.counter-strike.net/",
-            "summary": "占坑",
+            "summary": "CSGO虽说很火，但不是我喜欢的游戏类型。",
             "other": "<a href='https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/' target='_blank'><b>Steam</b></a>"
         },
         {
