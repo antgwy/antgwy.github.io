@@ -1,6 +1,14 @@
 {
     "data": [
         {
+            "title": "Hollow Knight",
+            "type": "冒险",
+            "date": "2017-02-25",
+            "official": "https://www.hollowknight.com/",
+            "summary": "强烈推荐，制作者Team Cherry是南澳的一个三人团队。白宫的跳跳乐各种酸爽不过我基本没看攻略还是过了，痛苦之路简直整个游戏最难，各种boss战基本死几次掌握技巧选好护符就能过，当然也有些boss死了几十次才过比如失败冠军，梦境格林对我这种手残真的难，有些boss做的真的非常好，比如三螳螂。期待黄蜂女为主角的《Hollow Knight: SilkSong》，B站好像有大佬自己做了一部分。",
+            "other": "<a href='https://store.steampowered.com/app/367520/Hollow_Knight/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Assassin's Creed Origins",
             "type": "动作",
             "date": "2017-10-27",
@@ -33,12 +41,28 @@
             "other": "<a href='https://store.steampowered.com/app/457140/Oxygen_Not_Included/' target='_blank'><b>Steam</b></a>"
         },
         {
+            "title": "To the Moon",
+            "type": "独立",
+            "date": "2011-11-01",
+            "official": "https://freebirdgames.com/to_the_moon/",
+            "summary": "一款有着独特构思给人带来很多感动的游戏，讲述两个医生借由改变记忆为弥留之际的人们完成他们人生最后愿望的故事，具体只有自己玩才体会的到，主题曲《For River》好听。",
+            "other": "<a href='https://store.steampowered.com/app/206440/To_the_Moon/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "ARK: Survival Evolved",
             "type": "生存",
             "date": "2017-08-28",
             "official": "http://playark.com/",
             "summary": "一款自由度很高的游戏，简述一下孤岛生存经验：在通用设置和高级设置调好自己喜欢的配置，萌新不建议调太难而自闭，前期尽量不要招惹主动攻击生物，因为一般打不过，抓好各种工具龙，比如三角龙采集浆果，甲龙采集石头金属等，获得流星锤开始驯龙，用研磨器获得麻醉药制作麻醉箭可以驯一些更高级的龙，游戏初期不建议使用作弊代码，否则体验不到游戏的挑战性与趣味性，中期可以参考<a href='http://wk.vmu.me/ark/' target='_blank'><b>物品代码</b></a>获取一些较难制作的物品，逐渐往北移到获取一些稀有资源，当然风险也随之变高，携带祭品前往方舟位置可以召唤boss，比如到达雪山蓝方舟可以召唤银背金刚boss，推荐用多只霸王龙和羽暴龙打，此外还有狮省蝎尾兽、育母蜘蛛、喷火龙等boss。最后吐槽下：南方巨兽龙和泰坦龙用强效麻醉镖打都要很久才晕，方舟竟然没有存档功能QAQ（不过可以自己加）。<br>PS：还可以参考<a href='http://www.teandy.com/' target='_blank'><b>听宇大佬的网站</b></a>获取一些关于方舟的干货。",
             "other": "<a href='https://store.steampowered.com/app/346110/ARK_Survival_Evolved/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "The Binding of Isaac: Rebirth",
+            "type": "独立",
+            "date": "2014-11-05",
+            "official": "https://bindingofisaac.com/",
+            "summary": "算是个知名的roguelike游戏了，剧情也十分的好，从重生入的以撒，在无聊时总有想玩几局的冲动。",
+            "other": "<a href='https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "BRAID",
@@ -49,8 +73,32 @@
             "other": "<a href='https://store.steampowered.com/app/26800/Braid/' target='_blank'><b>Steam</b></a>"
         },
         {
+            "title": "Portal2",
+            "type": "解谜",
+            "date": "2011-04-19",
+            "official": "https://www.thinkwithportals.com/",
+            "summary": "相比一代各方面都有提升，有令人印象深刻的剧情。",
+            "other": "<https://store.steampowered.com/app/620/Portal_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Portal",
+            "type": "解谜",
+            "date": "2007-10-10",
+            "official": "暂无",
+            "summary": "作者脑洞很大。",
+            "other": "<a href='https://store.steampowered.com/app/400/Portal/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "INSIDE",
+            "type": "解谜",
+            "date": "2016-07-08",
+            "official": "https://playdead.com/games/inside/",
+            "summary": "可以说是Limbo的续作，游戏风格压抑，没看攻略过的我很骄傲，剧情可能是反乌托邦，小男孩拔掉电源意味着玩家对他的控制终结，可以参考<a href='https://www.zhihu.com/question/47957864/answer/110885264'><b>知乎上的一个回答</b></a>。",
+            "other": "<a href='https://store.steampowered.com/app/304430/INSIDE/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "LIMBO",
-            "type": "独立",
+            "type": "解谜",
             "date": "2011-08-13",
             "official": "https://playdead.com/games/limbo/",
             "summary": "一部独立游戏的神作，小男孩进入了地狱边境，姐姐命运不明。游戏物理引擎很好，手残党还是可以通关滴，卡关的话可以看<a href='https://www.speedrun.com/Limbo' target='_blank'><b>speedrun</b></a>上的视频。",
@@ -61,7 +109,7 @@
             "type": "独立",
             "date": "2016-02-27",
             "official": "https://www.stardewvalley.net/",
-            "summary": "休闲游戏，适合妹子玩。前期钓鱼赚钱，刷等级，目前在玩，可以参考<a href='https://stardewvalleywiki.com/Stardew_Valley_Wiki' target='_blank'><b>stadew valley wiki</b></a>",
+            "summary": "休闲养老游戏，适合喜欢经营类游戏的玩，比较肝。前期钓鱼赚钱，刷等级，目前在玩，可以参考<a href='https://stardewvalleywiki.com/Stardew_Valley_Wiki' target='_blank'><b>stadew valley wiki</b></a>",
             "other": "<a href='https://store.steampowered.com/app/413150/Stardew_Valley/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -69,7 +117,7 @@
             "type": "独立",
             "date": "2011-05-17",
             "official": "https://terraria.org/",
-            "summary": "比较喜欢，2D版的minecraft，就是挖掘、合成、建造，玩多了就没啥意思了。",
+            "summary": "比较喜欢，2D版的minecraft，就是挖掘、合成、建造，还加入了一些boss，从1.4版本更新后加了很多东西。<br>&emsp;&emsp;毕竟玩了130h+，谈一下普通模式开荒之路吧，首先应该参考<a href='https://terraria-zh.gamepedia.com/Terraria_Wiki' target='_blank'><b>Terraria中文wiki</b></a>，初期晚上肯定不能随便出门，利用晚上多建房子吸引NPC，根据能力探索地表、矿洞、地牢等地形，各种boss战只要有好武器基本不难，特殊打法的boss我觉得只有两个，猪鲨棱形矿车打法和月总护士打法，肉山后由于我懒得挖矿，所以卡bug刷资源，比如复制世界存档文件，利用向导NPC或哥布林工匠通过旅途模式bug传递资源，例如游戏里的新三矿和特别难抓的松露虫，刷钱的话我是通过卡bug刷钛金/精金卖给商人，打完所有的boss自己建些有趣的东西然后我就退坑了。",
             "other": "<a href='https://store.steampowered.com/app/105600/Terraria/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -77,15 +125,15 @@
             "type": "沙盒",
             "date": "2009-05-17",
             "official": "https://www.minecraft.net/",
-            "summary": "几乎每个人都知道吧，游戏史上的里程碑。",
-            "other": "null"
+            "summary": "几乎每个人都知道吧，游戏史上的里程碑，觉得比较有意思的是捣鼓红石电路。",
+            "other": "<a href='https://minecraft-zh.gamepedia.com/' target='_blank'><b>minecraft中文wiki</b></a>"
         },
         {
             "title": "洞窟物语",
             "type": "独立",
             "date": "2004-12-20",
             "official": "https://www.cavestory.org/",
-            "summary": "游戏构思精巧，由天谷大辅利用5年业余时间开发而成，算是我最喜欢的游戏之一，有多个不同的结局，玩了3遍，第一遍没看攻略选了坏结局，最后的洞穴与圣境可以说是像我这种手残党的噩梦。独立游戏中文杂志给出了评语：<blockquote>有很多优秀的游戏，你玩过之后还是会毫不犹豫地从硬盘中删除，特别是那些动辄n个G以上的所谓大作。但有些游戏，你却会想永远珍藏，因为你知道这是一辈子都难得一见的珍品。洞窟物语就是这样一款游戏。当然或许还因为它不到1M的容量。</blockquote>",
+            "summary": "游戏构思精巧，由天谷大辅利用5年业余时间开发而成，算是我最喜欢的游戏之一，有多个不同的结局，玩了3遍，第一遍没看攻略选了坏结局，最后的洞穴与圣境可以说是像我这种手残党的噩梦，不过熟悉了其实也不难。独立游戏中文杂志给出了评语：<blockquote>有很多优秀的游戏，你玩过之后还是会毫不犹豫地从硬盘中删除，特别是那些动辄n个G以上的所谓大作。但有些游戏，你却会想永远珍藏，因为你知道这是一辈子都难得一见的珍品。洞窟物语就是这样一款游戏。当然或许还因为它不到1M的容量。</blockquote>",
             "other": "<a href='https://store.steampowered.com/app/200900/Cave_Story/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -97,12 +145,44 @@
             "other": "<a href='https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/' target='_blank'><b>Steam</b></a>"
         },
         {
+            "title": "Cities: Skylines",
+            "type": "模拟",
+            "date": "2015-03-11",
+            "official": "https://www.citiesskylines.com/",
+            "summary": "城市模拟游戏，我还是个刚入坑的新手。",
+            "other": "<a href='https://store.steampowered.com/app/255710/Cities_Skylines/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "ISLANDERS",
             "type": "独立",
             "date": "2019-04-04",
             "official": "https://en.wikipedia.org/wiki/Islanders_(video_game)",
             "summary": "休闲养老类游戏，在随机生成的岛屿上安放尽可能多的建筑同时达到分数目标。",
             "other": "<a href='https://store.steampowered.com/app/1046030/ISLANDERS/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Broforce",
+            "type": "独立",
+            "date": "2015-10-15",
+            "official": "http://www.broforcegame.com/",
+            "summary": "武装风暴，4399上有，经典的像素游戏。",
+            "other": "<a href='https://store.steampowered.com/app/274190/Broforce/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Poly Bridge",
+            "type": "模拟",
+            "date": "2016-07-13",
+            "official": "http://polybridge.drycactus.com/",
+            "summary": "桥梁建造游戏，挺烧脑的。",
+            "other": "<a href='https://store.steampowered.com/app/367450/Poly_Bridge/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Super Meat Boy",
+            "type": "独立",
+            "date": "2010-12-01",
+            "official": "http://www.supermeatboy.com/",
+            "summary": "跳跳乐游戏，让我逐渐脱离手残（划掉）。",
+            "other": "<a href='https://store.steampowered.com/app/40800/Super_Meat_Boy/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "风之旅人(Journey)",
@@ -207,6 +287,14 @@
             "official": "https://blog.counter-strike.net/",
             "summary": "CSGO虽说很火，但不是我喜欢的游戏类型。",
             "other": "<a href='https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Mirror's Edge",
+            "type": "跑酷",
+            "date": "2009-01-13",
+            "official": "https://www.mirrorsedge.com/",
+            "summary": "惊险刺激的老游戏，可以说是跑酷游戏的鼻祖。",
+            "other": "<a href='https://store.steampowered.com/app/17410/Mirrors_Edge/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Grand Theft Auto: Vice City",
