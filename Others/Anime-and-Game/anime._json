@@ -61,7 +61,7 @@
             "type": "番剧",
             "date": "2018-01-11",
             "official": "http://violet-evergarden.jp/",
-            "summary": "占坑",
+            "summary": "京都动画改编晓佳奈小说的作品，主题是爱与和平，一个被称为武器的少女薇尔莉特•伊芙加登(Violet Evergarden)想知道爱是什么，通过自动手记人偶的工作逐渐了解了其中的意思，最后不再是“道具”而成为一个像她名字一样的人。",
             "other": "ヴァイオレット・エヴァーガーデン"
         },
         {
@@ -201,6 +201,14 @@
             "other": "ラブライブ! School idol project"
         },
         {
+            "title": "心理测量者（Psycho-Pass）",
+            "type": "番剧",
+            "date": "2012-10-11",
+            "official": "https://psycho-pass.com/",
+            "summary": "这部番可能因为犯罪学手段与部分血腥画面而被ban，反派有着独特的个人魅力，或者说槙岛才是真正的主角，sibyl system管理着整个社会，而这个系统仅仅只是一群“免罪体质者”的大脑，当你凝视深渊的时候，深渊也在凝视着你，这样一个反乌托邦的寓言告诉我们始终要保持独立思考。",
+            "other": "PSYCHO-PASS サイコパス"
+        },
+        {
             "title": "樱花庄的宠物女孩",
             "type": "番剧",
             "date": "2012-10-08",
@@ -223,6 +231,14 @@
             "official": "https://www.fate-zero.jp/",
             "summary": "占坑",
             "other": "Fate/Zero"
+        },
+        {
+            "title": "未闻花名",
+            "type": "番剧",
+            "date": "2011-04-14",
+            "official": "https://www.anohana.jp/",
+            "summary": "占坑",
+            "other": "あの日見た花の名前を僕達はまだ知らない。"
         },
         {
             "title": "四畳半神话大系",
@@ -265,6 +281,22 @@
             "other": "BACCANO! -バッカーノ!-"
         },
         {
+            "title": "死亡笔记",
+            "type": "番剧",
+            "date": "2006-10-03",
+            "official": "https://www.ntv.co.jp/deathnote/",
+            "summary": "占坑。",
+            "other": "DEATH NOTE"
+        },
+        {
+            "title": "天气之子",
+            "type": "剧场版",
+            "date": "2019-07-19",
+            "official": "https://www.tenkinoko.com/",
+            "summary": "讲述了中二少年帆高与拥有改变天气能力的少女阳菜之间的故事。相比《你的名字》，导演新海诚选择了与众不同的另一条路线，片中涉及个人利益与集体利益的矛盾，本人不做过多评价。帆高压泡面的《麦田里的守望者》主人公便是16岁离家出走这一细节好评。",
+            "other": "天気の子"
+        },
+        {
             "title": "你的名字。",
             "type": "剧场版",
             "date": "2016-08-26",
@@ -277,8 +309,16 @@
             "type": "剧场版",
             "date": "2013-05-31",
             "official": "http://www.kotonohanoniwa.jp/",
-            "summary": "画面很美，故事很短，主题是师生恋，两个烦恼的人相遇在了一起，为各自脱离低估找到了契机。",
+            "summary": "画面很美，故事很短，主题是师生恋，两个烦恼的人相遇在了一起，为各自脱离低谷找到了契机。",
             "other": "言の葉の庭"
+        },
+        {
+            "title": "秒速五厘米",
+            "type": "剧场版",
+            "date": "2007-03-03",
+            "official": "https://www.cwfilms.jp/5cm/",
+            "summary": "占坑。",
+            "other": "秒速5センチメートル"
         },
         {
             "title": "千与千寻",
@@ -295,6 +335,14 @@
             "official": "暂无",
             "summary": "小学时的回忆，当时算是有点人气的国漫，但最后却是个烂尾结局。",
             "other": "知音漫客上的连载"
+        },
+        {
+            "title": "星际牛仔",
+            "type": "番剧",
+            "date": "1998-10-23",
+            "official": "http://www.cowboy-bebop.net/",
+            "summary": "占坑。",
+            "other": "カウボーイビバップ"
         },
         {
             "title": "名侦探柯南",
