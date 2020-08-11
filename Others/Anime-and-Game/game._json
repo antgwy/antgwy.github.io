@@ -9,6 +9,14 @@
             "other": "<a href='https://store.steampowered.com/app/367520/Hollow_Knight/' target='_blank'><b>Steam</b></a>"
         },
         {
+            "title": "RimWorld",
+            "type": "模拟",
+            "date": "2018-10-17",
+            "official": "https://rimworldgame.com/",
+            "summary": "92rmb入的，一款沙盒生存游戏，真实度很高。",
+            "other": "<a href='https://store.steampowered.com/app/294100/RimWorld/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Assassin's Creed Origins",
             "type": "动作",
             "date": "2017-10-27",
@@ -41,6 +49,22 @@
             "other": "<a href='https://store.steampowered.com/app/457140/Oxygen_Not_Included/' target='_blank'><b>Steam</b></a>"
         },
         {
+            "title": "Life is Strange: Before the Storm",
+            "type": "冒险",
+            "date": "2017-09-01",
+            "official": "https://lifeisstrange.square-enix-games.com/en-us/games/before-the-storm",
+            "summary": "《奇异人生：暴风前夕》讲述的是首作三年前的故事，主角Chloe Price从优等生变成朋克少女，能力的话就是嘴炮，这一部感觉没有首作那么好，Chloe和Rachel Amber成为好友，Rachel想要寻找生母Sera的下落，但父亲James却隐瞒真相极力反对，最后的选择是tell Rachel everything 或者 protect her from the truth，我当然是选择后者保护Rachel，并不是所有结局都是完美的。",
+            "other": "<a href='https://store.steampowered.com/app/554620/Life_is_Strange_Before_the_Storm/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Life is Strange",
+            "type": "冒险",
+            "date": "2015-01-30",
+            "official": "https://lifeisstrange.square-enix-games.com/en-us/games/life-is-strange",
+            "summary": "《奇异人生》是法国开发商Dontnode Entertainment开发的一个选择向的叙事游戏，无疑可以称得上是一部神作，蝴蝶效应在游戏中得到体现，女主角Max Caulfield拥有rewind time的能力，通关后我觉得我还是太单纯了，竟然没看出Mark Jefferson老师是坏人，最后的选择是牺牲好友Chloe还是Arcadia Bay，出于私欲我选择让Chloe活着，现实生活中即使我们有时间倒流能力，也并不能一定做得更好。",
+            "other": "<a href='https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "To the Moon",
             "type": "独立",
             "date": "2011-11-01",
@@ -61,8 +85,16 @@
             "type": "独立",
             "date": "2014-11-05",
             "official": "https://bindingofisaac.com/",
-            "summary": "算是个知名的roguelike游戏了，剧情也十分的好，从重生入的以撒，在无聊时总有想玩几局的冲动。<b>&emsp;&emsp;<a href='https://bindingofisaacrebirth.gamepedia.com/Binding_of_Isaac:_Rebirth_Wiki' target='_blank'>wiki</a>",
+            "summary": "算是个知名的roguelike游戏了，剧情也十分的好，从重生入的以撒，在无聊时总有想玩几局的冲动，需要注意要买胎衣和胎衣+才能开mod，打折没买的我后来原价74rmb买了感觉有点亏，不开mod通关妈腿一次就能不锁成就了，也可以开控制台玩了，可以参考下wiki。<br>&emsp;&emsp;<a href='https://bindingofisaacrebirth.gamepedia.com/Binding_of_Isaac:_Rebirth_Wiki' target='_blank'><b>wiki</b></a>",
             "other": "<a href='https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "疑案追声(Unheard)",
+            "type": "解谜",
+            "date": "2019-03-29",
+            "official": "https://www.nextstudios.com/unheard/index_cn.html",
+            "summary": "可以说是国产解谜之光，或者说这游戏更像是一个听力考试，通过不同房间听到的线索得出答案，中文版里面有几种方言不过都很容易懂，想练听力可以直接上英文，基本是原汁原味的不难懂。",
+            "other": "<a href='https://store.steampowered.com/app/942970/Unheard/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "BRAID",
@@ -78,14 +110,14 @@
             "date": "2011-04-19",
             "official": "https://www.thinkwithportals.com/",
             "summary": "相比一代各方面都有提升，有令人印象深刻的剧情。",
-            "other": "<https://store.steampowered.com/app/620/Portal_2/' target='_blank'><b>Steam</b></a>"
+            "other": "<a href='https://store.steampowered.com/app/620/Portal_2/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Portal",
             "type": "解谜",
             "date": "2007-10-10",
             "official": "暂无",
-            "summary": "作者脑洞很大。",
+            "summary": "值得一玩，作者脑洞很大。",
             "other": "<a href='https://store.steampowered.com/app/400/Portal/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -145,6 +177,14 @@
             "other": "<a href='https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/' target='_blank'><b>Steam</b></a>"
         },
         {
+            "title": "Goat Simulator",
+            "type": "模拟",
+            "date": "2014-04-02",
+            "official": "http://goat-simulator.com/",
+            "summary": "山羊版GTA5，steam“七大名著”之一，一款沙雕休闲游戏，游戏的特点在于各种bug，开发者声称只修复了游戏奔溃的bug。",
+            "other": "<a href='https://store.steampowered.com/app/265930/Goat_Simulator/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Cities: Skylines",
             "type": "模拟",
             "date": "2015-03-11",
@@ -197,8 +237,16 @@
             "type": "动作",
             "date": "2012-09-21",
             "official": "https://borderlands.com/zh-CN/",
-            "summary": "fps游戏，不是我喜欢的类型。",
+            "summary": "fps游戏，不是我喜欢的类型，epic上白嫖玩了10h+，最后在steam补了票。",
             "other": "<a href='https://store.steampowered.com/app/49520/Borderlands_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Just Cause 3",
+            "type": "动作",
+            "date": "2015-12-01",
+            "official": "https://justcause.square-enix-games.com/en-us",
+            "summary": "《正当防卫3》讲述了一个推翻政府的故事，主角各种破坏，解放后的地区由革命军控制，优点pros在于刺激惊险，缺点cons在于有点睿智毁三观，不知道哪一方才是邪恶的。",
+            "other": "<a href='https://store.steampowered.com/app/225540/Just_Cause_3/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Grand Theft Auto V",
