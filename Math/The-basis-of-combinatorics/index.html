@@ -1,160 +1,150 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>组合数学基础 | 2inf</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><!-- modified--><link rel="stylesheet" type="text/css" href="/css/atom-one-dark.min.css?v=0.0.0"><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script><!----><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">组合数学基础</h1><a id="logo" href="/.">2inf</a><p class="description">wtyang的数学与cs之旅</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/" target="_self"><i class="fa fa-archive"> 归档</i></a><a href="/tags/" target="_self"><i class="fa fa-tags"> 标签</i></a><a href="/about/" target="_self"><i class="fa fa-user"> 关于</i></a><a href="https://note.2inf.top" target="_self"><i class="fa fa-book"> 笔记</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">组合数学基础</h1><div class="post-meta">2019-09-06<span> | </span><span class="category"><a href="/categories/Math/">Math</a></span></div><div class="post-content"><h1>组合数(<a href="https://en.wikipedia.org/wiki/Binomial_coefficient" target="_blank" rel="noopener">Binomial coefficient</a>)</h1>
-<h2 id="性质"><a class="header-anchor" href="#性质">¶</a>性质</h2>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>组合数学基础 | 2inf</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><!-- modified--><link rel="stylesheet" type="text/css" href="/css/atom-one-dark.min.css?v=0.0.0"><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script><!----><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">组合数学基础</h1><a id="logo" href="/.">2inf</a><p class="description">wtyang的数学与cs之旅</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/" target="_self"><i class="fa fa-archive"> 归档</i></a><a href="/tags/" target="_self"><i class="fa fa-tags"> 标签</i></a><a href="/about/" target="_self"><i class="fa fa-user"> 关于</i></a><a href="https://note.2inf.top" target="_self"><i class="fa fa-book"> 笔记</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">组合数学基础</h1><div class="post-meta">2019-09-06<span> | </span><span class="category"><a href="/categories/Math/">Math</a></span></div><div class="post-content"><h1 id="组合数binomial-coefficient">组合数(<a href="https://en.wikipedia.org/wiki/Binomial_coefficient" target="_blank" rel="noopener">Binomial coefficient</a>)</h1>
+<h2 id="性质">性质</h2>
 <p>  首先我们回顾一下一些简单性质</p>
-<ol>
-<li>$\begin{pmatrix}n\k\end{pmatrix}=\displaystyle\frac{n!}{k!(n-k)!}$</li>
-<li>$\begin{pmatrix}n\k\end{pmatrix}=\displaystyle\frac{n}{k}\begin{pmatrix}n-1\k-1\end{pmatrix}$</li>
-<li>$\begin{pmatrix}n\k\end{pmatrix}=\begin{pmatrix}n-1\k\end{pmatrix}+\begin{pmatrix}n-1\k-1\end{pmatrix}$</li>
-<li>$\begin{pmatrix}n\m\end{pmatrix}\begin{pmatrix}m\k\end{pmatrix}=\begin{pmatrix}n\k\end{pmatrix}\begin{pmatrix}n-k\m-k\end{pmatrix}$</li>
-<li>$\displaystyle\sum_{m=0}^n\begin{pmatrix}m\k\end{pmatrix}=\begin{pmatrix}n+1\k+1\end{pmatrix}$</li>
-<li>$\displaystyle\sum_{k=0}<sup>nk\begin{pmatrix}n\k\end{pmatrix}=n2</sup>{n-1},\quad\sum_{k=0}<sup>nk</sup>2\begin{pmatrix}n\k\end{pmatrix}=n(n+1)2^{n-2}$</li>
+<ol type="1">
+<li><span class="math inline">\(\begin{pmatrix}n\\k\end{pmatrix}=\displaystyle\frac{n!}{k!(n-k)!}\)</span></li>
+<li><span class="math inline">\(\begin{pmatrix}n\\k\end{pmatrix}=\displaystyle\frac{n}{k}\begin{pmatrix}n-1\\k-1\end{pmatrix}\)</span></li>
+<li><span class="math inline">\(\begin{pmatrix}n\\k\end{pmatrix}=\begin{pmatrix}n-1\\k\end{pmatrix}+\begin{pmatrix}n-1\\k-1\end{pmatrix}\)</span></li>
+<li><span class="math inline">\(\begin{pmatrix}n\\m\end{pmatrix}\begin{pmatrix}m\\k\end{pmatrix}=\begin{pmatrix}n\\k\end{pmatrix}\begin{pmatrix}n-k\\m-k\end{pmatrix}\)</span></li>
+<li><span class="math inline">\(\displaystyle\sum_{m=0}^n\begin{pmatrix}m\\k\end{pmatrix}=\begin{pmatrix}n+1\\k+1\end{pmatrix}\)</span></li>
+<li><span class="math inline">\(\displaystyle\sum_{k=0}^nk\begin{pmatrix}n\\k\end{pmatrix}=n2^{n-1},\quad\sum_{k=0}^nk^2\begin{pmatrix}n\\k\end{pmatrix}=n(n+1)2^{n-2}\)</span></li>
 </ol>
 <a id="more"></a>
-<h2 id="组合数的计算"><a class="header-anchor" href="#组合数的计算">¶</a>组合数的计算</h2>
-<h3 id="利用性质3"><a class="header-anchor" href="#利用性质3">¶</a>利用性质3</h3>
+<h2 id="组合数的计算">组合数的计算</h2>
+<h3 id="利用性质3">利用性质3</h3>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-built_in">memset</span>(C, <span class="hljs-number">0</span>, <span class="hljs-keyword">sizeof</span>(C));</span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt;= n; ++i) &#123;</span><br><span class="line">    C[i][<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = i; j &lt;= i; ++j) C[i][j] = C[i<span class="hljs-number">-1</span>][j<span class="hljs-number">-1</span>] + C[i<span class="hljs-number">-1</span>][j];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="预处理阶乘和阶乘逆元"><a class="header-anchor" href="#预处理阶乘和阶乘逆元">¶</a>预处理阶乘和阶乘逆元</h3>
-<h4 id="费马小定理-a-href-https-en-wikipedia-org-wiki-fermat-27s-little-theorem-fermat-s-little-theorem-a"><a class="header-anchor" href="#费马小定理-a-href-https-en-wikipedia-org-wiki-fermat-27s-little-theorem-fermat-s-little-theorem-a">¶</a>费马小定理(<a href="https://en.wikipedia.org/wiki/Fermat%27s_little_theorem" target="_blank" rel="noopener">Fermat’s little theorem</a>)</h4>
-<p>  $p$为质数，且$p\nmid a$，则</p>
-<p>$$a^{p-1}\equiv1\pmod p$$</p>
-<p>$$inv(a)\equiv a^{p-2}\pmod p$$</p>
-<p>$$\begin{pmatrix}n\m\end{pmatrix}=fac(n)*inv(m!)*inv((n-m)!)$$</p>
-<p>$$inv(i!)\equiv inv((i+1)!)*(i+1)\pmod p$$</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">C</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> m)</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (m &gt; n) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">return</span> fac[n] * power(fac[m], p - <span class="hljs-number">2</span>) % p * power(fac[n-m], p - <span class="hljs-number">2</span>) % p;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>求解$C_n^m mod\ p$，该法要求p为质数</p>
-<h3 id="lucas定理-lucas-s-theorem"><a class="header-anchor" href="#lucas定理-lucas-s-theorem">¶</a>Lucas定理(<a href="https://en.wikipedia.org/wiki/Lucas%27s_theorem" target="_blank" rel="noopener">Lucas’s theorem</a>)</h3>
-<p>$$\begin{pmatrix}n\m\end{pmatrix}\equiv\begin{pmatrix}\lfloor n/p\rfloor\\lfloor m/p\rfloor\end{pmatrix}\begin{pmatrix}n\mod p\m\mod p\end{pmatrix}\pmod p\qquad (p为素数)$$</p>
-<p>$proof:\quad$设$n=sp+q,m=tp+r\ (q,r\leq p)$,那么<br>
-$$\begin{array}{l}<br>
-(1+x)<sup>n&amp;=&amp;\left((1+x)</sup>p\right)<sup>s(1+x)</sup>q\<br>
-&amp;\equiv&amp;(1+x<sup>p)</sup>s(1+x)^q\pmod p\<br>
-&amp;=&amp;\displaystyle\sum_{i=0}<sup>s\begin{pmatrix}s\i\end{pmatrix}x</sup>{ip}\sum_{j=0}<sup>q\begin{pmatrix}q\j\end{pmatrix}x</sup>j\<br>
-\end{array}$$</p>
+<h3 id="预处理阶乘和阶乘逆元">预处理阶乘和阶乘逆元</h3>
+<h4 id="费马小定理fermats-little-theorem">费马小定理(<a href="https://en.wikipedia.org/wiki/Fermat%27s_little_theorem" target="_blank" rel="noopener">Fermat's little theorem</a>)</h4>
+<p>  <span class="math inline">\(p\)</span>为质数，且<span class="math inline">\(p\nmid a\)</span>，则</p>
+<p><span class="math display">\[a^{p-1}\equiv1\pmod p\]</span></p>
+<p><span class="math display">\[inv(a)\equiv a^{p-2}\pmod p\]</span></p>
+<p><span class="math display">\[\begin{pmatrix}n\\m\end{pmatrix}=fac(n)*inv(m!)*inv((n-m)!)\]</span></p>
+<p><span class="math display">\[inv(i!)\equiv inv((i+1)!)*(i+1)\pmod p\]</span> <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">C</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n, <span class="hljs-keyword">int</span> m)</span> </span>&#123;</span><br><span class="line">    <span class="hljs-keyword">if</span> (m &gt; n) <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;</span><br><span class="line">    <span class="hljs-keyword">return</span> fac[n] * power(fac[m], p - <span class="hljs-number">2</span>) % p * power(fac[n-m], p - <span class="hljs-number">2</span>) % p;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure> 求解<span class="math inline">\(C_n^m mod\ p\)</span>，该法要求p为质数</p>
+<h3 id="lucas定理lucass-theorem">Lucas定理(<a href="https://en.wikipedia.org/wiki/Lucas%27s_theorem" target="_blank" rel="noopener">Lucas's theorem</a>)</h3>
+<p><span class="math display">\[\begin{pmatrix}n\\m\end{pmatrix}\equiv\begin{pmatrix}\lfloor n/p\rfloor\\\lfloor m/p\rfloor\end{pmatrix}\begin{pmatrix}n\mod p\\m\mod p\end{pmatrix}\pmod p\qquad (p为素数)\]</span></p>
+<p><span class="math inline">\(proof:\quad\)</span>设<span class="math inline">\(n=sp+q,m=tp+r\ (q,r\leq p)\)</span>,那么 <span class="math display">\[\begin{array}{l}
+(1+x)^n&amp;=&amp;\left((1+x)^p\right)^s(1+x)^q\\
+&amp;\equiv&amp;(1+x^p)^s(1+x)^q\pmod p\\
+&amp;=&amp;\displaystyle\sum_{i=0}^s\begin{pmatrix}s\\i\end{pmatrix}x^{ip}\sum_{j=0}^q\begin{pmatrix}q\\j\end{pmatrix}x^j\\
+\end{array}\]</span></p>
 <p>可以得到</p>
-<p>$$(1+x)<sup>{sp+q}\equiv\sum_{i=0}</sup>s\begin{pmatrix}s\i\end{pmatrix}x<sup>{ip}\sum_{j=0}</sup>q\begin{pmatrix}q\j\end{pmatrix}x^j\pmod p$$</p>
-<p>$LHS$中$(1+x)<sup>{sp+q}$中的$x</sup>{tp+r}$系数为$\begin{pmatrix}sp+q\tp+r\end{pmatrix}$, $RHS$中的$x^{tp+r}$系数为$\begin{pmatrix}s\t\end{pmatrix}\begin{pmatrix}q\r\end{pmatrix}$, 从而</p>
-<p>$$\begin{pmatrix}sp+q\tp+r\end{pmatrix}\equiv\begin{pmatrix}s\t\end{pmatrix}\begin{pmatrix}q\r\end{pmatrix}\pmod p$$</p>
+<p><span class="math display">\[(1+x)^{sp+q}\equiv\sum_{i=0}^s\begin{pmatrix}s\\i\end{pmatrix}x^{ip}\sum_{j=0}^q\begin{pmatrix}q\\j\end{pmatrix}x^j\pmod p\]</span></p>
+<p><span class="math inline">\(LHS\)</span>中<span class="math inline">\((1+x)^{sp+q}\)</span>中的<span class="math inline">\(x^{tp+r}\)</span>系数为<span class="math inline">\(\begin{pmatrix}sp+q\\tp+r\end{pmatrix}\)</span>, <span class="math inline">\(RHS\)</span>中的<span class="math inline">\(x^{tp+r}\)</span>系数为<span class="math inline">\(\begin{pmatrix}s\\t\end{pmatrix}\begin{pmatrix}q\\r\end{pmatrix}\)</span>, 从而</p>
+<p><span class="math display">\[\begin{pmatrix}sp+q\\tp+r\end{pmatrix}\equiv\begin{pmatrix}s\\t\end{pmatrix}\begin{pmatrix}q\\r\end{pmatrix}\pmod p\]</span></p>
 <p>这与原命题等价, 证毕.</p>
 <p><a href="https://www.luogu.org/problem/P3807" target="_blank" rel="noopener">Lucas定理模板题</a></p>
 <p><a href="https://paste.ubuntu.com/p/WS4v7wh9dH/" target="_blank" rel="noopener">code</a></p>
-<h3 id="lucas定理-crt合并"><a class="header-anchor" href="#lucas定理-crt合并">¶</a>Lucas定理+CRT合并</h3>
-<h4 id="crt合并"><a class="header-anchor" href="#crt合并">¶</a>CRT合并</h4>
+<h3 id="lucas定理crt合并">Lucas定理+CRT合并</h3>
+<h4 id="crt合并">CRT合并</h4>
 <p>  对同余方程</p>
-<p>$$\begin{cases}x\equiv{a_1}\pmod{p_1}\x\equiv{a_2}\pmod{p_2}\end{cases}$$</p>
-<p>令$x=mp_1+a_1,$代入方程2得</p>
-<p>$$mp_1\equiv{a_2-a_1}\pmod{p_2}$$</p>
+<p><span class="math display">\[\begin{cases}x\equiv{a_1}\pmod{p_1}\\x\equiv{a_2}\pmod{p_2}\end{cases}\]</span></p>
+<p>令<span class="math inline">\(x=mp_1+a_1,\)</span>代入方程2得</p>
+<p><span class="math display">\[mp_1\equiv{a_2-a_1}\pmod{p_2}\]</span></p>
 <p>即</p>
-<p>$$mp_1-np_2=a_2-a_1$$</p>
-<p>由贝祖定理(<a href="https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity" target="_blank" rel="noopener">Bezout’s identity</a>)，若$m$有解$m_0$(即$\gcd(p_1,p_2)|a_2-a_1,m_0$可用exgcd求)，则$m$满足通项</p>
-<p>$$m=m_0+k\frac{p_2}{\gcd(p_1,p_2)}\quad k\in\Bbb{Z}$$</p>
-<p>代入$x$表达式有</p>
-<p>$$x=m_0p_1+k{\rm{lcm}}(p_1,p_2)+a_1$$</p>
+<p><span class="math display">\[mp_1-np_2=a_2-a_1\]</span></p>
+<p>由贝祖定理(<a href="https://en.wikipedia.org/wiki/B%C3%A9zout%27s_identity" target="_blank" rel="noopener">Bezout's identity</a>)，若<span class="math inline">\(m\)</span>有解<span class="math inline">\(m_0\)</span>(即<span class="math inline">\(\gcd(p_1,p_2)|a_2-a_1,m_0\)</span>可用exgcd求)，则<span class="math inline">\(m\)</span>满足通项</p>
+<p><span class="math display">\[m=m_0+k\frac{p_2}{\gcd(p_1,p_2)}\quad k\in\Bbb{Z}\]</span></p>
+<p>代入<span class="math inline">\(x\)</span>表达式有</p>
+<p><span class="math display">\[x=m_0p_1+k{\rm{lcm}}(p_1,p_2)+a_1\]</span></p>
 <p>故</p>
-<p>$$x\equiv m_0p_1+a_1\pmod{ {\rm lcm}(p_1,p_2) }$$</p>
-<h4 id="孙子定理-a-href-https-en-wikipedia-org-wiki-chinese-remainder-theorem-chinese-remainder-theorem-a"><a class="header-anchor" href="#孙子定理-a-href-https-en-wikipedia-org-wiki-chinese-remainder-theorem-chinese-remainder-theorem-a">¶</a>孙子定理(<a href="https://en.wikipedia.org/wiki/Chinese_remainder_theorem" target="_blank" rel="noopener">Chinese remainder theorem</a>)</h4>
-<p>  对同余方程组，其中$p_i$两两互质</p>
-<p>$$\begin{cases}x\equiv{a_1}\pmod{p_1}\x\equiv{a_2}\pmod{p_2}\\quad\vdots\x\equiv{a_n}\pmod{p_n}<br>
-\end{cases}$$</p>
-<p>设$\displaystyle P=\prod_{i=1}^np_i,\ P_i=\frac{P}{p_i}$，则方程组有通解</p>
-<p>$$x\equiv\sum_{i=1}^na_iP_i{\rm inv}(P_i)\pmod{P}$$</p>
+<p><span class="math display">\[x\equiv m_0p_1+a_1\pmod{ {\rm lcm}(p_1,p_2) }\]</span></p>
+<h4 id="孙子定理chinese-remainder-theorem">孙子定理(<a href="https://en.wikipedia.org/wiki/Chinese_remainder_theorem" target="_blank" rel="noopener">Chinese remainder theorem</a>)</h4>
+<p>  对同余方程组，其中<span class="math inline">\(p_i\)</span>两两互质</p>
+<p><span class="math display">\[\begin{cases}x\equiv{a_1}\pmod{p_1}\\x\equiv{a_2}\pmod{p_2}\\\quad\vdots\\x\equiv{a_n}\pmod{p_n}
+\end{cases}\]</span></p>
+<p>设<span class="math inline">\(\displaystyle P=\prod_{i=1}^np_i,\ P_i=\frac{P}{p_i}\)</span>，则方程组有通解</p>
+<p><span class="math display">\[x\equiv\sum_{i=1}^na_iP_i{\rm inv}(P_i)\pmod{P}\]</span></p>
 <p><a href="https://www.luogu.com.cn/problem/P2480" target="_blank" rel="noopener">P2840</a></p>
-<h3 id="勒让德定理-a-href-https-en-wikipedia-org-wiki-legendre-27s-formula-legendre-s-formula-a-或者叫扩展lucas"><a class="header-anchor" href="#勒让德定理-a-href-https-en-wikipedia-org-wiki-legendre-27s-formula-legendre-s-formula-a-或者叫扩展lucas">¶</a>勒让德定理(<a href="https://en.wikipedia.org/wiki/Legendre%27s_formula" target="_blank" rel="noopener">Legendre’s formula</a>) (或者叫扩展Lucas)</h3>
+<h3 id="勒让德定理legendres-formula-或者叫扩展lucas">勒让德定理(<a href="https://en.wikipedia.org/wiki/Legendre%27s_formula" target="_blank" rel="noopener">Legendre's formula</a>) (或者叫扩展Lucas)</h3>
 <p>  考虑计算</p>
-<p>$$\begin{pmatrix}n\m\end{pmatrix}\mod{p}$$</p>
-<p>对$p$进行唯一分解$p=\prod p_i^{c_i}$</p>
-<p>  我们想知道$n!$分解里$p_i$的最高指数，设$f(n)$表示$n!$分解里$p$的最高指数，我们这样考虑：先将$p$的倍数($\lfloor\frac{n}{p}\rfloor$个)全部除以$p$，再考虑除$p$后的子问题，有递推</p>
-<p>$$f(n)=f(\lfloor\frac{n}{p}\rfloor)+\lfloor\frac{n}{p}\rfloor$$</p>
-<p>  勒让德定理：在正数$n!$的素因子标准分解式中，素数$p$的最高指数为<br>
-$$v_p(n!)=\displaystyle\sum_{i=1}<sup>\infty\lfloor\frac{n}{p</sup>i}\rfloor$$</p>
-<h2 id="一些应用"><a class="header-anchor" href="#一些应用">¶</a>一些应用</h2>
+<p><span class="math display">\[\begin{pmatrix}n\\m\end{pmatrix}\mod{p}\]</span></p>
+<p>对<span class="math inline">\(p\)</span>进行唯一分解<span class="math inline">\(p=\prod p_i^{c_i}\)</span></p>
+<p>  我们想知道<span class="math inline">\(n!\)</span>分解里<span class="math inline">\(p_i\)</span>的最高指数，设<span class="math inline">\(f(n)\)</span>表示<span class="math inline">\(n!\)</span>分解里<span class="math inline">\(p\)</span>的最高指数，我们这样考虑：先将<span class="math inline">\(p\)</span>的倍数(<span class="math inline">\(\lfloor\frac{n}{p}\rfloor\)</span>个)全部除以<span class="math inline">\(p\)</span>，再考虑除<span class="math inline">\(p\)</span>后的子问题，有递推</p>
+<p><span class="math display">\[f(n)=f(\lfloor\frac{n}{p}\rfloor)+\lfloor\frac{n}{p}\rfloor\]</span></p>
+<p>  勒让德定理：在正数<span class="math inline">\(n!\)</span>的素因子标准分解式中，素数<span class="math inline">\(p\)</span>的最高指数为 <span class="math display">\[v_p(n!)=\displaystyle\sum_{i=1}^\infty\lfloor\frac{n}{p^i}\rfloor\]</span></p>
+<h2 id="一些应用">一些应用</h2>
 <blockquote>
-<p>给定$n,m$输出$C_n^m$的后十位。其中$0&lt;m\le n\le 30000$，输出时不足十位数也按十位输出，此时高位补0。<br>
+<p>给定<span class="math inline">\(n,m\)</span>输出<span class="math inline">\(C_n^m\)</span>的后十位。其中<span class="math inline">\(0&lt;m\le n\le 30000\)</span>，输出时不足十位数也按十位输出，此时高位补0。<br>
 <b>input</b>：29999 27381<br>
 <b>output</b>：4531330240</p>
 </blockquote>
-<p>  将分子分母进行分解并进行约分，数组$c$记录重数</p>
+<p>  将分子分母进行分解并进行约分，数组<span class="math inline">\(c\)</span>记录重数</p>
 <p><a href="https://paste.ubuntu.com/p/fhXvk2wHz5/" target="_blank" rel="noopener">code</a></p>
-<h1>生成函数(<a href="https://en.wikipedia.org/wiki/Generating_function" target="_blank" rel="noopener">Generating function</a>)</h1>
-<p>  对于有限数列$a_0,a_1,a_2,\cdots,a_n,$多项式$f(z)=\displaystyle\sum_{k=0}<sup>na_kz</sup>k$称为数列${a_k}$的生成函数。无穷数列相关定义类似。</p>
-<h2 id="技巧"><a class="header-anchor" href="#技巧">¶</a>技巧</h2>
+<h1 id="生成函数generating-function">生成函数(<a href="https://en.wikipedia.org/wiki/Generating_function" target="_blank" rel="noopener">Generating function</a>)</h1>
+<p>  对于有限数列<span class="math inline">\(a_0,a_1,a_2,\cdots,a_n,\)</span>多项式<span class="math inline">\(f(z)=\displaystyle\sum_{k=0}^na_kz^k\)</span>称为数列<span class="math inline">\(\{a_k\}\)</span>的生成函数。无穷数列相关定义类似。</p>
+<h2 id="技巧">技巧</h2>
 <ul>
 <li>乘积</li>
 </ul>
-<p>$$f(z)g(z)=\sum_{i&gt;=0}a_iz<sup>i\sum_{j&gt;=0}b_jz</sup>j\=(a_0b_0)+(a_0b_1+a_1b_0)z+(a_0b_2+a_1b_1+a_2b_0)z^2$$</p>
-<p>$f(z)g(z)$是${c_n}$的生成函数，其中</p>
-<p>$$c_n=\sum_{k=0}^na_kb_{n-k}$$</p>
+<p><span class="math display">\[f(z)g(z)=\sum_{i&gt;=0}a_iz^i\sum_{j&gt;=0}b_jz^j\\=(a_0b_0)+(a_0b_1+a_1b_0)z+(a_0b_2+a_1b_1+a_2b_0)z^2\]</span></p>
+<p><span class="math inline">\(f(z)g(z)\)</span>是<span class="math inline">\(\{c_n\}\)</span>的生成函数，其中</p>
+<p><span class="math display">\[c_n=\sum_{k=0}^na_kb_{n-k}\]</span></p>
 <p>其中一个特例是</p>
-<p>$$\frac{1}{1-z}f(z)=a_0+(a_0+a_1)z+(a_0+a_1+a_2)z^2+\cdots$$</p>
+<p><span class="math display">\[\frac{1}{1-z}f(z)=a_0+(a_0+a_1)z+(a_0+a_1+a_2)z^2+\cdots\]</span></p>
 <p>三个函数乘积的生成函数遵循</p>
-<p>$$d_n=\sum_{\begin{array}{c}i,j,k&gt;0\i+j+k=n\end{array} }a_ib_jc_k$$</p>
+<p><span class="math display">\[d_n=\sum_{\begin{array}{c}i,j,k&gt;0\\i+j+k=n\end{array} }a_ib_jc_k\]</span></p>
 <p>一般地，任意函数乘积遵循</p>
-<p>$$\prod_{j\geq0}\sum_{i\geq0}a_{ij}z<sup>i=\sum_{n\geq0}\left(z</sup>n\sum_{\begin{array}{c}i_0,i_1,\cdots\geq0\i_0+i_1+\cdots=n\end{array} }a_{0i_0}a_{ai_1}\cdots\right)$$</p>
+<p><span class="math display">\[\prod_{j\geq0}\sum_{i\geq0}a_{ij}z^i=\sum_{n\geq0}\left(z^n\sum_{\begin{array}{c}i_0,i_1,\cdots\geq0\\i_0+i_1+\cdots=n\end{array} }a_{0i_0}a_{ai_1}\cdots\right)\]</span></p>
 <p>$$$$</p>
 <ul>
 <li>变换</li>
 </ul>
-<p>$$\frac{1}{2}(f(z)+f(-z))=\sum_{n\geq0}a_{2n}z^{2n}$$<br>
-$$\frac{1}{2}(f(z)-f(-z))=\sum_{n\geq0}a_{2n+1}z^{2n+1}$$</p>
-<p>利用复数根$w=e^{\frac{2\pi i}{m} }=\cos{\frac{2\pi}{m} }+i\sin{\frac{2\pi}{m} }$，我们可以扩展得到</p>
-<p>$$\sum_{n\geq0,n\bmod m=r}a_nz^n=\frac{1}{m}\sum_{0\leq k&lt;m}w<sup>{-kr}f(w</sup>kz)$$</p>
-<p>例如$m=3$，$w=-\frac{1}{2}+\frac{\sqrt{3}}{2}i$，有</p>
-<p>$$a_1z+a_4z<sup>4+a_7z</sup>7+\cdots=\frac{1}{3}(f(z)+w<sup>{-1}f(wz)+w</sup>{-2}f(w^2z))$$</p>
-<h2 id="生成函数举例"><a class="header-anchor" href="#生成函数举例">¶</a>生成函数举例</h2>
-<p>$$(1+z)<sup>n=\sum_{k\geq0}\begin{pmatrix}n\k\end{pmatrix}z</sup>k$$</p>
-<p>$$\frac{1}{(1-z)^{n+1} }=\sum_{k\geq0}\begin{pmatrix}n+k\n\end{pmatrix}z^k$$</p>
-<p>$$e<sup>z=\sum_{k\geq0}\frac{1}{k!}z</sup>k$$</p>
-<p>$$\ln{(1+z)}=z-\frac{1}{2}z<sup>2+\cdots=\sum_{k\geq1}\frac{(-1)</sup>{k+1} }{k}z^k$$</p>
-<p>$$\frac{z}{e<sup>z-1}=1-\frac{1}{2}z+\frac{1}{12}z</sup>2+\cdots=\sum_{k\geq0}\frac{B_k}{k!}z^k$$</p>
-<p>其中$B_k$为<a href="https://en.wikipedia.org/wiki/Bernoulli_number" target="_blank" rel="noopener">伯努利数</a>，以下函数涉及到<a href="https://en.wikipedia.org/wiki/Stirling_number" target="_blank" rel="noopener">斯特林数</a></p>
-<p>$$(e<sup>z-1)</sup>n=z<sup>n+\frac{1}{n+1}\begin{Bmatrix}n+1\n\end{Bmatrix}z</sup>{n+1}+\cdots=n!\sum_{k}\begin{Bmatrix}k\n\end{Bmatrix}\frac{z^k}{k!}$$</p>
-<p>$$\left(\ln\frac{1}{1-z}\right)<sup>n=z</sup>n+\frac{1}{n+1}\begin{bmatrix}n+1\n\end{bmatrix}z<sup>{n+1}+\cdots=n!\sum_{k}\begin{bmatrix}k\n\end{bmatrix}\frac{z</sup>k}{k!}$$</p>
-<p>$$z(z+1)\cdots(z+n-1)=\sum_{k}\begin{bmatrix}n\k\end{bmatrix}z^k$$</p>
-<p>$$\frac{z<sup>n}{(1-z)(1-2z)\cdots(1-nz)}=\begin{Bmatrix}k\n\end{Bmatrix}z</sup>k$$</p>
-<h2 id="证明组合恒等式"><a class="header-anchor" href="#证明组合恒等式">¶</a>证明组合恒等式</h2>
-<p>$$(1)\sum_{k=1}<sup>nC_n</sup>kC_n<sup>{n+1-k}=C_{2n}</sup>{n+1}$$</p>
+<p><span class="math display">\[\frac{1}{2}(f(z)+f(-z))=\sum_{n\geq0}a_{2n}z^{2n}\]</span> <span class="math display">\[\frac{1}{2}(f(z)-f(-z))=\sum_{n\geq0}a_{2n+1}z^{2n+1}\]</span></p>
+<p>利用复数根<span class="math inline">\(w=e^{\frac{2\pi i}{m} }=\cos{\frac{2\pi}{m} }+i\sin{\frac{2\pi}{m} }\)</span>，我们可以扩展得到</p>
+<p><span class="math display">\[\sum_{n\geq0,n\bmod m=r}a_nz^n=\frac{1}{m}\sum_{0\leq k&lt;m}w^{-kr}f(w^kz)\]</span></p>
+<p>例如<span class="math inline">\(m=3\)</span>，<span class="math inline">\(w=-\frac{1}{2}+\frac{\sqrt{3}}{2}i\)</span>，有</p>
+<p><span class="math display">\[a_1z+a_4z^4+a_7z^7+\cdots=\frac{1}{3}(f(z)+w^{-1}f(wz)+w^{-2}f(w^2z))\]</span></p>
+<h2 id="生成函数举例">生成函数举例</h2>
+<p><span class="math display">\[(1+z)^n=\sum_{k\geq0}\begin{pmatrix}n\\k\end{pmatrix}z^k\]</span></p>
+<p><span class="math display">\[\frac{1}{(1-z)^{n+1} }=\sum_{k\geq0}\begin{pmatrix}n+k\\n\end{pmatrix}z^k\]</span></p>
+<p><span class="math display">\[e^z=\sum_{k\geq0}\frac{1}{k!}z^k\]</span></p>
+<p><span class="math display">\[\ln{(1+z)}=z-\frac{1}{2}z^2+\cdots=\sum_{k\geq1}\frac{(-1)^{k+1} }{k}z^k\]</span></p>
+<p><span class="math display">\[\frac{z}{e^z-1}=1-\frac{1}{2}z+\frac{1}{12}z^2+\cdots=\sum_{k\geq0}\frac{B_k}{k!}z^k\]</span></p>
+<p>其中<span class="math inline">\(B_k\)</span>为<a href="https://en.wikipedia.org/wiki/Bernoulli_number" target="_blank" rel="noopener">伯努利数</a>，以下函数涉及到<a href="https://en.wikipedia.org/wiki/Stirling_number" target="_blank" rel="noopener">斯特林数</a></p>
+<p><span class="math display">\[(e^z-1)^n=z^n+\frac{1}{n+1}\begin{Bmatrix}n+1\\n\end{Bmatrix}z^{n+1}+\cdots=n!\sum_{k}\begin{Bmatrix}k\\n\end{Bmatrix}\frac{z^k}{k!}\]</span></p>
+<p><span class="math display">\[\left(\ln\frac{1}{1-z}\right)^n=z^n+\frac{1}{n+1}\begin{bmatrix}n+1\\n\end{bmatrix}z^{n+1}+\cdots=n!\sum_{k}\begin{bmatrix}k\\n\end{bmatrix}\frac{z^k}{k!}\]</span></p>
+<p><span class="math display">\[z(z+1)\cdots(z+n-1)=\sum_{k}\begin{bmatrix}n\\k\end{bmatrix}z^k\]</span></p>
+<p><span class="math display">\[\frac{z^n}{(1-z)(1-2z)\cdots(1-nz)}=\begin{Bmatrix}k\\n\end{Bmatrix}z^k\]</span></p>
+<h2 id="证明组合恒等式">证明组合恒等式</h2>
+<p><span class="math display">\[(1)\sum_{k=1}^nC_n^kC_n^{n+1-k}=C_{2n}^{n+1}\]</span></p>
 <details>
-<summary>proof</summary>
-<p>$\displaystyle\left(\sum_{i=0}<sup>nC_n</sup>iz<sup>i\right)\left(\sum_{j=0}</sup>nC_n<sup>jz</sup>j\right)=(1+z)<sup>{2n}=\sum_{k=0}</sup>{2n}C_{2n}<sup>kz</sup>k$, 两边$z^{n+1}$系数相等。</p>
+<p><summary>proof</summary></p>
+<p><span class="math inline">\(\displaystyle\left(\sum_{i=0}^nC_n^iz^i\right)\left(\sum_{j=0}^nC_n^jz^j\right)=(1+z)^{2n}=\sum_{k=0}^{2n}C_{2n}^kz^k\)</span>, 两边<span class="math inline">\(z^{n+1}\)</span>系数相等。</p>
 </details>
-<p>$$(2)\sum_{k=0}<sup>{[\frac{n}{2}]}(-1)</sup>kC_{n+1}<sup>kC_{2n-2k}</sup>n=n+1$$</p>
+<p><span class="math display">\[(2)\sum_{k=0}^{[\frac{n}{2}]}(-1)^kC_{n+1}^kC_{2n-2k}^n=n+1\]</span></p>
 <details>
-<summary>proof</summary>
-<p>$$\displaystyle\sum_{k=0}<sup>{n+1}C_{n+1}</sup>kz<sup>k=(1+z)</sup>{n+1}\=\frac{(1-z<sup>2)</sup>{n+1}}{(1-z)<sup>{n+1}}=\left(\sum_{k=0}</sup>{n+1}(-1)<sup>kC_{n+1}</sup>kz<sup>{2k}\right)\left(\sum_{j=0}</sup>\infty C_{n+j}<sup>nz</sup>j\right),$$</p>
-<p>右边$z<sup>n$系数$=\displaystyle\sum_{k=0}</sup>{[\frac{n}{2}]}(-1)<sup>kC_{n+1}</sup>kC_{n+(n-2k)}<sup>n=\sum_{k=0}</sup>{[\frac{n}{2}]}(-1)<sup>kC_{n+1}</sup>kC_{2n-2k}<sup>n=$左边$z</sup>n$系数$=n+1$</p>
+<p><summary>proof</summary></p>
+<p><span class="math display">\[\displaystyle\sum_{k=0}^{n+1}C_{n+1}^kz^k=(1+z)^{n+1}\\=\frac{(1-z^2)^{n+1}}{(1-z)^{n+1}}=\left(\sum_{k=0}^{n+1}(-1)^kC_{n+1}^kz^{2k}\right)\left(\sum_{j=0}^\infty C_{n+j}^nz^j\right),\]</span></p>
+<p>右边<span class="math inline">\(z^n\)</span>系数<span class="math inline">\(=\displaystyle\sum_{k=0}^{[\frac{n}{2}]}(-1)^kC_{n+1}^kC_{n+(n-2k)}^n=\sum_{k=0}^{[\frac{n}{2}]}(-1)^kC_{n+1}^kC_{2n-2k}^n=\)</span>左边<span class="math inline">\(z^n\)</span>系数<span class="math inline">\(=n+1\)</span></p>
 </details>
-<p>$$(3)\sum_{k=p}<sup>n(-1)</sup>kC_n<sup>kC_k</sup>p=(-1)^n\delta_{pn},\text{其中}\delta_{ij}=\begin{cases}1\quad ,i=j\0\quad ,i\neq j\end{cases}$$</p>
+<p><span class="math display">\[(3)\sum_{k=p}^n(-1)^kC_n^kC_k^p=(-1)^n\delta_{pn},\text{其中}\delta_{ij}=\begin{cases}1\quad ,i=j\\0\quad ,i\neq j\end{cases}\]</span></p>
 <details>
-<summary>proof</summary>
-<p>$$\displaystyle\because k\geq p\text{时}(1+z)<sup>k=\sum_{i=0}</sup>kC_k<sup>iz</sup>i\text{中}z<sup>p\text{系数}C_k</sup>p,0\leq k &lt; p\text{时}(1+z)<sup>k\text{中}z</sup>p\text{系数}0$$<br>
-$\displaystyle\therefore\sum_{k=0}<sup>n(-1)</sup>kC_n<sup>k(1+z)</sup>k中z<sup>p系数为\sum_{k=p}</sup>n(-1)<sup>kC_n</sup>kC_k<sup>p$并且$\displaystyle\sum_{k=0}</sup>n(-1)<sup>kC_n</sup>k(1+z)<sup>k=[1-(1+z)]</sup>n=(-1)<sup>nz</sup>n$中$z^p$系数为$(-1)\delta_{pn}$,即证。</p>
+<p><summary>proof</summary></p>
+<p><span class="math display">\[\displaystyle\because k\geq p\text{时}(1+z)^k=\sum_{i=0}^kC_k^iz^i\text{中}z^p\text{系数}C_k^p,0\leq k &lt; p\text{时}(1+z)^k\text{中}z^p\text{系数}0\]</span> <span class="math inline">\(\displaystyle\therefore\sum_{k=0}^n(-1)^kC_n^k(1+z)^k中z^p系数为\sum_{k=p}^n(-1)^kC_n^kC_k^p\)</span>并且<span class="math inline">\(\displaystyle\sum_{k=0}^n(-1)^kC_n^k(1+z)^k=[1-(1+z)]^n=(-1)^nz^n\)</span>中<span class="math inline">\(z^p\)</span>系数为<span class="math inline">\((-1)\delta_{pn}\)</span>,即证。</p>
 </details>
-<h2 id="实际应用"><a class="header-anchor" href="#实际应用">¶</a>实际应用</h2>
+<h2 id="实际应用">实际应用</h2>
 <blockquote>
-<p>将一张$n$元的纸币全部兑换为1元和2元的纸币，问有多少种不同的兑换方法?</p>
+<p>将一张<span class="math inline">\(n\)</span>元的纸币全部兑换为1元和2元的纸币，问有多少种不同的兑换方法?</p>
 </blockquote>
-<p>  所求方法数为下列多项式中$z^n$的系数$a_n$<br>
-$$f(z)=\sum_{n=0}^\infty a_nz<sup>n=\left(\sum_{i=0}</sup>\infty z<sup>i\right)\left(\sum_{j=0}</sup>\infty z<sup>{2j}\right)\=\left(\frac{1}{1-z}\right)\left(\frac{1}{1-z</sup>2}\right)=\frac{1}{4(1+z)}+\frac{1}{2(1-z<sup>2)}+\frac{1}{4(1-z)}\=\sum_{n=0}</sup>\infty\left(\frac{n+1}{2}+\frac{1+(-1)<sup>n}{4}\right)z</sup>n$$<br>
-故所求方法数为$\displaystyle a_n=\frac{n+1}{2}+\frac{1+(-1)^n}{4}=\left[\frac{n+2}{2}\right]$</p>
+<p>  所求方法数为下列多项式中<span class="math inline">\(z^n\)</span>的系数<span class="math inline">\(a_n\)</span> <span class="math display">\[f(z)=\sum_{n=0}^\infty a_nz^n=\left(\sum_{i=0}^\infty z^i\right)\left(\sum_{j=0}^\infty z^{2j}\right)\\=\left(\frac{1}{1-z}\right)\left(\frac{1}{1-z^2}\right)=\frac{1}{4(1+z)}+\frac{1}{2(1-z^2)}+\frac{1}{4(1-z)}\\=\sum_{n=0}^\infty\left(\frac{n+1}{2}+\frac{1+(-1)^n}{4}\right)z^n\]</span> 故所求方法数为<span class="math inline">\(\displaystyle a_n=\frac{n+1}{2}+\frac{1+(-1)^n}{4}=\left[\frac{n+2}{2}\right]\)</span></p>
 <blockquote>
-<p>求$n$位十进制数中出现偶数个5的数的个数。</p>
+<p>求<span class="math inline">\(n\)</span>位十进制数中出现偶数个5的数的个数。</p>
 </blockquote>
-<p>  设$a_n$表示$n$位十进制数中出现偶数个5的个数，$b_n$表示$n$位十进制数中出现奇数个的个数，则：</p>
-<p>$$\begin{cases}<br>
-a_n=9a_{n-1}+b_{n-1}\<br>
-b_n=9b_{n-1}+a_{n-1}\<br>
-a_1=8,\ b_1=1<br>
-\end{cases}$$</p>
-<p>设${a_n}$，${b_n}$生成函数分别为$f(z)$，$g(z)$则</p>
-<p>$$(1-9z)f(z)-zg(z)=a_1=8$$<br>
-$$(1-9z)g(z)-zf(z)=b_1=1$$</p>
+<p>  设<span class="math inline">\(a_n\)</span>表示<span class="math inline">\(n\)</span>位十进制数中出现偶数个5的个数，<span class="math inline">\(b_n\)</span>表示<span class="math inline">\(n\)</span>位十进制数中出现奇数个的个数，则：</p>
+<p><span class="math display">\[\begin{cases}
+a_n=9a_{n-1}+b_{n-1}\\
+b_n=9b_{n-1}+a_{n-1}\\
+a_1=8,\ b_1=1
+\end{cases}\]</span></p>
+<p>设<span class="math inline">\(\{a_n\}\)</span>，<span class="math inline">\(\{b_n\}\)</span>生成函数分别为<span class="math inline">\(f(z)\)</span>，<span class="math inline">\(g(z)\)</span>则</p>
+<p><span class="math display">\[(1-9z)f(z)-zg(z)=a_1=8\]</span> <span class="math display">\[(1-9z)g(z)-zf(z)=b_1=1\]</span></p>
 <p>解得</p>
-<p>$$f(z)=\frac{1}{2}\left(\frac{7}{1-8z}+\frac{9}{1-10z}\right)=\frac{1}{2}\left(\sum_{n=0}<sup>\infty7*(8z)</sup>n+\sum_{n=0}<sup>\infty9*(10z)</sup>n\right)$$</p>
-<p>所以<br>
-$$a_n=\frac{7*8<sup>{n-1}+9*10</sup>{n-1}}{2}$$</p>
+<p><span class="math display">\[f(z)=\frac{1}{2}\left(\frac{7}{1-8z}+\frac{9}{1-10z}\right)=\frac{1}{2}\left(\sum_{n=0}^\infty7*(8z)^n+\sum_{n=0}^\infty9*(10z)^n\right)\]</span></p>
+<p>所以 <span class="math display">\[a_n=\frac{7*8^{n-1}+9*10^{n-1}}{2}\]</span></p>
 <p><a href="https://www.luogu.com.cn/problem/P2563" target="_blank" rel="noopener">P2563</a>质数分解问题</p>
 <p>构造生成函数</p>
-<p>$$G(z)=\sum_{k=0}<sup>{\infty}z</sup>{2k}<em>\sum_{k=0}<sup>{\infty}z</sup>{3k}\sum_{k=0}<sup>{\infty}z</sup>{5k}</em>\cdots$$</p>
-<p>则$z^n$的系数为所求方案数。</p>
+<p><span class="math display">\[G(z)=\sum_{k=0}^{\infty}z^{2k}*\sum_{k=0}^{\infty}z^{3k}\sum_{k=0}^{\infty}z^{5k}*\cdots\]</span></p>
+<p>则<span class="math inline">\(z^n\)</span>的系数为所求方案数。</p>
 <p><a href="https://paste.ubuntu.com/p/5VgZ7tsgVX/" target="_blank" rel="noopener">代码</a></p>
 </div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><!--pspan= __('copyright_title_prefix')
 = page.title--><p><span>文章作者：</span>wtyang</p><!--pspan= __('copyright_date_prefix')
@@ -162,7 +152,7 @@ $$a_n=\frac{7*8<sup>{n-1}+9*10</sup>{n-1}}{2}$$</p>
 = page.updated.format(config.date_format)--><p><span>原始链接：</span><a href="/Math/The-basis-of-combinatorics/">https://2inf.top/Math/The-basis-of-combinatorics/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://2inf.top/Math/The-basis-of-combinatorics/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 许可协议。转载请注明出处！</p></div><br><div class="tags"><a href="/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/"><i class="fa fa-tag"></i>组合数学</a></div><div class="post-nav"><a class="pre" href="/Algorithm/Summary-of-string-algorithm/">一些字符串算法小结</a><a class="next" href="/Math/Talk-about-a-few-special-functions/">浅谈几个特殊函数</a></div></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">2inf</a>&nbsp;|&nbsp;<a href="http://www.beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">湘ICP备20012049号-1 </a>|&nbsp;
 <a href="/atom.xml" target="_blank"><i class="fa fa-rss"></i>&nbsp;RSS Feed</a><div><link rel="stylesheet" type="text/css" href="/css/badge.css"/><div class="github-badge"><a rel="nofollow" target="_blank" href="https://hexo.io"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hexo</span></a></div>
 <div class="github-badge"> <a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"><span class="badge-subject">Theme</span><span class="badge-value bg-orange">maupassant</span></a></div>
-<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://www.cnblogs.com/2inf/"><span class="badge-subject">cnblogs</span><span class="badge-value bg-blueviolet">2inf</span></a></div></div></div></div></div><div class="post-toc"><div class="post-toc-wrap"><div class="post-toc" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">组合数(Binomial coefficient)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#性质"><span class="toc-number">1.1.</span> <span class="toc-text">¶性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#组合数的计算"><span class="toc-number">1.2.</span> <span class="toc-text">¶组合数的计算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#利用性质3"><span class="toc-number">1.2.1.</span> <span class="toc-text">¶利用性质3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预处理阶乘和阶乘逆元"><span class="toc-number">1.2.2.</span> <span class="toc-text">¶预处理阶乘和阶乘逆元</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#费马小定理-a-href-https-en-wikipedia-org-wiki-fermat-27s-little-theorem-fermat-s-little-theorem-a"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">¶费马小定理(Fermat’s little theorem)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lucas定理-lucas-s-theorem"><span class="toc-number">1.2.3.</span> <span class="toc-text">¶Lucas定理(Lucas’s theorem)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lucas定理-crt合并"><span class="toc-number">1.2.4.</span> <span class="toc-text">¶Lucas定理+CRT合并</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#crt合并"><span class="toc-number">1.2.4.1.</span> <span class="toc-text">¶CRT合并</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#孙子定理-a-href-https-en-wikipedia-org-wiki-chinese-remainder-theorem-chinese-remainder-theorem-a"><span class="toc-number">1.2.4.2.</span> <span class="toc-text">¶孙子定理(Chinese remainder theorem)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#勒让德定理-a-href-https-en-wikipedia-org-wiki-legendre-27s-formula-legendre-s-formula-a-或者叫扩展lucas"><span class="toc-number">1.2.5.</span> <span class="toc-text">¶勒让德定理(Legendre’s formula) (或者叫扩展Lucas)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一些应用"><span class="toc-number">1.3.</span> <span class="toc-text">¶一些应用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#undefined"><span class="toc-number">2.</span> <span class="toc-text">生成函数(Generating function)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#技巧"><span class="toc-number">2.1.</span> <span class="toc-text">¶技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成函数举例"><span class="toc-number">2.2.</span> <span class="toc-text">¶生成函数举例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#证明组合恒等式"><span class="toc-number">2.3.</span> <span class="toc-text">¶证明组合恒等式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实际应用"><span class="toc-number">2.4.</span> <span class="toc-text">¶实际应用</span></a></li></ol></li></ol></div></div><div class="post-toc-toggle-wrap open" id="right-toggle"><div class="post-toc-toggle-first post-toc-toggle"></div><div class="post-toc-toggle-second post-toc-toggle"></div><div class="post-toc-toggle-thrid post-toc-toggle"></div></div><script type="text/javascript" src="/js/sidebar.js?v=0.0.0" async></script></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://www.cnblogs.com/2inf/"><span class="badge-subject">cnblogs</span><span class="badge-value bg-blueviolet">2inf</span></a></div></div></div></div></div><div class="post-toc"><div class="post-toc-wrap"><div class="post-toc" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#组合数binomial-coefficient"><span class="toc-number">1.</span> <span class="toc-text">组合数(Binomial coefficient)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#性质"><span class="toc-number">1.1.</span> <span class="toc-text">性质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#组合数的计算"><span class="toc-number">1.2.</span> <span class="toc-text">组合数的计算</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#利用性质3"><span class="toc-number">1.2.1.</span> <span class="toc-text">利用性质3</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#预处理阶乘和阶乘逆元"><span class="toc-number">1.2.2.</span> <span class="toc-text">预处理阶乘和阶乘逆元</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#费马小定理fermats-little-theorem"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">费马小定理(Fermat&#39;s little theorem)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lucas定理lucass-theorem"><span class="toc-number">1.2.3.</span> <span class="toc-text">Lucas定理(Lucas&#39;s theorem)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#lucas定理crt合并"><span class="toc-number">1.2.4.</span> <span class="toc-text">Lucas定理+CRT合并</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#crt合并"><span class="toc-number">1.2.4.1.</span> <span class="toc-text">CRT合并</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#孙子定理chinese-remainder-theorem"><span class="toc-number">1.2.4.2.</span> <span class="toc-text">孙子定理(Chinese remainder theorem)</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#勒让德定理legendres-formula-或者叫扩展lucas"><span class="toc-number">1.2.5.</span> <span class="toc-text">勒让德定理(Legendre&#39;s formula) (或者叫扩展Lucas)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一些应用"><span class="toc-number">1.3.</span> <span class="toc-text">一些应用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#生成函数generating-function"><span class="toc-number">2.</span> <span class="toc-text">生成函数(Generating function)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#技巧"><span class="toc-number">2.1.</span> <span class="toc-text">技巧</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#生成函数举例"><span class="toc-number">2.2.</span> <span class="toc-text">生成函数举例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#证明组合恒等式"><span class="toc-number">2.3.</span> <span class="toc-text">证明组合恒等式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实际应用"><span class="toc-number">2.4.</span> <span class="toc-text">实际应用</span></a></li></ol></li></ol></div></div><div class="post-toc-toggle-wrap open" id="right-toggle"><div class="post-toc-toggle-first post-toc-toggle"></div><div class="post-toc-toggle-second post-toc-toggle"></div><div class="post-toc-toggle-thrid post-toc-toggle"></div></div><script type="text/javascript" src="/js/sidebar.js?v=0.0.0" async></script></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
   TeX: {equationNumbers: { autoNumber: ['AMS'], useLabelIds: true }},
   'HTML-CSS': { linebreaks: { automatic: true } },
