@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>复分析1-基础</title>
-    <url>/uncategorized/complex-analysis1/</url>
+    <url>/Math/complex-analysis1/</url>
     <content><![CDATA[<h2 id="复数及复空间">复数及复空间</h2>
 <h3 id="基础知识">基础知识</h3>
 <p><span class="math inline">\(z=x+iy=re^{i\theta}=r(\cos{\theta}+i\sin{\theta})\)</span></p>
@@ -106,10 +106,13 @@ x_3=t=\displaystyle\frac{|z|^2-1}{|z|^2+1}\end{cases}\]</span></p>
 <p>  (3) 和角公式基本关系成立</p>
 <p>  (4) <span class="math inline">\(|\sin{z}|\)</span>和<span class="math inline">\(|\cos{z}|\)</span>在<span class="math inline">\(\mathbb{C}\)</span>上无界</p>
 ]]></content>
+      <categories>
+        <category>Math</category>
+      </categories>
   </entry>
   <entry>
     <title>近世代数-群</title>
-    <url>/uncategorized/Algebra-groups/</url>
+    <url>/Math/Algebra-groups/</url>
     <content><![CDATA[<h2 id="semigroups-monoids-and-groups">semigroups, monoids and groups</h2>
 <p>  If <span class="math inline">\(G\)</span> is a nonempty set, a <strong>binary operation</strong> on <span class="math inline">\(G\)</span> is a function <span class="math inline">\(G\times G\to G\)</span>.</p>
 <p><strong>Definition 1.1.</strong> A <strong>semigroup</strong> is a nonempty set <span class="math inline">\(G\)</span> together with a binary operation on <span class="math inline">\(G\)</span> which is</p>
@@ -138,8 +141,16 @@ x_3=t=\displaystyle\frac{|z|^2-1}{|z|^2+1}\end{cases}\]</span></p>
 <p><strong>Proposition 1.4.</strong> Let <span class="math inline">\(G\)</span> be a semigroup. Then <span class="math inline">\(G\)</span> is a group if and only if for all <span class="math inline">\(a,b\in G\)</span> the equations <span class="math inline">\(ax=b\)</span> and <span class="math inline">\(ya=b\)</span> have solutions in <span class="math inline">\(G\)</span>.</p>
 <p>  Let <span class="math inline">\(G\)</span> and <span class="math inline">\(H\)</span> be groups with identities <span class="math inline">\(e_G,e_H\)</span> respectively, and define the <strong>direct product</strong> of <span class="math inline">\(G\)</span> and <span class="math inline">\(H\)</span> to be the group whose underlying set is <span class="math inline">\(G\times H\)</span> and whose binary operation is given by:</p>
 <p><span class="math display">\[(a,b)(a^{&#39;}b^{&#39;})=(aa^{&#39;},bb^{&#39;}),\quad where\quad a,a^{&#39;}\in G;b,b^{&#39;}\in H.\]</span></p>
+<p><strong>Theorem 1.5.</strong> Let <span class="math inline">\(R(\sim\)</span>) be an equivalence relation on a monoid <span class="math inline">\(G\)</span> such that <span class="math inline">\(a_1\sim a_2\)</span> and <span class="math inline">\(b_1\sim b_2\)</span> imply <span class="math inline">\(a_1b_1\sim a_2b_2\)</span> for all <span class="math inline">\(a_i,b_i\in G\)</span>. Then the set <span class="math inline">\(G/R\)</span> of all equivalence classes of <span class="math inline">\(G\)</span> under <span class="math inline">\(R\)</span> is a monoid under the binary operation defined by <span class="math inline">\((\overline{a})(\overline{b})=\overline{ab}\)</span>, wllere <span class="math inline">\(\overline{x}\)</span> denotes the equivalence class of <span class="math inline">\(x\in G\)</span>. If <span class="math inline">\(G\)</span> is an [abelian] group, then so is <span class="math inline">\(G/R\)</span>.</p>
+<p><strong>Theorem 1.6.</strong> (Generalized Associative Law) lf <span class="math inline">\(G\)</span> is a semigroup and <span class="math inline">\(a_1,\cdots,a_n\in G\)</span>, then any two meaningful products of <span class="math inline">\(a_1,\cdots,a_n\)</span> in this order are equal.</p>
+<p><strong>Corollary 1.7.</strong> (Generalized Commutative Law) If <span class="math inline">\(G\)</span> is a commutative semigroup and <span class="math inline">\(a_1,\cdots,a_n\in G\)</span>, then for any permutation <span class="math inline">\(i_1,\cdots,i_n\)</span> of <span class="math inline">\(1,2,\cdots,n\)</span>, <span class="math inline">\(a_1a_2\cdots a_n=a_{i_1}a_{i_2}\cdots a_{i_n}\)</span>.</p>
+<p><strong>Definition 1.8.</strong> Let <span class="math inline">\(G\)</span> be a semigroup, <span class="math inline">\(a\in G\)</span> and <span class="math inline">\(n\in N^*\)</span>. The element <span class="math inline">\(a^n\in G\)</span> is defined to be the standard n product <span class="math inline">\(\displaystyle\prod_{i=1}^na_i\)</span> with <span class="math inline">\(a_i = a\)</span> for <span class="math inline">\(1&lt;i&lt;n\)</span>. If <span class="math inline">\(G\)</span> is a monoid, <span class="math inline">\(a^0\)</span> is defined to be the identity element <span class="math inline">\(e\)</span>. lf <span class="math inline">\(G\)</span> is a group, then for each <span class="math inline">\(n\in N^*\)</span>, <span class="math inline">\(a^{-n}\)</span> is defined to be <span class="math inline">\((a^{-1})^n\in G\)</span>.</p>
 <h2 id="homomorphisms-and-subgroups">homomorphisms and subgroups</h2>
+<p><strong>Definition 2.1.</strong> Let <span class="math inline">\(G\)</span> and <span class="math inline">\(H\)</span> be semigroups. A function <span class="math inline">\(f:G\to H\)</span> is a <strong>homomorphism</strong> provided <span class="math display">\[f(ab) = f(a)f(b)\quad for\ all\ a,b\in G.\]</span> If <span class="math inline">\(f\)</span> is injective as a map of sets, <span class="math inline">\(f\)</span> is said to be a <strong>monomorphism</strong>. If <span class="math inline">\(f\)</span> is surjectice, <span class="math inline">\(f\)</span> is called an <strong>epimorphism</strong>. If <span class="math inline">\(f\)</span> is bijective, <span class="math inline">\(f\)</span> is called an <strong>isomorphism</strong>. In this case <span class="math inline">\(G\)</span> and $$ are said to be <strong>isomorphic</strong> (written <span class="math inline">\(G\cong H\)</span>). A homomorphism <span class="math inline">\(f:G\to G\)</span> is called an <strong>endomorphism</strong> of <span class="math inline">\(G\)</span> and an isomorphism <span class="math inline">\(f : G\to G\)</span> is called an <strong>automorphism</strong> of <span class="math inline">\(G\)</span>.</p>
 ]]></content>
+      <categories>
+        <category>Math</category>
+      </categories>
   </entry>
   <entry>
     <title>My fun</title>
