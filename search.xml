@@ -159,7 +159,7 @@ x_3=t=\displaystyle\frac{|z|^2-1}{|z|^2+1}\end{cases}\]</span></p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.8/vue.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/element-ui/2.13.2/index.js"></script>
 <h1 id="动漫">动漫</h1>
-<p>  记录部分看过的动漫</p>
+<p>  记录部分看过的动漫，此处不含数码宝贝等我认为是动画片的作品。</p>
 
 <div id="app1">
     <template>
@@ -205,7 +205,7 @@ x_3=t=\displaystyle\frac{|z|^2-1}{|z|^2+1}\end{cases}\]</span></p>
     });
 </script>
 <h1 id="游戏">游戏</h1>
-<p>  记录部分玩过的游戏，目前还在玩小学和初中时玩的flash页游赛尔(氪金)号等，下面不会涉及到此类游戏。</p>
+<p>  记录部分玩过的游戏，目前时不时短暂回归小学和初中时玩的flash页游赛尔(氪金)号等，下面不会涉及到此类游戏。</p>
 <p>常用站点导航:</p>
 <p>   <a href="https://store.steampowered.com/" target="_blank" rel="noopener">steam</a> <a href="https://steamdb.info/" target="_blank" rel="noopener">steamdb</a> <a href="https://steampy.com/" target="_blank" rel="noopener">steampy</a> <a href="https://www.humblebundle.com/" target="_blank" rel="noopener">Humble Bundle</a></p>
 <p>   <a href="https://www.3dmgame.com/" target="_blank" rel="noopener">3dm</a> <a href="https://www.rockstargames.com/" target="_blank" rel="noopener">rockstar</a> <a href="https://uplay.ubisoft.com/" target="_blank" rel="noopener">uplay</a> <a href="https://www.paradoxplaza.com/" target="_blank" rel="noopener">Paradox Interactive</a> <a href="https://www.epicgames.com/" target="_blank" rel="noopener">epic</a> <a href="https://www.gog.com/" target="_blank" rel="noopener">gog</a></p>
