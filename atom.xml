@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://2inf.top/"/>
-  <updated>2020-09-25T07:36:25.136Z</updated>
+  <updated>2020-10-18T16:00:21.329Z</updated>
   <id>https://2inf.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>主席树专题学习</title>
+    <link href="https://2inf.top/Algorithm/Chairman-Tree/"/>
+    <id>https://2inf.top/Algorithm/Chairman-Tree/</id>
+    <published>2020-10-18T15:58:50.000Z</published>
+    <updated>2020-10-18T16:00:21.329Z</updated>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    <summary type="html">
+    
+      Chairman Tree
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="https://2inf.top/categories/Algorithm/"/>
+    
+    
+      <category term="数据结构-主席树" scheme="https://2inf.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E4%B8%BB%E5%B8%AD%E6%A0%91/"/>
+    
+  </entry>
   
   <entry>
     <title>复分析1-基础</title>

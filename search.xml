@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>主席树专题学习</title>
+    <url>/Algorithm/Chairman-Tree/</url>
+    <content><![CDATA[
+]]></content>
+      <categories>
+        <category>Algorithm</category>
+      </categories>
+      <tags>
+        <tag>数据结构-主席树</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>复分析1-基础</title>
     <url>/Math/complex-analysis1/</url>
     <content><![CDATA[<h2 id="复数及复空间">复数及复空间</h2>
