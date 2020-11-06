@@ -217,6 +217,14 @@
             "other": "<a href='https://store.steampowered.com/app/367450/Poly_Bridge/' target='_blank'><b>Steam</b></a>"
         },
         {
+            "title": "Rusty Lake Hotel",
+            "type": "解谜",
+            "date": "2016-01-29",
+            "official": "http://www.rustylake.com/adventure-games/rusty-lake-hotel.html",
+            "summary": "一个黑旅馆把客人的肉做成晚餐的故事，杀错顺序就很难受，原来猪屎还能做成三明治。",
+            "other": "<a href='http://www.rustylake.com/adventure-games/rusty-lake-hotel.html' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Super Meat Boy",
             "type": "独立",
             "date": "2010-12-01",
