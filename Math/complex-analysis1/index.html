@@ -1,112 +1,153 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>复分析1-基础 | 2inf</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><!-- modified--><link rel="stylesheet" type="text/css" href="/css/atom-one-dark.min.css?v=0.0.0"><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script><!----><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">复分析1-基础</h1><a id="logo" href="/.">2inf</a><p class="description">wtyangのスペース</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/" target="_self"><i class="fa fa-archive"> 归档</i></a><a href="/tags/" target="_self"><i class="fa fa-tags"> 标签</i></a><a href="/about/" target="_self"><i class="fa fa-user"> 关于</i></a><a href="https://note.2inf.top" target="_self"><i class="fa fa-book"> 笔记</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">复分析1-基础</h1><div class="post-meta">2020-09-03<span> | </span><span class="category"><a href="/categories/Math/">Math</a></span></div><div class="post-content"><h2 id="复数及复空间">复数及复空间</h2>
-<h3 id="基础知识">基础知识</h3>
-<p><span class="math inline">\(z=x+iy=re^{i\theta}=r(\cos{\theta}+i\sin{\theta})\)</span></p>
-<p>取<span class="math inline">\(-\pi\lt\theta_0\le\pi\)</span>作为<span class="math inline">\(z\)</span>的辐角主值, 则<span class="math inline">\(\arg z=\begin{cases}\arctan{\frac{y}{x}}&amp;z\text{在1,4象限}\\\arctan{\frac{y}{x}}\pm\pi&amp;z\text{在2,3象限}\end{cases}\)</span></p>
-<p><span class="math inline">\(\mathrm{Arg}z=\arg{z}+2k\pi\)</span></p>
-<p><span class="math inline">\(z^n=r^n(\cos{n\theta}+i\sin{n\theta})\)</span></p>
-<p><span class="math inline">\(w=\sqrt[n]{z}=r^{\frac{1}{n}}\left(\cos{\frac{\theta+2k\pi}{n}}+i\sin{\frac{\theta+2k\pi}{n}}\right)\)</span></p>
-<p><span class="math inline">\(z\overline{z}=|z|^2\)</span></p>
-<p><span class="math inline">\(\begin{cases}|z_1z_2|=|z_1||z_2|\\ \mathrm{Arg}(z_1z_2)=\mathrm{Arg}z_1+\mathrm{Arg}z_2\end{cases}\)</span></p>
-<p><span class="math inline">\(\begin{cases}|z_1/z_2|=|z_1|/|z_2|\\ \mathrm{Arg}\frac{z_1}{z_2}=\mathrm{Arg}z_1-\mathrm{Arg}z_2\end{cases}\)</span></p>
-<p>  <strong>定理1</strong> <span class="math display">\[(1)\ |z_1+z_2|\leq|z_1|+|z_2|\]</span> <span class="math display">\[(2)\ ||z_1|-|z_2||\le|z_1-z_2|\]</span></p>
-<p>  <strong>定理2</strong> 设 <span class="math inline">\(a_k,b_k(k=1,2,\cdots,n)\)</span> 为复数, 则 <span class="math display">\[\left|\sum_{k=1}^na_kb_k\right|\le\left(\sum_{k=1}^n|a_k|^2\right)\left(\sum_{k=1}^n|b_k|^2\right)\]</span></p>
-<p>  <strong>证明:</strong> 设<span class="math inline">\(t\)</span>为任意复数, 则 <span class="math display">\[0\le\left|a_k-t\overline{b}_k\right|^2=(a_k-t\overline{b}_k)(\overline{a}_k-\overline{t}b_k)\\=|a_k|^2-2\operatorname{Re}\overline{t}a_kb_k+|t|^2|b_k|^2\]</span> 累加得 <span class="math display">\[0\le\sum_{k=1}^n|a_k|^2-2\operatorname{Re}(\overline{t}\sum_{k=1}^na_kb_k)+|t|^2\sum_{k=1}^n|b_k|^2\]</span> 令<span class="math inline">\(t=\sum\limits_{k=1}^na_kb_k/\sum\limits_{k=1}^n|b_k|^2\)</span>, 代入得 <span class="math display">\[0\le\sum_{k=1}^n|a_k|^2-\frac{2\operatorname{Re}\left|\sum\limits_{k=1}^na_kb_k\right|^2}{\sum\limits_{k=1}^n|b_k|^2}+\frac{\left|\sum\limits_{k=1}^na_kb_k\right|^2}{\sum\limits_{k=1}^n|b_k|^2},\]</span> 化简即证.</p>
-<h3 id="圆周和直线方程">圆周和直线方程</h3>
-<p>  <strong>定理3</strong> 给定方程 <span class="math inline">\(Az\overline{z}+\overline{B}z+B\overline{z}+C=0\)</span>, 其中 <span class="math inline">\(A,C\in\mathbb{R}\)</span>, <span class="math inline">\(B\in\mathbb{C}\)</span>, 且 <span class="math inline">\(|B|^2-AC\gt 0\)</span>, 则方程是一圆周方程, 即 <span class="math inline">\(\left|z+\frac{B}{A}\right|=\frac{\sqrt{|B|^2-AC}}{|A|}\)</span>.</p>
-<h3 id="关于圆周的对称点">关于圆周的对称点</h3>
-<p>  <strong>定理4</strong> 给定两点 <span class="math inline">\(z_1,z_2\)</span> 和圆周 <span class="math inline">\(Az\overline{z}+\overline{B}z+B\overline{z}+C=0\)</span>, 其系数满足 <span class="math inline">\(|B|^2-AC\gt0\)</span>, 则<span class="math inline">\(z_1,z_2\)</span>关于圆周对称的充分必要条件为<span class="math inline">\(Az_2\overline{z_1}+\overline{B}z_2+B\overline{z_1}+C=0\)</span></p>
-<h3 id="复数的球面表示与扩充复平面">复数的球面表示与扩充复平面</h3>
-<p> 考虑 <span class="math inline">\(\mathbb{R}^3\)</span> 中的单位球面 <span class="math inline">\(S=\{(x,y,z)|x^2+y^2+z^2=1\}\)</span>，点 <span class="math inline">\(N(0,0,1)\)</span> 称为<strong>北极</strong>，复平面 <span class="math inline">\(\mathbb{C}=\{(x,y,0)|x,y\in \mathbb{R}\}\)</span> 表示复数集。<span class="math inline">\(\forall z\in\mathbb{C}\)</span>, 直线 <span class="math inline">\(zN\)</span> 与球面 <span class="math inline">\(S\)</span> 相交于一点 <span class="math inline">\(Z\)</span>。若 <span class="math inline">\(|z|&lt;1\)</span>, <span class="math inline">\(Z\)</span> 在下半球面; 若 <span class="math inline">\(|z|&gt;1\)</span>, <span class="math inline">\(Z\)</span> 在上半球面; 若<span class="math inline">\(|z|=1\)</span>, 则 <span class="math inline">\(Z=z\)</span>. 在 <span class="math inline">\(\mathbb{C}\)</span> 中引入理想点, 称为<strong>无穷远点</strong>, 记作 <span class="math inline">\(z=\infty\)</span>. 扩展复平面 <span class="math inline">\(\overline{\mathbb{C}}=\mathbb{C}\bigcup\{\infty\}\)</span>, <span class="math inline">\(\overline{\mathbb{C}}\)</span> 与 <span class="math inline">\(S\)</span> 上的点建立起一一对应关系, <span class="math inline">\(S\)</span> 称为<strong>黎曼球面</strong>, <span class="math inline">\(\overline{\mathbb{C}}\)</span> 与 <span class="math inline">\(S\)</span> 这种一一对应称为<strong>球极射影</strong>.</p>
-<p>  设 <span class="math inline">\(z=x+iy\)</span>, 对应的 <span class="math inline">\(Z=(x_1,x_2,x_3)\)</span>, 过 <span class="math inline">\(z,N\)</span> 的直线上的点为 <span class="math display">\[tN+(1-t)z,\quad-\infty\lt t\lt\infty\]</span> 即 <span class="math display">\[((1-t)x,(1-t)y,t),\quad-\infty\lt t\lt\infty\]</span> <span class="math inline">\(\exists\ t\in(-\infty,\infty)\)</span>, 使 <span class="math display">\[x_1=(1-t)x,\quad x_1=(1-t)y,\quad x_3=t.\]</span></p>
-<p><span class="math inline">\(Z\)</span> 在 <span class="math inline">\(S\)</span> 上, 坐标满足</p>
-<p><span class="math display">\[1=(1-t)^2x^2+(1-t)^2y^2+t^2=(1-t)^2|z|^2+t^2\]</span></p>
-<p>解得 <span class="math inline">\(t=1\)</span> 或 <span class="math inline">\(t=\displaystyle\frac{|z|^2-1}{|z|^2+1}\)</span>. 因<span class="math inline">\(Z\neq N\)</span>, 与 <span class="math inline">\(Z\)</span> 对应的 <span class="math inline">\(t\)</span> 只能为</p>
-<p><span class="math display">\[t=\displaystyle\frac{|z|^2-1}{|z|^2+1},\quad 1-t=\displaystyle\frac{2}{|z|^2+1}\]</span></p>
-<p>则 <span class="math inline">\(Z\)</span> 的坐标</p>
-<p><span class="math display">\[\begin{cases}x_1=(1-t)x=\displaystyle\frac{z+\overline{z}}{|z|^2+1},\\
-x_2=(1-t)y=\displaystyle\frac{z-\overline{z}}{i(|z|^2+1)},\\
-x_3=t=\displaystyle\frac{|z|^2-1}{|z|^2+1}\end{cases}\]</span></p>
-<p>反之, 由 <span class="math inline">\(Z\)</span> 的坐标 <span class="math inline">\((x_1,x_2,x_3)\)</span>求对应点 <span class="math inline">\(z\)</span> 的公式为: <span class="math display">\[z=x+iy=\frac{x_1+ix_2}{1-t}=\frac{x_1+ix_2}{1-x_3}.\]</span></p>
-<h2 id="复平面的拓扑">复平面的拓扑</h2>
-<h3 id="开集与闭集">开集与闭集</h3>
-<p> open disc <span class="math inline">\(D_r(z_0)\)</span> of radius <span class="math inline">\(r\)</span> centered at <span class="math inline">\(z_0\)</span> : <span class="math inline">\(D_r(z_0)=\{z\in\mathbb{C}:|z-z_0|\lt r\}\)</span>, closed disc <span class="math inline">\(\overline{D_r}(z_0)\)</span> of radius r centered at <span class="math inline">\(z_0\)</span> is defined by <span class="math inline">\(\overline{D_r}(z_0)=\{z\in\mathbb{C}:|z-z_0|\le r\}\)</span>, boundary <span class="math inline">\(C_r(z_0)=\{z\in\mathbb{C}:|z-z_0|\le r\}\)</span>, unit disc <span class="math inline">\(D=\{z\in\mathbb{C}:|z|\lt1\}\)</span>.</p>
-<p> The boundary of a set <span class="math inline">\(\Omega\)</span> is equal to its closure minus its interior, and is often denoted by <span class="math inline">\(\partial\Omega\)</span>.</p>
-<h3 id="完备性">完备性</h3>
-<p>  序列<span class="math inline">\(\{z_n\}\)</span>收敛于<span class="math inline">\(w\in\mathbb{C}\)</span>, 有<span class="math inline">\(\lim\limits_{n\to\infty}|z_n-w|=0\)</span>, 记为<span class="math inline">\(w=\lim\limits_{n\to\infty}z_n\)</span>, 容易证明其充分必要条件为 <span class="math display">\[\lim_{n
-\to\infty}\operatorname{Re}z_n=\operatorname{Re}w,\quad\lim_{n\to\infty}\operatorname{Im}z_n=\operatorname{Im}w\]</span></p>
-<p>  <span class="math inline">\(\mathbb{C}\)</span>中序列<span class="math inline">\(\{z_n\}\)</span>称为<span class="math inline">\(Cauchy\)</span>序列, 如果<span class="math inline">\(\forall\varepsilon\gt0,\exists\)</span>正整数<span class="math inline">\(N\)</span>, 使得<span class="math inline">\(n,m\ge N\)</span>时, 有<span class="math inline">\(|z_n-z_m|&lt;\varepsilon\)</span>.</p>
-<p>  <strong>定理1</strong> 设<span class="math inline">\(\{z_n\}\)</span>为<span class="math inline">\(\mathbb{C}\)</span>中<span class="math inline">\(Cauchy\)</span>序列, 则序列<span class="math inline">\(\{z_n\}\)</span>收敛到<span class="math inline">\(w\)</span>, 或序列极限存在.</p>
-<p> If <span class="math inline">\(\Omega\subset\mathbb{C}\)</span> is bounded, we define its diameter by <span class="math display">\[\operatorname{diam}(\Omega)=\sup_{z,w\in\Omega}|z-w|\]</span></p>
-<p>  <strong>Cantor定理</strong> 若<span class="math inline">\(\Omega\subset\mathbb{C}(n=1,2,\cdots)\)</span>为闭集, 且<span class="math inline">\(\Omega_1\supset\Omega_2\supset\cdots\supset\Omega_n\supset\cdots, \operatorname{diam}(\Omega_n)\to0\quad as\ n\to \infty\)</span>, 则<span class="math inline">\(\bigcap\limits_{n=1}^{\infty}\Omega_n\)</span>由一点组成.</p>
-<h3 id="紧性">紧性</h3>
-<p>  <span class="math inline">\(\mathbb{C}\)</span>或<span class="math inline">\(\overline{\mathbb{C}}\)</span>中集合<span class="math inline">\(E\)</span>称为紧集, 如果任一开集族<span class="math inline">\(\mathscr{G}\)</span>覆盖<span class="math inline">\(E\)</span>, 即<span class="math inline">\(E\)</span>中的每一点至少属于<span class="math inline">\(\mathscr{G}\)</span>中某一开集, 则必能从<span class="math inline">\(\mathscr{G}\)</span>中选出有穷个开集<span class="math inline">\(G_1,G_2,\cdots,G_n\)</span>覆盖<span class="math inline">\(E\)</span>, 即<span class="math inline">\(E\subset\bigcup\limits_{j=1}^nG_j\)</span>.</p>
-<p>  <strong>Heine-Borel定理</strong> 若<span class="math inline">\(E\subset\mathbb{C}\)</span>是有界闭集, 则<span class="math inline">\(E\)</span>为<span class="math inline">\(\mathbb{C}\)</span>中的闭集.</p>
-<p>  <strong>Bolzano-Weierstrass定理</strong> 任一无穷集至少有一极限点(或任一序列至少有一收敛子列, 子列可以收敛到<span class="math inline">\(\infty\)</span>)</p>
-<h3 id="曲线">曲线</h3>
-<p>  <strong>连续曲线</strong> 定义为区间<span class="math inline">\([a,b]\)</span>上的连续复值函数<span class="math inline">\(z(t)=x(t)+iy(t)\quad(a\le t\le b)\)</span></p>
-<p>  <strong>可求长曲线</strong> 给定曲线<span class="math inline">\(\gamma(t):a\le t\le b.\)</span>对区间<span class="math inline">\([a,b]\)</span>作分割 <span class="math display">\[\Delta:a=t_0\le t_1\le\cdots\le t_n=b.\]</span> 以<span class="math inline">\(z_j=z(t_j)(0\le j\le n)\)</span>为顶点作折线<span class="math inline">\(P\)</span>, <span class="math inline">\(P\)</span>的长度为 <span class="math display">\[\sum_{j=1}^n|z(t_j)-z(t_{j-1})|.\]</span> 并对<span class="math inline">\([a,b]\)</span>的任意分割<span class="math inline">\(\Delta\)</span>, 上式有界, 则称曲线<span class="math inline">\(z(t)\)</span>为<strong>可求长曲线</strong>, 并称上确界 <span class="math display">\[L=\sup_{\{\Delta\}}\sum_{j=1}^n|z(t_j)-z(t_{j-1})|\]</span> 为曲线<span class="math inline">\(z(t)\)</span>的长度.</p>
-<p> We say that the parametrized curve is <strong>smooth</strong> if <span class="math inline">\(z&#39;(t)\)</span> exists and is continuous on <span class="math inline">\([a,b]\)</span>, and <span class="math inline">\(z&#39;(t)\neq0\)</span> for <span class="math inline">\(t\in[a,b]\)</span>.</p>
-<p> We can define a curve <span class="math inline">\(\gamma^-\)</span> obtained from the curve <span class="math inline">\(\gamma\)</span> by reversing the orientation. As a particular parametrization for <span class="math inline">\(\gamma^-\)</span> we can take <span class="math inline">\(z^-:[a,b]\to\mathbb{R}^2\)</span> defined by <span class="math display">\[z^-(t)=z(b+a-t).\]</span></p>
-<p> A smooth or piecewise-smooth curve is closed if <span class="math inline">\(z(a)=z(b)\)</span> for any of its parametrizations. Finally, a smooth or piecewise-smooth curve is <strong>simple</strong>(Jordan curve) if it is not self-intersecting, that is, <span class="math inline">\(z(t)\neq z(s)\ unless\ s=t\)</span>.</p>
-<p>  <strong>引理</strong> 设<span class="math inline">\(f(t)\)</span>为<span class="math inline">\([a,b]\)</span>上的复值连续函数, 则 <span class="math display">\[\left|\int_a^bf(t)\mathrm{d}t\right|\leq\int_a^b|f(t)|\mathrm{d}t.\]</span></p>
-<p>  <strong>定理2</strong> 设<span class="math inline">\(z(t)(a\le t\le b)\)</span>为光滑曲线, 则必为可求长曲线, 且长度为 <span class="math display">\[L=\int_{a}^b|z&#39;(t)|\mathrm{d}t.\]</span></p>
-<h3 id="连通性">连通性</h3>
-<p>  <strong>定义</strong> 设<span class="math inline">\(E\)</span>为<span class="math inline">\(\mathbb{C}\)</span>(或<span class="math inline">\(\overline{\mathbb{C}}\)</span>)中集合, 称<span class="math inline">\(E\)</span>为连通集, 如果不存在<span class="math inline">\(\mathbb{C}\)</span>(或<span class="math inline">\(\overline{\mathbb{C}}\)</span>)中满足下列条件的开集<span class="math inline">\(G_1,G_2\)</span>:</p>
-<p>  (1) <span class="math inline">\(G_1\cap G_2=\varnothing;\)</span></p>
-<p>  (2) <span class="math inline">\(E\cap G_1\neq\varnothing, E\cap G_2\neq\varnothing;\)</span></p>
-<p>  (3) <span class="math inline">\(E\subset(G_1\cup G_2).\)</span></p>
-<p>即不能用两个不相交非空集将其一分为二, 则称<span class="math inline">\(E\)</span>为连通集.</p>
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>复分析1-基础 | 2inf</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/normalize.css/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/purecss/build/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><!-- modified--><link rel="stylesheet" type="text/css" href="/css/atom-one-dark.min.css?v=0.0.0"><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script><!----><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//cdn.jsdelivr.net/npm/clipboard/dist/clipboard.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/codeseven/toastr/build/toastr.min.css"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">复分析1-基础</h1><a id="logo" href="/.">2inf</a><p class="description">wtyangのスペース</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/" target="_self"><i class="fa fa-archive"> 归档</i></a><a href="/tags/" target="_self"><i class="fa fa-tags"> 标签</i></a><a href="/about/" target="_self"><i class="fa fa-user"> 关于</i></a><a href="https://note.2inf.top" target="_self"><i class="fa fa-book"> 笔记</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">复分析1-基础</h1><div class="post-meta">2020-09-03<span> | </span><span class="category"><a href="/categories/Math/">Math</a></span></div><div class="post-content"><h2 id="复数及复空间"><a class="header-anchor" href="#复数及复空间">¶</a>复数及复空间</h2>
+<h3 id="基础知识"><a class="header-anchor" href="#基础知识">¶</a>基础知识</h3>
+<p>$z=x+iy=re^{i\theta}=r(\cos{\theta}+i\sin{\theta})$</p>
+<p>取$-\pi\lt\theta_0\le\pi$作为$z$的辐角主值, 则$\arg z=\begin{cases}\arctan{\frac{y}{x}}&amp;z\text{在1,4象限}\\arctan{\frac{y}{x}}\pm\pi&amp;z\text{在2,3象限}\end{cases}$</p>
+<p>$\mathrm{Arg}z=\arg{z}+2k\pi$</p>
+<p>$z<sup>n=r</sup>n(\cos{n\theta}+i\sin{n\theta})$</p>
+<p>$w=\sqrt[n]{z}=r^{\frac{1}{n}}\left(\cos{\frac{\theta+2k\pi}{n}}+i\sin{\frac{\theta+2k\pi}{n}}\right)$</p>
+<p>$z\overline{z}=|z|^2$</p>
+<p>$\begin{cases}|z_1z_2|=|z_1||z_2|\<br>
+\mathrm{Arg}(z_1z_2)=\mathrm{Arg}z_1+\mathrm{Arg}z_2\end{cases}$</p>
+<p>$\begin{cases}|z_1/z_2|=|z_1|/|z_2|\<br>
+\mathrm{Arg}\frac{z_1}{z_2}=\mathrm{Arg}z_1-\mathrm{Arg}z_2\end{cases}$</p>
+<p>  <strong>定理1</strong><br>
+$$(1)\ |z_1+z_2|\leq|z_1|+|z_2|$$<br>
+$$(2)\ ||z_1|-|z_2||\le|z_1-z_2|$$</p>
+<p>  <strong>定理2</strong> 设 $a_k,b_k(k=1,2,\cdots,n)$ 为复数, 则<br>
+$$\left|\sum_{k=1}<sup>na_kb_k\right|\le\left(\sum_{k=1}</sup>n|a_k|<sup>2\right)\left(\sum_{k=1}</sup>n|b_k|^2\right)$$</p>
+<p>  <strong>证明:</strong> 设$t$为任意复数, 则<br>
+$$0\le\left|a_k-t\overline{b}<em>k\right|<sup>2=(a_k-t\overline{b}_k)(\overline{a}_k-\overline{t}b_k)\=|a_k|</sup>2-2\operatorname{Re}\overline{t}a_kb_k+|t|<sup>2|b_k|</sup>2$$<br>
+累加得<br>
+$$0\le\sum</em>{k=1}<sup>n|a_k|</sup>2-2\operatorname{Re}(\overline{t}\sum_{k=1}<sup>na_kb_k)+|t|</sup>2\sum_{k=1}<sup>n|b_k|</sup>2$$<br>
+令$t=\sum\limits_{k=1}<sup>na_kb_k/\sum\limits_{k=1}</sup>n|b_k|^2$, 代入得<br>
+$$0\le\sum_{k=1}<sup>n|a_k|</sup>2-\frac{2\operatorname{Re}\left|\sum\limits_{k=1}<sup>na_kb_k\right|</sup>2}{\sum\limits_{k=1}<sup>n|b_k|</sup>2}+\frac{\left|\sum\limits_{k=1}<sup>na_kb_k\right|</sup>2}{\sum\limits_{k=1}<sup>n|b_k|</sup>2},$$<br>
+化简即证.</p>
+<h3 id="圆周和直线方程"><a class="header-anchor" href="#圆周和直线方程">¶</a>圆周和直线方程</h3>
+<p>  <strong>定理3</strong> 给定方程 $Az\overline{z}+\overline{B}z+B\overline{z}+C=0$, 其中 $A,C\in\mathbb{R}$, $B\in\mathbb{C}$, 且 $|B|^2-AC\gt 0$, 则方程是一圆周方程, 即 $\left|z+\frac{B}{A}\right|=\frac{\sqrt{|B|^2-AC}}{|A|}$.</p>
+<h3 id="关于圆周的对称点"><a class="header-anchor" href="#关于圆周的对称点">¶</a>关于圆周的对称点</h3>
+<p>  <strong>定理4</strong> 给定两点 $z_1,z_2$ 和圆周 $Az\overline{z}+\overline{B}z+B\overline{z}+C=0$, 其系数满足 $|B|^2-AC\gt0$, 则$z_1,z_2$关于圆周对称的充分必要条件为$Az_2\overline{z_1}+\overline{B}z_2+B\overline{z_1}+C=0$</p>
+<h3 id="复数的球面表示与扩充复平面"><a class="header-anchor" href="#复数的球面表示与扩充复平面">¶</a>复数的球面表示与扩充复平面</h3>
+<p> 考虑 $\mathbb{R}^3$ 中的单位球面 $S={(x,y,z)|x<sup>2+y</sup>2+z^2=1}$，点 $N(0,0,1)$ 称为<strong>北极</strong>，复平面 $\mathbb{C}={(x,y,0)|x,y\in \mathbb{R}}$ 表示复数集。$\forall z\in\mathbb{C}$, 直线 $zN$ 与球面 $S$ 相交于一点 $Z$。若 $|z|&lt;1$, $Z$ 在下半球面; 若 $|z|&gt;1$, $Z$ 在上半球面; 若$|z|=1$, 则 $Z=z$. 在 $\mathbb{C}$ 中引入理想点, 称为<strong>无穷远点</strong>, 记作 $z=\infty$. 扩展复平面 $\overline{\mathbb{C}}=\mathbb{C}\bigcup{\infty}$, $\overline{\mathbb{C}}$ 与 $S$ 上的点建立起一一对应关系, $S$ 称为<strong>黎曼球面</strong>, $\overline{\mathbb{C}}$ 与 $S$ 这种一一对应称为<strong>球极射影</strong>.</p>
+<p>  设 $z=x+iy$, 对应的 $Z=(x_1,x_2,x_3)$, 过 $z,N$ 的直线上的点为<br>
+$$tN+(1-t)z,\quad-\infty\lt t\lt\infty$$<br>
+即<br>
+$$((1-t)x,(1-t)y,t),\quad-\infty\lt t\lt\infty$$<br>
+$\exists\ t\in(-\infty,\infty)$, 使<br>
+$$x_1=(1-t)x,\quad x_1=(1-t)y,\quad x_3=t.$$</p>
+<p>$Z$ 在 $S$ 上, 坐标满足</p>
+<p>$$1=(1-t)<sup>2x</sup>2+(1-t)<sup>2y</sup>2+t<sup>2=(1-t)</sup>2|z|<sup>2+t</sup>2$$</p>
+<p>解得 $t=1$ 或 $t=\displaystyle\frac{|z|<sup>2-1}{|z|</sup>2+1}$. 因$Z\neq N$, 与 $Z$ 对应的 $t$ 只能为</p>
+<p>$$t=\displaystyle\frac{|z|<sup>2-1}{|z|</sup>2+1},\quad 1-t=\displaystyle\frac{2}{|z|^2+1}$$</p>
+<p>则 $Z$ 的坐标</p>
+<p>$$\begin{cases}x_1=(1-t)x=\displaystyle\frac{z+\overline{z}}{|z|^2+1},\<br>
+x_2=(1-t)y=\displaystyle\frac{z-\overline{z}}{i(|z|^2+1)},\<br>
+x_3=t=\displaystyle\frac{|z|<sup>2-1}{|z|</sup>2+1}\end{cases}$$</p>
+<p>反之, 由 $Z$ 的坐标 $(x_1,x_2,x_3)$求对应点 $z$ 的公式为:<br>
+$$z=x+iy=\frac{x_1+ix_2}{1-t}=\frac{x_1+ix_2}{1-x_3}.$$</p>
+<h2 id="复平面的拓扑"><a class="header-anchor" href="#复平面的拓扑">¶</a>复平面的拓扑</h2>
+<h3 id="开集与闭集"><a class="header-anchor" href="#开集与闭集">¶</a>开集与闭集</h3>
+<p> open disc $D_r(z_0)$ of radius $r$ centered at $z_0$ : $D_r(z_0)={z\in\mathbb{C}:|z-z_0|\lt r}$, closed disc $\overline{D_r}(z_0)$ of radius r centered at $z_0$ is defined by $\overline{D_r}(z_0)={z\in\mathbb{C}:|z-z_0|\le r}$, boundary $C_r(z_0)={z\in\mathbb{C}:|z-z_0|\le r}$, unit disc $D={z\in\mathbb{C}:|z|\lt1}$.</p>
+<p> The boundary of a set $\Omega$ is equal to its closure minus its interior, and is often denoted by $\partial\Omega$.</p>
+<h3 id="完备性"><a class="header-anchor" href="#完备性">¶</a>完备性</h3>
+<p>  序列${z_n}$收敛于$w\in\mathbb{C}$, 有$\lim\limits_{n\to\infty}|z_n-w|=0$, 记为$w=\lim\limits_{n\to\infty}z_n$, 容易证明其充分必要条件为<br>
+$$\lim_{n<br>
+\to\infty}\operatorname{Re}z_n=\operatorname{Re}w,\quad\lim_{n\to\infty}\operatorname{Im}z_n=\operatorname{Im}w$$</p>
+<p>  $\mathbb{C}$中序列${z_n}$称为$Cauchy$序列, 如果$\forall\varepsilon\gt0,\exists$正整数$N$, 使得$n,m\ge N$时, 有$|z_n-z_m|&lt;\varepsilon$.</p>
+<p>  <strong>定理1</strong> 设${z_n}$为$\mathbb{C}$中$Cauchy$序列, 则序列${z_n}$收敛到$w$, 或序列极限存在.</p>
+<p> If $\Omega\subset\mathbb{C}$ is bounded, we define its diameter by<br>
+$$\operatorname{diam}(\Omega)=\sup_{z,w\in\Omega}|z-w|$$</p>
+<p>  <strong>Cantor定理</strong> 若$\Omega\subset\mathbb{C}(n=1,2,\cdots)$为闭集, 且$\Omega_1\supset\Omega_2\supset\cdots\supset\Omega_n\supset\cdots, \operatorname{diam}(\Omega_n)\to0\quad as\ n\to \infty$, 则$\bigcap\limits_{n=1}^{\infty}\Omega_n$由一点组成.</p>
+<h3 id="紧性"><a class="header-anchor" href="#紧性">¶</a>紧性</h3>
+<p>  $\mathbb{C}$或$\overline{\mathbb{C}}$中集合$E$称为紧集, 如果任一开集族$\mathscr{G}$覆盖$E$, 即$E$中的每一点至少属于$\mathscr{G}$中某一开集, 则必能从$\mathscr{G}$中选出有穷个开集$G_1,G_2,\cdots,G_n$覆盖$E$, 即$E\subset\bigcup\limits_{j=1}^nG_j$.</p>
+<p>  <strong>Heine-Borel定理</strong> 若$E\subset\mathbb{C}$是有界闭集, 则$E$为$\mathbb{C}$中的闭集.</p>
+<p>  <strong>Bolzano-Weierstrass定理</strong> 任一无穷集至少有一极限点(或任一序列至少有一收敛子列, 子列可以收敛到$\infty$)</p>
+<h3 id="曲线"><a class="header-anchor" href="#曲线">¶</a>曲线</h3>
+<p>  <strong>连续曲线</strong> 定义为区间$[a,b]$上的连续复值函数$z(t)=x(t)+iy(t)\quad(a\le t\le b)$</p>
+<p>  <strong>可求长曲线</strong> 给定曲线$\gamma(t):a\le t\le b.$对区间$[a,b]$作分割<br>
+$$\Delta:a=t_0\le t_1\le\cdots\le t_n=b.$$<br>
+以$z_j=z(t_j)(0\le j\le n)$为顶点作折线$P$, $P$的长度为<br>
+$$\sum_{j=1}^n|z(t_j)-z(t_{j-1})|.$$<br>
+并对$[a,b]$的任意分割$\Delta$, 上式有界, 则称曲线$z(t)$为<strong>可求长曲线</strong>, 并称上确界<br>
+$$L=\sup_\sum_{j=1}^n|z(t_j)-z(t_{j-1})|$$<br>
+为曲线$z(t)$的长度.</p>
+<p> We say that the parametrized curve is <strong>smooth</strong> if $z’(t)$ exists and is continuous on $[a,b]$, and $z’(t)\neq0$ for $t\in[a,b]$.</p>
+<p> We can define a curve $\gamma^-$ obtained from the curve $\gamma$ by reversing the orientation. As a particular parametrization for $\gamma^-$ we can take $z<sup>-:[a,b]\to\mathbb{R}</sup>2$ defined by<br>
+$$z^-(t)=z(b+a-t).$$</p>
+<p> A smooth or piecewise-smooth curve is closed if $z(a)=z(b)$ for any of its parametrizations. Finally, a smooth or piecewise-smooth curve is <strong>simple</strong>(Jordan curve) if it is not self-intersecting, that is, $z(t)\neq z(s)\ unless\ s=t$.</p>
+<p>  <strong>引理</strong> 设$f(t)$为$[a,b]$上的复值连续函数, 则<br>
+$$\left|\int_a<sup>bf(t)\mathrm{d}t\right|\leq\int_a</sup>b|f(t)|\mathrm{d}t.$$</p>
+<p>  <strong>定理2</strong> 设$z(t)(a\le t\le b)$为光滑曲线, 则必为可求长曲线, 且长度为<br>
+$$L=\int_{a}^b|z’(t)|\mathrm{d}t.$$</p>
+<h3 id="连通性"><a class="header-anchor" href="#连通性">¶</a>连通性</h3>
+<p>  <strong>定义</strong> 设$E$为$\mathbb{C}$(或$\overline{\mathbb{C}}$)中集合, 称$E$为连通集, 如果不存在$\mathbb{C}$(或$\overline{\mathbb{C}}$)中满足下列条件的开集$G_1,G_2$:</p>
+<p>  (1) $G_1\cap G_2=\varnothing;$</p>
+<p>  (2) $E\cap G_1\neq\varnothing, E\cap G_2\neq\varnothing;$</p>
+<p>  (3) $E\subset(G_1\cup G_2).$</p>
+<p>即不能用两个不相交非空集将其一分为二, 则称$E$为连通集.</p>
 <p>  <strong>定义</strong> 称连通开集为<strong>区域</strong>, 称区域的闭包为<strong>闭区域</strong>.</p>
-<p>  <strong>定理3</strong> 若<span class="math inline">\(D\)</span>是开集, 则<span class="math inline">\(D\)</span>的连通性与道路连通是等价的.</p>
-<p>  <strong>定义</strong> <span class="math inline">\(D\)</span>为区域, 若<span class="math inline">\(\overline{\mathbb{C}}\setminus D\)</span>是连通集, 则称<span class="math inline">\(D\)</span>为<strong>单连通区域</strong>.</p>
-<p>  <strong>Jordan定理</strong> 设<span class="math inline">\(\gamma\subset D\)</span>为Jordan曲线, 它把<span class="math inline">\(\overline{\mathbb{C}}\)</span>分成两个单连通区域, 其中一个是有界的, 称为<span class="math inline">\(\gamma\)</span>的内部, 另一个是无界的, 称为<span class="math inline">\(\gamma\)</span>的外部, <span class="math inline">\(\gamma\)</span>是这两个单连通区域的共同边界.</p>
-<p>  <strong>定理4</strong> 设<span class="math inline">\(D\subset\mathbb{C}\)</span>为区域, 则<span class="math inline">\(D\)</span>为单连通区域的充分必要条件是: 对任一Jordan曲线<span class="math inline">\(\gamma\subset D\)</span>, <span class="math inline">\(\gamma\)</span>的内部属于<span class="math inline">\(D\)</span>.</p>
-<p>  <strong>定义</strong> 集合<span class="math inline">\(E\)</span>的最大连通子集称为<span class="math inline">\(E\)</span>的一个分支.</p>
-<p>  <strong>定义</strong> 设<span class="math inline">\(D\)</span>为区域, 若<span class="math inline">\(\overline{\mathbb{C}}\setminus D\)</span>由<span class="math inline">\(n\)</span>个连通分支组成, 则称<span class="math inline">\(D\)</span>为<strong>n连通区域</strong>.</p>
-<h3 id="连续函数">连续函数</h3>
-<p>  如果<span class="math inline">\(f(z_1)=f(z_2)\)</span>蕴含着<span class="math inline">\(z_1=z_2\)</span>, 即<span class="math inline">\(E\)</span>中不同点的像也是<span class="math inline">\(F\)</span>中的不同点, 则称映射<span class="math inline">\(f\)</span>是一一的, 或<strong>单叶</strong>或<strong>双方单值</strong>的. 在这种情况下, <span class="math inline">\(w=f(z)\)</span>有一个定义在<span class="math inline">\(f(E)\)</span>上的反函数或逆映射, 记作<span class="math inline">\(z=f^{-1}(w)\)</span>.</p>
-<h2 id="解析函数">解析函数</h2>
-<p>  <strong>定义:</strong> 当<span class="math inline">\(z\in D\)</span>趋于<span class="math inline">\(z_0\)</span>时, 若极限 <span class="math display">\[\lim_{z\to z_0}\frac{f(z)-f(z_0)}{z-z_0}\]</span> 存在, 则称<span class="math inline">\(f(z)\)</span>在点<span class="math inline">\(z=z_0\)</span><strong>可导</strong>, 极限值称为<span class="math inline">\(f(z)\)</span>在<span class="math inline">\(z_0\)</span>点的<strong>导数</strong>, 记作<span class="math inline">\(f&#39;(z_0)\)</span>.</p>
-<p>  <strong>定义:</strong> 如果函数在<span class="math inline">\(z_0\)</span>点的改变量可写成<span class="math inline">\(\Delta f=A(z_0)\Delta z+O(\Delta z)\)</span>, 则称<span class="math inline">\(f(z)\)</span>在<span class="math inline">\(z=z_0\)</span>点<strong>可微</strong>, 微分<span class="math inline">\(\mathbb{d}f(z_0)=A(z_0)\Delta z\)</span>.</p>
-<p>  若函数<span class="math inline">\(f(z)\)</span>在域<span class="math inline">\(D\)</span>内的每一点可导, 则称函数<span class="math inline">\(f(z)\)</span>在域<span class="math inline">\(D\)</span>内是<strong>解析</strong>的(analytic)或<strong>全纯</strong>的(holomorphic). 函数<span class="math inline">\(f(z)\)</span>在<span class="math inline">\(z_0\)</span>邻域内解析, 则称<span class="math inline">\(f(z)\)</span>在<span class="math inline">\(z_0\)</span>点解析.</p>
-<p> we fix <span class="math inline">\(y_0\)</span> and think of <span class="math inline">\(f\)</span> as a complex-valued fuction of the single real variable <span class="math inline">\(x\)</span>.</p>
-<p><span class="math display">\[f&#39;(z_0)=\lim_{h_1\to0}\frac{f(x_0+h_1,y_0)-f(x_0,y_0)}{h_1}=\frac{\partial f}{\partial x}(z_0)\]</span></p>
-<p> Now taking h purely imaginary, say <span class="math inline">\(h=ih_2\)</span>, a similar argument yields</p>
-<p><span class="math display">\[f&#39;(z_0)=\lim_{h_2\to0}\frac{f(x_0,y_0+h_2)-f(x_0,y_0)}{ih_2}=\frac{1}{i}\frac{\partial f}{\partial y}(z_0)\]</span></p>
-<p> Therefore, if <span class="math inline">\(f\)</span> is holomorphic we have shown that</p>
-<p><span class="math display">\[\frac{\partial f}{\partial x}=\frac{1}{i}\frac{\partial f}{\partial y}\]</span></p>
-<p> Writing <span class="math inline">\(f=u+iv\)</span></p>
-<p><span class="math display">\[f&#39;(z)=\frac{\partial u}{\partial x}+\frac{1}{i}\frac{\partial v}{\partial x}=\frac{1}{i}\frac{\partial u}{\partial y}+\frac{\partial v}{\partial x}\]</span></p>
-<p>  <strong>定理1</strong> 设函数<span class="math inline">\(f(z)=u(z)+iv(z)\)</span>定义在区域<span class="math inline">\(D\)</span>内, 则<span class="math inline">\(f(z)\)</span>在<span class="math inline">\(z_0\in D\)</span>点可微的充要条件为: <span class="math inline">\(u(z),v(z)\)</span>在<span class="math inline">\(z_0\)</span>点可微, 且在该点偏导数满足<strong>Cauchy-Riemann方程</strong>(简称<span class="math inline">\(C-R\)</span>方程)： <span class="math display">\[\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}\quad and\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}\]</span></p>
-<p> we can clarify the situation further by defining two differential operators <span class="math display">\[\frac{\partial}{\partial z}=\frac{1}{2}\left(\frac{\partial}{\partial x}+\frac{1}{i}\frac{\partial}{\partial y}\right)\quad and\quad\frac{\partial}{\partial{\overline{z}}}=\frac{1}{2}\left(\frac{\partial}{\partial x}-\frac{1}{i}\frac{\partial}{\partial y}\right)\]</span></p>
-<h3 id="指数函数">指数函数</h3>
-<p>  设<span class="math inline">\(z=x+iy\)</span>,<strong>指数函数</strong><span class="math inline">\(e^z\)</span>定义为: <span class="math display">\[e^z=e^x(\cos{y}+i\sin{y})\]</span> 易证如下性质</p>
-<p>  (1) <span class="math inline">\(e^z\gt0,|e^z|=e^x\gt0\)</span></p>
-<p>  (2) <span class="math inline">\(e^{z_1+z_2}=e^{z_1}\cdot e^{z_2}\)</span></p>
-<p>  (3) <span class="math inline">\(e^z\)</span>是以<span class="math inline">\(2\pi i\)</span>为周期的周期函数</p>
-<p>  (4) <span class="math inline">\(e^z\)</span>在<span class="math inline">\(\mathbb{C}\)</span>上解析, 且<span class="math inline">\((e^z)&#39;=e^z\)</span></p>
-<h3 id="儒可夫斯基函数">儒可夫斯基函数</h3>
-<p>  称函数 <span class="math display">\[w=f(z)=\frac{1}{2}\left(z+\frac{1}{z}\right)\]</span> 为<strong>儒可夫斯基函数</strong></p>
-<h3 id="分式线性变换">分式线性变换</h3>
-<p>  称函数 <span class="math display">\[w=f(z)=\frac{az+b}{cz+d}\quad(ad-bc\neq0)\]</span> 为<strong>分式线性变换</strong>, 也称为<strong>Mobius变换</strong></p>
-<h3 id="三角函数">三角函数</h3>
-<p>定义正弦函数和余弦函数 <span class="math display">\[\sin{z}=\frac{e^{iz}-e^{-iz}}{2i},\quad\cos{z}=\frac{e^{iz}+e^{-iz}}{2}.\]</span> 则 <span class="math display">\[\mathrm{ch}{z}=\cos{iz}=\frac{e^z+e^{-z}}{2},\quad\mathrm{sh}{z}=\frac{\sin{iz}}{i}=\frac{e^z-e^{-z}}{2}\]</span></p>
-<p><span class="math display">\[\begin{cases}\cos{(x+iy)}=\cos{x}\mathrm{ch}{y}-i\sin{x}\mathrm{sh}{y}\\
-\sin{(x+iy)}=\sin{x}\mathrm{ch}{y}+i\cos{x}\mathrm{sh}{y}\end{cases}\]</span></p>
-<p><span class="math display">\[\begin{cases}\mathrm{ch}{(x+iy)}=\mathrm{ch}{x}\cos{y}+i\mathrm{sh}{x}\sin{y}\\
-\mathrm{sh}{(x+iy)}=\mathrm{sh}{x}\cos{y}+i\mathrm{ch}{x}\sin{y}\end{cases}\]</span></p>
+<p>  <strong>定理3</strong> 若$D$是开集, 则$D$的连通性与道路连通是等价的.</p>
+<p>  <strong>定义</strong> $D$为区域, 若$\overline{\mathbb{C}}\setminus D$是连通集, 则称$D$为<strong>单连通区域</strong>.</p>
+<p>  <strong>Jordan定理</strong> 设$\gamma\subset D$为Jordan曲线, 它把$\overline{\mathbb{C}}$分成两个单连通区域, 其中一个是有界的, 称为$\gamma$的内部, 另一个是无界的, 称为$\gamma$的外部, $\gamma$是这两个单连通区域的共同边界.</p>
+<p>  <strong>定理4</strong> 设$D\subset\mathbb{C}$为区域, 则$D$为单连通区域的充分必要条件是: 对任一Jordan曲线$\gamma\subset D$, $\gamma$的内部属于$D$.</p>
+<p>  <strong>定义</strong> 集合$E$的最大连通子集称为$E$的一个分支.</p>
+<p>  <strong>定义</strong> 设$D$为区域, 若$\overline{\mathbb{C}}\setminus D$由$n$个连通分支组成, 则称$D$为<strong>n连通区域</strong>.</p>
+<h3 id="连续函数"><a class="header-anchor" href="#连续函数">¶</a>连续函数</h3>
+<p>  如果$f(z_1)=f(z_2)$蕴含着$z_1=z_2$, 即$E$中不同点的像也是$F$中的不同点, 则称映射$f$是一一的, 或<strong>单叶</strong>或<strong>双方单值</strong>的. 在这种情况下, $w=f(z)$有一个定义在$f(E)$上的反函数或逆映射, 记作$z=f^{-1}(w)$.</p>
+<h2 id="解析函数"><a class="header-anchor" href="#解析函数">¶</a>解析函数</h2>
+<p>  <strong>定义:</strong> 当$z\in D$趋于$z_0$时, 若极限<br>
+$$\lim_{z\to z_0}\frac{f(z)-f(z_0)}{z-z_0}$$<br>
+存在, 则称$f(z)$在点$z=z_0$<strong>可导</strong>, 极限值称为$f(z)$在$z_0$点的<strong>导数</strong>, 记作$f’(z_0)$.</p>
+<p>  <strong>定义:</strong> 如果函数在$z_0$点的改变量可写成$\Delta f=A(z_0)\Delta z+O(\Delta z)$, 则称$f(z)$在$z=z_0$点<strong>可微</strong>, 微分$\mathbb{d}f(z_0)=A(z_0)\Delta z$.</p>
+<p>  若函数$f(z)$在域$D$内的每一点可导, 则称函数$f(z)$在域$D$内是<strong>解析</strong>的(analytic)或<strong>全纯</strong>的(holomorphic). 函数$f(z)$在$z_0$邻域内解析, 则称$f(z)$在$z_0$点解析.</p>
+<p> we fix $y_0$ and think of $f$ as a complex-valued fuction of the single real variable $x$.</p>
+<p>$$f’(z_0)=\lim_{h_1\to0}\frac{f(x_0+h_1,y_0)-f(x_0,y_0)}{h_1}=\frac{\partial f}{\partial x}(z_0)$$</p>
+<p> Now taking h purely imaginary, say $h=ih_2$, a similar argument yields</p>
+<p>$$f’(z_0)=\lim_{h_2\to0}\frac{f(x_0,y_0+h_2)-f(x_0,y_0)}{ih_2}=\frac{1}{i}\frac{\partial f}{\partial y}(z_0)$$</p>
+<p> Therefore, if $f$ is holomorphic we have shown that</p>
+<p>$$\frac{\partial f}{\partial x}=\frac{1}{i}\frac{\partial f}{\partial y}$$</p>
+<p> Writing $f=u+iv$</p>
+<p>$$f’(z)=\frac{\partial u}{\partial x}+\frac{1}{i}\frac{\partial v}{\partial x}=\frac{1}{i}\frac{\partial u}{\partial y}+\frac{\partial v}{\partial x}$$</p>
+<p>  <strong>定理1</strong> 设函数$f(z)=u(z)+iv(z)$定义在区域$D$内, 则$f(z)$在$z_0\in D$点可微的充要条件为: $u(z),v(z)$在$z_0$点可微, 且在该点偏导数满足<strong>Cauchy-Riemann方程</strong>(简称$C-R$方程)：<br>
+$$\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}\quad and\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}$$</p>
+<p> we can clarify the situation further by defining two differential operators<br>
+$$\frac{\partial}{\partial z}=\frac{1}{2}\left(\frac{\partial}{\partial x}+\frac{1}{i}\frac{\partial}{\partial y}\right)\quad and\quad\frac{\partial}{\partial{\overline{z}}}=\frac{1}{2}\left(\frac{\partial}{\partial x}-\frac{1}{i}\frac{\partial}{\partial y}\right)$$</p>
+<h3 id="指数函数"><a class="header-anchor" href="#指数函数">¶</a>指数函数</h3>
+<p>  设$z=x+iy$,<strong>指数函数</strong>$e^z$定义为:<br>
+$$e<sup>z=e</sup>x(\cos{y}+i\sin{y})$$<br>
+易证如下性质</p>
+<p>  (1) $e<sup>z\gt0,|e</sup>z|=e^x\gt0$</p>
+<p>  (2) $e<sup>{z_1+z_2}=e</sup>{z_1}\cdot e^{z_2}$</p>
+<p>  (3) $e^z$是以$2\pi i$为周期的周期函数</p>
+<p>  (4) $e^z$在$\mathbb{C}$上解析, 且$(e<sup>z)’=e</sup>z$</p>
+<h3 id="儒可夫斯基函数"><a class="header-anchor" href="#儒可夫斯基函数">¶</a>儒可夫斯基函数</h3>
+<p>  称函数<br>
+$$w=f(z)=\frac{1}{2}\left(z+\frac{1}{z}\right)$$<br>
+为<strong>儒可夫斯基函数</strong></p>
+<h3 id="分式线性变换"><a class="header-anchor" href="#分式线性变换">¶</a>分式线性变换</h3>
+<p>  称函数<br>
+$$w=f(z)=\frac{az+b}{cz+d}\quad(ad-bc\neq0)$$<br>
+为<strong>分式线性变换</strong>, 也称为<strong>Mobius变换</strong></p>
+<h3 id="三角函数"><a class="header-anchor" href="#三角函数">¶</a>三角函数</h3>
+<p>定义正弦函数和余弦函数<br>
+$$\sin{z}=\frac{e<sup>{iz}-e</sup>{-iz}}{2i},\quad\cos{z}=\frac{e<sup>{iz}+e</sup>{-iz}}{2}.$$<br>
+则<br>
+$$\mathrm{ch}{z}=\cos{iz}=\frac{e<sup>z+e</sup>{-z}}{2},\quad\mathrm{sh}{z}=\frac{\sin{iz}}{i}=\frac{e<sup>z-e</sup>{-z}}{2}$$</p>
+<p>$$\begin{cases}\cos{(x+iy)}=\cos{x}\mathrm{ch}{y}-i\sin{x}\mathrm{sh}{y}\<br>
+\sin{(x+iy)}=\sin{x}\mathrm{ch}{y}+i\cos{x}\mathrm{sh}{y}\end{cases}$$</p>
+<p>$$\begin{cases}\mathrm{ch}{(x+iy)}=\mathrm{ch}{x}\cos{y}+i\mathrm{sh}{x}\sin{y}\<br>
+\mathrm{sh}{(x+iy)}=\mathrm{sh}{x}\cos{y}+i\mathrm{ch}{x}\sin{y}\end{cases}$$</p>
 <p>具有如下性质</p>
-<p>  (1) <span class="math inline">\(\sin{z},\cos{z}\)</span>在<span class="math inline">\(\mathbb{C}\)</span>上解析, 且<span class="math inline">\((\sin{z})&#39;=\cos{z},\quad(\cos{z})&#39;=-\sin{z}\)</span></p>
-<p>  (2) <span class="math inline">\(\sin{z},\cos{z}\)</span>以<span class="math inline">\(2\pi\)</span>为周期, <span class="math inline">\(\sin{z}\)</span>为奇函数, <span class="math inline">\(\cos{z}\)</span>为偶函数</p>
+<p>  (1) $\sin{z},\cos{z}$在$\mathbb{C}$上解析, 且$(\sin{z})’=\cos{z},\quad(\cos{z})’=-\sin{z}$</p>
+<p>  (2) $\sin{z},\cos{z}$以$2\pi$为周期, $\sin{z}$为奇函数, $\cos{z}$为偶函数</p>
 <p>  (3) 和角公式基本关系成立</p>
-<p>  (4) <span class="math inline">\(|\sin{z}|\)</span>和<span class="math inline">\(|\cos{z}|\)</span>在<span class="math inline">\(\mathbb{C}\)</span>上无界</p>
+<p>  (4) $|\sin{z}|$和$|\cos{z}|$在$\mathbb{C}$上无界</p>
 </div><div class="post-copyright"><script type="text/javascript" src="/js/copyright.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copyright.css"><!--pspan= __('copyright_title_prefix')
 = page.title--><p><span>文章作者：</span>wtyang</p><!--pspan= __('copyright_date_prefix')
 = page.date.format(config.date_format)--><!--pspan= __('copyright_update_prefix')
 = page.updated.format(config.date_format)--><p><span>原始链接：</span><a href="/Math/complex-analysis1/">https://2inf.top/Math/complex-analysis1/</a><span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="https://2inf.top/Math/complex-analysis1/"></i></span></p><p><span>版权声明：</span>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 许可协议。转载请注明出处！</p></div><br><div class="tags"></div><div class="post-nav"><a class="pre" href="/Algorithm/Chairman-Tree/">主席树专题学习</a><a class="next" href="/Math/Algebra-groups/">近世代数-群</a></div></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">Copyright © 2020 <a href="/." rel="nofollow">2inf</a>&nbsp;|&nbsp;<a href="http://www.beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">湘ICP备20012049号-1 </a>|&nbsp;
 <a href="/atom.xml" target="_blank"><i class="fa fa-rss"></i>&nbsp;RSS Feed</a><div><link rel="stylesheet" type="text/css" href="/css/badge.css"/><div class="github-badge"><a rel="nofollow" target="_blank" href="https://hexo.io"><span class="badge-subject">Powered by</span><span class="badge-value bg-blue">Hexo</span></a></div>
 <div class="github-badge"> <a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"><span class="badge-subject">Theme</span><span class="badge-value bg-orange">maupassant</span></a></div>
-<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://www.cnblogs.com/2inf/"><span class="badge-subject">cnblogs</span><span class="badge-value bg-blueviolet">2inf</span></a></div></div></div></div></div><div class="post-toc"><div class="post-toc-wrap"><div class="post-toc" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#复数及复空间"><span class="toc-number">1.</span> <span class="toc-text">复数及复空间</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基础知识"><span class="toc-number">1.1.</span> <span class="toc-text">基础知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#圆周和直线方程"><span class="toc-number">1.2.</span> <span class="toc-text">圆周和直线方程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于圆周的对称点"><span class="toc-number">1.3.</span> <span class="toc-text">关于圆周的对称点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#复数的球面表示与扩充复平面"><span class="toc-number">1.4.</span> <span class="toc-text">复数的球面表示与扩充复平面</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#复平面的拓扑"><span class="toc-number">2.</span> <span class="toc-text">复平面的拓扑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#开集与闭集"><span class="toc-number">2.1.</span> <span class="toc-text">开集与闭集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#完备性"><span class="toc-number">2.2.</span> <span class="toc-text">完备性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#紧性"><span class="toc-number">2.3.</span> <span class="toc-text">紧性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#曲线"><span class="toc-number">2.4.</span> <span class="toc-text">曲线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#连通性"><span class="toc-number">2.5.</span> <span class="toc-text">连通性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#连续函数"><span class="toc-number">2.6.</span> <span class="toc-text">连续函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解析函数"><span class="toc-number">3.</span> <span class="toc-text">解析函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#指数函数"><span class="toc-number">3.1.</span> <span class="toc-text">指数函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#儒可夫斯基函数"><span class="toc-number">3.2.</span> <span class="toc-text">儒可夫斯基函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分式线性变换"><span class="toc-number">3.3.</span> <span class="toc-text">分式线性变换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三角函数"><span class="toc-number">3.4.</span> <span class="toc-text">三角函数</span></a></li></ol></li></ol></div></div><div class="post-toc-toggle-wrap open" id="right-toggle"><div class="post-toc-toggle-first post-toc-toggle"></div><div class="post-toc-toggle-second post-toc-toggle"></div><div class="post-toc-toggle-thrid post-toc-toggle"></div></div><script type="text/javascript" src="/js/sidebar.js?v=0.0.0" async></script></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
+<div class="github-badge"> <a rel="nofollow" target="_blank" href="https://www.cnblogs.com/2inf/"><span class="badge-subject">cnblogs</span><span class="badge-value bg-blueviolet">2inf</span></a></div></div></div></div></div><div class="post-toc"><div class="post-toc-wrap"><div class="post-toc" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#复数及复空间"><span class="toc-number">1.</span> <span class="toc-text">¶复数及复空间</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基础知识"><span class="toc-number">1.1.</span> <span class="toc-text">¶基础知识</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#圆周和直线方程"><span class="toc-number">1.2.</span> <span class="toc-text">¶圆周和直线方程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#关于圆周的对称点"><span class="toc-number">1.3.</span> <span class="toc-text">¶关于圆周的对称点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#复数的球面表示与扩充复平面"><span class="toc-number">1.4.</span> <span class="toc-text">¶复数的球面表示与扩充复平面</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#复平面的拓扑"><span class="toc-number">2.</span> <span class="toc-text">¶复平面的拓扑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#开集与闭集"><span class="toc-number">2.1.</span> <span class="toc-text">¶开集与闭集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#完备性"><span class="toc-number">2.2.</span> <span class="toc-text">¶完备性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#紧性"><span class="toc-number">2.3.</span> <span class="toc-text">¶紧性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#曲线"><span class="toc-number">2.4.</span> <span class="toc-text">¶曲线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#连通性"><span class="toc-number">2.5.</span> <span class="toc-text">¶连通性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#连续函数"><span class="toc-number">2.6.</span> <span class="toc-text">¶连续函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解析函数"><span class="toc-number">3.</span> <span class="toc-text">¶解析函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#指数函数"><span class="toc-number">3.1.</span> <span class="toc-text">¶指数函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#儒可夫斯基函数"><span class="toc-number">3.2.</span> <span class="toc-text">¶儒可夫斯基函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分式线性变换"><span class="toc-number">3.3.</span> <span class="toc-text">¶分式线性变换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三角函数"><span class="toc-number">3.4.</span> <span class="toc-text">¶三角函数</span></a></li></ol></li></ol></div></div><div class="post-toc-toggle-wrap open" id="right-toggle"><div class="post-toc-toggle-first post-toc-toggle"></div><div class="post-toc-toggle-second post-toc-toggle"></div><div class="post-toc-toggle-thrid post-toc-toggle"></div></div><script type="text/javascript" src="/js/sidebar.js?v=0.0.0" async></script></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox/dist/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><script type="text/x-mathjax-config">MathJax.Hub.Config({
   tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
   TeX: {equationNumbers: { autoNumber: ['AMS'], useLabelIds: true }},
   'HTML-CSS': { linebreaks: { automatic: true } },
