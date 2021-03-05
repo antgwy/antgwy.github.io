@@ -1,12 +1,44 @@
 {
     "data": [
         {
+            "title": "Celeste",
+            "type": "独立",
+            "date": "2018-01-25",
+            "official": "http://www.celestegame.com/",
+            "summary": "关卡设计的非常棒，每个草莓的收集都有一定的技巧，我玩的时候没有开过帮助模式，不停死掌握技巧来通关，而这些不断失败也间接地提高了你的技巧。也许刚玩这个游戏的时候它对你而言只是个有点难度的平台跳跃游戏，但是当你登上山顶那一刻，它就不仅仅是一个登山游戏了，而是与你达成了心灵共鸣，登上山顶后，还有许多非常有挑战性的内容给玩家们探索，关卡的 b 面和 8、9 关，这款游戏无疑是一部杰出的艺术品。",
+            "other": "<a href='https://store.steampowered.com/app/504230/Celeste/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Ori and the Will of the Wisps",
+            "type": "动作",
+            "date": "2020-03-11",
+            "official": "https://www.orithegame.com/",
+            "summary": "玩萤火意志的时候还没玩黑暗森林，视觉效果做的很好(图形学的就业还是很不错的)，似乎向《空洞骑士》学习了一些东西，但比空洞简单很多，普通版的 boss 都不难打，重点体验剧情，不过结局有点牵强。",
+            "other": "<a href='https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Hollow Knight",
             "type": "冒险",
             "date": "2017-02-25",
             "official": "https://www.hollowknight.com/",
             "summary": "强烈推荐，制作者Team Cherry是南澳的一个三人团队。白宫的跳跳乐各种酸爽不过我基本没看攻略还是过了，痛苦之路简直整个游戏最难，各种boss战基本死几次掌握技巧选好护符就能过，当然也有些boss死了几十次才过比如失败冠军，梦境格林对我这种手残真的难，有些boss做的真的非常好，比如三螳螂。期待黄蜂女为主角的《Hollow Knight: SilkSong》，B站好像有大佬自己做了一部分。",
             "other": "<a href='https://store.steampowered.com/app/367520/Hollow_Knight/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Undertale",
+            "type": "独立",
+            "date": "2015-09-15",
+            "official": "https://undertale.com/",
+            "summary": "metagame 杰作，优秀的反游戏，结局有很多，基本三种：NE普通结局、PE和平结局、GE屠杀结局，推荐 NE->PE->GE->PE(一开始千万别玩GE)，做了一些决定再读档在新的档案上个档做的事都会有体现，在游戏技术角度上说 GE 线的 sans 真的难打，独白似乎是 chara，永远不要放弃，保持决心，keep your determination。",
+            "other": "<a href='https://store.steampowered.com/app/391540/Undertale/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "The Stanley Parable",
+            "type": "独立",
+            "date": "2013-10-17",
+            "official": "https://stanleyparable.com/",
+            "summary": "结局非常多，玩家与游戏博弈，玩的时候需要思考，才能找到自我，而不是单纯地做获利行为，对于有消极心理的人玩过之后会产生压抑情绪，游戏有个成就是不玩这个游戏 5 年，当然我用解锁器开了。",
+            "other": "<a href='https://store.steampowered.com/app/221910/The_Stanley_Parable/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "RimWorld",
@@ -21,7 +53,7 @@
             "type": "动作",
             "date": "2017-10-27",
             "official": "https://assassinscreed.ubisoft.com/origins/en-us/home/",
-            "summary": "游戏时间54h，风景很漂亮，骑着骆驼漫游沙漠，登上过胡夫金字塔，站在法罗斯灯塔顶俯瞰地中海，游戏还原了很多遗迹，带我游览了埃及的各种美景，有很强的代入感。主角巴耶克因为儿子的死而与“维序者”展开了斗争，每次打死一个boss都会出现一个相当于人间与地狱交界的地方，巴爷挥了挥羽毛boss就走了，最难打的boss可以说是战象。巴爷可以与鹰共享它的视野有点奇怪，巴爷的攀爬能力惊人，一个细节是每次巴爷从高处落下腿会瘸着走几步，Alt+w信仰之跃都会掉到草堆或者水里，打怪很少用刺杀，感觉玩的不是刺客而是战士，在金字塔及及各种古墓探险时怪物似乎只有罐子里的蛇，在沙漠会遭遇沙尘暴、海市蜃楼、虫雨等自然奇观，地图最下面的一个沙漠有个裂谷会冒出很多死而复生的战士。<br>&nbsp;&nbsp;前期开各种问号，做任务升级，因为一般差2级就打不过，支线人物都有独立的剧情，但大部分是平民给你个任务，让你救出或刺杀某人，到了30多级就少做很多支线任务，差不多40h主线全通关，后期做做限时任务(阿努比斯的试炼什么的)开开问号什么的就退坑了，信条是什么，可以概括为“Nothing is true, everything is permitted.”。整体来说还是很棒的，期待以中国为背景的刺客信条。",
+            "summary": "游戏时间54h，风景很漂亮，骑着骆驼漫游沙漠，登上过胡夫金字塔，站在法罗斯灯塔顶俯瞰地中海，游戏还原了很多遗迹，带我游览了埃及的各种美景，有很强的代入感。主角巴耶克因为儿子的死而与“维序者”展开了斗争，每次打死一个boss都会出现一个相当于人间与地狱交界的地方，巴爷挥了挥羽毛boss就走了，最难打的boss可以说是战象。巴爷可以与鹰共享它的视野有点奇怪，巴爷的攀爬能力惊人，一个细节是每次巴爷从高处落下腿会瘸着走几步，Alt+w信仰之跃都会掉到草堆或者水里，打怪很少用刺杀，感觉玩的不是刺客而是战士，在金字塔及及各种古墓探险时怪物似乎只有罐子里的蛇，在沙漠会遭遇沙尘暴、海市蜃楼、虫雨等自然奇观，地图最下面的一个沙漠有个裂谷会冒出很多死而复生的战士。<br>&emsp;&emsp;前期开各种问号，做任务升级，因为一般差2级就打不过，支线人物都有独立的剧情，但大部分是平民给你个任务，让你救出或刺杀某人，到了30多级就少做很多支线任务，差不多40h主线全通关，后期做做限时任务(阿努比斯的试炼什么的)开开问号什么的就退坑了，信条是什么，可以概括为“Nothing is true, everything is permitted.”。整体来说还是很棒的，期待以中国为背景的刺客信条。",
             "other": "<a href='https://store.steampowered.com/app/582160/Assassins_Creed_Origins/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -53,7 +85,7 @@
             "type": "冒险",
             "date": "2017-09-01",
             "official": "https://lifeisstrange.square-enix-games.com/en-us/games/before-the-storm",
-            "summary": "《奇异人生：暴风前夕》讲述的是首作三年前的故事，主角Chloe Price从优等生变成朋克少女，能力的话就是嘴炮，这一部感觉没有首作那么好，Chloe和Rachel Amber成为好友，Rachel想要寻找生母Sera的下落，但父亲James却隐瞒真相极力反对，最后的选择是tell Rachel everything 或者 protect her from the truth，我当然是选择后者保护Rachel，并不是所有结局都是完美的。",
+            "summary": "《奇异人生：暴风前夕》讲述的是首作三年前的故事，主角 Chloe Price 从优等生变成朋克少女，能力的话就是嘴炮，这一部感觉没有首作那么好，Chloe和Rachel Amber成为好友，Rachel想要寻找生母Sera的下落，但父亲James却隐瞒真相极力反对，最后的选择是tell Rachel everything 或者 protect her from the truth，我当然是选择后者保护Rachel，并不是所有结局都是完美的。",
             "other": "<a href='https://store.steampowered.com/app/554620/Life_is_Strange_Before_the_Storm/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -61,7 +93,7 @@
             "type": "冒险",
             "date": "2015-01-30",
             "official": "https://lifeisstrange.square-enix-games.com/en-us/games/life-is-strange",
-            "summary": "《奇异人生》是法国开发商Dontnode Entertainment开发的一个选择向的叙事游戏，无疑可以称得上是一部神作，蝴蝶效应在游戏中得到体现，女主角Max Caulfield拥有rewind time的能力，通关后我觉得我还是太单纯了，竟然没看出Mark Jefferson老师是坏人，最后的选择是牺牲好友Chloe还是Arcadia Bay，出于私欲我选择让Chloe活着，现实生活中即使我们有时间倒流能力，也并不能一定做得更好。",
+            "summary": "《奇异人生》是法国开发商 Dontnode Entertainment 开发的一个选择向的叙事游戏，无疑可以称得上是一部神作，蝴蝶效应在游戏中得到体现，女主角Max Caulfield拥有rewind time的能力，通关后我觉得我还是太单纯了，竟然没看出Mark Jefferson老师是坏人，最后的选择是牺牲好友Chloe还是Arcadia Bay，出于私欲我选择让Chloe活着，现实生活中即使我们有时间倒流能力，也并不能一定做得更好。",
             "other": "<a href='https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -141,7 +173,7 @@
             "type": "独立",
             "date": "2016-02-27",
             "official": "https://www.stardewvalley.net/",
-            "summary": "休闲养老游戏，适合喜欢经营类游戏的玩，比较肝。前期钓鱼赚钱，刷等级，目前在玩，可以参考<a href='https://stardewvalleywiki.com/Stardew_Valley_Wiki' target='_blank'><b>stadew valley wiki</b></a>",
+            "summary": "休闲养老游戏(并不)，比较肝，在游戏中规划自己的人生。前期钓鱼赚钱探矿洞，刷各种技能等级，目前在玩，还能结婚生孩子，当然你会见到很现实的事，给一个女孩不断送礼物刷好感度最后邀请跳舞被拒，可以参考<a href='https://stardewvalleywiki.com/Stardew_Valley_Wiki' target='_blank'><b>stadew valley wiki</b></a><br>&emsp;&emsp;我只愿面朝大海，春暖花开。",
             "other": "<a href='https://store.steampowered.com/app/413150/Stardew_Valley/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -321,6 +353,14 @@
             "other": "<a href='https://store.steampowered.com/app/40700/_Machinarium/' target='_blank'><b>Steam</b></a>"
         },
         {
+            "title": "Fallout 4",
+            "type": "角色扮演",
+            "date": "2015-11-10",
+            "official": "https://fallout.bethesda.net/en/",
+            "summary": "我有点晕 3D。",
+            "other": "<a href='https://store.steampowered.com/app/377160/Fallout_4/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "theHunter: Call of the Wild",
             "type": "冒险",
             "date": "2017-02-16",
@@ -335,6 +375,22 @@
             "official": "https://www.duetgame.com/",
             "summary": "一款优秀的手游，通过不断犯错去学习各种技巧来通关。",
             "other": "<a href='https://store.steampowered.com/app/292600/Duet/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "SPORE™",
+            "type": "模拟",
+            "date": "2008-12-19",
+            "official": "http://www.spore.com/",
+            "summary": "老游戏了，steam 上补个票。",
+            "other": "<a href='https://store.steampowered.com/app/17390/SPORE/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Age of Empires II: Definitive Edition",
+            "type": "策略",
+            "date": "2019-11-15",
+            "official": "https://www.ageofempires.com/games/aoeiide/",
+            "summary": "诞生于上个世纪末的经典老游戏。",
+            "other": "<a href='https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Counter-Strike: Global Offensive",
