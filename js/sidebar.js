@@ -16,6 +16,7 @@ $(document).ready(function() {
         }
     });
 });
+
 function showSidebar() {
     $('.post-toc-wrap').show();
     $('.post-toc-wrap').animate({"width": "320px"});
@@ -28,6 +29,7 @@ function showSidebar() {
     $('#right-toggle').removeClass('open');
     $('#right-toggle').addClass('close');
 }
+
 function hideSidebar(){
     $('.post-toc-wrap').animate({"width": 0}, function(){
         $('.post-toc-wrap').hide();
