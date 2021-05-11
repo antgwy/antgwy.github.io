@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>文摘选集</title>
+    <url>/Others/Digest-with-soul/</url>
+    <content><![CDATA[<p>  受和我曾经同届的真带佬 <a href="https://github.com/ZenithalHourlyRate" target="_blank" rel="noopener">ZenithalH</a> 的 <a href="https://digest.icu/" target="_blank" rel="noopener">digest.icu</a> 启发启动的文摘</p>
+<h2 id="section">2021</h2>
+<p><a href="https://zhuanlan.zhihu.com/p/174127957" target="_blank" rel="noopener">我的第一个故事：发现失败的根源</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/55532089" target="_blank" rel="noopener">奋斗逼简史（1）：奋斗逼的中学时代</a></p>
+<p><a href="https://mp.weixin.qq.com/s/4iq4xySWGMe-ljO_y5L96Q" target="_blank" rel="noopener">从北大退学重考上清华，一个“985废物”的自我重构</a></p>
+]]></content>
+      <categories>
+        <category>Others</category>
+      </categories>
+  </entry>
+  <entry>
     <title>二叉搜索树相关学习</title>
     <url>/uncategorized/BST/</url>
     <content><![CDATA[<p>  给定一棵二叉树，每个节点带有一个数值称为 “关键码”，则“BST 性质”指，对树中任意一个节点：</p>
