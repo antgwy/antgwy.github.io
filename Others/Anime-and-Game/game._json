@@ -1,12 +1,44 @@
 {
     "data": [
         {
+            "title": "Hades",
+            "type": "动作",
+            "date": "2020-09-17",
+            "official": "https://www.supergiantgames.com/games/hades/",
+            "summary": "貌似史低 64 入的，背景是希腊神话，剧情改编自希腊神话的一个家庭故事，重点自己体验，死了之后通关收集品可以变强，我最喜欢玩的武器是狮鹫炮。",
+            "other": "<a href='https://store.steampowered.com/app/1145360/Hades/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Monster Sanctuary",
+            "type": "角色扮演",
+            "date": "2020-12-09",
+            "official": "https://www.team17.com/games/monster-sanctuary/",
+            "summary": "宝可梦+银河恶魔城，本人游戏时长60h，40h主线通关，跑图还是有点累的，游戏中我们作为驯魔人在乐土培养魔物，初始四个使魔我选的幽灵鹰，战斗是回合制，最后决战有 4 场 6v6(最难的部分)，最后两场我是靠冰冻队无脑过，可见这款游戏 buff 的重要性，有 pvp 但是没看见多少国人打，新手可以参考小破站 up 暗子臣裔的这篇<a href='https://store.steampowered.com/app/294100/RimWorld/' target='_blank'><b>怪物圣所攻略指南</b></a>以及他的视频，靠攻略我 boss 基本五星了 pvp 不太想打就退坑了，还是很有意思的。",
+            "other": "<a href='https://store.steampowered.com/app/814370/Monster_Sanctuary/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Life is Strange 2",
+            "type": "冒险",
+            "date": "2018-09-27",
+            "official": "https://lifeisstrange.square-enix-games.com/en-us/",
+            "summary": "只玩了 episode 1，后面云的价格太贵不值，感觉没之前好但制作还是一如既往的棒，主角一对兄弟，弟弟偶然觉醒了超能力，哥哥一开始不想把爸爸死了的事告诉弟弟，一章结束时那个旅馆离一代的 Arcadia Bay 挺近的。",
+            "other": "<a href='https://store.steampowered.com/app/532210/Life_is_Strange_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Celeste",
             "type": "独立",
             "date": "2018-01-25",
             "official": "http://www.celestegame.com/",
             "summary": "关卡设计的非常棒，每个草莓的收集都有一定的技巧，我玩的时候没有开过帮助模式，不停死掌握技巧来通关，而这些不断失败也间接地提高了你的技巧。也许刚玩这个游戏的时候它对你而言只是个有点难度的平台跳跃游戏，但是当你登上山顶那一刻，它就不仅仅是一个登山游戏了，而是与你达成了心灵共鸣，登上山顶后，还有许多非常有挑战性的内容给玩家们探索，关卡的 b 面和 8、9 关，这款游戏无疑是一部杰出的艺术品。",
             "other": "<a href='https://store.steampowered.com/app/504230/Celeste/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Ori and the Blind Forest: Definitive Edition",
+            "type": "动作",
+            "date": "2015-03-11",
+            "official": "https://www.orithegame.com/blind-forest/",
+            "summary": "steam 上国区买不了完全版，黑盒上入的，不想全收集走流程应该 10h+ 就能搞完，对于玩过空洞、蔚蓝和 ori2 再玩这游戏的我来说没啥难度，重点体验剧情，美术风格和音乐还是很棒的。",
+            "other": "<a href='https://store.steampowered.com/app/387290/Ori_and_the_Blind_Forest_Definitive_Edition/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Ori and the Will of the Wisps",
@@ -117,7 +149,7 @@
             "type": "独立",
             "date": "2014-11-05",
             "official": "https://bindingofisaac.com/",
-            "summary": "算是个知名的roguelike游戏了，剧情也十分的好，从重生入的以撒，在无聊时总有想玩几局的冲动，需要注意要买胎衣和胎衣+才能开mod，打折没买的我后来原价74rmb买了感觉有点亏，不开mod通关妈腿一次就能不锁成就了，也可以开控制台玩了，可以参考下wiki。<br>&emsp;&emsp;<a href='https://bindingofisaacrebirth.gamepedia.com/Binding_of_Isaac:_Rebirth_Wiki' target='_blank'><b>wiki</b></a>",
+            "summary": "算是个知名的roguelike游戏了，剧情也十分的好，从重生入的以撒，在无聊时总有想玩几局的冲动，需要注意要买胎衣和胎衣+才能开mod，打折没买的我后来原价74rmb买了感觉有点亏，不开mod通关妈腿一次就能不锁成就了，也可以开控制台玩了，游戏的乐趣在于各种有趣的道具，可以参考下wiki。<br>&emsp;&emsp;<a href='https://bindingofisaacrebirth.gamepedia.com/Binding_of_Isaac:_Rebirth_Wiki' target='_blank'><b>wiki</b></a>",
             "other": "<a href='https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -293,7 +325,7 @@
             "type": "动作",
             "date": "2015-04-14",
             "official": "https://www.rockstargames.com/V/",
-            "summary": "对游戏细节制作很用心，还原了一部分真实的洛杉矶，当然为了防沉迷已经退坑。",
+            "summary": "对游戏细节制作很用心，还原了一部分真实的洛杉矶，线下不追求金牌任务还都挺简单的，线上模式貌似有很多小学生，第一次进的时候身边一个玩家开车撞我到一边扔了个手雷然后我死了。",
             "other": "<a href='https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -317,7 +349,7 @@
             "type": "策略",
             "date": "2016-10-21",
             "official": "https://civilization.com/",
-            "summary": "AI初期好战有点过分，前一秒还是欢迎代表，后一秒就谴责你了，一直玩下去可能会沉迷。",
+            "summary": "第二局打的时候 490 多回合快结束的时候没注意到一个国家科技胜利了，本来想到 500 回合总分胜利的，所以一局打了20h+，可见得多肝。",
             "other": "<a href='https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/' target='_blank'><b>Steam</b></a>"
         },
         {
