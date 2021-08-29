@@ -5,16 +5,24 @@
             "type": "角色扮演",
             "date": "2019-10-16",
             "official": "https://zaumstudio.com/",
-            "summary": "作者是东欧人，所以作品被称为“苏联寄出的最后一封信笺”，讲述 class 斗争的小说，20h+ 可以通关(如果只看关键内容的话)，通过两个骰子进行判定，绝大部分判定都可以通关 sl 大法成功，但我一般只 sl 28% 及以上概率的，也就是点数和要求 9 及以下的，所以技能点数在平均的基础上加常用的。",
+            "summary": "作者是东欧人，所以作品被称为“苏联寄出的最后一封信笺”，可以说是一部讲述 class 斗争的小说，20h+ 可以通关(如果只看关键内容的话)，故事发生在瑞瓦肖，有红色白色两种判定，通过两个骰子进行判定，绝大部分判定都可以通过 sl 大法成功(要注意 sl 可能会丢失角色扮演感)，但我一般只 sl 28% 及以上概率的，也就是点数和要求 9 及以下的，所以技能点数在平均的基础上加常用的。",
             "other": "<a href='https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Slay the Spire",
-            "type": "动作",
+            "type": "策略",
             "date": "2019-01-23",
             "official": "https://www.megacrit.com/",
-            "summary": "占坑",
+            "summary": "rougelike 与卡牌相结合，失败带来的挫败感不是很强，开发者可以考虑多增加点角色与怪物。",
             "other": "<a href='https://store.steampowered.com/app/646570/Slay_the_Spire/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Starbound",
+            "type": "独立",
+            "date": "2016-07-23",
+            "official": "https://playstarbound.com/",
+            "summary": "官方没有中文，风格和 terraria 类似，前期生存稍有难度，后期简单，相比泰拉更偏探索，开了 admin 模式就感觉没啥意思了。",
+            "other": "<a href='https://store.steampowered.com/app/211820/Starbound/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Hades",
@@ -33,12 +41,28 @@
             "other": "<a href='https://store.steampowered.com/app/814370/Monster_Sanctuary/' target='_blank'><b>Steam</b></a>"
         },
         {
+            "title": "Katana ZERO",
+            "type": "独立",
+            "date": "2019-04-18",
+            "official": "https://www.katanazero.com/",
+            "summary": "流程很短但剧情很棒，战斗不追求速通也没啥难度，背景可能是越战，杀手和小女孩让我想起《这个杀手不太冷》但其实二者没有关联，主角零号失去了记忆，有金面银面两种结局。",
+            "other": "<a href='https://store.steampowered.com/app/460950/Katana_ZERO/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Life is Strange 2",
             "type": "冒险",
             "date": "2018-09-27",
             "official": "https://lifeisstrange.square-enix-games.com/en-us/",
             "summary": "只玩了 episode 1，后面云的价格太贵不值，感觉没之前好但制作还是一如既往的棒，主角一对兄弟，弟弟偶然觉醒了超能力，哥哥一开始不想把爸爸死了的事告诉弟弟，一章结束时那个旅馆离一代的 Arcadia Bay 挺近的。",
             "other": "<a href='https://store.steampowered.com/app/532210/Life_is_Strange_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Turmoil",
+            "type": "独立",
+            "date": "2016-06-02",
+            "official": "https://gamious.com/portfolio/turmoil/",
+            "summary": "一个模拟经营游戏，游戏很简单，几个小时就能通关。在随机生成的地图采用策略挖石油并卖出，算是个用来休闲的小游戏吧。",
+            "other": "<a href='https://store.steampowered.com/app/361280/Turmoil/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Celeste",
