@@ -1,6 +1,22 @@
 {
     "data": [
         {
+            "title": "Disco Elysium",
+            "type": "角色扮演",
+            "date": "2019-10-16",
+            "official": "https://zaumstudio.com/",
+            "summary": "作者是东欧人，所以作品被称为“苏联寄出的最后一封信笺”，讲述 class 斗争的小说，20h+ 可以通关(如果只看关键内容的话)，通过两个骰子进行判定，绝大部分判定都可以通关 sl 大法成功，但我一般只 sl 28% 及以上概率的，也就是点数和要求 9 及以下的，所以技能点数在平均的基础上加常用的。",
+            "other": "<a href='https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Slay the Spire",
+            "type": "动作",
+            "date": "2019-01-23",
+            "official": "https://www.megacrit.com/",
+            "summary": "占坑",
+            "other": "<a href='https://store.steampowered.com/app/646570/Slay_the_Spire/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Hades",
             "type": "动作",
             "date": "2020-09-17",
@@ -237,7 +253,7 @@
             "type": "模拟",
             "date": "2012-10-18",
             "official": "https://eurotrucksimulator2.com/",
-            "summary": "欧卡不能像GTA5里那样开卡车，倒车是个挺大的麻烦，买车库雇佣人开卡车，欧洲公路风景不错，以后有时间再继续玩。",
+            "summary": "欧卡不能像GTA5里那样开卡车，倒车是个挺大的麻烦，买车库雇佣人开卡车，欧洲公路风景不错，10 多级后感觉赚钱好肝，就开了个 10 倍金钱的 mod。",
             "other": "<a href='https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/' target='_blank'><b>Steam</b></a>"
         },
         {
@@ -349,7 +365,7 @@
             "type": "策略",
             "date": "2016-10-21",
             "official": "https://civilization.com/",
-            "summary": "第二局打的时候 490 多回合快结束的时候没注意到一个国家科技胜利了，本来想到 500 回合总分胜利的，所以一局打了20h+，可见得多肝。",
+            "summary": "胜利有分数、统治、宗教、文化和科技这几种。第二局打的时候 490 多回合快结束的时候没注意到一个国家科技胜利了，本来想到 500 回合总分胜利的，所以一局打了20h+，可见得多肝。",
             "other": "<a href='https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/' target='_blank'><b>Steam</b></a>"
         },
         {
