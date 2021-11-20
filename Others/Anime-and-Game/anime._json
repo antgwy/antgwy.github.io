@@ -1,11 +1,27 @@
 {
     "data": [
         {
+            "title": "国王排名",
+            "type": "TV",
+            "date": "2021-10-14",
+            "official": "https://osama-ranking.com/",
+            "summary": "(待补充)。画风偏低龄，波吉和卡克是两个宿命相似被上帝诅咒了的人，值得看下去。",
+            "other": "王様ランキング(好评)"
+        },
+        {
+            "title": "A.I.C.O. -Incarnation-",
+            "type": "TV",
+            "date": "2018-03-09",
+            "official": "http://project-aico.com/",
+            "summary": "NETFIX 和骨头社联合打造的动画，制作效果肯定不错，但剧情普普通通，开头看有神作的味道就选择看完了，第 9 话算是个转折，女主原来才是人造物，最后女主愿意牺牲，为了满足观众剧情没让她牺牲，反派的女儿只要脱离连接就恢复意识这个设定有点 sb。",
+            "other": "A.I.C.O. -Incarnation-(好评)"
+        },
+        {
             "title": "致不灭的你",
             "type": "TV",
             "date": "2021-04-12",
             "official": "https://www.anime-fumetsunoanatae.com/",
-            "summary": "不死从石头变得越来越像人，与敲门人战斗的故事。",
+            "summary": "不死从石头变得越来越像人，与敲门人战斗的故事，第一季大体可以分成不死变成少年、玛琪篇、古古篇和监狱岛篇四个部分。",
             "other": "不滅のあなたへ(好评)"
         },
         {
@@ -63,6 +79,14 @@
             "official": "https://www.vap.co.jp/gokukoku/",
             "summary": "虐妹狂魔冈本伦的又一漫画改编，最后一话为了草草结尾改了很多，风格继承妖精的旋律但感觉不如，是后宫番男主高智商身边有几个女魔法使，男主带霞去秋葉原有个画面是经典表情包的出处，剧中有很多 H。",
             "other": "極黒のブリュンヒルデ(好评)"
+        },
+        {
+            "title": "弹丸论破",
+            "type": "TV",
+            "date": "2013-07-04",
+            "official": "https://www.nbcuni.co.jp/rondorobe/anime/danganronpa/",
+            "summary": "(待补充)。很优秀的推理番。不二咲女装很可爱，反派江之岛盾子真可恶啊。",
+            "other": "ダンガンロンパ 希望の学園と絶望の高校生 THE ANIMATION(特别好评)"
         },
         {
             "title": "未来日记",
@@ -274,6 +298,14 @@
             "other": "ピンポン(好评)"
         },
         {
+            "title": "棋魂",
+            "type": "TV",
+            "date": "2001-10-10",
+            "official": "https://pierrot.jp/archive/2000/tv00_07.html",
+            "summary": "BGM很燃，也激起了我进一步学习围棋的兴趣。故事大概是小学6年级学生进藤光被平安时代棋士藤原佐为附身并开始他的围棋生涯，佐为消失后，小光从一度想放弃围棋到最后发现佐为一直在他的围棋中而释然。“如果你执意追逐我的幻影，迟早会被真正的我给打败的”，一个核心是追逐，佐为追随小光，小光追逐小亮，小亮又追逐小光。最后不是大家理想的结局。",
+            "other": "ヒカルの碁(特别好评)"
+        },
+        {
             "title": "命运石之门",
             "type": "TV",
             "date": "2011-04-06",
@@ -422,7 +454,7 @@
             "type": "TV",
             "date": "2019-10-17",
             "official": "https://psycho-pass.com/",
-            "summary": "占坑",
+            "summary": "彩虹桥的三人博弈。",
             "other": "PSYCHO-PASS サイコパス 2"
         },
         {
@@ -430,7 +462,7 @@
             "type": "TV",
             "date": "2014-10-09",
             "official": "https://psycho-pass.com/",
-            "summary": "占坑",
+            "summary": "反派鹿矛围桐斗很有吸引力，有点像孤立个体集合体 stand alone complex。",
             "other": "PSYCHO-PASS サイコパス 2"
         },
         {
@@ -666,6 +698,14 @@
             "other": "もうそうだいりにん(好评)"
         },
         {
+            "title": "千年女优",
+            "type": "剧场版",
+            "date": "2001-07-28",
+            "official": "https://www.imdb.com/title/tt0291350/",
+            "summary": "今敏导演的一部作品，不是简单的爱情片，作者的主题似乎是对艺术的追求。",
+            "other": "千年女優"
+        },
+        {
             "title": "HELLSING OVA",
             "type": "OVA",
             "date": "2006-02-10",
@@ -728,6 +768,14 @@
             "official": "http://www.cowboy-bebop.net/",
             "summary": "是单元剧，将主角团的不同命运交错在一起，参杂了很多元素，spike 想带着 julia 脱离红龙，jet 离开了前妻，faye 从清纯少女变成 sexy girl 是个赌徒，Ed 出生地球长时间脱离父亲生活，数码狗 Ein 是机构的实验品，大家有不同原因在 swordfish 相遇最后又分开，有很强的孤独氛围。最后 spike 倒下时响起了菅野洋子的《blue》，对 julia 的爱让 spike 感觉自己还活着，是男人特有的浪漫。",
             "other": "カウボーイビバップ(特别好评)"
+        },
+        {
+            "title": "全职猎人",
+            "type": "TV",
+            "date": "1998-10-16",
+            "official": "https://www.ntv.co.jp/hunterhunter/",
+            "summary": "占坑",
+            "other": "ハンター×ハンター"
         },
         {
             "title": "名侦探柯南",
