@@ -9,6 +9,14 @@
             "other": "Ruina: Fairy Tale of the Forgotten Ruins"
         },
         {
+            "title": "Baba Is You",
+            "type": "独立",
+            "date": "2019-03-14",
+            "official": "https://www.hempuli.com/baba/",
+            "summary": "(想写的很多)占坑",
+            "other": "<a href='https://store.steampowered.com/app/736260/Baba_Is_You/' target='_blank'><b>Steam</b></a>"
+        },
+        {
             "title": "Disco Elysium",
             "type": "角色扮演",
             "date": "2019-10-16",
@@ -23,6 +31,14 @@
             "official": "https://www.megacrit.com/",
             "summary": "rougelike 与卡牌相结合，失败带来的挫败感不是很强，开发者可以考虑多增加点角色与怪物。",
             "other": "<a href='https://store.steampowered.com/app/646570/Slay_the_Spire/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Return of the Obra Dinn",
+            "type": "策略",
+            "date": "2019-01-23",
+            "official": "https://obradinn.com/",
+            "summary": "画风很独特，考验英文和地理知识，通过时间回溯找出真相。",
+            "other": "<a href='https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Starbound",
@@ -79,6 +95,14 @@
             "official": "http://www.celestegame.com/",
             "summary": "关卡设计的非常棒，每个草莓的收集都有一定的技巧，我玩的时候没有开过帮助模式，不停死掌握技巧来通关，而这些不断失败也间接地提高了你的技巧。也许刚玩这个游戏的时候它对你而言只是个有点难度的平台跳跃游戏，但是当你登上山顶那一刻，它就不仅仅是一个登山游戏了，而是与你达成了心灵共鸣，登上山顶后，还有许多非常有挑战性的内容给玩家们探索，关卡的 b 面和 8、9 关，这款游戏无疑是一部杰出的艺术品。",
             "other": "<a href='https://store.steampowered.com/app/504230/Celeste/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "OneShot",
+            "type": "独立",
+            "date": "2016-12-08",
+            "official": "http://www.oneshot-game.com/",
+            "summary": "meta",
+            "other": "<a href='https://store.steampowered.com/app/420530/OneShot/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Ori and the Blind Forest: Definitive Edition",
@@ -463,6 +487,14 @@
             "official": "http://www.spore.com/",
             "summary": "老游戏了，steam 上补个票。",
             "other": "<a href='https://store.steampowered.com/app/17390/SPORE/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Fish Fillets 2",
+            "type": "解谜",
+            "date": "2007-04-05",
+            "official": "http://www.fish-fillets.com/pages/news.html",
+            "summary": "一款很难(真的很难)的益智游戏。",
+            "other": "<a href='https://store.steampowered.com/app/33950/Fish_Fillets_2/' target='_blank'><b>Steam</b></a>"
         },
         {
             "title": "Age of Empires II: Definitive Edition",
