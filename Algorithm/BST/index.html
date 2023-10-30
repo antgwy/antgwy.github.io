@@ -13,7 +13,7 @@ Tree，BST)”。二叉搜索树的中序遍历是一个关键码单调递增的
 <span class="math inline">\(O(\log{n})\)</span>。</p>
 <p>  改变形态并保持 BST
 性质方法即“旋转”，基本的旋转有“左旋”与“右旋”，如下图所示。</p>
-<p><img src="./BST/treap1.png" /></p>
+<p><img src="treap1.png" /></p>
 <p>  左右旋代码</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">zig</span><span class="params">(<span class="keyword">int</span> &amp;p)</span> </span>&#123; <span class="comment">// 右旋</span></span><br><span class="line">    <span class="keyword">int</span> q = a[p].l;</span><br><span class="line">    a[p].l = a[q].r; a[q].r = p;</span><br><span class="line">    p = q;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">zag</span><span class="params">(<span class="keyword">int</span> &amp;p)</span> </span>&#123; <span class="comment">// 左旋</span></span><br><span class="line">    <span class="keyword">int</span> q = a[p].r;</span><br><span class="line">    a[p].r = a[q].l; a[q].l = p;</span><br><span class="line">    p = q;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>  为处理关键码相同的情况，节点增加一个域 <code>cnt</code>，节点的

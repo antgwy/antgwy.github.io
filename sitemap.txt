@@ -1,3 +1,4 @@
+https://2inf.top/Algorithm/Dancing-Links/
 https://2inf.top/Algorithm/BST/
 https://2inf.top/Others/Hexo-record/
 https://2inf.top/Math/Talk-about-a-few-special-functions/
@@ -10,7 +11,6 @@ https://2inf.top/Math/The-basis-of-combinatorics/
 https://2inf.top/Algorithm/Lowest-Common-Ancestor/
 https://2inf.top/Algorithm/Theory-of-Inversion/
 https://2inf.top/Math/Theory-and-application-of-Catalan-Number/
-https://2inf.top/Algorithm/Dancing-Links/
 https://2inf.top/Algorithm/Chairman-Tree/
 https://2inf.top/Algorithm/Learing-Segment-Tree/
 https://2inf.top/Math/complex-analysis1/
@@ -20,16 +20,16 @@ https://2inf.top/categories/index.html
 https://2inf.top/Algorithm/POJ1845-Sumdiv/
 https://2inf.top/tags/index.html
 https://2inf.top/
-https://2inf.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E4%B8%BB%E5%B8%AD%E6%A0%91/
 https://2inf.top/tags/%E6%90%9C%E7%B4%A2-DLX/
+https://2inf.top/tags/%E5%88%86%E6%B2%BB/
 https://2inf.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E7%BA%BF%E6%AE%B5%E6%A0%91/
 https://2inf.top/tags/%E5%9B%BE%E8%AE%BA-LCA/
-https://2inf.top/tags/%E5%88%86%E6%B2%BB/
 https://2inf.top/tags/NumPy/
-https://2inf.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/
 https://2inf.top/tags/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/
 https://2inf.top/tags/%E5%B0%8F%E7%9F%A5%E8%AF%86/
 https://2inf.top/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/
+https://2inf.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/
+https://2inf.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E4%B8%BB%E5%B8%AD%E6%A0%91/
 https://2inf.top/categories/Others/
 https://2inf.top/categories/Math/
 https://2inf.top/categories/Algorithm/

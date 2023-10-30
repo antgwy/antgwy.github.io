@@ -3,7 +3,7 @@ href="https://en.wikipedia.org/wiki/Exact_cover">(Exact Cover)</a></h1>
 <p>  定义:给定一个<span class="math inline">\(R\times C\)</span>的<span
 class="math inline">\(0,1\)</span>矩阵，问是否存在一个行集合，使得集合每一列<strong>恰好</strong>有一个<span
 class="math inline">\(1\)</span>。</p>
-<p><img src="Dancing%20Links/fig1.jpg" /></p>
+<p><img src="fig1.jpg" /></p>
 <ul>
 <li>穷举法</li>
 </ul>
@@ -23,13 +23,13 @@ class="math inline">\(2^C-1\)</span>；令<span
 class="math inline">\(tmp\)</span>表示当前所有被选择了的<span
 class="math inline">\(C\)</span>位二进制数的或。时间复杂度<span
 class="math inline">\(O(R\times 2^R)\)</span></p>
-<p><img src="Dancing%20Linkss/fig2.jpg" /></p>
+<p><img src="fig2.jpg" /></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> n, m;</span><br><span class="line"><span class="keyword">int</span> a[N][N], num[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> ok = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i)</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = m; j &gt;= <span class="number">1</span>; --j)</span><br><span class="line">            num[i] = num[i] &lt;&lt; <span class="number">1</span> | a[i][j];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> state = <span class="number">1</span>; state &lt; <span class="number">1</span> &lt;&lt; n; ++state) &#123;</span><br><span class="line">        <span class="keyword">int</span> tmp = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i)  <span class="keyword">if</span>((<span class="number">1</span> &lt;&lt; i - <span class="number">1</span>) &amp; state) &#123;</span><br><span class="line">            <span class="keyword">if</span>(tmp &amp; num[i]) <span class="keyword">break</span>;</span><br><span class="line">            tmp |= num[i];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(tmp == (<span class="number">1</span> &lt;&lt; m) - <span class="number">1</span>) &#123;</span><br><span class="line">            ok = <span class="number">1</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; ++i) <span class="keyword">if</span>((<span class="number">1</span> &lt;&lt; i - <span class="number">1</span>) &amp; state)</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d "</span>, i);</span><br><span class="line">            <span class="built_in">puts</span>(<span class="string">""</span>);</span><br><span class="line">           &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(!ok) <span class="built_in">puts</span>(<span class="string">"No Solution!"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="dancing-linksalgorithm-x">Dancing Links(<a
 href="https://en.wikipedia.org/wiki/Knuth%27s_Algorithm_X">Algorithm
 X</a>)</h1>
 <p>红色的框代表选中的行，蓝色的框代表删除的列，绿色的框代表删除的行</p>
-<p><img src="Dancing%20Links/fig3.jpg" /></p>
+<p><img src="fig3.jpg" /></p>
 <p><a href="https://www.youtube.com/watch?v=R9gRLnddOBg" target="_blank" rel="noopener">Dancing
 Links(2000)</a></p>
 <p><a href="https://www.youtube.com/watch?v=_cR9zDlvP88" target="_blank" rel="noopener">Dancing
@@ -60,7 +60,7 @@ class="math inline">\([4N,6N-2]\)</span>表示棋盘2N-1条副对角线的占据
 </ol>
 <p>故共有<span class="math inline">\(6N-2\)</span>列。</p>
 <div style="width: 400px; margin: auto">
-<img src="Dancing%20Links/queen.jpg" />
+<img src="queen.jpg" />
 </div>
 <p>  对于<span
 class="math inline">\((i,j)\)</span>的位置，占据的行为<span

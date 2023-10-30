@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://2inf.top/Algorithm/Dancing-Links/</loc>
+    
+    <lastmod>2023-10-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://2inf.top/Algorithm/BST/</loc>
     
     <lastmod>2023-10-30</lastmod>
@@ -110,15 +119,6 @@
   </url>
   
   <url>
-    <loc>https://2inf.top/Algorithm/Dancing-Links/</loc>
-    
-    <lastmod>2020-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://2inf.top/Algorithm/Chairman-Tree/</loc>
     
     <lastmod>2020-11-07</lastmod>
@@ -200,14 +200,14 @@
 
   
   <url>
-    <loc>https://2inf.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
+    <loc>https://2inf.top/tags/%E6%90%9C%E7%B4%A2-DLX/</loc>
     <lastmod>2023-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://2inf.top/tags/%E6%90%9C%E7%B4%A2-DLX/</loc>
+    <loc>https://2inf.top/tags/%E5%88%86%E6%B2%BB/</loc>
     <lastmod>2023-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -228,21 +228,7 @@
   </url>
   
   <url>
-    <loc>https://2inf.top/tags/%E5%88%86%E6%B2%BB/</loc>
-    <lastmod>2023-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://2inf.top/tags/NumPy/</loc>
-    <lastmod>2023-10-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://2inf.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</loc>
     <lastmod>2023-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -264,6 +250,20 @@
   
   <url>
     <loc>https://2inf.top/tags/%E7%BB%84%E5%90%88%E6%95%B0%E5%AD%A6/</loc>
+    <lastmod>2023-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://2inf.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/</loc>
+    <lastmod>2023-10-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://2inf.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E4%B8%BB%E5%B8%AD%E6%A0%91/</loc>
     <lastmod>2023-10-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
