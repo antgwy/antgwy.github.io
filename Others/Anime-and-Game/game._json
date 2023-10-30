@@ -1,0 +1,540 @@
+{
+    "data": [
+        {
+            "title": "废都物语",
+            "type": "独立",
+            "date": "2008-12-24",
+            "official": "https://www.freem.ne.jp/win/game/2037",
+            "summary": "(待补充)由日本开发者枯草章吉一人完成，无需多言绝对的神作，如果喜欢日式 RPG 不玩这款游戏将会是你的损失。",
+            "other": "Ruina: Fairy Tale of the Forgotten Ruins"
+        },
+        {
+            "title": "Baba Is You",
+            "type": "独立",
+            "date": "2019-03-14",
+            "official": "https://www.hempuli.com/baba/",
+            "summary": "(想写的很多)占坑",
+            "other": "<a href='https://store.steampowered.com/app/736260/Baba_Is_You/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Disco Elysium",
+            "type": "角色扮演",
+            "date": "2019-10-16",
+            "official": "https://zaumstudio.com/",
+            "summary": "作者是东欧人，所以作品被称为“苏联寄出的最后一封信笺”，可以说是一部讲述 class 斗争的小说，20h+ 可以通关(如果只看关键内容的话)，故事发生在瑞瓦肖，有红色白色两种判定，通过两个骰子进行判定，绝大部分判定都可以通过 sl 大法成功(要注意 sl 可能会丢失角色扮演感)，但我一般只 sl 28% 及以上概率的，也就是点数和要求 9 及以下的，所以技能点数在平均的基础上加常用的。",
+            "other": "<a href='https://store.steampowered.com/app/632470/Disco_Elysium__The_Final_Cut/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Slay the Spire",
+            "type": "策略",
+            "date": "2019-01-23",
+            "official": "https://www.megacrit.com/",
+            "summary": "rougelike 与卡牌相结合，失败带来的挫败感不是很强，开发者可以考虑多增加点角色与怪物。",
+            "other": "<a href='https://store.steampowered.com/app/646570/Slay_the_Spire/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Return of the Obra Dinn",
+            "type": "策略",
+            "date": "2019-01-23",
+            "official": "https://obradinn.com/",
+            "summary": "画风很独特，考验英文和地理知识，通过时间回溯找出真相。",
+            "other": "<a href='https://store.steampowered.com/app/653530/Return_of_the_Obra_Dinn/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Starbound",
+            "type": "独立",
+            "date": "2016-07-23",
+            "official": "https://playstarbound.com/",
+            "summary": "官方没有中文，风格和 terraria 类似，前期生存稍有难度，后期简单，相比泰拉更偏探索，开了 admin 模式就感觉没啥意思了。",
+            "other": "<a href='https://store.steampowered.com/app/211820/Starbound/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Hades",
+            "type": "动作",
+            "date": "2020-09-17",
+            "official": "https://www.supergiantgames.com/games/hades/",
+            "summary": "貌似史低 64 入的，背景是希腊神话，剧情改编自希腊神话的一个家庭故事，重点自己体验，死了之后通关收集品可以变强，我最喜欢玩的武器是狮鹫炮。",
+            "other": "<a href='https://store.steampowered.com/app/1145360/Hades/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Monster Sanctuary",
+            "type": "角色扮演",
+            "date": "2020-12-09",
+            "official": "https://www.team17.com/games/monster-sanctuary/",
+            "summary": "宝可梦+银河恶魔城，本人游戏时长60h，40h主线通关，跑图还是有点累的，游戏中我们作为驯魔人在乐土培养魔物，初始四个使魔我选的幽灵鹰，战斗是回合制，最后决战有 4 场 6v6(最难的部分)，最后两场我是靠冰冻队无脑过，可见这款游戏 buff 的重要性，有 pvp 但是没看见多少国人打，新手可以参考小破站 up 暗子臣裔的这篇<a href='https://store.steampowered.com/app/294100/RimWorld/' target='_blank'><b>怪物圣所攻略指南</b></a>以及他的视频，靠攻略我 boss 基本五星了 pvp 不太想打就退坑了，还是很有意思的。",
+            "other": "<a href='https://store.steampowered.com/app/814370/Monster_Sanctuary/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Katana ZERO",
+            "type": "独立",
+            "date": "2019-04-18",
+            "official": "https://www.katanazero.com/",
+            "summary": "流程很短但剧情很棒，战斗不追求速通也没啥难度，背景可能是越战，杀手和小女孩让我想起《这个杀手不太冷》但其实二者没有关联，主角零号失去了记忆，有金面银面两种结局。",
+            "other": "<a href='https://store.steampowered.com/app/460950/Katana_ZERO/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Life is Strange 2",
+            "type": "冒险",
+            "date": "2018-09-27",
+            "official": "https://lifeisstrange.square-enix-games.com/en-us/",
+            "summary": "只玩了 episode 1，后面云的价格太贵不值，感觉没之前好但制作还是一如既往的棒，主角一对兄弟，弟弟偶然觉醒了超能力，哥哥一开始不想把爸爸死了的事告诉弟弟，一章结束时那个旅馆离一代的 Arcadia Bay 挺近的。",
+            "other": "<a href='https://store.steampowered.com/app/532210/Life_is_Strange_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Turmoil",
+            "type": "独立",
+            "date": "2016-06-02",
+            "official": "https://gamious.com/portfolio/turmoil/",
+            "summary": "一个模拟经营游戏，游戏很简单，几个小时就能通关。在随机生成的地图采用策略挖石油并卖出，算是个用来休闲的小游戏吧。",
+            "other": "<a href='https://store.steampowered.com/app/361280/Turmoil/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Celeste",
+            "type": "独立",
+            "date": "2018-01-25",
+            "official": "http://www.celestegame.com/",
+            "summary": "关卡设计的非常棒，每个草莓的收集都有一定的技巧，我玩的时候没有开过帮助模式，不停死掌握技巧来通关，而这些不断失败也间接地提高了你的技巧。也许刚玩这个游戏的时候它对你而言只是个有点难度的平台跳跃游戏，但是当你登上山顶那一刻，它就不仅仅是一个登山游戏了，而是与你达成了心灵共鸣，登上山顶后，还有许多非常有挑战性的内容给玩家们探索，关卡的 b 面和 8、9 关，这款游戏无疑是一部杰出的艺术品。",
+            "other": "<a href='https://store.steampowered.com/app/504230/Celeste/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "OneShot",
+            "type": "独立",
+            "date": "2016-12-08",
+            "official": "http://www.oneshot-game.com/",
+            "summary": "meta",
+            "other": "<a href='https://store.steampowered.com/app/420530/OneShot/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Ori and the Blind Forest: Definitive Edition",
+            "type": "动作",
+            "date": "2015-03-11",
+            "official": "https://www.orithegame.com/blind-forest/",
+            "summary": "steam 上国区买不了完全版，黑盒上入的，不想全收集走流程应该 10h+ 就能搞完，对于玩过空洞、蔚蓝和 ori2 再玩这游戏的我来说没啥难度，重点体验剧情，美术风格和音乐还是很棒的。",
+            "other": "<a href='https://store.steampowered.com/app/387290/Ori_and_the_Blind_Forest_Definitive_Edition/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Ori and the Will of the Wisps",
+            "type": "动作",
+            "date": "2020-03-11",
+            "official": "https://www.orithegame.com/",
+            "summary": "玩萤火意志的时候还没玩黑暗森林，视觉效果做的很好(图形学的就业还是很不错的)，似乎向《空洞骑士》学习了一些东西，但比空洞简单很多，普通版的 boss 都不难打，重点体验剧情，不过结局有点牵强。",
+            "other": "<a href='https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Hollow Knight",
+            "type": "冒险",
+            "date": "2017-02-25",
+            "official": "https://www.hollowknight.com/",
+            "summary": "强烈推荐，制作者Team Cherry是南澳的一个三人团队。白宫的跳跳乐各种酸爽不过我基本没看攻略还是过了，痛苦之路简直整个游戏最难，各种boss战基本死几次掌握技巧选好护符就能过，当然也有些boss死了几十次才过比如失败冠军，梦境格林对我这种手残真的难，有些boss做的真的非常好，比如三螳螂。期待黄蜂女为主角的《Hollow Knight: SilkSong》，B站好像有大佬自己做了一部分。<br>不论什么代价都在所不惜。<br>没有可以思考的心智。<br>没有可以屈从的意志。<br>没有为苦难哭泣的声音。<br>生于神与虚空之手。<br>你必封印在众人梦中散布瘟疫的障目之光。<br>你是容器。<br>你是空洞骑士。",
+            "other": "<a href='https://store.steampowered.com/app/367520/Hollow_Knight/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Undertale",
+            "type": "独立",
+            "date": "2015-09-15",
+            "official": "https://undertale.com/",
+            "summary": "metagame 杰作，优秀的反游戏，结局有很多，基本三种：NE普通结局、PE和平结局、GE屠杀结局，推荐 NE->PE->GE->PE(一开始千万别玩GE)，做了一些决定再读档在新的档案上个档做的事都会有体现，在游戏技术角度上说 GE 线的 sans 真的难打，独白似乎是 chara，永远不要放弃，保持决心，keep your determination。",
+            "other": "<a href='https://store.steampowered.com/app/391540/Undertale/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "The Stanley Parable",
+            "type": "独立",
+            "date": "2013-10-17",
+            "official": "https://stanleyparable.com/",
+            "summary": "结局非常多，玩家与游戏博弈，玩的时候需要思考，才能找到自我，而不是单纯地做获利行为，对于有消极心理的人玩过之后会产生压抑情绪，游戏有个成就是不玩这个游戏 5 年，当然我用解锁器开了。",
+            "other": "<a href='https://store.steampowered.com/app/221910/The_Stanley_Parable/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "RimWorld",
+            "type": "模拟",
+            "date": "2018-10-17",
+            "official": "https://rimworldgame.com/",
+            "summary": "92rmb入的，一款沙盒生存游戏，真实度很高。",
+            "other": "<a href='https://store.steampowered.com/app/294100/RimWorld/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Assassin's Creed Origins",
+            "type": "动作",
+            "date": "2017-10-27",
+            "official": "https://assassinscreed.ubisoft.com/origins/en-us/home/",
+            "summary": "游戏时间54h，风景很漂亮，骑着骆驼漫游沙漠，登上过胡夫金字塔，站在法罗斯灯塔顶俯瞰地中海，游戏还原了很多遗迹，带我游览了埃及的各种美景，有很强的代入感。主角巴耶克因为儿子的死而与“维序者”展开了斗争，每次打死一个boss都会出现一个相当于人间与地狱交界的地方，巴爷挥了挥羽毛boss就走了，最难打的boss可以说是战象。巴爷可以与鹰共享它的视野有点奇怪，巴爷的攀爬能力惊人，一个细节是每次巴爷从高处落下腿会瘸着走几步，Alt+w信仰之跃都会掉到草堆或者水里，打怪很少用刺杀，感觉玩的不是刺客而是战士，在金字塔及及各种古墓探险时怪物似乎只有罐子里的蛇，在沙漠会遭遇沙尘暴、海市蜃楼、虫雨等自然奇观，地图最下面的一个沙漠有个裂谷会冒出很多死而复生的战士。<br>&emsp;&emsp;前期开各种问号，做任务升级，因为一般差2级就打不过，支线人物都有独立的剧情，但大部分是平民给你个任务，让你救出或刺杀某人，到了30多级就少做很多支线任务，差不多40h主线全通关，后期做做限时任务(阿努比斯的试炼什么的)开开问号什么的就退坑了，信条是什么，可以概括为“Nothing is true, everything is permitted.”。整体来说还是很棒的，期待以中国为背景的刺客信条。",
+            "other": "<a href='https://store.steampowered.com/app/582160/Assassins_Creed_Origins/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Tomb Raider",
+            "type": "动作",
+            "date": "2013-03-05",
+            "official": "https://www.tombraider.com/",
+            "summary": "《古墓丽影9》背景是一个刚大学毕业的妹子劳拉提议去日本邪马台岛，即将到达时发生海难，劳拉被打昏绑架，最后开始逃生之路，英文原名没有后缀，是整个系列重启之作。游戏有不少惊悚画面，让人不寒而栗。记得劳拉第一次杀死鹿的时候说了声sorry，可是最后她杀死了岛上的所有敌人。<br>&nbsp;&nbsp;卡关的时候可以参考<a href='https://www.bilibili.com/video/BV1Js411b76M' target='_blank'><b>B站攻略</b></a>",
+            "other": "<a href='https://store.steampowered.com/app/203160/Tomb_Raider/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Shadow Tactics: Blades of the Shogun",
+            "type": "潜行",
+            "date": "2016-12-06",
+            "official": "https://www.mimimi.games/shadow_tactics_micro/",
+            "summary": "《影子战术：将军之刃》算是我比较喜欢的暗杀类游戏，由德国的mimimi公司设计，背景在日本幕府时期（第一关背景是1615年的大坂夏之阵，德川家族战胜了丰臣家，结束了日本的战国时代，统一了日本），新的幕府将军为了和平及镇压叛变，招募了五位暗杀人才，最后发现叛变的竟是将军的弟弟。游戏的关卡设定十分精巧，游戏里的平民设定很烦，一看见你就通风报信，玩的过程中可以参考<a href='https://www.bilibili.com/video/BV1ps41187D6' target='_blank'><b>B站攻略</b></a>，不禁让人感叹原来还有这种操作。",
+            "other": "<a href='https://store.steampowered.com/app/418240/Shadow_Tactics_Blades_of_the_Shogun/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Oxygen Not Included",
+            "type": "模拟",
+            "date": "2019-07-31",
+            "official": "https://klei.com/games/oxygen-not-included",
+            "summary": "Klei的一款太空殖民生存游戏，涉及到了一些物理知识与化学知识，游戏的目的就是建立一个循环以生存，最后还可以发射火箭，当然我玩到人造蒸汽失败导致火箭造出来了发射失败就弃坑了。",
+            "other": "<a href='https://store.steampowered.com/app/457140/Oxygen_Not_Included/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Life is Strange: Before the Storm",
+            "type": "冒险",
+            "date": "2017-09-01",
+            "official": "https://lifeisstrange.square-enix-games.com/en-us/games/before-the-storm",
+            "summary": "《奇异人生：暴风前夕》讲述的是首作三年前的故事，主角 Chloe Price 从优等生变成朋克少女，能力的话就是嘴炮，这一部感觉没有首作那么好，Chloe和Rachel Amber成为好友，Rachel想要寻找生母Sera的下落，但父亲James却隐瞒真相极力反对，最后的选择是tell Rachel everything 或者 protect her from the truth，我当然是选择后者保护Rachel，并不是所有结局都是完美的。",
+            "other": "<a href='https://store.steampowered.com/app/554620/Life_is_Strange_Before_the_Storm/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Life is Strange",
+            "type": "冒险",
+            "date": "2015-01-30",
+            "official": "https://lifeisstrange.square-enix-games.com/en-us/games/life-is-strange",
+            "summary": "《奇异人生》是法国开发商 Dontnode Entertainment 开发的一个选择向的叙事游戏，无疑可以称得上是一部神作，蝴蝶效应在游戏中得到体现，女主角Max Caulfield拥有rewind time的能力，通关后我觉得我还是太单纯了，竟然没看出Mark Jefferson老师是坏人，最后的选择是牺牲好友Chloe还是Arcadia Bay，出于私欲我选择让Chloe活着，现实生活中即使我们有时间倒流能力，也并不能一定做得更好。",
+            "other": "<a href='https://store.steampowered.com/app/319630/Life_is_Strange__Episode_1/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "To the Moon",
+            "type": "独立",
+            "date": "2011-11-01",
+            "official": "https://freebirdgames.com/to_the_moon/",
+            "summary": "一款有着独特构思给人带来很多感动的游戏，讲述两个医生借由改变记忆为弥留之际的人们完成他们人生最后愿望的故事，具体只有自己玩才体会的到，主题曲《For River》好听。",
+            "other": "<a href='https://store.steampowered.com/app/206440/To_the_Moon/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "ARK: Survival Evolved",
+            "type": "生存",
+            "date": "2017-08-28",
+            "official": "http://playark.com/",
+            "summary": "一款自由度很高的游戏，简述一下孤岛生存经验：在通用设置和高级设置调好自己喜欢的配置，萌新不建议调太难而自闭，前期尽量不要招惹主动攻击生物，因为一般打不过，抓好各种工具龙，比如三角龙采集浆果，甲龙采集石头金属等，获得流星锤开始驯龙，用研磨器获得麻醉药制作麻醉箭可以驯一些更高级的龙，游戏初期不建议使用作弊代码，否则体验不到游戏的挑战性与趣味性，中期可以参考<a href='http://wk.vmu.me/ark/' target='_blank'><b>物品代码</b></a>获取一些较难制作的物品，逐渐往北移到获取一些稀有资源，当然风险也随之变高，携带祭品前往方舟位置可以召唤boss，比如到达雪山蓝方舟可以召唤银背金刚boss，推荐用多只霸王龙和羽暴龙打，此外还有狮省蝎尾兽、育母蜘蛛、喷火龙等boss。最后吐槽下：南方巨兽龙和泰坦龙用强效麻醉镖打都要很久才晕，方舟竟然没有存档功能QAQ（不过可以自己加）。<br>PS：还可以参考<a href='http://www.teandy.com/' target='_blank'><b>听宇大佬的网站</b></a>获取一些关于方舟的干货。",
+            "other": "<a href='https://store.steampowered.com/app/346110/ARK_Survival_Evolved/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "The Binding of Isaac: Rebirth",
+            "type": "独立",
+            "date": "2014-11-05",
+            "official": "https://bindingofisaac.com/",
+            "summary": "算是个知名的roguelike游戏了，剧情也十分的好，从重生入的以撒，在无聊时总有想玩几局的冲动，需要注意要买胎衣和胎衣+才能开mod，打折没买的我后来原价74rmb买了感觉有点亏，不开mod通关妈腿一次就能不锁成就了，也可以开控制台玩了，游戏的乐趣在于各种有趣的道具，可以参考下wiki。<br>&emsp;&emsp;<a href='https://bindingofisaacrebirth.gamepedia.com/Binding_of_Isaac:_Rebirth_Wiki' target='_blank'><b>wiki</b></a>",
+            "other": "<a href='https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "疑案追声(Unheard)",
+            "type": "解谜",
+            "date": "2019-03-29",
+            "official": "https://www.nextstudios.com/unheard/index_cn.html",
+            "summary": "可以说是国产解谜之光，或者说这游戏更像是一个听力考试，通过不同房间听到的线索得出答案，中文版里面有几种方言不过都很容易懂，想练听力可以直接上英文，基本是原汁原味的不难懂。",
+            "other": "<a href='https://store.steampowered.com/app/942970/Unheard/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "BRAID",
+            "type": "独立",
+            "date": "2011-04-11",
+            "official": "http://braid-game.com/",
+            "summary": "可以说是神作吧，通关后，拿了一半的星星，但游戏告诉我要节省时间，so不打算拿剩下的就退坑了。<br>&nbsp;&nbsp;时空幻境，表面上是一个西装革履的男孩找公主的故事，却隐含着一个令人深思的主题。游戏结尾书上写着有人说：“成功了”，令一个人说：“我们都成了混蛋”，而另一本书则提到曼哈顿，而曼哈顿计划就是为了研制原子弹，那两句话便是在场科学家说的，游戏中提姆是一个科学家，寻找着原子弹这个“公主”，但成功后却懊悔不已，希望通过时间倒流将其抹杀。这部优秀的游戏艺术品不仅仅是在说原子弹，更是与作者Jonathan Blow的亲身经历相关联。",
+            "other": "<a href='https://store.steampowered.com/app/26800/Braid/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Portal2",
+            "type": "解谜",
+            "date": "2011-04-19",
+            "official": "https://www.thinkwithportals.com/",
+            "summary": "相比一代各方面都有提升，有令人印象深刻的剧情。",
+            "other": "<a href='https://store.steampowered.com/app/620/Portal_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Portal",
+            "type": "解谜",
+            "date": "2007-10-10",
+            "official": "暂无",
+            "summary": "值得一玩，作者脑洞很大。",
+            "other": "<a href='https://store.steampowered.com/app/400/Portal/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "INSIDE",
+            "type": "解谜",
+            "date": "2016-07-08",
+            "official": "https://playdead.com/games/inside/",
+            "summary": "可以说是Limbo的续作，游戏风格压抑，没看攻略过的我很骄傲，剧情可能是反乌托邦，小男孩拔掉电源意味着玩家对他的控制终结，可以参考<a href='https://www.zhihu.com/question/47957864/answer/110885264'><b>知乎上的一个回答</b></a>。",
+            "other": "<a href='https://store.steampowered.com/app/304430/INSIDE/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "LIMBO",
+            "type": "解谜",
+            "date": "2011-08-13",
+            "official": "https://playdead.com/games/limbo/",
+            "summary": "一部独立游戏的神作，小男孩进入了地狱边境，姐姐命运不明。游戏物理引擎很好，手残党还是可以通关滴，卡关的话可以看<a href='https://www.speedrun.com/Limbo' target='_blank'><b>speedrun</b></a>上的视频。",
+            "other": "<a href='https://store.steampowered.com/app/48000/LIMBO/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Stardew Valley",
+            "type": "独立",
+            "date": "2016-02-27",
+            "official": "https://www.stardewvalley.net/",
+            "summary": "休闲养老游戏(并不)，比较肝，在游戏中规划自己的人生。前期钓鱼赚钱探矿洞，刷各种技能等级，目前在玩，还能结婚生孩子，当然你会见到很现实的事，给一个女孩不断送礼物刷好感度最后邀请跳舞被拒，可以参考<a href='https://stardewvalleywiki.com/Stardew_Valley_Wiki' target='_blank'><b>stadew valley wiki</b></a><br>&emsp;&emsp;我只愿面朝大海，春暖花开。",
+            "other": "<a href='https://store.steampowered.com/app/413150/Stardew_Valley/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Terraria",
+            "type": "独立",
+            "date": "2011-05-17",
+            "official": "https://terraria.org/",
+            "summary": "比较喜欢，2D版的minecraft，就是挖掘、合成、建造，还加入了一些boss，从1.4版本更新后加了很多东西。<br>&emsp;&emsp;毕竟玩了130h+，谈一下普通模式开荒之路吧，首先应该参考<a href='https://terraria-zh.gamepedia.com/Terraria_Wiki' target='_blank'><b>Terraria中文wiki</b></a>，初期晚上肯定不能随便出门，利用晚上多建房子吸引NPC，根据能力探索地表、矿洞、地牢等地形，各种boss战只要有好武器基本不难，特殊打法的boss我觉得只有两个，猪鲨棱形矿车打法和月总护士打法，肉山后由于我懒得挖矿，所以卡bug刷资源，比如复制世界存档文件，利用向导NPC或哥布林工匠通过旅途模式bug传递资源，例如游戏里的新三矿和特别难抓的松露虫，刷钱的话我是通过卡bug刷钛金/精金卖给商人，打完所有的boss自己建些有趣的东西然后我就退坑了。",
+            "other": "<a href='https://store.steampowered.com/app/105600/Terraria/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "MINECRAFT",
+            "type": "沙盒",
+            "date": "2009-05-17",
+            "official": "https://www.minecraft.net/",
+            "summary": "几乎每个人都知道吧，游戏史上的里程碑，觉得比较有意思的是捣鼓红石电路。",
+            "other": "<a href='https://minecraft-zh.gamepedia.com/' target='_blank'><b>minecraft中文wiki</b></a>"
+        },
+        {
+            "title": "洞窟物语",
+            "type": "独立",
+            "date": "2004-12-20",
+            "official": "https://www.cavestory.org/",
+            "summary": "游戏构思精巧，由天谷大辅利用5年业余时间开发而成，算是我最喜欢的游戏之一，有多个不同的结局，玩了3遍，第一遍没看攻略选了坏结局，最后的洞穴与圣境可以说是像我这种手残党的噩梦，不过熟悉了其实也不难。独立游戏中文杂志给出了评语：<blockquote>有很多优秀的游戏，你玩过之后还是会毫不犹豫地从硬盘中删除，特别是那些动辄n个G以上的所谓大作。但有些游戏，你却会想永远珍藏，因为你知道这是一辈子都难得一见的珍品。洞窟物语就是这样一款游戏。当然或许还因为它不到1M的容量。</blockquote>",
+            "other": "<a href='https://store.steampowered.com/app/200900/Cave_Story/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Euro Truck Simulator 2",
+            "type": "模拟",
+            "date": "2012-10-18",
+            "official": "https://eurotrucksimulator2.com/",
+            "summary": "欧卡不能像GTA5里那样开卡车，倒车是个挺大的麻烦，买车库雇佣人开卡车，欧洲公路风景不错，10 多级后感觉赚钱好肝，就开了个 10 倍金钱的 mod。",
+            "other": "<a href='https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Goat Simulator",
+            "type": "模拟",
+            "date": "2014-04-02",
+            "official": "http://goat-simulator.com/",
+            "summary": "山羊版GTA5，steam“七大名著”之一，一款沙雕休闲游戏，游戏的特点在于各种bug，开发者声称只修复了游戏奔溃的bug。",
+            "other": "<a href='https://store.steampowered.com/app/265930/Goat_Simulator/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Cities: Skylines",
+            "type": "模拟",
+            "date": "2015-03-11",
+            "official": "https://www.citiesskylines.com/",
+            "summary": "城市模拟游戏，我还是个刚入坑的新手。",
+            "other": "<a href='https://store.steampowered.com/app/255710/Cities_Skylines/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "ISLANDERS",
+            "type": "独立",
+            "date": "2019-04-04",
+            "official": "https://en.wikipedia.org/wiki/Islanders_(video_game)",
+            "summary": "休闲养老类游戏，在随机生成的岛屿上安放尽可能多的建筑同时达到分数目标。",
+            "other": "<a href='https://store.steampowered.com/app/1046030/ISLANDERS/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Broforce",
+            "type": "独立",
+            "date": "2015-10-15",
+            "official": "http://www.broforcegame.com/",
+            "summary": "武装风暴，4399上有，经典的像素游戏。",
+            "other": "<a href='https://store.steampowered.com/app/274190/Broforce/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Poly Bridge",
+            "type": "模拟",
+            "date": "2016-07-13",
+            "official": "http://polybridge.drycactus.com/",
+            "summary": "桥梁建造游戏，挺烧脑的。",
+            "other": "<a href='https://store.steampowered.com/app/367450/Poly_Bridge/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Rusty Lake Hotel",
+            "type": "解谜",
+            "date": "2016-01-29",
+            "official": "http://www.rustylake.com/adventure-games/rusty-lake-hotel.html",
+            "summary": "一个黑旅馆把客人的肉做成晚餐的故事，杀错顺序就很难受，原来猪屎还能做成三明治。",
+            "other": "<a href='http://www.rustylake.com/adventure-games/rusty-lake-hotel.html' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Super Meat Boy",
+            "type": "独立",
+            "date": "2010-12-01",
+            "official": "http://www.supermeatboy.com/",
+            "summary": "跳跳乐游戏，让我逐渐脱离手残（划掉）。",
+            "other": "<a href='https://store.steampowered.com/app/40800/Super_Meat_Boy/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "风之旅人(Journey)",
+            "type": "冒险",
+            "date": "2012-03-15",
+            "official": "https://thatgamecompany.com/journey/",
+            "summary": "2020-06-11上线steam，游戏画面精美，让人感叹：“游戏还能这么玩”，一个人走在沙漠中，不经意间，有可能遇到另一个同行者，互助着登上圣山。主题曲很好。人生如逆旅，我亦是行人。",
+            "other": "<a href='https://store.steampowered.com/app/638230/Journey/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Borderlands 2",
+            "type": "动作",
+            "date": "2012-09-21",
+            "official": "https://borderlands.com/zh-CN/",
+            "summary": "fps游戏，不是我喜欢的类型，epic上白嫖玩了10h+，最后在steam补了票。",
+            "other": "<a href='https://store.steampowered.com/app/49520/Borderlands_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Just Cause 3",
+            "type": "动作",
+            "date": "2015-12-01",
+            "official": "https://justcause.square-enix-games.com/en-us",
+            "summary": "《正当防卫3》讲述了一个推翻政府的故事，主角各种破坏，解放后的地区由革命军控制，优点pros在于刺激惊险，缺点cons在于有点睿智毁三观，不知道哪一方才是邪恶的。",
+            "other": "<a href='https://store.steampowered.com/app/225540/Just_Cause_3/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Grand Theft Auto V",
+            "type": "动作",
+            "date": "2015-04-14",
+            "official": "https://www.rockstargames.com/V/",
+            "summary": "对游戏细节制作很用心，还原了一部分真实的洛杉矶，线下不追求金牌任务还都挺简单的，线上模式貌似有很多小学生，第一次进的时候身边一个玩家开车撞我到一边扔了个手雷然后我死了。",
+            "other": "<a href='https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "The Witcher3: Wild Hunt",
+            "type": "角色扮演",
+            "date": "2015-05-18",
+            "official": "https://thewitcher.com/zh-cn/witcher3",
+            "summary": "波兰人的游戏风格，主线故事十分有趣，猎魔人不但不受人敬仰，而是受人歧视，有一些怪外貌真的恐怖，在游戏里学会了玩昆特牌。",
+            "other": "<a href='https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Don't Starve",
+            "type": "独立",
+            "date": "2009-04-11",
+            "official": "https://www.klei.com/games/dont-starve",
+            "summary": "自由度高，玩法很多，初入手时玩的大力士，作为活了一百天就退了的轻度玩家就不多说了。",
+            "other": "<a href='https://store.steampowered.com/app/26800/Braid/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Civilization VI",
+            "type": "策略",
+            "date": "2016-10-21",
+            "official": "https://civilization.com/",
+            "summary": "胜利有分数、统治、宗教、文化和科技这几种。第二局打的时候 490 多回合快结束的时候没注意到一个国家科技胜利了，本来想到 500 回合总分胜利的，所以一局打了20h+，可见得多肝。",
+            "other": "<a href='https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Europa Universalis IV",
+            "type": "策略",
+            "date": "2013-08-13",
+            "official": "https://www.paradoxplaza.com/europa-universalis-all/",
+            "summary": "P社游戏，一开始玩的时候汉化mod用不了，自己强忍着很多单词看不懂玩的，开局选的卡斯提尔，在南美开辟殖民地被盟友葡萄牙好感度下降后打了，后悔扩张没打葡萄牙打的阿拉贡。以后有时间再玩。<br>&emsp;&emsp;<a href='https://eu4.paradoxwikis.com/Europa_Universalis_4_Wiki' target='_blank'><b>参考wiki</b></a>",
+            "other": "<a href='https://store.steampowered.com/app/236850/Europa_Universalis_IV/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Human: Fall Flat",
+            "type": "独立",
+            "date": "2016-07-22",
+            "official": "http://curve-digital.com/en-gb/games/detail/6/human-fall-flat/",
+            "summary": "开发者脑洞很大，许多关卡可以用一些奇怪的方法通关，爬墙可以解决很多问题，可以安装一些很有趣的mod玩。",
+            "other": "<a href='https://store.steampowered.com/app/477160/Human_Fall_Flat/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Cube Escape",
+            "type": "解谜",
+            "date": "2018-09-20",
+            "official": "http://www.rustylake.com/",
+            "summary": "故事很精彩，部分画面有点恐怖，最后查了查攻略全成就达成。",
+            "other": "<a href='https://store.steampowered.com/app/909080/Cube_Escape_Paradox/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "机械迷城 (Machinarium)",
+            "type": "解谜",
+            "date": "2009-10-16",
+            "official": "https://amanita-design.net/games/machinarium.html",
+            "summary": "游戏很有趣，由捷克Amanita Design开发，一个叫Josef的机器人被吸垃圾的机器人吸走遗弃在城郊废墟，为了救出被邪恶机器人绑架的女朋友Berta，他再次回到机械迷城。PS：算是steam里全成就最容易达成之一，BGM很好听。",
+            "other": "<a href='https://store.steampowered.com/app/40700/_Machinarium/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Fallout 4",
+            "type": "角色扮演",
+            "date": "2015-11-10",
+            "official": "https://fallout.bethesda.net/en/",
+            "summary": "我有点晕 3D。",
+            "other": "<a href='https://store.steampowered.com/app/377160/Fallout_4/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "theHunter: Call of the Wild",
+            "type": "冒险",
+            "date": "2017-02-16",
+            "official": "http://callofthewild.thehunter.com/",
+            "summary": "游戏音效画面不错，细节做得好，不是fps游戏，对新手有点难度，不过不是我感冒的游戏。",
+            "other": "<a href='https://store.steampowered.com/app/518790/theHunter_Call_of_the_Wild/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Duet",
+            "type": "动作",
+            "date": "2015-08-04",
+            "official": "https://www.duetgame.com/",
+            "summary": "一款优秀的手游，通过不断犯错去学习各种技巧来通关。",
+            "other": "<a href='https://store.steampowered.com/app/292600/Duet/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "SPORE™",
+            "type": "模拟",
+            "date": "2008-12-19",
+            "official": "http://www.spore.com/",
+            "summary": "老游戏了，steam 上补个票。",
+            "other": "<a href='https://store.steampowered.com/app/17390/SPORE/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Fish Fillets 2",
+            "type": "解谜",
+            "date": "2007-04-05",
+            "official": "http://www.fish-fillets.com/pages/news.html",
+            "summary": "一款很难(真的很难)的益智游戏。",
+            "other": "<a href='https://store.steampowered.com/app/33950/Fish_Fillets_2/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Age of Empires II: Definitive Edition",
+            "type": "策略",
+            "date": "2019-11-15",
+            "official": "https://www.ageofempires.com/games/aoeiide/",
+            "summary": "诞生于上个世纪末的经典老游戏。",
+            "other": "<a href='https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Counter-Strike: Global Offensive",
+            "type": "FPS",
+            "date": "2012-08-22",
+            "official": "https://blog.counter-strike.net/",
+            "summary": "CSGO虽说很火，但不是我喜欢的游戏类型。",
+            "other": "<a href='https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Mirror's Edge",
+            "type": "跑酷",
+            "date": "2009-01-13",
+            "official": "https://www.mirrorsedge.com/",
+            "summary": "惊险刺激的老游戏，可以说是跑酷游戏的鼻祖。",
+            "other": "<a href='https://store.steampowered.com/app/17410/Mirrors_Edge/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "Grand Theft Auto: Vice City",
+            "type": "动作",
+            "date": "2002-10-27",
+            "official": "https://www.rockstargames.com/vicecity/",
+            "summary": "没记错的话因该是玩的第一部GTA系列。",
+            "other": "<a href='https://store.steampowered.com/app/12110/Grand_Theft_Auto_Vice_City/' target='_blank'><b>Steam</b></a>"
+        },
+        {
+            "title": "真·三国无双部分系列",
+            "type": "动作",
+            "date": "2000",
+            "official": "https://en.wikipedia.org/wiki/Dynasty_Warriors",
+            "summary": "占坑",
+            "other": "null"
+        }
+    ]
+}
